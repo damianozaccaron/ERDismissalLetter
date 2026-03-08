@@ -3,5 +3,4 @@ torch
 transformers
 fitz
 faiss-cpu
-pickle
 protobuf
