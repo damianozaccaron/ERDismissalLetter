@@ -1,4 +1,4 @@
-MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
+MODEL_NAME = "meta-llama/Llama-3.2-3B"
 EMBEDDING_MODEL = "abhinand/MedEmbed-base-v0.1"
 RETRIEVAL_K = 20
 FINAL_J = 5

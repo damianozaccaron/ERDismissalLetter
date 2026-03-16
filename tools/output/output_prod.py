@@ -5,11 +5,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 def load_model(model_name: str, device: str):
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-
-    model = AutoModelForCausalLM.from_pretrained(
-        model_name,
-        device_map="auto",
-    )
+    model = AutoModelForCausalLM.from_pretrained(model_name)
 
     model.eval()
 
