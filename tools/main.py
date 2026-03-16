@@ -81,6 +81,8 @@ def main():
         lambda_=MMR_LAMBDA
     )
 
+    print(selected_chunks)
+
     print("Building prompt...")
     prompt = build_prompt(patient_data, selected_chunks)
 
