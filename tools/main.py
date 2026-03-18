@@ -7,7 +7,10 @@ from config import (
     RETRIEVAL_K,
     FINAL_J,
     MMR_LAMBDA,
-    TEMPERATURE)
+    TEMPERATURE,
+    QUANT,
+    REPO,
+    MODEL_QUANT)
 
 from retrieval.storage import load_index_and_metadata
 from retrieval.embedding import embed_query, load_embedder
@@ -15,9 +18,11 @@ from retrieval.retrieval import mmr_select, retrieve_top_k
 from retrieval.storage import load_index_and_metadata
 
 from output.output_prod import (
-    load_model,
+    load_model_quant,
+    load_model_transformer,
     build_prompt,
-    generate_letter,
+    generate_letter_quant,
+    generate_letter_transformer
 )
 
 def collect_patient_input():
@@ -26,37 +31,46 @@ def collect_patient_input():
     Later: CLI or structured input.
     """
     return {
-        "Age": 67,
+        "Name": "Ugo Bianchetti",
+        "Age": "57",
         "Gender": "Male",
-        "Relevant Medical History": "Hypertension, Type 2 Diabetes",
-        "Exams Performed": "ECG, Blood Panel",
-        "Diagnosis": "Atrial Fibrillation with migraine episodes",
+        "Relevant Medical History": (
+        "Hypertension (on ACE inhibitors), Type 2 Diabetes Mellitus, "
+        "Hyperlipidemia, previous transient ischemic attack (2019), "
+        "former smoker (quit 10 years ago)"
+        ),
+        "Exams Performed": (
+        "ECG: irregularly irregular rhythm, no P waves, ventricular rate ~110 bpm; "
+        "Blood Panel: elevated fasting glucose (145 mg/dL), HbA1c 7.5%, normal electrolytes; "
+        "Cardiac enzymes: within normal limits; "
+        "Echocardiogram: mild left atrial enlargement, preserved ejection fraction (55%); "
+        "Blood pressure at admission: 150/95 mmHg"
+        ),
+        "Diagnosis": (
+        "Symptomatic atrial fibrillation with rapid ventricular response, "
+        "likely non-valvular, in a patient with multiple cardiovascular risk factors "
+        "(hypertension, diabetes, prior TIA)"
+        ),
     }
 
 
 def main():
 
     print("Loading FAISS index and metadata...")
-    start_time = torch.cuda.Event(enable_timing=True)
     index, metadata = load_index_and_metadata()
-    end_time = torch.cuda.Event(enable_timing=True)
-    start_time.record()
-    end_time.record()
-    torch.cuda.synchronize()  # Wait for the events to be recorded
-    elapsed_time_ms = start_time.elapsed_time(end_time)
-    print(f"Index and metadata loaded in {elapsed_time_ms:.2f} ms")
-
-    print("Loading LLM...")
-    device = ("cuda" if torch.cuda.is_available() else "cpu")
-    tokenizer, model = load_model(MODEL_NAME, device)
 
     print("Collecting patient input...")
     patient_data = collect_patient_input()
 
-    # Use diagnosis as query seed
-    query_text = patient_data["Diagnosis"]
+    query_text = (
+        f"Gender: {patient_data['Gender']}."
+        f"Age: {patient_data['Age']}."
+        f"Diagnosis: {patient_data['Diagnosis']}. "
+        f"Medical history: {patient_data['Relevant Medical History']}. "
+        f"Exams: {patient_data['Exams Performed']}."
+    )
 
-    print("Loading LLM...")
+    print("Loading Embedder...")
     emb_model = load_embedder(EMBEDDING_MODEL)
 
     print("Embedding query...")
@@ -70,6 +84,9 @@ def main():
         k=RETRIEVAL_K
     )
 
+    if len(top_k_candidates) == 0:
+        raise ValueError("No candidates retrieved")
+
     # Take the indexes listed in faiss_ids and fetch the corresponding embeddings from the FAISS index using the reconstruct method, which retrieves the original embedding vector for a given index. We stack these embeddings into a single numpy array called candidate_embeddings, which will have the shape (k, dim) where k is the number of retrieved candidates and dim is the dimensionality of the embeddings.
     candidate_embeddings = np.stack([index.reconstruct(int(i)) for i in faiss_ids])
 
@@ -81,18 +98,34 @@ def main():
         lambda_=MMR_LAMBDA
     )
 
-    print(selected_chunks)
+    if len(selected_chunks) == 0:
+        raise ValueError("No chunks retrieved")
 
     print("Building prompt...")
     prompt = build_prompt(patient_data, selected_chunks)
 
-    print("Generating dismissal letter...\n")
-    letter = generate_letter(
-        prompt=prompt,
-        tokenizer=tokenizer,
-        model=model,
-        temperature=TEMPERATURE,
-    )
+    if QUANT:
+        print("Loading LLM...")
+        model = load_model_quant(repo=REPO, model_name=MODEL_QUANT)
+
+        print("Generating letter...")
+        letter = generate_letter_quant(
+            prompt=prompt,
+            llm=model,
+            temperature=TEMPERATURE)
+        
+    else:
+        print("Loading LLM...")
+        device = ("cuda" if torch.cuda.is_available() else "cpu")
+        tokenizer, model = load_model_transformer(MODEL_NAME, device)
+
+        print("Generating dismissal letter...\n")
+        letter = generate_letter_transformer(
+            prompt=prompt,
+            tokenizer=tokenizer,
+            model=model,
+            temperature=TEMPERATURE,
+        )
 
     print("=== GENERATED LETTER ===\n")
     print(letter)

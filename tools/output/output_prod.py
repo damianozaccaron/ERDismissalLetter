@@ -1,8 +1,10 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
+from llama_cpp import Llama
 
 
-def load_model(model_name: str, device: str):
+
+def load_model_transformer(model_name: str, device: str):
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(model_name)
@@ -10,6 +12,16 @@ def load_model(model_name: str, device: str):
     model.eval()
 
     return tokenizer, model
+
+def load_model_quant(repo, model_name):
+
+    llm = Llama.from_pretrained(
+        repo_id=repo,
+        filename=model_name,
+        n_ctx=4096
+    )
+
+    return llm
 
 
 def build_prompt(patient_data: dict, retrieved_chunks: list[dict]) -> str:
@@ -20,18 +32,18 @@ def build_prompt(patient_data: dict, retrieved_chunks: list[dict]) -> str:
 
     prompt = []
 
-    prompt.append("You are a physician writing a medical dismissal letter from the ER department.\n")
+    prompt.append("You are a medical doctor writing a discharge document for the patient. Follow instructions strictly. Do not generate generic templates.\n")
 
     prompt.append("PATIENT INFORMATION:")
     for key, value in patient_data.items():
         prompt.append(f"- {key}: {value}")
     prompt.append("\n")
 
-    prompt.append("GUIDELINE EXCERPTS (use only these):\n")
+    prompt.append("GUIDELINE EXCERPTS:\n")
 
     for i, chunk in enumerate(retrieved_chunks, 1):
         prompt.append(
-            f"[Excerpt {i}] "
+            f"[E{i}] "
             f"({chunk['doc_id']}, p.{chunk['page_start']}-{chunk['page_end']})\n"
         )
         prompt.append(chunk["text"])
@@ -39,16 +51,26 @@ def build_prompt(patient_data: dict, retrieved_chunks: list[dict]) -> str:
 
     prompt.append(
         "INSTRUCTIONS:\n"
-        "- Base your recommendations strictly and exclusively on the provided guideline excerpts.\n"
+        "- Use ONLY the provided guideline excerpts. Do not rely on prior knowledge.\n"
+        "- Base your recommendations strictly and exclusively on the provided guideline excerpts.\n"    "- Do NOT invent or assume any information.\n"
         "- If a recommendation cannot be supported by the excerpts, state that no guidance is available.\n"
-        "- Do not change the diagnosis.\n"
-        "- Write a clear, structured dismissal letter including therapy recommendations and precautions.\n"
-        "- Cite sources in parentheses.\n"
+        "- Write the discharge document using the extracted recommendations.\n"
+        "- Structure the output EXACTLY as follows:\n\n"
+        "Patient Data:\n"
+        "...(Copy from input)\n\n"
+        "Diagnosis:\n"
+        "... (Copy from input)\n\n"
+        "Exams Performed:\n"
+        "...(Copy from input)\n\n"
+        "Recommended Therapy:\n"
+        "- ... (cite Excerpt number)\n\n"
+        "Precautions:\n"
+        "- ... (cite Excerpt number)\n\n"
     )
 
     return "\n".join(prompt)
 
-def generate_letter(
+def generate_letter_transformer(
     prompt: str,
     tokenizer,
     model,
@@ -71,9 +93,20 @@ def generate_letter(
     # Remove prompt from output
     return decoded[len(prompt):].strip()
 
+def generate_letter_quant(
+        prompt: str, 
+        llm, 
+        max_new_tokens=800, 
+        temperature=0.2):
+    
+    formatted_prompt = f"<s>[INST] {prompt} [/INST]"
 
+    output = llm(
+        formatted_prompt,
+        max_tokens=max_new_tokens,
+        temperature=temperature,
+        stop=["</s>"],
+        echo=True
+    )
 
-"""messages = [
-    {"role": "system", "content": sys_prompt},
-    {"role": "user", "content": ex_query}
-]"""
+    return output["choices"][0]["text"].strip()

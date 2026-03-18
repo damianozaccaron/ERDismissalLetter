@@ -4,3 +4,6 @@ RETRIEVAL_K = 20
 FINAL_J = 5
 MMR_LAMBDA = 0.5
 TEMPERATURE = 0.2
+QUANT=True
+MODEL_QUANT="Mistral-7B-Instruct-v0.3-Q6_K.gguf"
+REPO="bartowski/Mistral-7B-Instruct-v0.3-GGUF"

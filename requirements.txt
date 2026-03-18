@@ -4,3 +4,4 @@ transformers
 fitz
 faiss-cpu
 protobuf
+llama-cpp-python
