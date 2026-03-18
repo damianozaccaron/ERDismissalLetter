@@ -18,7 +18,8 @@ def load_model_quant(repo, model_name):
     llm = Llama.from_pretrained(
         repo_id=repo,
         filename=model_name,
-        n_ctx=4096
+        n_ctx=4096,
+        n_gpu_layers=-1
     )
 
     return llm
@@ -99,7 +100,7 @@ def generate_letter_quant(
         max_new_tokens=800, 
         temperature=0.2):
     
-    formatted_prompt = f"<s>[INST] {prompt} [/INST]"
+    formatted_prompt = f"[INST] {prompt} [/INST]"
 
     output = llm(
         formatted_prompt,
