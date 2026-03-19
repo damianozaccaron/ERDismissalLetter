@@ -184,7 +184,7 @@ def extract_folder(
     return all_pages
 
 if __name__ == "__main__":
-    data_dir = Path("/home/zazza/Documents/NLP/Project/Guidelines")
+    data_dir = Path("./Guidelines")
     print(f"Extracting PDFs from {data_dir}")
     blocks = extract_folder(data_dir)
 

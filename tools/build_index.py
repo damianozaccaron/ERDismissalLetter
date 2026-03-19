@@ -8,10 +8,10 @@ from retrieval.storage import (
 )
 from pathlib import Path
 
-def main():
+def main(rel_path):
 
     print("Extracting PDFs...")
-    data_dir = Path("/home/zazza/Documents/NLP/Project/Guidelines")
+    data_dir = rel_path
     pages = extract_folder(data_dir)
     print(f"Extracted {len(pages)} pages")
 
@@ -36,4 +36,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    guidelines = Path("./Guidelines")
+    main(guidelines)
