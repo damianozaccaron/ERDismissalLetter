@@ -112,6 +112,7 @@ def main():
             prompt=prompt,
             llm=model,
             temperature=TEMPERATURE)"""
+        letter="stocazzo"
         
     else:
         print("Loading LLM...")
