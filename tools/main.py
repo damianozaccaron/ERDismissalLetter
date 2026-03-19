@@ -62,13 +62,10 @@ def main():
     print("Collecting patient input...")
     patient_data = collect_patient_input()
 
-    query_text = (
-        f"Gender: {patient_data['Gender']}."
-        f"Age: {patient_data['Age']}."
-        f"Diagnosis: {patient_data['Diagnosis']}. "
-        f"Medical history: {patient_data['Relevant Medical History']}. "
-        f"Exams: {patient_data['Exams Performed']}."
-    )
+    query_text = " ".join([
+        patient_data["Diagnosis"],
+        patient_data["Relevant Medical History"]
+    ])
 
     print("Loading Embedder...")
     emb_model = load_embedder(EMBEDDING_MODEL)
@@ -104,15 +101,17 @@ def main():
     print("Building prompt...")
     prompt = build_prompt(patient_data, selected_chunks)
 
+    print(prompt)
+
     if QUANT:
         print("Loading LLM...")
-        model = load_model_quant(repo=REPO, model_name=MODEL_QUANT)
+        # model = load_model_quant(repo=REPO, model_name=MODEL_QUANT)
 
         print("Generating letter...")
-        letter = generate_letter_quant(
+        """letter = generate_letter_quant(
             prompt=prompt,
             llm=model,
-            temperature=TEMPERATURE)
+            temperature=TEMPERATURE)"""
         
     else:
         print("Loading LLM...")

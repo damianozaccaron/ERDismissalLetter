@@ -33,7 +33,7 @@ def build_prompt(patient_data: dict, retrieved_chunks: list[dict]) -> str:
 
     prompt = []
 
-    prompt.append("You are a medical doctor writing a discharge document for the patient. Follow instructions strictly. Do not generate generic templates.\n")
+    prompt.append("You are a medical doctor writing a discharge document for the patient. The document is addressed to the patient. Follow instructions strictly. Write specific, patient-tailored recommendations. Avoid generic statements.\n")
 
     prompt.append("PATIENT INFORMATION:")
     for key, value in patient_data.items():
@@ -56,6 +56,7 @@ def build_prompt(patient_data: dict, retrieved_chunks: list[dict]) -> str:
         "- Base your recommendations strictly and exclusively on the provided guideline excerpts.\n"    "- Do NOT invent or assume any information.\n"
         "- If a recommendation cannot be supported by the excerpts, state that no guidance is available.\n"
         "- Write the discharge document using the extracted recommendations.\n"
+        "- Each recommendation MUST explicitly cite at least one excerpt.\n"
         "- Structure the output EXACTLY as follows:\n\n"
         "Patient Data:\n"
         "...(Copy from input)\n\n"
