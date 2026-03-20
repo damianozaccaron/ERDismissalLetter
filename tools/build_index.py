@@ -35,6 +35,24 @@ def main(rel_path):
     print("Index successfully built.")
 
 
+def check_chunking(rel_path):
+    print("Extracting PDFs...")
+    data_dir = rel_path
+    pages = extract_folder(data_dir)
+    print(f"Extracted {len(pages)} pages")
+
+    print("Chunking...")
+    chunks = create_chunks(pages)
+
+    print(f"Extracted {len(chunks)} chunks")
+
+    output = []
+    for chunk in chunks[500:539]:
+        output.append(chunk["text"])
+
+    with open('output.txt', 'w', encoding='utf-8') as file:
+        file.write("\n\n\n".join(output))
+
 if __name__ == "__main__":
     guidelines = Path("./Guidelines")
-    main(guidelines)
+    check_chunking(guidelines)

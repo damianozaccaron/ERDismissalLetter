@@ -1,34 +1,10 @@
 from typing import List, Dict
 
-def merge_lines(lines: List[str]) -> List[str]:
-    """
-    Merge broken lines from PDF extraction.
-    """
-    merged = []
-    buffer = ""
+import pickle, time, re
+from pathlib import Path
+from nltk.tokenize.punkt import PunktTrainer, PunktSentenceTokenizer
 
-    for line in lines:
-        line = line.strip()
-        if not line:
-            continue
-
-        # if buffer empty → start
-        if not buffer:
-            buffer = line
-            continue
-
-        # if previous line ends with punctuation → new unit
-        if buffer.endswith((".", ":", ";")):
-            merged.append(buffer)
-            buffer = line
-        else:
-            # merge lines
-            buffer += " " + line
-
-    if buffer:
-        merged.append(buffer)
-
-    return merged
+from ingestion.cleaning import clean_lines, remove_captions, remove_reference_numbers
 
 
 def create_chunks(
@@ -42,14 +18,32 @@ def create_chunks(
     current_len = 0
     current_metadata = None
 
+    merged_sentences = {} 
     for page in pages:
-        raw_lines = [l.strip() for l in page["text"].split("\n") if l.strip()]
 
-        # merge broken PDF lines
-        units = merge_lines(raw_lines)
+        raw_lines = page["text"].split("\n")
+        clean = remove_reference_numbers(raw_lines)
 
+        merged_sentences[(page["doc_id"], page["page"])] = merge_lines(clean)
+
+    all_units_flat = [unit for units in merged_sentences.values() for unit in units]
+    tokenizer = get_tokenizer(all_units_flat)
+
+    for page in pages:
+        units = merged_sentences[(page["doc_id"], page["page"])]
+
+        # flatten punkt output into a list of sentences
+        sentences = []
         for unit in units:
-            unit_len = len(unit)
+            sentences.extend(tokenizer.tokenize(unit))
+
+        # remove captions
+        sentences = remove_captions(sentences)
+
+        # check if there are sentences that are too long, if that's the case split them based on punctuation
+        sentences = split_oversized_sentences(sentences, max_chars)
+
+        for sentence in sentences:
 
             if current_metadata is None:
                 current_metadata = {
@@ -58,18 +52,15 @@ def create_chunks(
                     "page_end": page["page"],
                 }
 
-            # if exceeds → emit chunk
-            if current_len + unit_len > max_chars and current_chunk:
+            if current_len + len(sentence) > max_chars and current_chunk:
                 chunk_text = " ".join(current_chunk)
-
                 chunks.append({
                     **current_metadata,
                     "text": chunk_text
                 })
 
-                # overlap (last N units)
                 current_chunk = current_chunk[-overlap_units:]
-                current_len = sum(len(u) for u in current_chunk)
+                current_len = sum(len(s) for s in current_chunk)
 
                 current_metadata = {
                     "doc_id": page["doc_id"],
@@ -77,8 +68,8 @@ def create_chunks(
                     "page_end": page["page"],
                 }
 
-            current_chunk.append(unit)
-            current_len += unit_len
+            current_chunk.append(sentence)
+            current_len += len(sentence)
             current_metadata["page_end"] = page["page"]
 
     # last chunk
@@ -91,23 +82,102 @@ def create_chunks(
     return chunks
 
 
-def is_noisy_chunk(text: str) -> bool:
+def merge_lines(lines: List[str]) -> List[str]:
     """
-    Function used to identify if a chunk is a summary table, 
-    which can skew significantly the similarity scores due to density of key words but lack of actual significance.
-
-    The idea is that summary table contain many less periods than plain text, but normally higher counts of digits and , due to citations.
+    Merge broken lines from PDF extraction.
     """
+    merged = []
+    buffer = ""
 
-    period_count = text.count(".")
-    comma_count = text.count(",")
-    semicolon_count = text.count(";")
- 
-    digits = sum(c.isdigit() for c in text)
-    digit_ratio = digits / max(len(text), 1)
+    for line in lines:
+        broken = False
+        line = line.strip()
+        if not line:
+            continue
 
-    if period_count < 2 and (
-        (comma_count + semicolon_count) > 8 or digit_ratio > 0.1):
-        return True
+        # if the buffer is empty, start to populate it
+        if not buffer:
+            buffer = line
+            continue
 
-    return False
+        #if the line ends with -, assume it is a broken word and fix it
+        if buffer.endswith("-"):
+            buffer = buffer[:-1]
+            broken = True
+
+        # if the line ends with punctuation, then the buffer is complete
+        if buffer.endswith((".", ":", ";", "?", "!", ",")):
+            merged.append(buffer)
+            buffer = line
+        
+        # if the line is the continuation of the previous line, don't add the space
+        elif broken:
+            buffer += line
+        else:
+            buffer += " " + line
+    # last line
+    if buffer:
+        merged.append(buffer)
+
+    return merged
+
+def train_punkt(texts: list[str], save_path: str = "punkt_medical.pkl") -> PunktSentenceTokenizer:
+    """
+    Train a Punkt tokenizer on a list of texts and save it to disk.
+    """
+    trainer = PunktTrainer()
+    # trainer.ABBREV_BACKOFF = 0  # more aggressive abbreviation learning
+
+    print("Training a new Punkt tokenzizer")
+    
+    start_time = time.time()
+
+    for text in texts:
+        trainer.train(text, finalize=False)
+    
+    trainer.finalize_training()
+    tokenizer = PunktSentenceTokenizer(trainer.get_params())
+    
+    with open(save_path, "wb") as f:
+        pickle.dump(tokenizer, f)
+
+    end_time = time.time()
+
+    print(f"Tokenizer trained in {end_time - start_time:.3f} seconds")
+    
+    return tokenizer
+
+
+def load_punkt(path: str = "punkt_medical.pkl") -> PunktSentenceTokenizer:
+    """
+    Load a previously trained tokenizer from disk.
+    """
+    with open(path, "rb") as f:
+        return pickle.load(f)
+
+# Remember to modify paths for models
+def get_tokenizer(texts: list[str] = None, path: str = "punkt_medical.pkl") -> PunktSentenceTokenizer:
+    """
+    Load tokenizer if it exists, otherwise train and save it.
+    """
+    if Path(path).exists():
+        print("Loading existing tokenizer...")
+        return load_punkt(path)
+    
+    if not texts:
+        raise ValueError("No saved tokenizer found and no texts provided for training.")
+    
+    print("Training new tokenizer...")
+    return train_punkt(texts, save_path=path)
+
+def split_oversized_sentences(sentences: List[str], max_chars: int) -> List[str]:
+
+    i = 0
+    while i < len(sentences):
+        if len(sentences[i]) > max_chars:
+            split_parts = re.split(r'(?<=[;:!?])\s+', sentences[i])
+            sentences = sentences[:i] + split_parts + sentences[i+1:]
+            i += len(split_parts)
+        else:
+            i += 1
+    return sentences
