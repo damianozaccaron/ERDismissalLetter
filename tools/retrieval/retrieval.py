@@ -21,8 +21,9 @@ def retrieve_top_k(query_embedding, index, metadata, k=RETRIEVAL_K):
 
 def mmr_select(
     query_embedding: np.ndarray,
-    candidate_embeddings: np.ndarray,
     candidates: list[dict],
+    faiss_ids: list[int],
+    index,
     top_j=FINAL_J,
     lambda_=MMR_LAMBDA
 ):
@@ -32,6 +33,8 @@ def mmr_select(
     candidate_embeddings: shape (k, dim), normalized
     candidates: list of metadata dicts (same order)
     """
+
+    candidate_embeddings = np.stack([index.reconstruct(int(i)) for i in faiss_ids])
 
     selected = []
     selected_indices = [] # we also keep the indices

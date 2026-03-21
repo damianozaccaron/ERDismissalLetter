@@ -33,12 +33,14 @@ def sanity_check(index, metadata):
     assert index.ntotal == len(metadata)
 
 def save_index_and_metadata(index, metadata, index_path="faiss.index", metadata_path="metadata.pkl"):
+
     faiss.write_index(index, index_path)
 
     with open(metadata_path, "wb") as f:
         pickle.dump(metadata, f)
 
 def load_index_and_metadata(index_path="faiss.index", metadata_path="metadata.pkl"):
+
     if not Path(index_path).exists() or not Path(metadata_path).exists():
         raise RuntimeError(
             "FAISS index or metadata not found."
@@ -48,5 +50,7 @@ def load_index_and_metadata(index_path="faiss.index", metadata_path="metadata.pk
 
     with open(metadata_path, "rb") as f:
         metadata = pickle.load(f)
+
+    sanity_check(index, metadata)
 
     return index, metadata

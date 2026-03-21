@@ -9,6 +9,7 @@ model = AutoModel.from_pretrained("emilyalsentzer/Bio_ClinicalBERT")
 """
 from sentence_transformers import SentenceTransformer
 import torch
+from typing import List, Dict
 from config import EMBEDDING_MODEL
 
 def load_embedder(model_name=EMBEDDING_MODEL):
@@ -18,11 +19,12 @@ def load_embedder(model_name=EMBEDDING_MODEL):
         device="cuda" if torch.cuda.is_available() else "cpu")
     return emb_model
 
-def embed_docs(chunks, embedder, batch_size=32):
-    texts = [c["text"] for c in chunks]
+def embed_docs(chunks: List[Dict], embedder, batch_size=32) -> List[Dict]:
     """Embed a list of text chunks using the provided embedder, takes the parameter text from the chunk (dict type) and returns 
     a list of dicts with the same metadata and the embedding vector added as a new key "embedding".
     """
+
+    texts = [c["text"] for c in chunks]
 
     embeddings = embedder.encode(
         texts,

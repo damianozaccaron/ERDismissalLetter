@@ -22,7 +22,7 @@ def create_chunks(
     for page in pages:
 
         raw_lines = page["text"].split("\n")
-        clean = remove_reference_numbers(raw_lines)
+        clean = clean_lines(raw_lines)
 
         merged_sentences[(page["doc_id"], page["page"])] = merge_lines(clean)
 
@@ -122,13 +122,11 @@ def merge_lines(lines: List[str]) -> List[str]:
     return merged
 
 def train_punkt(texts: list[str], save_path: str = "punkt_medical.pkl") -> PunktSentenceTokenizer:
-    """
-    Train a Punkt tokenizer on a list of texts and save it to disk.
-    """
+
     trainer = PunktTrainer()
     # trainer.ABBREV_BACKOFF = 0  # more aggressive abbreviation learning
 
-    print("Training a new Punkt tokenzizer")
+    print("Training a new Punkt tokenizer")
     
     start_time = time.time()
 
@@ -148,18 +146,15 @@ def train_punkt(texts: list[str], save_path: str = "punkt_medical.pkl") -> Punkt
     return tokenizer
 
 
-def load_punkt(path: str = "punkt_medical.pkl") -> PunktSentenceTokenizer:
-    """
-    Load a previously trained tokenizer from disk.
-    """
+def load_punkt(path: str = "punkt_weights.pkl") -> PunktSentenceTokenizer:
+
     with open(path, "rb") as f:
         return pickle.load(f)
 
 # Remember to modify paths for models
 def get_tokenizer(texts: list[str] = None, path: str = "punkt_medical.pkl") -> PunktSentenceTokenizer:
-    """
-    Load tokenizer if it exists, otherwise train and save it.
-    """
+
+    # load tokenizer if it exists, otherwise train and save it.
     if Path(path).exists():
         print("Loading existing tokenizer...")
         return load_punkt(path)

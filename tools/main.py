@@ -15,7 +15,6 @@ from config import (
 from retrieval.storage import load_index_and_metadata
 from retrieval.embedding import embed_query, load_embedder
 from retrieval.retrieval import mmr_select, retrieve_top_k
-from retrieval.storage import load_index_and_metadata
 
 from output.output_prod import (
     load_model_quant,
@@ -84,13 +83,11 @@ def main():
     if len(top_k_candidates) == 0:
         raise ValueError("No candidates retrieved")
 
-    # Take the indexes listed in faiss_ids and fetch the corresponding embeddings from the FAISS index using the reconstruct method, which retrieves the original embedding vector for a given index. We stack these embeddings into a single numpy array called candidate_embeddings, which will have the shape (k, dim) where k is the number of retrieved candidates and dim is the dimensionality of the embeddings.
-    candidate_embeddings = np.stack([index.reconstruct(int(i)) for i in faiss_ids])
-
     selected_chunks = mmr_select(
         query_embedding=query_embedding,
-        candidate_embeddings=candidate_embeddings,
         candidates=top_k_candidates,
+        faiss_ids=faiss_ids,
+        index=index,
         top_j=FINAL_J,
         lambda_=MMR_LAMBDA
     )
@@ -105,14 +102,13 @@ def main():
 
     if QUANT:
         print("Loading LLM...")
-        # model = load_model_quant(repo=REPO, model_name=MODEL_QUANT)
+        model = load_model_quant(repo=REPO, model_name=MODEL_QUANT)
 
         print("Generating letter...")
         """letter = generate_letter_quant(
             prompt=prompt,
             llm=model,
             temperature=TEMPERATURE)"""
-        letter="stocazzo"
         
     else:
         print("Loading LLM...")

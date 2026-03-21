@@ -1,0 +1,15 @@
+- Reorganize Code (Not everything in the same notebook, but one py file for each part of the process) (X)
+
+- Choice of PDF extractor (X)
+- Choice of Embedder (MedEmbed, BioClinicalBERT, ModernPubMedBERT) (X)
+- Choice of vector database (FAISS; Chroma; Milvus; Weaviate; Pinecone) (X)
+- Retrieval Strategy
+- Choice of base LLM (medalpaca, BioGPT, Llama-3-Instruct, or Mistral-Med, MedGemma)
+
+- Understanding cross-reasoning. Multi-query retrieval could be useful (One per diagnosis)
+- Translation challenges
+- Consider including the source for information
+
+Optional:
+- Parallelizing PDF ingestion
+- Tokenized Chunking (needs a tokenizer)

@@ -6,8 +6,8 @@ from llama_cpp import Llama
 
 def load_model_transformer(model_name: str, device: str):
 
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForCausalLM.from_pretrained(model_name)
+    tokenizer = AutoTokenizer.from_pretrained(model_name).to(device)
+    model = AutoModelForCausalLM.from_pretrained(model_name).to(device)
 
     model.eval()
 
@@ -53,7 +53,8 @@ def build_prompt(patient_data: dict, retrieved_chunks: list[dict]) -> str:
     prompt.append(
         "INSTRUCTIONS:\n"
         "- Use ONLY the provided guideline excerpts. Do not rely on prior knowledge.\n"
-        "- Base your recommendations strictly and exclusively on the provided guideline excerpts.\n"    "- Do NOT invent or assume any information.\n"
+        "- Base your recommendations strictly and exclusively on the provided guideline excerpts.\n"    
+        "- Do NOT invent or assume any information.\n"
         "- If a recommendation cannot be supported by the excerpts, state that no guidance is available.\n"
         "- Write the discharge document using the extracted recommendations.\n"
         "- Each recommendation MUST explicitly cite at least one excerpt.\n"

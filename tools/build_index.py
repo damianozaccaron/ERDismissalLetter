@@ -1,11 +1,7 @@
 from ingestion.pdf_retriever import extract_folder
 from ingestion.chunking import create_chunks
 from retrieval.embedding import load_embedder, embed_docs
-from retrieval.storage import (
-    build_faiss_index,
-    build_metadata,
-    save_index_and_metadata,
-)
+from retrieval.storage import build_faiss_index, build_metadata, save_index_and_metadata, sanity_check
 from pathlib import Path
 
 def main(rel_path):
@@ -17,6 +13,7 @@ def main(rel_path):
 
     print("Chunking...")
     chunks = create_chunks(pages)
+    print(f"Extracted {len(chunks)} chunks")
 
     print("Loading embedder...")
     embedder = load_embedder()
@@ -26,8 +23,9 @@ def main(rel_path):
 
     print("Building FAISS index...")
     index = build_faiss_index(chunks)
-
     metadata = build_metadata(chunks)
+
+    sanity_check(index, metadata)
 
     print("Saving index and metadata...")
     save_index_and_metadata(index, metadata)
@@ -47,7 +45,7 @@ def check_chunking(rel_path):
     print(f"Extracted {len(chunks)} chunks")
 
     output = []
-    for chunk in chunks[500:539]:
+    for chunk in chunks:
         output.append(chunk["text"])
 
     with open('output.txt', 'w', encoding='utf-8') as file:
@@ -55,4 +53,4 @@ def check_chunking(rel_path):
 
 if __name__ == "__main__":
     guidelines = Path("./Guidelines")
-    check_chunking(guidelines)
+    main(guidelines)
