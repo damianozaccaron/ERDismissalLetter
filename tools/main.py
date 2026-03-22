@@ -105,10 +105,10 @@ def main():
         model = load_model_quant(repo=REPO, model_name=MODEL_QUANT)
 
         print("Generating letter...")
-        """letter = generate_letter_quant(
+        letter = generate_letter_quant(
             prompt=prompt,
             llm=model,
-            temperature=TEMPERATURE)"""
+            temperature=TEMPERATURE)
         
     else:
         print("Loading LLM...")
@@ -126,6 +126,53 @@ def main():
     print("=== GENERATED LETTER ===\n")
     print(letter)
 
+def check_retrieval():
+
+    print("Loading FAISS index and metadata...")
+    index, metadata = load_index_and_metadata()
+
+    print("Collecting patient input...")
+    patient_data = collect_patient_input()
+
+    query_text = " ".join([
+        patient_data["Diagnosis"],
+        patient_data["Relevant Medical History"]
+    ])
+
+    print("Loading Embedder...")
+    emb_model = load_embedder(EMBEDDING_MODEL)
+
+    print("Embedding query...")
+    query_embedding = embed_query(query_text, embedder=emb_model)
+
+    print("Retrieving relevant chunks...")
+    top_k_candidates, faiss_ids = retrieve_top_k(
+        query_embedding=query_embedding,
+        index=index,
+        metadata=metadata,
+        k=RETRIEVAL_K
+    )
+
+    if len(top_k_candidates) == 0:
+        raise ValueError("No candidates retrieved")
+
+    selected_chunks = mmr_select(
+        query_embedding=query_embedding,
+        candidates=top_k_candidates,
+        faiss_ids=faiss_ids,
+        index=index,
+        top_j=FINAL_J,
+        lambda_=MMR_LAMBDA
+    )
+
+    if len(selected_chunks) == 0:
+        raise ValueError("No chunks retrieved")
+
+    print("Building prompt...")
+    prompt = build_prompt(patient_data, selected_chunks)
+
+    print(prompt)
+
 
 if __name__ == "__main__":
-    main()
+    check_retrieval()
