@@ -4,7 +4,9 @@ import numpy as np
 from config import (
     MODEL_NAME,
     EMBEDDING_MODEL,
+    CROSS_ENCODER,
     RETRIEVAL_K,
+    MMR_N,
     FINAL_J,
     MMR_LAMBDA,
     TEMPERATURE,
@@ -14,7 +16,7 @@ from config import (
 
 from retrieval.storage import load_index_and_metadata
 from retrieval.embedding import embed_query, load_embedder
-from retrieval.retrieval import mmr_select, retrieve_top_k
+from retrieval.retrieval import mmr_select, retrieve_top_k, load_crossEncoder, reranking
 
 from output.output_prod import (
     load_model_quant,
@@ -63,7 +65,8 @@ def main():
 
     query_text = " ".join([
         patient_data["Diagnosis"],
-        patient_data["Relevant Medical History"]
+        patient_data["Relevant Medical History"],
+        "anticoagulation therapy stroke prevention rate control recommendations"
     ])
 
     print("Loading Embedder...")
@@ -136,7 +139,8 @@ def check_retrieval():
 
     query_text = " ".join([
         patient_data["Diagnosis"],
-        patient_data["Relevant Medical History"]
+        patient_data["Relevant Medical History"],
+        "anticoagulation therapy stroke prevention rate control recommendations"
     ])
 
     print("Loading Embedder...")
@@ -154,25 +158,34 @@ def check_retrieval():
     )
 
     if len(top_k_candidates) == 0:
-        raise ValueError("No candidates retrieved")
+        raise ValueError("No candidates retrieved from top k")
 
     selected_chunks = mmr_select(
         query_embedding=query_embedding,
         candidates=top_k_candidates,
         faiss_ids=faiss_ids,
         index=index,
-        top_j=FINAL_J,
+        top_j=MMR_N,
         lambda_=MMR_LAMBDA
     )
 
     if len(selected_chunks) == 0:
-        raise ValueError("No chunks retrieved")
+        raise ValueError("No candidates retrieved from MMR")
+    
+    cross_encoder = load_crossEncoder(CROSS_ENCODER)
+    final_chunks = reranking(query_text, selected_chunks, cross_encoder, FINAL_J)
+
+    if len(final_chunks) == 0:
+        raise ValueError("No candidates retrieved from Cross-Encoder")
 
     print("Building prompt...")
-    prompt = build_prompt(patient_data, selected_chunks)
+    prompt = build_prompt(patient_data, final_chunks)
 
-    print(prompt)
+    return prompt
 
 
 if __name__ == "__main__":
-    check_retrieval()
+    output = check_retrieval()
+
+    with open('output.txt', 'w', encoding='utf-8') as file:
+        file.write(output)

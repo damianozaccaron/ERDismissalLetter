@@ -2,6 +2,8 @@ from pathlib import Path
 import fitz 
 import re, time
 
+from ingestion.cleaning import is_page_bad
+
 def empty_page_warning(doc_id: str, empty_page_counter: int, total_pages: int, threshold: float = 0.3):
     """
     Simple function to print a warning if too many pages are empty in a document.
@@ -12,32 +14,6 @@ def empty_page_warning(doc_id: str, empty_page_counter: int, total_pages: int, t
             f"{empty_page_counter*100/total_pages:.1f}% pages are empty. "
             "Possible scanned PDF or extraction failure."
         )
-
-
-def is_page_bad(text: str) -> bool:
-    """
-    Detects if a page only contains Bibliography references or is part of the Index or Abbreviation section.
-    """
-    text_lower = text.lower()
-
-    # DOI / URLs (Bibliography)
-    doi_count = text_lower.count("doi")
-    url_count = text_lower.count("http")
-
-    if doi_count + url_count >= 8:
-        return True
-
-    # Et al.
-    etal_counter = text_lower.count("et al")
-    if etal_counter >= 8:
-        return True
-    
-    # Index
-    sep_counter = text.count(".............................")
-    if sep_counter >= 8:
-        return True
-       
-    return False
 
 def extract_pdf_text(
     pdf_path: Path,
@@ -145,7 +121,7 @@ def extract_pdf_text_layout_aware(
         if textpage:
             full_text = "\n".join(textpage)
 
-            # If the page is identified as bibliography/index, ignore it
+            # If the page is identified as bibliography/index/abbreviation, ignore it
             if is_page_bad(full_text):
                 continue
             

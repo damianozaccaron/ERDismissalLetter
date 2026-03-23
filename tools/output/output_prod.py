@@ -1,6 +1,6 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from llama_cpp import Llama
+ #from llama_cpp import Llama
 
 
 
@@ -18,7 +18,6 @@ def load_model_quant(repo, model_name):
     llm = Llama.from_pretrained(
         repo_id=repo,
         filename=model_name,
-        n_ctx=4096,
         n_gpu_layers=-1
     )
 

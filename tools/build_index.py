@@ -19,11 +19,11 @@ def main(rel_path):
     embedder = load_embedder()
 
     print("Embedding...")
-    chunks = embed_docs(chunks, embedder)
+    emb_chunks = embed_docs(chunks, embedder)
 
     print("Building FAISS index...")
-    index = build_faiss_index(chunks)
-    metadata = build_metadata(chunks)
+    index = build_faiss_index(emb_chunks)
+    metadata = build_metadata(emb_chunks)
 
     sanity_check(index, metadata)
 

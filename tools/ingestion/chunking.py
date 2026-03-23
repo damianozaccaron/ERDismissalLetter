@@ -19,6 +19,13 @@ def create_chunks(
     current_metadata = None
 
     merged_sentences = {} 
+
+    for page in pages:
+        if page["doc_id"] == "AtrialFibrillation" and page["page"] == 6:
+            for i, line in enumerate(page["text"].split("\n")):
+                print(f"{i}: {repr(line)}")
+            break
+
     for page in pages:
 
         raw_lines = page["text"].split("\n")

@@ -1,5 +1,3 @@
-# emb_model = SentenceTransformer("abhinand/MedEmbed-large-v0.1") <- to use for final model
-
 # emb_model = SentenceTransformer("lokeshch19/ModernPubMedBERT") <- to try in evaluation phase
 
 #BioCLinicalBERT <- to try in evaluation phase
@@ -20,7 +18,7 @@ def load_embedder(model_name=EMBEDDING_MODEL):
     return emb_model
 
 def embed_docs(chunks: List[Dict], embedder, batch_size=32) -> List[Dict]:
-    """Embed a list of text chunks using the provided embedder, takes the parameter text from the chunk (dict type) and returns 
+    """Embed a list of text chunks using the provided embedder, takes the parameter text from the chunk and returns 
     a list of dicts with the same metadata and the embedding vector added as a new key "embedding".
     """
 

@@ -1,5 +1,6 @@
 import numpy as np
 from config import RETRIEVAL_K, MMR_LAMBDA, FINAL_J
+from sentence_transformers import CrossEncoder
 
 def retrieve_top_k(query_embedding, index, metadata, k=RETRIEVAL_K):
     scores, indices = index.search(query_embedding, k)
@@ -70,3 +71,20 @@ def mmr_select(
         selected.append(candidates[best_idx])
 
     return selected
+
+
+def load_crossEncoder(model_name):
+    return CrossEncoder(model_name)
+
+def reranking(query: str, retrieved_chunks: list[dict], reranker: CrossEncoder, top_n: int = FINAL_J) -> list[dict]:
+    texts = [chunk["text"] for chunk in retrieved_chunks]
+    ranks = reranker.rank(query, texts, return_documents=True)
+    
+    # map ranked results back to original chunk dicts to preserve metadata
+    ranked_chunks = []
+    for rank in ranks[:top_n]:
+        original_chunk = retrieved_chunks[rank["corpus_id"]]
+        original_chunk["rerank_score"] = rank["score"]
+        ranked_chunks.append(original_chunk)
+    
+    return ranked_chunks

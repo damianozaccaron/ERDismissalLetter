@@ -1,6 +1,46 @@
 import re
 from typing import List
 
+def detect_biblio(text: str, threshold = 8) -> bool:
+    text_lower = text.lower()
+
+    # DOI / URLs (Bibliography)
+    doi_count = text_lower.count("doi")
+    url_count = text_lower.count("http")
+
+    if doi_count + url_count >= threshold:
+        return True
+
+    # Et al.
+    etal_counter = text_lower.count("et al")
+    if etal_counter >= threshold:
+        return True
+    
+    return False
+
+def detect_index(text:str, threshold = 5) -> bool:
+    
+    sep_counter = text.count(".............................")
+    return sep_counter >= threshold
+
+
+def detect_abbreviations(text:str, threshold = 12) -> bool:
+    abbrev_counter = sum(
+        1 for line in text.split("\n")
+        if re.match(r'^[A-Z][A-Z0-9\-]{1,9}\s*$', line.strip())
+    )
+
+    return abbrev_counter >= threshold
+
+
+def is_page_bad(text: str) -> bool:
+    """
+    Detects if a page only contains Bibliography references or is part of the Index or Abbreviation section.
+    """
+
+    return detect_biblio(text) or detect_abbreviations(text) or detect_index(text)
+
+
 def remove_reference_numbers(lines: List[str]) -> List[str]:
 
     cleaned = []
@@ -10,28 +50,6 @@ def remove_reference_numbers(lines: List[str]) -> List[str]:
         line = line.strip()
         if line:
             cleaned.append(line)
-    return cleaned
-
-
-def remove_table_lines(lines: List[str]) -> List[str]:
-    """
-    Remove lines that look like table rows:
-    - Contain recommendation markers like 'I C', 'I B', 'III C' in isolation
-    - Very high density of uppercase abbreviations
-    - Short lines with mostly non-prose content
-    """
-    cleaned = []
-    for line in lines:
-        # standalone recommendation class markers
-        if re.fullmatch(r'\s*(I{1,3}|IV|V)\s+[ABC]\s*', line):
-            continue
-        # lines that are almost entirely uppercase abbreviations and numbers
-        words = line.split()
-        if len(words) < 6:
-            upper_ratio = sum(1 for w in words if w.isupper()) / max(len(words), 1)
-            if upper_ratio > 0.6:
-                continue
-        cleaned.append(line)
     return cleaned
 
 
@@ -61,7 +79,6 @@ def remove_figure_nonsense(lines: List[str]) -> List[str]:
 def clean_lines(lines: List[str]) -> List[str]:
 
     lines = remove_reference_numbers(lines)
-    # lines = remove_table_lines(lines)
     lines = remove_figure_nonsense(lines)
 
     return lines
