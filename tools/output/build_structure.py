@@ -1,8 +1,9 @@
 import deepl
 import re
+from transformers import pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-def deepl_translation(text, auth_key = "3e8dba21-6f6c-4f49-9d7f-9fea17bd3f3f:fx"):
+def deepl_translation(text, auth_key = "3e8dba21-6f6c-4f49-9d7f-:fx"):
 
     deepl_client = deepl.DeepLClient(auth_key)
     result = deepl_client.translate_text(text, source_lang="IT", target_lang="EN-GB")
@@ -74,17 +75,12 @@ def extract_patient_fields(translated_note: str) -> dict:
 
     return fields
 
-
- 
-# Clinical note filler that sklearn's english stopwords won't catch
-CLINICAL_STOPWORDS = [
-    "patient", "performed", "denies", "reports", "presents",
-    "noted", "found", "sent", "viewed", "contacted", "discussed",
-    "administered", "informed", "calculated", "decided", "approximately",
-    "check", "slight", "mild", "moderate", "severe",
-    "negative", "positive", "normal", "present", "absent",
-    "right", "left", "bilateral", "bilaterally",
-]
+# NER management
+ENTITY_TYPE_ANCHORS = {
+    "problem":   "diagnosis comorbidities risk factors management",
+    "treatment": "therapy recommendations pharmacological management",
+    "test":      "diagnostic evaluation assessment workup",
+}
 
 # Clinically high-impact terms that should ALWAYS be included in queries
 MANDATORY_TERMS = {
@@ -96,6 +92,41 @@ MANDATORY_TERMS = {
     "breastfeeding", "lactation",
 }
 
+def load_ner_pipeline(model_name: str = "samrawal/bert-base-uncased_clinical-ner", device: int = -1):
+
+    ner_pipe = pipeline("ner", model=model_name, aggregation_strategy="simple", device=device)
+    return ner_pipe
+ 
+ 
+def extract_entities(text: str, ner_pipe) -> dict[str, list[str]]:
+   
+    results = ner_pipe(text)
+ 
+    entities: dict[str, list[str]] = {}
+    seen: dict[str, set[str]] = {}
+ 
+    for ent in results:
+        etype = ent["entity_group"].lower()
+        # Clean up the entity text: strip whitespace, lowercase for dedup
+        word = ent["word"].strip()
+        word_key = word.lower()
+ 
+        if etype not in entities:
+            entities[etype] = []
+            seen[etype] = set()
+ 
+        if word_key not in seen[etype]:
+            entities[etype].append(word)
+            seen[etype].add(word_key)
+ 
+    return entities
+ 
+def find_mandatory_terms(text: str) -> list[str]:
+    text_lower = text.lower()
+    return [term for term in MANDATORY_TERMS if term in text_lower]
+
+
+# TF-IDF to summarize NER further
 def tfidf_keywords(
     text: str,
     vectorizer: TfidfVectorizer,
