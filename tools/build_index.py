@@ -1,7 +1,7 @@
 from ingestion.pdf_retriever import extract_folder
 from ingestion.chunking import create_chunks
-from retrieval.embedding import load_embedder, embed_docs
-from retrieval.storage import build_faiss_index, build_metadata, save_index_and_metadata, sanity_check
+from storage.embedding import load_embedder, embed_docs
+from storage.storage import build_faiss_index, build_metadata, save_index_and_metadata, sanity_check, save_vectorizer, build_vectorizer
 from pathlib import Path
 
 def main(rel_path):
@@ -29,6 +29,13 @@ def main(rel_path):
 
     print("Saving index and metadata...")
     save_index_and_metadata(index, metadata)
+
+    print("Performing TF-IDF...")
+    vectorizer = build_vectorizer(chunks)
+
+    print("Saving TF-IDF Vectorizer...")
+    save_vectorizer(vectorizer)
+    print(f"Vocabulary size: {len(vectorizer.vocabulary_)} terms")
 
     print("Index successfully built.")
 

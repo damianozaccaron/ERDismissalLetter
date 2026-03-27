@@ -4,7 +4,7 @@ import pickle, time, re
 from pathlib import Path
 from nltk.tokenize.punkt import PunktTrainer, PunktSentenceTokenizer
 
-from ingestion.cleaning import clean_lines, remove_captions, remove_reference_numbers
+from ingestion.cleaning import clean_lines, clean_sentences
 
 
 def create_chunks(
@@ -39,13 +39,13 @@ def create_chunks(
     for page in pages:
         units = merged_sentences[(page["doc_id"], page["page"])]
 
-        # flatten punkt output into a list of sentences
+        # flatten punkt output into a list of sentences and apply Punkt sentence splitting
         sentences = []
         for unit in units:
             sentences.extend(tokenizer.tokenize(unit))
 
-        # remove captions
-        sentences = remove_captions(sentences)
+        # remove captions and summaries
+        sentences = clean_sentences(sentences)
 
         # check if there are sentences that are too long, if that's the case split them based on punctuation
         sentences = split_oversized_sentences(sentences, max_chars)
@@ -108,7 +108,7 @@ def merge_lines(lines: List[str]) -> List[str]:
             continue
 
         #if the line ends with -, assume it is a broken word and fix it
-        if buffer.endswith("-"):
+        if buffer.endswith("-") or buffer.endswith("–") or buffer.endswith("\u00ad"):
             buffer = buffer[:-1]
             broken = True
 

@@ -1,8 +1,8 @@
 import numpy as np
-from config import RETRIEVAL_K, MMR_LAMBDA, FINAL_J
 from sentence_transformers import CrossEncoder
+import torch
 
-def retrieve_top_k(query_embedding, index, metadata, k=RETRIEVAL_K):
+def retrieve_top_k(query_embedding, index, metadata, k=30):
     scores, indices = index.search(query_embedding, k)
 
     results = []
@@ -25,9 +25,8 @@ def mmr_select(
     candidates: list[dict],
     faiss_ids: list[int],
     index,
-    top_j=FINAL_J,
-    lambda_=MMR_LAMBDA
-):
+    top_j=15,
+    lambda_=0.5):
     """
     Reranks candidates using Maximal Marginal Relevance (MMR) to balance relevance and diversity.
 
@@ -73,18 +72,54 @@ def mmr_select(
     return selected
 
 
-def load_crossEncoder(model_name):
+def load_crossEncoder(model_name: str = "BAAI/bge-reranker-large"):
+    if "MedCPT" in model_name:
+        return MedCPTReranker(model_name)
     return CrossEncoder(model_name)
 
-def reranking(query: str, retrieved_chunks: list[dict], reranker: CrossEncoder, top_n: int = FINAL_J) -> list[dict]:
+def reranking(query: str, retrieved_chunks: list[dict], reranker: CrossEncoder, top_n: int = 6) -> list[dict]:
     texts = [chunk["text"] for chunk in retrieved_chunks]
     ranks = reranker.rank(query, texts, return_documents=True)
     
-    # map ranked results back to original chunk dicts to preserve metadata
+    # map ranked results back to original chunk dicts to preserve metadata (corpus_id maintains original order)
     ranked_chunks = []
     for rank in ranks[:top_n]:
         original_chunk = retrieved_chunks[rank["corpus_id"]]
         original_chunk["rerank_score"] = rank["score"]
+        # chunks already automatically sorted by highest score
         ranked_chunks.append(original_chunk)
     
     return ranked_chunks
+
+
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+
+class MedCPTReranker:
+    def __init__(self, model_name: str = "ncbi/MedCPT-Cross-Encoder"):
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
+        self.model.eval()
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        self.model.to(self.device)
+
+    def rank(self, query: str, documents: list[str], return_documents: bool = True) -> list[dict]:
+        pairs = [[query, doc] for doc in documents]
+        
+        with torch.no_grad():
+            encoded = self.tokenizer(
+                pairs,
+                truncation=True,
+                padding=True,
+                return_tensors="pt",
+                max_length=512,
+            ).to(self.device)
+            
+            logits = self.model(**encoded).logits.squeeze(dim=1)
+        
+        scores = logits.cpu().tolist()
+        
+        results = [
+            {"corpus_id": i, "score": score, "text": documents[i]}
+            for i, score in enumerate(scores)
+        ]
+        return sorted(results, key=lambda x: x["score"], reverse=True)

@@ -1,4 +1,4 @@
-import torch
+import torch, time
 import numpy as np
 
 from config import (
@@ -6,55 +6,34 @@ from config import (
     EMBEDDING_MODEL,
     CROSS_ENCODER,
     RETRIEVAL_K,
-    MMR_N,
-    FINAL_J,
+    MMR_J,
+    FINAL_N,
     MMR_LAMBDA,
     TEMPERATURE,
     QUANT,
     REPO,
     MODEL_QUANT)
 
-from retrieval.storage import load_index_and_metadata
-from retrieval.embedding import embed_query, load_embedder
-from retrieval.retrieval import mmr_select, retrieve_top_k, load_crossEncoder, reranking
+from storage.storage import load_index_and_metadata, load_vectorizer
+from storage.embedding import embed_query, load_embedder
+from output.retrieval import mmr_select, retrieve_top_k, load_crossEncoder, reranking
 
 from output.output_prod import (
     load_model_quant,
     load_model_transformer,
-    build_prompt,
     generate_letter_quant,
     generate_letter_transformer
 )
 
-def collect_patient_input():
-    """
-    For first test: hardcoded example.
-    Later: CLI or structured input.
-    """
-    return {
-        "Name": "Ugo Bianchetti",
-        "Age": "57",
-        "Gender": "Male",
-        "Relevant Medical History": (
-        "Hypertension (on ACE inhibitors), Type 2 Diabetes Mellitus, "
-        "Hyperlipidemia, previous transient ischemic attack (2019), "
-        "former smoker (quit 10 years ago)"
-        ),
-        "Exams Performed": (
-        "ECG: irregularly irregular rhythm, no P waves, ventricular rate ~110 bpm; "
-        "Blood Panel: elevated fasting glucose (145 mg/dL), HbA1c 7.5%, normal electrolytes; "
-        "Cardiac enzymes: within normal limits; "
-        "Echocardiogram: mild left atrial enlargement, preserved ejection fraction (55%); "
-        "Blood pressure at admission: 150/95 mmHg"
-        ),
-        "Diagnosis": (
-        "Symptomatic atrial fibrillation with rapid ventricular response, "
-        "likely non-valvular, in a patient with multiple cardiovascular risk factors "
-        "(hypertension, diabetes, prior TIA)"
-        ),
-    }
+from output.build_structure import (
+    build_prompt,
+    build_query,
+    build_queries,
+    collect_patient_input,
+    deepl_translation,
+)
 
-
+"""
 def main():
 
     print("Loading FAISS index and metadata...")
@@ -91,7 +70,7 @@ def main():
         candidates=top_k_candidates,
         faiss_ids=faiss_ids,
         index=index,
-        top_j=FINAL_J,
+        top_j=MMR_J,
         lambda_=MMR_LAMBDA
     )
 
@@ -128,64 +107,110 @@ def main():
 
     print("=== GENERATED LETTER ===\n")
     print(letter)
+"""
 
 def check_retrieval():
-
     print("Loading FAISS index and metadata...")
     index, metadata = load_index_and_metadata()
 
-    print("Collecting patient input...")
-    patient_data = collect_patient_input()
+    # raw_data = collect_patient_input()
+    with open("AFexample.txt", "r", encoding="utf-8") as f:
+        raw_data = f.read()
+    print("Translating clinical note...")
 
-    query_text = " ".join([
-        patient_data["Diagnosis"],
-        patient_data["Relevant Medical History"],
-        "anticoagulation therapy stroke prevention rate control recommendations"
-    ])
+    """ translated_note = deepl_translation(raw_data)
 
-    print("Loading Embedder...")
+    with open('translationAF.txt', 'w', encoding='utf-8') as file:
+        file.write(translated_note)"""
+
+    with open("translationAF.txt", "r", encoding="utf-8") as f:
+        translated_note = f.read()
+
+    patient_data = {
+        "clinical_note": raw_data,
+        "clinical_note_translated": translated_note
+    }
+
+    print("Building queries...")
+    vectorizer = load_vectorizer()
+
+    queries = build_queries(translated_note, vectorizer, top_n_terms=8)
+    print(f"Generated {len(queries)} sub-queries")
+
+    print("Loading embedder...")
     emb_model = load_embedder(EMBEDDING_MODEL)
 
-    print("Embedding query...")
-    query_embedding = embed_query(query_text, embedder=emb_model)
-
     print("Retrieving relevant chunks...")
-    top_k_candidates, faiss_ids = retrieve_top_k(
-        query_embedding=query_embedding,
-        index=index,
-        metadata=metadata,
-        k=RETRIEVAL_K
-    )
+    all_candidates = {}   # faiss_id -> chunk dict
+    query_embeddings = []
+
+    for i, q in enumerate(queries, 1):
+        q_emb = embed_query(q, embedder=emb_model)
+        query_embeddings.append(q_emb)
+
+        candidates, faiss_ids = retrieve_top_k(
+            query_embedding=q_emb,
+            index=index,
+            metadata=metadata,
+            k=RETRIEVAL_K
+        )
+
+        new_count = 0
+        for cand, fid in zip(candidates, faiss_ids):
+            if fid not in all_candidates:
+                all_candidates[fid] = cand
+                new_count += 1
+
+        print(f"Q{i}: retrieved {len(candidates)}, {new_count} new unique chunks")
+
+    top_k_candidates = list(all_candidates.values())
+    faiss_ids = list(all_candidates.keys())
+    print(f"Total unique candidates after merge: {len(top_k_candidates)}")
 
     if len(top_k_candidates) == 0:
-        raise ValueError("No candidates retrieved from top k")
+        raise ValueError("No candidates retrieved from top_k retrieval")
 
+    """avg_embedding = np.mean(query_embeddings, axis=0)
     selected_chunks = mmr_select(
-        query_embedding=query_embedding,
+        query_embedding=avg_embedding,
         candidates=top_k_candidates,
         faiss_ids=faiss_ids,
         index=index,
-        top_j=MMR_N,
+        top_j=MMR_J,
         lambda_=MMR_LAMBDA
     )
-
     if len(selected_chunks) == 0:
-        raise ValueError("No candidates retrieved from MMR")
-    
+        raise ValueError("No candidates retrieved from MMR")"""
+
+    print("Reranking with cross-encoder...")
+    start = time.time()
+    combined_query = " | ".join(queries)
+
     cross_encoder = load_crossEncoder(CROSS_ENCODER)
-    final_chunks = reranking(query_text, selected_chunks, cross_encoder, FINAL_J)
+    final_chunks = reranking(
+        query=combined_query,
+        retrieved_chunks=top_k_candidates,
+        reranker=cross_encoder,
+        top_n=FINAL_N
+    )
+
+    end = time.time()
+
+    print(f"Total time for re-reranking: {end-start:.3f} seconds")
 
     if len(final_chunks) == 0:
         raise ValueError("No candidates retrieved from Cross-Encoder")
 
     print("Building prompt...")
-    prompt = build_prompt(patient_data, final_chunks)
+    prompt = build_prompt(translated_note, final_chunks)
 
-    return prompt
-
+    return prompt, queries
 
 if __name__ == "__main__":
-    output = check_retrieval()
+    output, queries = check_retrieval()
 
     with open('output.txt', 'w', encoding='utf-8') as file:
         file.write(output)
+        file.write("\n\n\nQUERIES:\n")
+        for i, q in enumerate(queries, 1):
+                file.write(f"Q{i}: {q}\n")

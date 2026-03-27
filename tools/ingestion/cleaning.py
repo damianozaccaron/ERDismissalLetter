@@ -46,7 +46,7 @@ def remove_reference_numbers(lines: List[str]) -> List[str]:
     cleaned = []
     for line in lines:
         # remove sequences of numbers that appear right after a letter, a parenthesis or a period without spaces in between (most likely references)
-        line = re.sub(r'(?<=[a-zA-Z\)\.])\d+(?:[,-]\d+)*', '', line)
+        line = re.sub(r'(?<=[a-zA-Z\)\.,])\d+(?:[,\-–]\d+)*', '', line)
         line = line.strip()
         if line:
             cleaned.append(line)
@@ -55,7 +55,7 @@ def remove_reference_numbers(lines: List[str]) -> List[str]:
 
 def remove_captions(sentences: List[str]) -> List[str]:
     return [s for s in sentences
-        if not re.match(r'^\s*(Figure|Fig\.|Table|Supplementary)\s*+\d+', s, re.IGNORECASE)]
+        if not re.match(r'^\s*(Figure|Fig\.|Table|Supplementary|Recommendation Table)\s*+\d+', s, re.IGNORECASE)]
 
 def remove_figure_nonsense(lines: List[str]) -> List[str]:
     """
@@ -75,10 +75,35 @@ def remove_figure_nonsense(lines: List[str]) -> List[str]:
 
     return cleaned
 
+def remove_summaries(lines: list[str]) -> list[str]:
+
+    cleaned = []
+    for line in lines:
+        line = line.strip()
+
+        if "©" in line:
+            continue
+        if line.count(";") >= 3:
+            continue
+        # if len(line) >= 300 and line.count(",") / len(line) > 0.05::
+            # continue
+
+        cleaned.append(line)
+
+    return cleaned
+
+
+def clean_sentences(lines: list[str]) -> list[str]:
+    
+    lines = remove_summaries(lines)
+    lines = remove_captions(lines)
+
+    return lines
+
 
 def clean_lines(lines: List[str]) -> List[str]:
 
     lines = remove_reference_numbers(lines)
     lines = remove_figure_nonsense(lines)
-
+    
     return lines

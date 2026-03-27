@@ -1,10 +1,10 @@
 MODEL_NAME = "meta-llama/Llama-3.2-3B"
 EMBEDDING_MODEL = "abhinand/MedEmbed-large-v0.1"
-CROSS_ENCODER = "cross-encoder/ms-marco-MiniLM-L6-v2"
-RETRIEVAL_K = 30
-MMR_N = 15
-FINAL_J = 8
-MMR_LAMBDA = 0.4
+CROSS_ENCODER = "ncbi/MedCPT-Cross-Encoder"
+RETRIEVAL_K = 12
+MMR_J = 15
+FINAL_N = 8
+MMR_LAMBDA = 0.2
 TEMPERATURE = 0.2
 QUANT=True
 MODEL_QUANT="Mistral-7B-Instruct-v0.3-Q6_K.gguf"

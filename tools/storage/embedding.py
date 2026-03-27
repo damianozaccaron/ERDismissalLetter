@@ -1,6 +1,8 @@
 # emb_model = SentenceTransformer("lokeshch19/ModernPubMedBERT") <- to try in evaluation phase
 
 #BioCLinicalBERT <- to try in evaluation phase
+
+# https://huggingface.co/spaces/mteb/leaderboard
 """from transformers import AutoTokenizer, AutoModel
 tokenizer = AutoTokenizer.from_pretrained("emilyalsentzer/Bio_ClinicalBERT")
 model = AutoModel.from_pretrained("emilyalsentzer/Bio_ClinicalBERT")

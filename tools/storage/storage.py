@@ -1,6 +1,7 @@
 import numpy as np
-import faiss, pickle
+import faiss, pickle, joblib
 from pathlib import Path
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 # ASK FOR CLARIFICATION OVER WHAT THIS IS DOING LINE BY LINE
 def build_faiss_index(chunks):
@@ -54,3 +55,37 @@ def load_index_and_metadata(index_path="faiss.index", metadata_path="metadata.pk
     sanity_check(index, metadata)
 
     return index, metadata
+
+
+def build_vectorizer(metadata: list[dict]) -> TfidfVectorizer:
+    """
+    Fit a TfidfVectorizer on the guideline chunk corpus.
+    Call once at startup; the fitted vectorizer stores the IDF weights.
+    """
+
+    corpus = [chunk["text"] for chunk in metadata]
+ 
+    # Merge sklearn's built-in english stopwords with clinical stopwords
+    vectorizer = TfidfVectorizer(
+        stop_words="english",
+        token_pattern=r'(?u)[a-zA-Z0-9µ²³]+(?:[-/][a-zA-Z0-9µ²³]+)*', # allows to catch terms such as CHA2DS2-VASc as a single one
+        min_df=2,
+        max_df=0.85,
+    )
+
+    builtin_stops = vectorizer.get_stop_words() or set()
+    # vectorizer.stop_words = set(builtin_stops) | set(CLINICAL_STOPWORDS)
+ 
+    vectorizer.fit(corpus)
+    return vectorizer
+
+def save_vectorizer(vectorizer, path="tfidf_vectorizer.joblib"):
+    joblib.dump(vectorizer, path)
+
+def load_vectorizer(path="tfidf_vectorizer.joblib"):
+    if not Path(path).exists():
+        raise RuntimeError(
+            f"TF-IDF vectorizer not found at {path}. "
+            "Run the indexing pipeline first to fit and save it."
+        )
+    return joblib.load(path)
