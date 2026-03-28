@@ -16,7 +16,7 @@ from config import (
 
 from storage.storage import load_index_and_metadata, load_vectorizer
 from storage.embedding import embed_query, load_embedder
-from output.retrieval import mmr_select, retrieve_top_k, load_crossEncoder, reranking
+from output.retrieval import mmr_select, retrieve_top_k, load_crossEncoder, reranking_multi_query
 
 from output.output_prod import (
     load_model_quant,
@@ -27,60 +27,15 @@ from output.output_prod import (
 
 from output.build_structure import (
     build_prompt,
-    build_query,
-    build_queries,
+    build_queries_ner,
+    extract_entities,
+    load_ner_model,
     collect_patient_input,
     deepl_translation,
 )
 
 """
 def main():
-
-    print("Loading FAISS index and metadata...")
-    index, metadata = load_index_and_metadata()
-
-    print("Collecting patient input...")
-    patient_data = collect_patient_input()
-
-    query_text = " ".join([
-        patient_data["Diagnosis"],
-        patient_data["Relevant Medical History"],
-        "anticoagulation therapy stroke prevention rate control recommendations"
-    ])
-
-    print("Loading Embedder...")
-    emb_model = load_embedder(EMBEDDING_MODEL)
-
-    print("Embedding query...")
-    query_embedding = embed_query(query_text, embedder=emb_model)
-
-    print("Retrieving relevant chunks...")
-    top_k_candidates, faiss_ids = retrieve_top_k(
-        query_embedding=query_embedding,
-        index=index,
-        metadata=metadata,
-        k=RETRIEVAL_K
-    )
-
-    if len(top_k_candidates) == 0:
-        raise ValueError("No candidates retrieved")
-
-    selected_chunks = mmr_select(
-        query_embedding=query_embedding,
-        candidates=top_k_candidates,
-        faiss_ids=faiss_ids,
-        index=index,
-        top_j=MMR_J,
-        lambda_=MMR_LAMBDA
-    )
-
-    if len(selected_chunks) == 0:
-        raise ValueError("No chunks retrieved")
-
-    print("Building prompt...")
-    prompt = build_prompt(patient_data, selected_chunks)
-
-    print(prompt)
 
     if QUANT:
         print("Loading LLM...")
@@ -123,19 +78,25 @@ def check_retrieval():
     with open('translationAF.txt', 'w', encoding='utf-8') as file:
         file.write(translated_note)"""
 
-    with open("translationAF.txt", "r", encoding="utf-8") as f:
-        translated_note = f.read()
+    with open("translationAF.txt", "r", encoding="utf-8") as file:
+        translated_note = file.read()
 
-    patient_data = {
-        "clinical_note": raw_data,
-        "clinical_note_translated": translated_note
-    }
+
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"Loading NER pipeline...")
+    ner_model = load_ner_model(device=device)
+
+
+    print("Extracting entities...")
+    entities = extract_entities(translated_note, ner_model)
 
     print("Building queries...")
     vectorizer = load_vectorizer()
+    queries = build_queries_ner(translated_note, ner_model, vectorizer)
 
-    queries = build_queries(translated_note, vectorizer, top_n_terms=8)
-    print(f"Generated {len(queries)} sub-queries")
+    with open("queries.txt", "w", encoding="utf-8") as file:
+        for i, q in enumerate(queries, 1):
+            file.write(f"--- Query {i} ---\n{q}\n\n")
 
     print("Loading embedder...")
     emb_model = load_embedder(EMBEDDING_MODEL)
@@ -144,6 +105,7 @@ def check_retrieval():
     all_candidates = {}   # faiss_id -> chunk dict
     query_embeddings = []
 
+    # top-k
     for i, q in enumerate(queries, 1):
         q_emb = embed_query(q, embedder=emb_model)
         query_embeddings.append(q_emb)
@@ -170,7 +132,8 @@ def check_retrieval():
     if len(top_k_candidates) == 0:
         raise ValueError("No candidates retrieved from top_k retrieval")
 
-    """avg_embedding = np.mean(query_embeddings, axis=0)
+    """
+    avg_embedding = np.mean(query_embeddings, axis=0)
     selected_chunks = mmr_select(
         query_embedding=avg_embedding,
         candidates=top_k_candidates,
@@ -182,17 +145,13 @@ def check_retrieval():
     if len(selected_chunks) == 0:
         raise ValueError("No candidates retrieved from MMR")"""
 
-    print("Reranking with cross-encoder...")
-    start = time.time()
-    combined_query = " | ".join(queries)
-
+    print("Loading cross-encoder...")
     cross_encoder = load_crossEncoder(CROSS_ENCODER)
-    final_chunks = reranking(
-        query=combined_query,
-        retrieved_chunks=top_k_candidates,
-        reranker=cross_encoder,
-        top_n=FINAL_N
-    )
+
+    print("Reranking...")
+    start = time.time()
+
+    final_chunks = reranking_multi_query(queries, top_k_candidates, cross_encoder, top_n=FINAL_N)
 
     end = time.time()
 

@@ -1,0 +1,16 @@
+curl -X POST 'https://api-free.deepl.com/v3/glossaries' \
+--header 'Authorization: DeepL-Auth-Key 3e8dba21-6f6c-4f49-9d7f-9fea17bd3f3f:fx' \
+--header 'Content-Type: application/json' \
+--data '{
+  "name": "My Glossary",
+  "dictionaries": [
+    {
+      "source_lang": "IT",
+      "target_lang": "EN",
+      "entries": "Anamnesi\tMedical history\nPatologica Prossima\tPathological proximate\nPatologica Remota\tRemote pathology\nEsame obiettivo\tObjective examination\nDiario Clinico\tClinical diary\nDiagnosi\tDiagnosis\nPrognosi\tPrognosis",
+      "entries_format": "tsv"
+    }
+  ]
+}'
+
+627f273f-d457-400f-a171-d04b9c13ddf3

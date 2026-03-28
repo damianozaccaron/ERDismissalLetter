@@ -23,55 +23,6 @@ def load_model_quant(repo, model_name):
 
     return llm
 
-
-def build_prompt(patient_data: dict, retrieved_chunks: list[dict]) -> str:
-    """
-    patient_data: dict containing age, gender, diagnosis, exams, etc.
-    retrieved_chunks: list of selected chunks (after MMR)
-    """
-
-    prompt = []
-
-    prompt.append("You are a medical doctor writing a discharge document for the patient. The document is addressed to the patient. Follow instructions strictly. Write specific, patient-tailored recommendations. Avoid generic statements.\n")
-
-    prompt.append("PATIENT INFORMATION:")
-    for key, value in patient_data.items():
-        prompt.append(f"- {key}: {value}")
-    prompt.append("\n")
-
-    prompt.append("GUIDELINE EXCERPTS:\n")
-
-    for i, chunk in enumerate(retrieved_chunks, 1):
-        prompt.append(
-            f"[E{i}] "
-            f"({chunk['doc_id']}, p.{chunk['page_start']}-{chunk['page_end']})\n"
-        )
-        prompt.append(chunk["text"])
-        prompt.append("\n")
-
-    prompt.append(
-        "INSTRUCTIONS:\n"
-        "- Use ONLY the provided guideline excerpts. Do not rely on prior knowledge.\n"
-        "- Base your recommendations strictly and exclusively on the provided guideline excerpts.\n"    
-        "- Do NOT invent or assume any information.\n"
-        "- If a recommendation cannot be supported by the excerpts, state that no guidance is available.\n"
-        "- Write the discharge document using the extracted recommendations.\n"
-        "- Each recommendation MUST explicitly cite at least one excerpt.\n"
-        "- Structure the output EXACTLY as follows:\n\n"
-        "Patient Data:\n"
-        "...(Copy from input)\n\n"
-        "Diagnosis:\n"
-        "... (Copy from input)\n\n"
-        "Exams Performed:\n"
-        "...(Copy from input)\n\n"
-        "Recommended Therapy:\n"
-        "- ... (cite Excerpt number)\n\n"
-        "Precautions:\n"
-        "- ... (cite Excerpt number)\n\n"
-    )
-
-    return "\n".join(prompt)
-
 def generate_letter_transformer(
     prompt: str,
     tokenizer,

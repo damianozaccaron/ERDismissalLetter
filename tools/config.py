@@ -1,7 +1,7 @@
 MODEL_NAME = "meta-llama/Llama-3.2-3B"
 EMBEDDING_MODEL = "abhinand/MedEmbed-large-v0.1"
 CROSS_ENCODER = "ncbi/MedCPT-Cross-Encoder"
-RETRIEVAL_K = 12
+RETRIEVAL_K = 10
 MMR_J = 15
 FINAL_N = 8
 MMR_LAMBDA = 0.2

@@ -72,9 +72,6 @@ def build_vectorizer(metadata: list[dict]) -> TfidfVectorizer:
         min_df=2,
         max_df=0.85,
     )
-
-    builtin_stops = vectorizer.get_stop_words() or set()
-    # vectorizer.stop_words = set(builtin_stops) | set(CLINICAL_STOPWORDS)
  
     vectorizer.fit(corpus)
     return vectorizer
@@ -82,6 +79,7 @@ def build_vectorizer(metadata: list[dict]) -> TfidfVectorizer:
 def save_vectorizer(vectorizer, path="tfidf_vectorizer.joblib"):
     joblib.dump(vectorizer, path)
 
+# from storage.storage import load_vectorizer
 def load_vectorizer(path="tfidf_vectorizer.joblib"):
     if not Path(path).exists():
         raise RuntimeError(

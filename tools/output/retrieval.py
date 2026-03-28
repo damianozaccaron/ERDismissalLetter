@@ -1,6 +1,5 @@
 import numpy as np
 from sentence_transformers import CrossEncoder
-import torch
 
 def retrieve_top_k(query_embedding, index, metadata, k=30):
     scores, indices = index.search(query_embedding, k)
@@ -29,9 +28,7 @@ def mmr_select(
     lambda_=0.5):
     """
     Reranks candidates using Maximal Marginal Relevance (MMR) to balance relevance and diversity.
-
-    candidate_embeddings: shape (k, dim), normalized
-    candidates: list of metadata dicts (same order)
+    Deprecated but could potentially be re-implemented.
     """
 
     candidate_embeddings = np.stack([index.reconstruct(int(i)) for i in faiss_ids])
@@ -73,8 +70,6 @@ def mmr_select(
 
 
 def load_crossEncoder(model_name: str = "BAAI/bge-reranker-large"):
-    if "MedCPT" in model_name:
-        return MedCPTReranker(model_name)
     return CrossEncoder(model_name)
 
 def reranking(query: str, retrieved_chunks: list[dict], reranker: CrossEncoder, top_n: int = 6) -> list[dict]:
@@ -92,34 +87,97 @@ def reranking(query: str, retrieved_chunks: list[dict], reranker: CrossEncoder, 
     return ranked_chunks
 
 
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+def _text_overlap(a: str, b: str, threshold: float = 0.8) -> bool:
+    """
+    Check if two chunk texts are near-duplicates using token overlap.
+    Uses set intersection over the smaller set to detect when one
+    chunk is largely contained within another.
+    """
+    tokens_a = set(a.lower().split())
+    tokens_b = set(b.lower().split())
 
-class MedCPTReranker:
-    def __init__(self, model_name: str = "ncbi/MedCPT-Cross-Encoder"):
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
-        self.model.eval()
-        self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.model.to(self.device)
+    if not tokens_a or not tokens_b:
+        return False
 
-    def rank(self, query: str, documents: list[str], return_documents: bool = True) -> list[dict]:
-        pairs = [[query, doc] for doc in documents]
-        
-        with torch.no_grad():
-            encoded = self.tokenizer(
-                pairs,
-                truncation=True,
-                padding=True,
-                return_tensors="pt",
-                max_length=512,
-            ).to(self.device)
-            
-            logits = self.model(**encoded).logits.squeeze(dim=1)
-        
-        scores = logits.cpu().tolist()
-        
-        results = [
-            {"corpus_id": i, "score": score, "text": documents[i]}
-            for i, score in enumerate(scores)
-        ]
-        return sorted(results, key=lambda x: x["score"], reverse=True)
+    intersection = len(tokens_a & tokens_b)
+    smaller = min(len(tokens_a), len(tokens_b))
+
+    return (intersection / smaller) >= threshold
+
+
+def remove_duplicates(chunks: list[dict]) -> list[dict]:
+    """
+    Remove near-duplicate chunks, keeping the higher-scored one.
+    Assumes chunks are already sorted by score descending.
+    """
+    kept = []
+    for chunk in chunks:
+        is_dup = False
+        for existing in kept:
+            if _text_overlap(chunk["text"], existing["text"]):
+                is_dup = True
+                break
+        if not is_dup:
+            kept.append(chunk)
+    return kept
+
+
+def reranking_multi_query(
+    queries: list[str],
+    retrieved_chunks: list[dict],
+    reranker: CrossEncoder,
+    top_n: int = 8,
+    category_boost: float = 0.1
+) -> list[dict]:
+    """
+    Rerank chunks by scoring each chunk against each query independently,
+    then aggregating with max. Applies category leader boost and text deduplication.
+
+    Pipeline:
+      1. Score every (query, chunk) pair with the cross-encoder.
+      2. For each chunk, take the MAX score across all queries.
+      3. Identify the top-scoring chunk per query (category leader) and apply a percentage boost to its max score.
+      4. Sort by final score, deduplicate near-identical chunks.
+      5. Return top-N.
+    """
+    texts = [chunk["text"] for chunk in retrieved_chunks]
+    n_chunks = len(texts)
+    n_queries = len(queries)
+
+    # Step 1
+    all_pairs = []
+    for q in queries:
+        for t in texts:
+            all_pairs.append((q, t))
+
+    all_scores = reranker.predict(all_pairs) # Why not rank?
+
+    # Reshape into (n_queries, n_chunks)
+    score_matrix = np.array(all_scores).reshape(n_queries, n_chunks)
+
+    # Step 2
+    max_scores = score_matrix.max(axis=0)            # shape (n_chunks,)
+
+    # Step 3
+    # For each query, find the chunk that scored highest on that query
+    category_leaders = set()
+    for q_idx in range(n_queries):
+        best_chunk_idx = int(score_matrix[q_idx].argmax())
+        category_leaders.add(best_chunk_idx)
+
+    boosted_scores = max_scores.copy()
+    for chunk_idx in category_leaders:
+        boosted_scores[chunk_idx] *= (1.0 + category_boost)
+
+    # Step 4
+    for i, chunk in enumerate(retrieved_chunks):
+        chunk["final_score"] = float(boosted_scores[i])
+
+    sorted_chunks = sorted(
+        retrieved_chunks,
+        key=lambda c: c["final_score"],
+        reverse=True,
+    )
+    final = remove_duplicates(sorted_chunks)
+
+    return final[:top_n]
