@@ -6,6 +6,9 @@ from pathlib import Path
 
 def main(rel_path):
 
+    print("Loading embedder...")
+    embedder = load_embedder()
+
     print("Extracting PDFs...")
     data_dir = rel_path
     pages = extract_folder(data_dir)
@@ -14,9 +17,6 @@ def main(rel_path):
     print("Chunking...")
     chunks = create_chunks(pages)
     print(f"Extracted {len(chunks)} chunks")
-
-    print("Loading embedder...")
-    embedder = load_embedder()
 
     print("Embedding...")
     emb_chunks = embed_docs(chunks, embedder)

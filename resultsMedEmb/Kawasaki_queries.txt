@@ -1,0 +1,9 @@
+--- Query 1 ---
+Kawasaki disease. KAWASAKI DISEASE - CLASSIC FORM (5/5 criteria present). diagnosis comorbidities risk factors management
+
+--- Query 2 ---
+paracetamol ibuprofen anti antibiotic procalcitonin ALT. KAWASAKI DISEASE - CLASSIC FORM (5/5 criteria present). therapy recommendations pharmacological management clinical scores diagnostic evaluation
+
+--- Query 3 ---
+KAWASAKI DISEASE - CLASSIC FORM (5/5 criteria present) recommendations discharge management pediatric male
+

@@ -1,0 +1,20 @@
+FEMALE, 31 AA
+Medical history:
+- Pathological proximate: Patient accesses for pain and swelling in the left calf that has been present for about 3 days, progressively worsening. Denies dyspnoea, chest pain or haemoptysis. Denies fever. Does not report recent trauma or prolonged immobilisation.
+- Remote pathology: No known pathology. No previous thromboembolic events or family history of thrombophilia. On oral oestrogen therapy (contraceptive pill). Smoker of about 1 pack/day for 10 years. Denies drug allergies.
+
+Objective examination: Patient alert, oriented, co-operating. Not in pain at rest. Vesicular murmur present in all lung areas, no added noise. Heart tones normofrequent, rhythmic, free pauses. Abdomen treatable, not painful. Left lower limb: calf oedema, skin warm and erythematous distally. Right lower limb normal. BP 122/76 mmHg. HR 82 bpm. SpO2 99% aa. TC 36.8°C.
+
+Clinical diary:
+- Wells score for DVT is calculated: pain along deep venous course (+1), unilateral oedema (+1), swelling>3cm (+1). Total score: 3 - high pretest probability.
+- Venous access found and D-dimer, biochemistry, blood count, coagulation performed.
+- ECG is performed: sinus rhythm, no alterations.
+- Arterial EGA is performed: physiological exchanges, no acid-base alterations. Performed for diagnostic completion in view of thromboembolic suspicion, normal.
+- Examinations are performed: D-dimer 2,840 ng/mL (v.n. <500), significantly elevated. No indices of inflammation. CBC and coagulation normal.
+- Venous echocolordoppler of the left lower limb is performed: deep venous thrombosis of the left twin veins, without extension to the popliteal vein. No involvement of the proximal venous circulation.
+- The angiologist/on-call internist is contacted for collegial assessment and therapeutic setting.
+- Anticoagulant therapy is imposed: enoxaparin 8,000 IU (100 IU/kg, weight 80kg) s.c., first dose administered in the PS.
+- The patient is informed of the Diagnosis, the need to discontinue the contraceptive pill immediately and to adopt an alternative contraceptive method, as well as the risks related to cigarette smoking in this context.
+
+Diagnosis: DEEP VENOUS THROMBOSIS OF THE LEFT GEMELLAR VENEES
+Prognosis: 4 days

@@ -1,0 +1,20 @@
+MALE, 47 AA
+Medical history:
+- Pathological proximate: The patient comes in for swelling, redness and heat in the left leg that has been present for about 5 days, progressively worsening, associated with high fever (max. 39.4°C at home) and chills. He also reports marked asthenia and lack of appetite. He denies coughing, dyspnoea or chest pain. Does not report recent leg trauma.
+- Remote pathology: Homeless patient. Reports intravenous drug use (heroin), active. No known formally diagnosed pathologies. Does not take regular home therapy. No known declared drug allergies.
+
+Objective examination: Patient alert, oriented, poorly co-operative. General condition poor. Markedly dehydrated, malnourished. Personal hygiene severely lacking. Vesicular murmur present in all lung areas, no added noise. Tachycardic, rhythmic cardiac tones. On cardiac auscultation there is holosystolic murmur 3/6 at the mesocardium, radiating towards the axilla, not reported in Medical history nor documented in previous accesses. Abdomen treatable, not painful. Giordano and Blumberg negative. Left lower limb: erythematous plaque with clear, irregular margins extending from the ankle to the middle third of the leg, warm, oedematous skin, painful on palpation. Multiple venepuncture scars are present along the veins of the forearm bilaterally and the left popliteal cavity. No fluctuation suggestive of superficial abscess. No contralateral declivous oedema. BP 98/62 mmHg. HR 118 bpm. SpO2 96% aa. TC 39.1°C.
+
+Clinical diary:
+- Found venous access with difficulty due to compromised venous heritage; performed blood cultures x2 from separate sites prior to any antibiotic therapy. Performed biochemistry, blood count, indices of inflammation, procalcitonin, coagulation, renal and liver function, serologies for HIV, HBV, HCV.
+- ECG is performed: sinus tachycardia, HR 118 bpm, no ST segment abnormalities, no signs of conduction disturbances.
+- Arterial EGA performed: mild hypoxemia (PaO2 68 mmHg), compensatory respiratory alkalosis, lactates 2.8 mmol/L (mildly elevated).
+- 500cc saline bolus infusion is started for relative hypotension, BP improved to 108/68 mmHg. Continuous monitoring of vital parameters is started.
+- Tests are viewed: marked neutrophil leukocytosis (GB 22,400/μL, N 89%). PCR 28.4 mg/dL. Procalcitonin 18.2 ng/mL (v.n. <0.5), markedly elevated, suggestive of systemic bacterial infectious process. Creatinine 1.6 mg/dL (mild renal insufficiency). Slightly elevated AST/ALT. Coagulation: PT and aPTT at upper limits. HIV negative, HCV positive, HBsAg negative.
+- Bedside echo performed: no pericardial effusion. No diffuse B lines. Visually preserved left ventricular systolic function. On examination of the right sections there is a mobile hyperechogenic image at the level of the tricuspid valve, suspicious for vegetation. No significant pleural effusion.
+- Given the overall picture - erysipelas/cellulitis in an IVDU patient, high fever, markedly elevated procalcitonin, increased lactates, new heart murmur and suspicious echocardiographic findings - the picture is strongly suggestive of infective endocarditis with a likely skin/venous entry port. The on-call infectivologist is urgently contacted.
+- Empirical broad-spectrum antibiotic therapy is initiated after blood cultures are taken: vancomycin 25mg/kg slow infusion (estimated weight 65kg, dose 1,625mg rounded to 1,500mg) to cover for methicillin-resistant staphylococcus (MRSA), a priority pathogen in IVDU patient.
+- The infectivologist assessed the patient in the PS and confirmed the indication for urgent admission for dedicated transthoracic/transesophageal echocardiography, monitoring of blood cultures and continuation of targeted antibiotic therapy.
+
+Diagnosis: LEFT LOWER LIMB HERISIPELA/CELLULITE - SUSPECTED INFECTIVE ENDOCARDITIS (probably on tricuspid valve) IN IVDU PATIENT
+Prognosis: urgent hospitalisation

@@ -1,0 +1,109 @@
+ROLE:
+You are an emergency department physician writing a discharge document for a patient. The document will be read by the patient's general practitioner and by the patient. Write in a clinical but accessible tone.
+
+CLINICAL NOTE:
+
+MALE, 42 AA
+Medical history:
+- Pathological proximate: Patient accesses for retrosternal chest pain in supine position present for about 3 days, not exacerbated by breathing or movement. He has been complaining of a dry cough for several weeks. Denies fever or dyspnoea.
+- Remote pathology: No known cardiovascular events or family history. Not suffering from diabetes. Normal weight. Former smoker of about half a pack a day, STOPPED ten years ago. Previous helicobacter pylori infection, eradicated about 5 years ago. Otherwise no known pathologies. Denies drug allergies.
+
+Objective examination: Vesicular murmur present in all lung areas, no added noise. Heart tones normofrequent, rhythmic and with free pauses. Abdomen treatable, not painful on superficial or deep palpation. Jordan and Blumberg negative. Indolent cystic spots. No declivous oedema or signs of venous thrombosis.
+
+Clinical diary:
+- Venous access found and troponin plus biochemistry, CBC and pro-BNP performed. ECG is performed: sinus rhythm, no signs of under/over ST-segment elevation.
+- Arterial EGA is performed: physiological exchanges
+- Patient is sent to radiology for chest X-ray in 2 projections.
+- Examination is reviewed: troponin <14 therefore negative. No indication of inflammation. Negative chest X-ray
+for acuity.
+- 40mg pantoprazole in 100cc saline is administered.
+- Bedside echo is performed: no pleuropericardial or endoabdominal effusion. No B lines in the lung fields, pleural sliding valid. Cholecyst normodistended, no lithiasic formations observable by this method. No hydronephrosis bilaterally.
+- After one hour reduction until complete resolution of the symptomatological picture. Discharges home.
+
+Diagnosis: GASTROESOFAGEOUS REFLUSH DISEASE
+Prognosis: 4 days
+
+
+
+GUIDELINE EXCERPTS:
+
+[E1] (Gastro-oesophagealReflux, p.5-5)
+
+Gastro-oesophageal reflux disease (GORD) has been identified as the most common gastrointestinal diagnosis in outpatient clinics. Estimations suggest that up to 20% of adults are affected (weekly complaints over an observation period of 1 year). Over the last 2 decades there has been an overall increase in GORD, with trends indicating further increases still. According to the most recent consensus definition of GORD, the disease is defined as a condition which develops when the reflux of stomach contents causes troublesome symptoms and/or complications. According to this definition, “troublesome” symptoms are those that adversely affect an individual’s well-being. Typical symptoms (such as heartburn and acid regurgitation) and their frequency in order to be “troublesome” have also been defined. Other, earlier definitions put the focus quite similarly on complications (including oesophagitis) but also on the impairment of Quality of Life 4,. The typical symptoms, heartburn and acid regurgitation have been defined by consensus only and do currently lack adequate validation.
+
+
+[E2] (Gastro-oesophagealReflux, p.8-8)
+
+Non-erosive disease is by definition a “diagnosis of exclusion” based on the absence of mucosal breaks. Non-erosive disease is basically not distinct in terms of symptom pattern and severity from reflux oesophagitis, but has a lower frequency in patients with hiatal hernia, lower acid exposure, and higher rates of “functional comorbidity”, like functional dyspepsia, IBS, and psychological disorders. Diagnosis based on further criteria, such as micro-endoscopic diagnosis, has currently not been established and can therefore not be recommended for the purpose of drug registration trials. If studies in this patient population are conducted, data on endoscopic diagnosis (exclusion of mucosal breaks) are required before inclusion (see 6...). The condition “Symptomatic Gastro-oesophageal Reflux Disease” is slightly different from pure “nonerosive disease” because mild reflux oesophagitis (defined as grade A of L.A classification) has traditionally been included in trials in the “non-erosive” population leading to the claim “symptomatic GORD” or “symptomatic treatment of GORD”.
+
+
+[E3] (AtrialFibrillation, p.35-35)
+
+Co-prescription of proton pump inhibitors is common in clinical practice for patients receiving OAC that are at high risk of gastrointestinal bleeding. However, the evidence base is limited and not specifically in patients with AF. Whereas observational studies have shown potential benefit from proton pump inhibitors, a large RCT in patients receiving low-dose anticoagulation and/or aspirin for stable cardiovascular disease found that pantoprazole had no significant impact on upper gastrointestinal bleeding events compared with placebo (HR, 0.; 95% CI, 0..). Hence, the use of gastric protection should be individualized for each patient according to the totality of their perceived bleeding risk. 6... Management of bleeding on anticoagulant therapy General management of bleeding in patients receiving OAC is outlined in Figure 11. Cause-specific management is beyond the scope of these guidelines, and will depend on the individual circumstances of the patient and the healthcare environment. Assessment of patients with active bleeding should include confirmation of the bleeding site, bleeding severity, type/dose/timepoint of last anticoagulant intake,
+
+
+[E4] (NonvaricealUpperGastrointestinalHemorrhage, p.4-4)
+
+2 ESGE recommends a restrictive red blood cell transfusion strategy that aims for a target hemoglobin between 7 g/dL and 9 g/dL. A higher target hemoglobin should be considered in patients with significant co-morbidity (e. g., ischemic cardiovascular disease) (strong recommendation, moderate quality evidence). Risk stratification 3 ESGE recommends the use of a validated risk stratification tool to stratify patients into high and low risk groups. Risk stratification can aid clinical decision making regarding timing of endoscopy and hospital discharge (strong recommendation, moderate quality evidence). 4 ESGE recommends the use of the Glasgow-Blatchford Score (GBS) for pre-endoscopy risk stratification. Outpatients determined to be at very low risk, based upon a GBS score of 0 – 1, do not require early endoscopy nor hospital admission. Discharged patients should be informed of the risk of recurrent bleeding and be advised to maintain contact with the discharging hospital (strong recommendation, moderate quality evidence).
+
+
+[E5] (Gastro-oesophagealReflux, p.8-8)
+
+If studies in this patient population are conducted, data on endoscopic diagnosis (exclusion of mucosal breaks) are required before inclusion (see 6...). The condition “Symptomatic Gastro-oesophageal Reflux Disease” is slightly different from pure “nonerosive disease” because mild reflux oesophagitis (defined as grade A of L.A classification) has traditionally been included in trials in the “non-erosive” population leading to the claim “symptomatic GORD” or “symptomatic treatment of GORD”. The inclusion of mild oesophagitis patients and subsequent claim of “Symptomatic Gastro-oesophageal Reflux Disease” is considered acceptable on the basis of adequate justification. 4...  Further Subdivision/claims based on the response to acid suppressive medication, especially PPIs: In recent years, there have been a growing number of reports suggesting that about 30% of GORD patients treated with PPI are partially or completely unresponsive to standard dose and duration of PPI therapy. For these patients, it is usually suggested – as a first step – to increase (usually double) the dose and duration of therapy with a PPI.
+
+
+[E6] (Gastro-oesophagealReflux, p.5-5)
+
+However, despite the possible serious consequences, GORD usually presents as a relatively benign condition, not leading to a relevant increase in mortality. GORD has traditionally been seen as a nonprogressive disease (as regards the progression from non-erosive to erosive disease, to more severe erosive disease and to Barrett’s oesophagus and other complications), with progression occurring in only a small proportion of patients. However, conflicting evidence is available on this topic, indicating higher progression rates than previously thought. The pathophysiological factors causing GORD can be divided into those inducing greater exposure of the oesophagus to stomach contents, and those providing increased mucosal damage or increased perception of reflux. Key elements representing these factors have been identified to be transient lower oesophageal sphincter relaxations, and oesophageal hypersensitivity as a result of visceral neural pathways dysfunction. Risk factors associated with the development of GORD have been identified to be largely environmental/demographic in nature, such as smoking and alcohol consumption, age and high body mass index.
+
+
+[E7] (PrecancerousStomach, p.1-1)
+
+Scope and key questions We addressed the management, that is, the diagnostic assessment, treatment and follow-up, of individuals with atrophic gastritis, or intestinal metaplasia or dysplasia of the gastric mucosa. Specific issues were included: What is the optimal diagnostic approach for patients with gastric * Chairman, ESGE Educational Committee, and Chairman, SPED Research Committee † Chairperson, ESP Digestive Pathology Working Group ‡ Chairman, ESGE Guidelines Committee § President, Portuguese Society of Digestive Endoscopy ¶ ESP Digestive Pathology Working Group ** Including: Cathomas G (Switzerland), Fedorov ED (Russia), Figueiredo P (Portugal), Goldis A (Romania), Leja M (Latvia), Moehler M (Germany), Plesea E (Romania), Bergman J (The Netherlands), Hamoudi W (Jordan), Almeida R, Annibale B, Lobo LA, Balaban YH, Boeriu A, Burette A, Mallet AC, David L, Delchier J-C, Dobru ED, Fernandes C, Kahaleh M, Kashin S, Lomba-Viana R, Lunet N,
+
+
+[E8] (NonvaricealUpperGastrointestinalHemorrhage, p.1-1)
+
+moderate quality evidence). MR. ESGE recommends the use of the GlasgowBlatchford Score (GBS) for pre-endoscopy riskstratification. Outpatients determined to be at very low risk, based upon a GBS score of 0–1, do not require early endoscopy nor hospital admission. Discharged patients should be informed of the risk of recurrent bleeding and be advised to maintain contact with the discharging hospital (strong recommendation, moderate quality evidence). MR. ESGE recommends initiating high dose intravenous proton pump inhibitors (PPI), intravenous bolus followed by continuous infusion (80mg then 8mg/hour), in patients presenting with acute UGIH awaiting upper endoscopy. However, PPI infusion should not delay the performance of early endoscopy (strong recommendation, high quality evidence). MR. ESGE does not recommend the routine use of nasogastric or orogastric aspiration/lavage in patients presenting with acute UGIH (strong recommendation, moderate quality evidence). MR. ESGE recommends intravenous erythromycin (single dose, 250mg given 30–120 minutes prior to upper gastrointestinal [GI] endoscopy) in patients with clinically severe or ongoing active UGIH.
+
+
+[E9] (Gastro-oesophagealReflux, p.10-11)
+
+Further research, including the possible links between disease and symptoms, pathophysiology and mechanisms of disease interplay appear to be warranted before regulatory decisions can be taken on these issues. 4... Functional heartburn Based on the outcome of pH-monitoring, NERD patients have been further subdivided into “true” NERD (with pathological increased acid exposure in the oesophagus) and those with normal acid exposure in pH testing, subsequently diagnosed to be suffering from “functional heartburn”. Functional heartburn (FH) has been included into the list of functional GI disorders in the Rome III criteria, and is, in these criteria, defined as 1. Burning retrosternal discomfort or pain, 2. Absence of evidence that gastro-oesophageal acid reflux is the cause of the symptom and 3. Absence of histopathology-based motility disorders. This definition, referring to acid reflux only, is, however, in conflict to the Montreal definition of GORD, which includes FH into GORD, as the pH of the refluxate is not a criterion for diagnosis.
+
+
+[E10] (Gastro-oesophagealReflux, p.10-10)
+
+Likewise, the treatment success of acid suppressive medication in these syndromes appears to be rather modest or is mainly based on the suppression of oesophageal symptoms only. Therefore, reflux (disease) is usually seen as an “aggravating” factor of the underlying condition only. The investigation and subsequent claim of treatment of “atypical GORD” would therefore need to comprise a rather elaborate diagnostic work-up, showing that (acid or other) reflux is present to a pathological extent and is associated with the respective symptoms in the patients to be investigated. On the other hand, the treatment of these complaints would have to show that not only the reflux related symptoms are positively influenced but that also the “atypical” symptoms get better in a consistent manner (and, needless to say, both “parts” of the disease should be shown to improve in a statistically significant and clinically relevant manner). Therefore, the conduct of trials for regulatory purposes with the goal to claim an indication other than GORD, by defining a sub-population based on the nature of such “atypical” symptoms, can currently not be recommended.
+
+
+TASK:
+Using the clinical note and guideline excerpts above, produce a discharge document structured EXACTLY as follows.
+
+1. MEDICAL HISTORY
+   Copy the medical history from the clinical note. Do not alter, summarize, or omit any detail.
+
+2. OBJECTIVE EXAMINATION
+   Copy the objective examination from the clinical note verbatim.
+
+3. CLINICAL DIARY
+   Copy the clinical diary from the clinical note verbatim.
+
+4. PROGNOSIS
+   Based on the clinical data and the guideline excerpts, state the expected clinical course. Connect the patient's specific findings (e.g. lab values, imaging, scores) to the guideline criteria that apply. Cite the relevant excerpt(s) using [E#] notation.
+
+5. RECOMMENDATIONS AND PRESCRIPTIONS
+   Provide specific, actionable recommendations. Each recommendation MUST:
+   - Be supported by at least one guideline excerpt, cited as [E#]
+   - Reference the patient's specific clinical data that makes the recommendation applicable (e.g. "Given your CHA₂DS₂-VASc score of 3..." or "Given preserved LVEF...")
+   - Include drug names and dosages where applicable
+   - Be grouped into: Pharmacological therapy, Follow-up investigations, Lifestyle modifications, and Follow-up appointments
+
+   If a clinically relevant topic (e.g. anticoagulation, rate control) cannot be addressed by the provided excerpts, state:
+   "No specific guidance available from provided sources. Refer to specialist for [topic]."
+
+RULES:
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge for recommendations.
+- Do NOT invent dosages, drug names, or clinical facts not present in the clinical note or excerpts.
+- When multiple excerpts address the same topic, synthesize them into a single coherent recommendation and cite all relevant excerpts.
+- Do not repeat the same recommendation under different wording.

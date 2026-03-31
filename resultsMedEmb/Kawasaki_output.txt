@@ -1,0 +1,110 @@
+ROLE:
+You are an emergency department physician writing a discharge document for a patient. The document will be read by the patient's general practitioner and by the patient. Write in a clinical but accessible tone.
+
+CLINICAL NOTE:
+
+MALE, 2 AA and 8 MONTHS
+Medical history:
+- Pathological proximate: The patient is brought to the PS by the parents for persistent high fever for 6 days (TC max 40.1°C), unresponsive to home antipyretic therapy (paracetamol and ibuprofen at doses appropriate to weight). The parents report the appearance over the last 2-3 days of reddening of the eyes without discharge, a rash on the trunk, chapped and reddened lips, and an unusual-looking tongue. They also report right laterocervical swelling. The child is irritable, refuses to play and feed. Denies mother episodes of coughing, rhinorrhoea or diarrhoea. No known contact with ill subjects.
+Remote pathology: Born at term, eutococcal birth, regular psychomotor development. Vaccinations in order for age. No known pathology. No previous access to the PS. No continuous home therapy. Denies mother known drug allergies.
+
+Objective examination: Patient alert, irritable, crying at assessment. General condition compromised. Vesicular murmur present in all lung areas, no added noise. Tachycardic, rhythmic heart tones, free pauses. No appreciable murmurs. Abdomen treatable, mild pain on diffuse palpation, no organomegaly evident.
+
+Clinical diary:
+- Found venous access and performed biochemistry, blood count, indices of inflammation, procalcitonin, ESR, fibrinogen, ALT/AST, bilirubin, albumin, sodium, potassium, renal function, urinalysis. Blood cultures x2 are performed before any antibiotic therapy, to exclude bacteremia.
+- ECG is performed: sinus tachycardia, HR 138 bpm, no ST segment abnormalities, no conduction disturbances, PR interval normal for age.
+- Tests are viewed: neutrophilic leukocytosis (GB 18,600/μL, N 78%). PCR 14.2 mg/dL. ESR 88 mm/h. Fibrinogen 620 mg/dL (high). Procalcitonin 2.4 ng/mL. Platelets
+498,000/μL (thrombocytosis). ALT slightly elevated. Albumin 2.8 g/dL (hypoalbuminemia). Urine examination: sterile leukocyturia. Sodium 132 mEq/L (mild hyponatriemia).
+- The paediatrician on call is urgently contacted for collegial assessment. The clinical picture persistent fever for more than 5 days associated with all 5 clinical criteria for Kawasaki disease is diagnostic for Kawasaki disease in its classical form.
+- Clinical criteria noted: - Fever for 6 days (TC 39.8°C in PS) - Bilateral non-exudative conjunctivitis - Alterations of the lips and oral cavity: erythematous and chapped lips, strawberry tongue - Polymorphous rash on trunk and root of limbs - Right cervical lymphadenopathy with a single lymph node about 2cm wide, painful, not fluctuating - Erythema and mild oedema of the hands and feet PA 96/58 mmHg. HR 138 bpm. SpO2 99% aa. TC 39.8°C. Weight 14kg.
+- Bedside echo performed by paediatrician: cardiac function visually preserved, coronary arteries not clearly dilated by this method; dedicated inpatient echocardiography reserved.
+- Paracetamol 15mg/kg e.v. (210mg) is administered for fever management pending admission.
+- The family is informed of the Diagnosis, the need for urgent hospitalisation and the importance of early treatment to reduce the risk of coronary aneurysms.
+
+Diagnosis: KAWASAKI DISEASE - CLASSIC FORM (5/5 criteria present)
+Prognosis: urgent hospitalisation
+
+
+
+GUIDELINE EXCERPTS:
+
+[E1] (Kawasaki, p.2-2)
+
+. We provide evidence-based recommendations for the diagnosis and treatment of Kawasaki disease. Introduction Kawasaki disease (KD) is the second most common systemic vasculitic illness of childhood after IgA vasculitis [1]. KD is more prevalent in Japanese children (308/100 000) under the age of five years [2], a risk that is independent of geography [3]. In the UK, an indirect epidemiological survey indicated an incidence of 9./100 000 children under 5 years, with over-representation of Chinese and Japanese cases [4], but a recent direct British Paediatric Surveillance Unit epidemiological survey suggests an incidence of 4./100 000 children under 5 years [5]. In the USA, the incidence is 25/100 000 children [3]. Importantly, KD is the most common cause of acquired heart disease in children in developed countries, causing coronary artery aneurysms (CAA) in up to 25% of untreated patients due to coronary vasculitis. Clinical trials demonstrate that this declines to 4% with intravenous immunoglobulin (IVIG) treatment (reviewed comprehensively in [3, 6]) although emerging non-clinical trial ‘realworld’ studies suggest poorer outcomes despite IVIG,
+
+
+[E2] (Kawasaki, p.3-3)
+
+As is the case for complete KD, the requirement of fever 55 days to fulfil current diagnostic criteria may delay treatment unnecessarily. The expert panel recommended that an important research priority is to design and prospectively validate criteria to help diagnose incomplete KD in children. The AHA 2017 recommendations provide some guidance in this respect, defining incomplete KD as children with fever 55 days and two or three clinical criteria, or infants with fever for 57 days without other explanation [3]. Thereafter, treatment decisions are determined by laboratory tests including inflammatory markers (Fig. 1). These AHA recommendations offer a practical solution for the diagnosis and treatment of incomplete KD cases, but are not evidence-based, as acknowledged by McCrindle et al. [3] Laboratory work-up of suspected Kawasaki disease The diagnosis of KD is unlikely in the absence of significant systemic inflammation. Certain laboratory parameters may help stratify the severity of KD and thus help inform therapeutic decisions. Therefore, ESR, CRP, full blood count, electrolytes,
+
+
+[E3] (Kawasaki, p.3-3)
+
+A total of 31 recommendations were accepted with 100% agreement: 17 relating to diagnosis and 14 concerning treatment of KD. Diagnosis of Kawasaki disease Table 1 summarizes the SHARE recommendations for diagnosing KD and incomplete KD. Diagnostic criteria for KD There is no diagnostic test for KD; thus, diagnosis rests on clinical criteria and laboratory findings. To establish the diagnosis according to the Diagnostic Guidelines of the Japan KD Research Committee, any five of the six criteria in Table 2 must be present [5]. The AHA (2004) diagnostic criteria are similar, except that fever is mandatory, and four of the remaining five criteria are required [22]. The expert panel assessed the merits and strengths of each, and recommended that the AHA diagnostic criteria should be used for complete KD. Subsequently, the AHA revised their diagnostic criteria, as summarized in Table 2. These are broadly similar to the 2004 criteria, but now acknowledge that diagnosis may be made earlier than day 5 of fever, if fever plus 54 principal clinical features are present, in line with the SHARE recommendations. However,
+
+
+[E4] (Kawasaki, p.5-5)
+
+Therefore, clinicians must adopt a pragmatic approach and synthesize an overall picture of disease severity based on clinical features and laboratory parameters. Factors that increase risk include young age (i.e. <12 months), low serum sodium, high alanine transaminase, low albumin, high bilirubin, high CRP, low platelet count, falling haemoglobin, features of HLH and shock, and these are all important features to consider when assessing risk and hence choice of primary KD treatment modality. Echocardiography and monitoring systemic inflammation As up to 25% of untreated KD cases develop CAA, and a significant proportion have other cardiac manifestations, including pericardial effusion, pericarditis, myocarditis, valvular incompetence, cardiac failure and even myocardial infarction, all patients with suspected KD should TABLE 2 Kawasaki disease: diagnostic criteria (AHA 2017 [3]) Criterion Description Fever Duration of 5 days or more, plus four of five of the following: 1. Conjunctivitis Bilateral, bulbar, conjunctival injection without exudate 2. Lymphadenopathy Cervical, often >1. cm usually unilateral 3. Rash Maculopapular, diffuse erythroderma or erythema multiforme 4.
+
+
+[E5] (Kawasaki, p.3-3)
+
+or coronary dilatation (Zscore >2, but <2.) is present [6, 22, 23]. Diagnosing incomplete Kawasaki disease While the diagnosis of KD is generally straightforward in patients fulfilling all the criteria for KD (complete KD), many patients have only some of the clinical features [3, 6, 22, 23]. However, they may still be at risk of CAA, especially infants who may have prolonged fever alone or fleeting clinical signs. The panel acknowledged that diagnosing KD in patients with incomplete clinical criteria relies on a high index of suspicion, in agreement with other current guidelines [3, 6, 22]. In these situations, early echocardiography is recommended. This may reveal evidence of coronary vasculitis, confirming the diagnosis of KD. Notably, however, a negative echocardiogram does not exclude the diagnosis of KD. The definition of incomplete KD can cause confusion. As is the case for complete KD, the requirement of fever 55 days to fulfil current diagnostic criteria may delay treatment unnecessarily. The expert panel recommended that an important research priority is to design and prospectively validate criteria to help diagnose incomplete KD in children.
+
+
+[E6] (Kawasaki, p.8-2)
+
+Management of other KD scenarios A wide range of other complex management scenarios arising in the care of children with KD, spanning acute scenarios (such as emergency thrombolysis, calculation of coronary Z scores, long-term follow-up strategies and transition to adult care) were beyond the scope of the SHARE process but are covered elsewhere [3, 6]. Recurrent KD is recognized [70], but is rare and should be differentiated from the relatively common and benign re-peeling that can occur with intercurrent infection (such as upper respiratory tract infection) and is not associated with risk of CAA [71]. Secondary HLH (also referred to as macrophage activation syndrome) and Kawasaki shock syndrome, defined as the presence of hypotension and C. Radmayr (Chair), G. Bogaert, (Vice-chair), A. Bujons, B. Burgu, M. Castagnetti, L.A. ‘t Hoen, F. O’Kelly, N.A. Pakkasjärvi, J. Quaedackers, Y.F.H. Rawashdeh, M.S. Silay Guidelines Associates: U.K. Kennedy, M. Gnech, M. Skott, A. van Uitert, A. Zachou Guidelines Office: J.A. TABLE OF CONTENTS PAGE 1. INTRODUCTION 10 1. Aim 10 1. Panel composition 10 1. Available publications 10 1. Publication history 10 1. Summary of changes 10 2. METHODS 11 2. Introduction 11 2.
+
+
+[E7] (Kawasaki, p.3-3)
+
+N.G., S.O., S.K., P.B. and M.W.B.). These statements were presented to the expert committee (n = 14/17 of the experts) in an online survey (100% response rate). Recommendations were revised according to responses and discussed at three face-to-face consensus meetings in March 2014 (Genoa, n = 14/17 expert participants); January 2015 (Utrecht, n = 10/17 experts) and March 2015 (Barcelona, n = 16/17 experts). Nominal group technique was used to reach consensus [21], with final recommendations accepted with 580% agreement. Literature search and formulation of recommendations The literature search yielded 826 articles relating to KD (Supplementary Fig. S, available at Rheumatology online). References concerning rare paediatric systemic vasculitides and IgA vasculitis informed additional recommendations described in separate manuscripts (Supplementary Fig. S, available at Rheumatology online). A total of 31 recommendations were accepted with 100% agreement: 17 relating to diagnosis and 14 concerning treatment of KD. Diagnosis of Kawasaki disease Table 1 summarizes the SHARE recommendations for diagnosing KD and incomplete KD.
+
+
+[E8] (Kawasaki, p.1-1)
+
+Nico Wulffraat, Sylvia Kamphuis, Paul Brogan,y and Michael W. Beresford 3,,y Objectives. The European Single Hub and Access point for paediatric Rheumatology in Europe initiative aimed to optimize care for children with rheumatic diseases. Kawasaki disease (KD) is the most common cause of acquired heart disease in children and an important cause of long-term cardiac disease into adulthood. Prompt diagnosis and treatment of KD is difficult due to the heterogeneity of the disease but is crucial for improving outcome. To date, there are no European internationally agreed, evidence-based guidelines concerning the diagnosis and treatment of KD in children. Accordingly, treatment regimens differ widely. The aim of this study is to provide consensus-based, European-wide evidence-informed recommendations for diagnosis and treatment of children with KD. Methods. Recommendations were developed using the EULAR’s standard operating procedures. An extensive systematic literature search was performed, and evidence-based recommendations were extrapolated from the included papers.
+
+
+[E9] (Kawasaki, p.6-6)
+
+Among those with CAA, ECG and echocardiography should be performed every 36 months (or as specified by a paediatric cardiologist for individual cases), depending on CAA severity [3, 6]. A final important caveat in relation to echocardiography for young children who present with systemic inflammation is that other inflammatory diseases might be associated with transient coronary artery dilatation, particularly systemiconset juvenile idiopathic arthritis [38]. Treating Kawasaki disease Table 3 summarizes the SHARE recommendations for treating KD in childhood. Randomized controlled trials and meta-analyses have demonstrated unequivocally that early recognition and treatment of KD with IVIG and aspirin reduces the occurrence of CAA [39, 40]. Therefore, the panel recommended strongly that IVIG and aspirin should be started as soon as a patient is diagnosed with complete or incomplete KD. In keeping with previous guidance [3, 6], treatment should include a dose of 2 g/kg IVIG as a single infusion, in view of greater therapeutic effect in preventing CAA when compared with a lower, divided dose regimen [41].
+
+
+[E10] (Kawasaki, p.1-2)
+
+University of Helsinki, Helsinki, Finland, 12Department of Paediatric Rheumatology, Gaslini Children’s Hospital, Genoa, Italy, 13Meir Medical Centre, Sackler Faculty of Medicine, Tel Aviv University, Tel Aviv, Israel and 14Institute of Translational Medicine, University of Liverpool, Liverpool, UK *N. de Graeff and N. Groot contributed equally to this study yP. Brogan and M.W. Beresford contributed equally to this study Correspondence to: Michael W. Beresford, Institute in the Park, University of Liverpool, Alder Hey Children’s NHS Foundation Trust, Liverpool L 5AB, UK. E-mail: m.w.beresford@liverpool.ac.uk Submitted 2 July 2018; accepted 4 September 2018 RHEUMATOLOGY Rheumatology 2019;58:672682 doi:10./rheumatology/key Advance Access publication 7 December 2018 CLINICAL SCIENCE Rheumatology key messages . Coronary artery aneurysms in Kawasaki disease may be prevented by early institution of anti-inflammatory therapy, typically IVIG. . Patients resistant to IVIG are at highest risk of coronary artery aneurysms. . We provide evidence-based recommendations for the diagnosis and treatment of Kawasaki disease.
+
+
+TASK:
+Using the clinical note and guideline excerpts above, produce a discharge document structured EXACTLY as follows.
+
+1. MEDICAL HISTORY
+   Copy the medical history from the clinical note. Do not alter, summarize, or omit any detail.
+
+2. OBJECTIVE EXAMINATION
+   Copy the objective examination from the clinical note verbatim.
+
+3. CLINICAL DIARY
+   Copy the clinical diary from the clinical note verbatim.
+
+4. PROGNOSIS
+   Based on the clinical data and the guideline excerpts, state the expected clinical course. Connect the patient's specific findings (e.g. lab values, imaging, scores) to the guideline criteria that apply. Cite the relevant excerpt(s) using [E#] notation.
+
+5. RECOMMENDATIONS AND PRESCRIPTIONS
+   Provide specific, actionable recommendations. Each recommendation MUST:
+   - Be supported by at least one guideline excerpt, cited as [E#]
+   - Reference the patient's specific clinical data that makes the recommendation applicable (e.g. "Given your CHA₂DS₂-VASc score of 3..." or "Given preserved LVEF...")
+   - Include drug names and dosages where applicable
+   - Be grouped into: Pharmacological therapy, Follow-up investigations, Lifestyle modifications, and Follow-up appointments
+
+   If a clinically relevant topic (e.g. anticoagulation, rate control) cannot be addressed by the provided excerpts, state:
+   "No specific guidance available from provided sources. Refer to specialist for [topic]."
+
+RULES:
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge for recommendations.
+- Do NOT invent dosages, drug names, or clinical facts not present in the clinical note or excerpts.
+- When multiple excerpts address the same topic, synthesize them into a single coherent recommendation and cite all relevant excerpts.
+- Do not repeat the same recommendation under different wording.

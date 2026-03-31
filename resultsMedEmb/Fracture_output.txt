@@ -1,0 +1,106 @@
+ROLE:
+You are an emergency department physician writing a discharge document for a patient. The document will be read by the patient's general practitioner and by the patient. Write in a clinical but accessible tone.
+
+CLINICAL NOTE:
+
+WOMAN, 27 AA
+Medical history:
+- Pathological proximate: Patient accesses following left ankle single ankle trauma. Has not taken pain therapy. Denies head trauma.
+- Remote pathology: Non-smoker. No known pathology. Denies drug allergies. Denies with certainty current pregnancy.
+
+Objective examination:
+Patient lucid, oriented, cooperative. Enters wheelchair, no ambulation possible. Pale and painful swelling of the lateral malleolus of the left ankle. Indolent metatarsals and remaining bony components of the left leg. No ongoing vascular nerve deficits.
+
+Clinical diary:
+- Paracetamol 1gr orally is administered.
+- We accompany the patient to radiology to perform X-ray of the left tibio-tarsal joint.
+- Radiological images are taken: left lateral malleolus compound spiroid fracture.
+- Orthopaedic examination: plaster cast is placed.
+
+Diagnosis: LEFT PERONEAL MALLEOLAR FRACTURE.
+Prognosis: 30 days barring complications
+
+
+
+GUIDELINE EXCERPTS:
+
+[E1] (VenousThrombosis, p.38-38)
+
+7 and 8, respectively. 2.. Calf deep vein thrombosis 2... Risk factors and natural history. Calf DVT (or isolated distal DVT as opposed to proximal DVT) is deﬁned as involving the deep calf veins. It may affect the axial deep calf veins, usually the peroneal or posterior tibial veins, the calf muscle veins (gastrocnemius or soleal veins), or a combination of Provoked proximal DVT of the lower extremity not related to pregnancy or cancer Therapeutic anticoagulation with DOACs preferred over LMWH/VKA Class I A Anticoagulation for three months as opposed to a shorter duration Class I A Consider repeat whole leg ultrasound treatment to determine the new baseline anatomical status Class IIb C Risk stratification for bleeding Extremely high risk or active bleeding not permitting anticoagulation Low to high risk Temporary inferior vena cava filter insertion Class I B Bleeding risk subsides Stop anticoagulation Early thrombus removal in selected patients with symptomatic iliofemoral DVT Class IIa A Switch the type of anticoagulation,
+
+
+[E2] (ChronicPelvicPain, p.48-49)
+
+Combinations often provide a greater benefit than individual agents [443]. They may also allow lower individual dosages and thus minimise side effects. The aim of using these drugs is to allow patients to improve their QoL. This is best measured by assessing their function as well as pain severity. If the use of these agents does not allow this, then they should be withdrawn. The failure of one agent does not exclude potential benefit of an alternative. If the benefit is limited by side effects, then the lowest effective dose should be found (by dose titration). Sometimes, patients will prefer a higher level of pain and have fewer side effects. 5...a Mechanisms of action Mechanisms of action are discussed as appropriate under the drug headings below. 5...b Comparisons within and between groups in terms of efficacy and safety Paracetamol (acetaminophen) Paracetamol is a well-tolerated analgesic in a class of its own. This is an antipyretic analgesic with a central mechanism of action [444]. It is often available over the counter without prescription.
+
+
+[E3] (ChronicPelvicPain, p.3-3)
+
+Diagnostic evaluation of nerves to the pelvis 39 4.. Diagnostic evaluation of sexological aspects in chronic pelvic pain 39 4.. Diagnostic evaluation of psychological aspects of chronic pelvic pain 40 4.. Diagnostic evaluation of pelvic floor function 40 5. MANAGEMENT 40 5. Conservative management 41 5.. Physical therapy 41 5.. Psychological therapy 43 5.. Dietary treatment 43 5. Pharmacological management 43 5.. Drugs for chronic primary pelvic pain syndrome 43 5...a Mechanisms of action 44 5...b Comparisons of agents used in pelvic pain syndromes 44 5.. Analgesics 48 5...a Mechanisms of action 48 5...b Comparisons within and between groups in terms of efficacy and safety 49 5. Further management 51 5.. Nerve blocks 51 5.. Neuromodulation 51 5.. Surgery 52 5. Summary of evidence and recommendations: management 55 5.. Management of primary prostate pain syndrome 55 5.. Management of primary bladder pain syndrome 56 5.. Management of scrotal pain syndrome 57 5.. Management of primary urethral pain syndrome 57 5.. Management of gynaecological aspects of chronic pelvic pain 57 5.. Management of primary anorectal pain syndrome 57 5.. Management of pudendal neuralgia 58 5..
+
+
+[E4] (CardiovascularDiabetes, p.62-62)
+
+CLTI is the clinical presentation of advanced disease, characterized by ischaemic rest pain; however, pain may be absent in patients with diabetes. The 2017 ESC Guidelines on the diagnosis and treatment of peripheral arterial diseases and the 2019 Global Vascular Guidelines on the management of chronic limb-threatening ischaemia proposed the Wound, Ischaemia, and foot Infection (WIfI) classification to stratify amputation risk and the potential benefits of revascularization (Supplementary data online, Table S). Patients with diabetes and critical limb ischaemia are at very high risk of lowerlimb amputation and recurrent wounds. All of these factors increase the risk of limb infection. Although 20–30% of patients with diabetes have LEAD, more than half of these have no clinical symptoms. Therefore, screening and early diagnosis is important to allow early treatment and prevent major amputation. Clinical evaluation includes medical history, assessing symptoms, palpating peripheral pulses, and evaluating skin colour and temperature. In addition, examination for neuropathy is important; however, the sensitivity of clinical examination is limited.
+
+
+[E5] (CardiovascularDiabetes, p.63-64)
+
+Wound managementb Search for other causes for limited walking distance Wound healing Clinical examination ABI (TBIa), TcPO Duplex sonography WIfI score Clinical examination ABI (TBIa) Duplex sonography Treadmill test TBIa Duplex sonography Treadmill test Patients with diabetes Figure 20 Screening for and managing lower-extremity artery disease in patients with diabetes. WlfI, Wound, Ischaemia, foot Infection. aTBI when ABI >1.. bFurther information regarding wound management and exercise training can be found in the 2017 ESC Guidelines on the diagnosis and treatment of peripheral arterial diseases. cMRA or CTA when duplex sonography is not sufficient for planning revascularization. Due to the high burden of comorbidities in patients with diabetes, interdisciplinary co-operation is crucial. The medical management of LEAD in patients with diabetes does not differ from that recommended for patients with ASCVD in general including SGLT inhibitors and GLP-1 RAs.
+
+
+[E6] (ChronicPelvicPain, p.28-28)
+
+2 Recommendations Strength rating All of those involved in the management of chronic pelvic pain should have knowledge of peripheral and central pain mechanisms. Strong The early assessment of patients with chronic pelvic pain should involve investigations aimed at excluding disease-associated pelvic pain. Strong Assess functional, emotional, behavioural, sexual and other quality of life issues, such as effect on work and socialisation, early in patients with chronic pelvic pain and address these issues as well as the pain. Build up relations with colleagues to be able to manage chronic primary pelvic pain syndrome comprehensively in a multi-specialty and multidisciplinary environment with consideration of all the patient’s symptoms. 4. DIAGNOSTIC EVALUATION 4. General evaluation 4.. History History is very important for the evaluation of patients with chronic pelvic pain. Pain syndromes are symptomatic diagnoses, which are derived from a history of pain perceived in the region of the pelvis and absence of other pathology for a minimum of three months.
+
+
+[E7] (PeripheralArterialAndAorticDiseases, p.48-48)
+
+although specific protocols are currently undefined. Data on asymptomatic PAD follow-up are limited. For symptomatic PAD or postintervention, annual follow-up are advised, including ABI/TBI measurement and DUS for new or worsening symptoms. 8... Chronic limb-threatening ischaemia 8.... Clinical presentation and diagnosis Chronic limb-thretening ischaemia describes chronic lower-limb hypoperfusion responsible for ischaemic rest pain, or non-healing ulceration or gangrene (typically in distal segments). Ischaemic rest pain primarily affects the patient’s forefoot and aggravates in a supine position, while lowering of the affected leg eases ischaemic symptoms. 8..... Definition. Chronic limb-thretening ischaemia should be considered in the presence of one of the following lower-limb clinical signs or symptoms: • Ischaemic rest pain • Non-healing lower-limb wound of ≥2 weeks’ duration • Lower-limb gangrene The following haemodynamic criteria may be used to guide diagnosis in patients with suspicion of CLTI: • Ankle pressure <50 mmHg • TP <30 mmHg • TcPO <30 mmHg 8..... Initial assessment and risk of amputation.
+
+
+[E8] (PeripheralArterialAndAorticDiseases, p.39-41)
+
+walking impairment assessment (questionnaire, treadmill), and functional assessment (6MWT, SPPB) Haemodynamic/vascular assessment (ABI, AP, TP, TcPO, DUS), wound assessment (WIfl) Typical symptoms Ischaemic rest pain or gangrene or non-healing chronic wound and critical limb perfusion (AP <50 mmHg, TP <30 mmHg or TcPO <30 mmHg) N Masked PAD N Asymptomatic PAD with or without wound N Symptomatic PAD with or without wound Chronic limb-threatening ischaemia Other diagnosis Figure 9 Diagnostic algorithm for peripheral arterial disease. Wound, Ischaemia, and foot Infection classification. 8.... Medical treatment Patients with PAD should receive comprehensive OMT, including supervised exercise training and lifestyle modification (Figures 1012). A personalized programme of guidelines-guided pharmacotherapy to reduce MACE and MALE should be prescribed and tightly followed. Patients with PAD are less likely to receive OMT than patients with CAD. For general lifestyle and pharmacological therapy see Section 7. 8..... Exercise therapy. A consensus document on exercise and PAD has been published recently.
+
+
+[E9] (AcutePulmonaryEmbolism, p.7-7)
+
+PE in pregnancy A dedicated diagnostic algorithm is proposed for suspected PE in pregnancy (Figure 7). Updated information is provided on radiation absorption related to procedures used for diagnosing PE in pregnancy (Table 12). Long-term sequelae An integrated model of patient care after PE is proposed to ensure optimal transition from hospital to community care. Recommendations on patient care have been extended to the entire spectrum of post-PE symptoms and functional limitation, not only A new comprehensive algorithm is proposed for patient follow-up after acute PE (Figure 8). 2.. Changes in recommendations 201419 Recommendations 2014 2019 Rescue thrombolytic therapy is recommended for patients who deteriorate haemodynamically. IIa I Surgical embolectomy or catheter-directed treatment should be considered as alternatives to rescue thrombolytic therapy for patients who deteriorate haemodynamically. D-dimer measurement and clinical prediction rules should be considered to rule out PE during pregnancy or the post-partum period. Further evaluation may be considered for asymptomatic PE survivors at increased risk for CTEPH.
+
+
+[E10] (AcutePulmonaryEmbolism, p.28-29)
+
+and the corresponding cut-off levels, are graphically presented in Figure 3, and their prognostic value summarized in Supplementary Data Table 3. dIncludes the cases in which the patient’s condition is so critical that it only allows bedside diagnostic tests. In such cases, echocardiographic findings of RV dysfunction confirm high-risk PE and emergency reperfusion therapy is recommended ............................................ The diagnostic strategy for suspected acute PE in pregnancy is discussed in section 9. 7.. Suspected pulmonary embolism with haemodynamic instability The proposed strategy is shown in Figure 4. The clinical probability is usually high and the differential diagnosis includes cardiac tamponade, acute coronary syndrome, aortic dissection, acute valvular dysfunction, and hypovolaemia. The most useful initial test in this situation is bedside TTE, which will yield evidence of acute RV dysfunction if acute PE is the cause of the patient’s haemodynamic decompensation. In a highly unstable patient, echocardiographic evidence of RV dysfunction is sufficient to prompt immediate reperfusion without further testing.
+
+
+TASK:
+Using the clinical note and guideline excerpts above, produce a discharge document structured EXACTLY as follows.
+
+1. MEDICAL HISTORY
+   Copy the medical history from the clinical note. Do not alter, summarize, or omit any detail.
+
+2. OBJECTIVE EXAMINATION
+   Copy the objective examination from the clinical note verbatim.
+
+3. CLINICAL DIARY
+   Copy the clinical diary from the clinical note verbatim.
+
+4. PROGNOSIS
+   Based on the clinical data and the guideline excerpts, state the expected clinical course. Connect the patient's specific findings (e.g. lab values, imaging, scores) to the guideline criteria that apply. Cite the relevant excerpt(s) using [E#] notation.
+
+5. RECOMMENDATIONS AND PRESCRIPTIONS
+   Provide specific, actionable recommendations. Each recommendation MUST:
+   - Be supported by at least one guideline excerpt, cited as [E#]
+   - Reference the patient's specific clinical data that makes the recommendation applicable (e.g. "Given your CHA₂DS₂-VASc score of 3..." or "Given preserved LVEF...")
+   - Include drug names and dosages where applicable
+   - Be grouped into: Pharmacological therapy, Follow-up investigations, Lifestyle modifications, and Follow-up appointments
+
+   If a clinically relevant topic (e.g. anticoagulation, rate control) cannot be addressed by the provided excerpts, state:
+   "No specific guidance available from provided sources. Refer to specialist for [topic]."
+
+RULES:
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge for recommendations.
+- Do NOT invent dosages, drug names, or clinical facts not present in the clinical note or excerpts.
+- When multiple excerpts address the same topic, synthesize them into a single coherent recommendation and cite all relevant excerpts.
+- Do not repeat the same recommendation under different wording.

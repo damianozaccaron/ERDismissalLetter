@@ -1,8 +1,9 @@
 from pathlib import Path
 import fitz 
-import re, time
+import time
 
 from ingestion.cleaning import is_page_bad
+
 
 def empty_page_warning(doc_id: str, empty_page_counter: int, total_pages: int, threshold: float = 0.3):
     """
@@ -15,48 +16,6 @@ def empty_page_warning(doc_id: str, empty_page_counter: int, total_pages: int, t
             "Possible scanned PDF or extraction failure."
         )
 
-def extract_pdf_text(
-    pdf_path: Path,
-    min_chars_per_page: int = 10
-) -> list[dict]:
-    """
-    Extract text from a single PDF using PyMuPDF.
-    Returns a list of dicts:
-    [
-        {
-            "doc_id": "af_guideline",
-            "page": 1,
-            "text": "...",
-        },
-        ...
-    ]
-    """
-    doc = fitz.open(pdf_path)
-    results = []
-
-    doc_id = pdf_path.stem # use filename without extension as identification
-    empty_page_counter = 0
-
-    for page_idx, page in enumerate(doc):
-        text = page.get_text("text").strip()
-
-        is_empty = len(text) < min_chars_per_page
-
-        # Skip empty / nearly empty pages
-        if is_empty:
-            empty_page_counter += 1
-            continue
-
-        results.append({
-            "doc_id": doc_id,
-            "page": page_idx + 1,
-            "text": text,
-            "empty": is_empty
-        })
-
-    empty_page_warning(doc_id, empty_page_counter, len(doc))
-        
-    return results
 
 def extract_pdf_text_layout_aware(
     pdf_path: Path,
@@ -67,15 +26,7 @@ def extract_pdf_text_layout_aware(
 ) -> list[dict]:
     """
     Extract text from a single PDF using PyMuPDF. Excludes text written in page margins (page numbers, download references, footnotes, ...)
-    Returns a list of dicts:
-    [
-        {
-            "doc_id": "NameOfFile",
-            "page": 1,
-            "text": "...",
-        },
-        ...
-    ]
+    Returns a list of dicts with keys "doc_id", "page" and "text".
     """
 
     doc = fitz.open(pdf_path)
@@ -137,6 +88,7 @@ def extract_pdf_text_layout_aware(
 
     return results
 
+
 def extract_folder(
     folder_path: Path
 ) -> list[dict]:
@@ -158,6 +110,7 @@ def extract_folder(
     end_time = time.time()
     print(f"Extraction took {end_time - start_time:.3f} seconds")
     return all_pages
+
 
 if __name__ == "__main__":
     data_dir = Path("./Guidelines")

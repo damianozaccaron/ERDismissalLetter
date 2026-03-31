@@ -1,0 +1,111 @@
+ROLE:
+You are an emergency department physician writing a discharge document for a patient. The document will be read by the patient's general practitioner and by the patient. Write in a clinical but accessible tone.
+
+CLINICAL NOTE:
+
+WOMAN, 52 AA
+Medical history:
+- Pathological proximate: Patient accesses for dyspnoea and onset of fever since about 2 days, partially responsive to paracetamol and worsening. Denies recent travel. No chest pain.
+- Remote pathology: No known cardiovascular events or family history. Not suffering from diabetes. Normal weight.
+Never smoker. No known pathologies. Denies drug allergies.
+
+Objective examination:
+Vesicular murmur present in all lung areas, pathological noises in right basal lung area. Heart tones normofrequent, rhythmic and with free pauses. Abdomen treatable, not painful on superficial or deep palpation. Giordano and Blumberg negative. Indolent cystic spots. No declivous oedema or signs of venous thrombosis.
+
+Clinical diary:
+- Venous access found and biochemistry, blood count and pro-BNP performed. ECG is performed: sinus rhythm, no signs of under/over ST elevation.
+- 500cc RIII rehydration solution is administered
+- Arterial EGA is performed: physiological exchange, at lower Po2 limits.
+- Patient is sent to radiology for chest X-ray in 2 projections.
+- Tests are taken: PCR 78 and white blood cells 14000. Nothing else abnormal.
+- X-ray: focus on right base compatible with ongoing inflammatory process.
+- Bedside echo is performed: no pleuropericardial or endoabdominal effusion. No B lines in the lung fields, valid pleural sliding. In the right basal area, visible opacity comaptible with inflammatory focus in first hypothesis.
+- Amoxicillin 2gr+clavulanic acid 200mg is administered intravenously.
+
+Diagnosis: RIGHT BASAL POLMONYTHIA
+Prognosis: 10 days
+
+
+
+GUIDELINE EXCERPTS:
+
+[E1] (PulmonaryHypertension.pdf, p.12-12)
+
+multidisciplinary consultation at a PH centre to assess risk and benefit should be considered Women of childbearing potential – Recommendation Table 6 R It is recommended that PAH patients avoid pregnancy I It is recommended that women of childbearing potential with PAH are counselled at the time of diagnosis about the risks and uncertainties associated with becoming pregnant; this should include advice against becoming pregnant, and referral for psychological support where needed BOX 2 Continued New or revised Recommendation in 2015 version Classa Recommendation in 2022 version Classa N It is recommended to provide women of childbearing potential with PAH with clear contraceptive advice, considering the individual needs of the woman but recognizing that the implications of contraceptive failure are significant in PAH N It is recommended that women with PAH who consider pregnancy or who become pregnant receive prompt counselling in an experienced PH centre to facilitate genetic counselling and shared decision-making, and to provide psychological support to the patients and their families where needed N For women with PAH having termination of pregnancy,
+
+
+[E2] (PituitaryAdenomasPregnancy, p.5-5)
+
+Nienke Biermasz (the Netherlands), and Gesthimani Mintziori (Greece), an endocrine nurse Sofia Llahana (UK), an obstetrician and gynaecologist Felice Petraglia (Italy), a neurosurgeon Michael Buchfelder (Germany), and a paediatric endocrinologist Rasa Verkauskiene (Lithuania). Leonie Broersen joined the guideline working group for methodology support. The working group had two in-person meetings (February 2019 and November 2019) and communicated by phone and email. Consensus was reached upon discussion; minority positions were taken into account in the rationale behind recommendations. Prior to the process, all participants completed conflict of interest forms. 3.. Target group This guideline was developed for health care providers who may see pregnant patients with pituitary adenomas. In general, these women (with the exception of those with small nonfunctioning adenomas and microprolactinomas) should preferably be managed by a multidisciplinary team in expert pituitary centers, including Pituitary Tumor Centers of Excellence (PTCOE) (20)/Endo-ERN Reference Centers and their affiliated regional healthcare providers. General practitioners and patients might also find the guideline useful.
+
+
+[E3] (PituitaryAdenomasPregnancy, p.11-11)
+
+R... We recommend that women of reproductive age with a diagnosis of pituitary adenoma, functioning or nonfunctioning, who consider pregnancy, be managed by an endocrinologist. The consulting endocrinologist should inform women seeking pregnancy that this is feasible in the majority of cases, that the outcome is generally good and that breast feeding is often possible (see respective recommendations for the different adenoma types and therapies). At the same time, it should be stressed that pregnancy constitutes a medical situation where expert knowledge and often collaboration between specialists from different fields is required. The woman’s age is a major determinant of fertility and pre-conception counselling should also include an obstetrician with expertise in maternal-fetal medicine and reproductive medicine. An endocrine work-up including all anterior pituitary functions should be performed (see Table 3), with special attention to possible associated metabolic or cardiovascular diseases. R... We recommend that management of women of reproductive age with a large pituitary adenoma (>1 cm), Cushing’s disease or acromegaly, who consider pregnancy,
+
+
+[E4] (Hyponatraemia, p.28-28)
+
+7.... We recommend prompt i.v. infusion of 150 ml 3% hypertonic over 20 min (1D). 7.... We suggest checking the serum sodium concentration after 20 min while repeating an infusion of 150 ml 3% hypertonic saline for the next 20 min (2D). 7.... We suggest repeating therapeutic recommendations 7... and 7... twice or until a target of 5 mmol/l increase in serum sodium concentration is achieved (2D). 7.... Manage patients with severely symptomatic hyponatraemia in an environment where close biochemical and clinical monitoring can be provided (not graded). 7.... We recommend stopping the infusion of hypertonic saline (1D). 7.... We recommend keeping the i.v. line open by infusing the smallest feasible volume of 0.% saline until cause-speciﬁc treatment is started (1D). 7.... We recommend starting a diagnosis-speciﬁc treatment if available, aiming at least to stabilise sodium concentration (1D). 7.... We recommend limiting the increase in serum sodium concentration to a total of 10 mmol/l during the ﬁrst 24 h and an additional 8 mmol/l during every 24 h thereafter until the serum sodium concentration reaches 130 mmol/l (1D).
+
+
+[E5] (InterstitialPneumonias, p.6-6)
+
+Frequently associated with significant weight loss Risk factors: no clear age or sex predilection Biapical pleural thickening, dense subpleural confluent fibrosis and traction bronchiectasis with volume loss and upward hilar retraction, which may extend more caudally to involving the major fissures, and occasionally into the middle and lower lobes. May include platythorax, deep sternal notch, and/or tracheal deviation. Often coexists with additional patterns, especially with UIP Upper zone pleural fibrosis with subpleural intra-alveolar fibroelastosis, often with extension of fibrosis into underlying lung parenchyma. Some cases may lack upper lobe predominance. At least one-third of cases coexist with additional patterns or specific findings characteristic of UIP, NSIP, BIP, granulomas, or mycobacterial or fungal infection LIP Presentation: insidious onset with slow progression Risk factors: no clear age or sex predilection for idiopathic LIP. Risk factors for secondary LIP vary with underlying aetiology Mid- to lower-lobe-predominant thin-walled lung cysts with reticulation, ground-glass opacity, bronchovascular thickening and perilymphatic interstitial thickening;
+
+
+[E6] (Hyponatraemia, p.28-28)
+
+7.... We recommend starting a diagnosis-speciﬁc treatment if available, aiming at least to stabilise sodium concentration (1D). 7.... We recommend limiting the increase in serum sodium concentration to a total of 10 mmol/l during the ﬁrst 24 h and an additional 8 mmol/l during every 24 h thereafter until the serum sodium concentration reaches 130 mmol/l (1D). 7.... We suggest checking the serum sodium concentration after 6 and 12 h and daily afterwards until the serum sodium concentration has stabilised under stable treatment (2D). 7.... We recommend continuing an i.v. infusion of 3% hypertonic saline or equivalent aiming for an additional 1 mmol/l per h increase in serum sodium concentration (1D). 7.... We recommend stopping the infusion of 3% hypertonic saline or equivalent when the symptoms improve, the serum sodium concentration increases 10 mmol/l in total or the serum sodium concentration reaches 130 mmol/l, whichever occurs ﬁrst (1D). 7.... We recommend additional diagnostic exploration for other causes of the symptoms than hyponatraemia (1D).
+
+
+[E7] (PulmonaryHypertension, p.11-11)
+
+considering the individual needs of the woman but recognizing that the implications of contraceptive failure are signiﬁcant in PAH N It is recommended that women with PAH who consider pregnancy or who become pregnant receive prompt counselling in an experienced PH centre to facilitate genetic counselling and shared decision-making, and to provide psychological support to the patients and their families where needed N For women with PAH having termination of pregnancy, it is recommended that this be performed in PH centres, with psychological support provided to the patient and her family N For women with PAH who desire to have children, where available, adoption and surrogacy with pre-conception genetic counselling may be considered N As teratogenic potential has been reported in preclinical models for endothelin receptor antagonists and riociguat, these drugs are not recommended during pregnancy Treatment of vasoreactive patients with idiopathic, heritable, or drug-associated pulmonary arterial hypertension Recommendation Table 7 R Continuation of high doses of CCBs is recommended in patients with IPAH, HPAH, and DPAH in WHO-FC I or II with marked haemodynamic improvement (near normalization) Continuing high doses of CCBs is recommended in patients with IPAH, HPAH, or DPAH in WHO-FC I or II with marked haemodynamic improvement (mPAP , mmHg and PVR , WU) N In patients with a positive vasoreactivity test but insufﬁcient long-term response to CCBs who require additional PAH therapy, continuation of CCB therapy should be considered Treatment of non-vasoreactive patients with idiopathic, heritable, or drug-associated pulmonary arterial hypertension who present without cardiopulmonary comorbiditiesb – Recommendation Table 8 N In patients with IPAH/HPAH/DPAH who present at high risk of death, initial combination therapy with a PDEi, an ERA, and i.v./s.c.
+
+
+[E8] (TurnerSyndrome, p.57-57)
+
+• R 7. We recommend the clinical care recommendations herein be implemented on an individual basis with consideration of both patient- and system-level factors (Good Practice Statement). • R 7. We recommend all individuals with TS receive care from specialists with expertise in genetics (and/or genetic counseling), cardiology, endocrinology, reproductive medicine, audiology/otolaryngology, Electrocardiogram (ECG) x x if clinically indicated x every 510y 4., 4. Echocardiogram 2-3 days of age if clinically indicated x if clinically indicated x every 510y 4. Cardiac magne!c resonance (CMR) if clinically indicated x a"er growth complete before planned pregnancy; if clinically indicated 4. Tympanometry annually un!l 5y if clinically indicated 7. Behavioral Audiogram every 2-3y and if concerns for hearing every 5y and with symptoms of hearing loss 7. Uterine ultrasound to assist with HRT if clinically indicated (abnormal uterine bleeding, DXA: spine and hip x every 510y 7. Comprehensive neuropsychological assessment x at 5-11y of age (see also Table 18) x 8. Psychosocial screening / evalua!ons see Table 18 8. Counseling Healthy lifestyle (diet, physical ac!vity) annually 7., 7.
+
+
+[E9] (Hyponatraemia, p.32-32)
+
+infusion of 150 ml 3% hypertonic saline or equivalent over 20 min (2D). 7.... We suggest aiming for a 5 mmol/l per 24-h increase in serum sodium concentration (2D). 7.... We suggest limiting the increase in serum sodium concentration to 10 mmol/l in the ﬁrst 24 h and 8 mmol/l during every 24 h thereafter, until a serum sodium concentration of 130 mmol/l is reached (2D). 7.... We suggest checking the serum sodium concentration after 1, 6 and 12 h (2D). 7.... We suggest additional diagnostic exploration for other causes of the symptoms if the symptoms do not improve with an increase in serum sodium concentration (2D). 7.... We suggest considering to manage the patient as in severely symptomatic hyponatraemia if the serum sodium concentration further decreases despite treating the underlying diagnosis (2D). 7.... Make sure that the serum sodium concentration has been measured using the same technique used for the previous measurement and that no administrative errors in sample handling have occurred (not graded). 7.... If possible, stop ﬂuids, medications and other factors that can contribute to or provoke hyponatraemia (not graded).
+
+
+[E10] (Hyponatraemia, p.31-31)
+
+Based on an extensive systematic review of available case reports, the guideline development group agreed that a correction rate of 10 mmol/l during the ﬁrst 24 h and 18 mmol/l during the ﬁrst 48 h is probably a safe limit. We advise close monitoring of serum sodium concentrations during the ﬁrst 24 h of treatment and daily thereafter. It can be speculated that administering desmopressin makes the Androgue´–Madias formula more accurate in clinical practice, as it removes one of the variables during treatment, by clamping urine electrolytefree water excretion at a constant level. A retrospective observational study has indicated that combined use of 1–2 mg i.v. desmopressin with hypertonic saline may allow gradual increase in serum sodium concentration without risking overcorrection. The study involved physicians with extensive experience in treating hyponatraemia. The guideline development group believes that these results are interesting but require conﬁrmation before advocating it as a general practice. For management in case of accidental overcorrection, we refer to section 7..
+
+
+TASK:
+Using the clinical note and guideline excerpts above, produce a discharge document structured EXACTLY as follows.
+
+1. MEDICAL HISTORY
+   Copy the medical history from the clinical note. Do not alter, summarize, or omit any detail.
+
+2. OBJECTIVE EXAMINATION
+   Copy the objective examination from the clinical note verbatim.
+
+3. CLINICAL DIARY
+   Copy the clinical diary from the clinical note verbatim.
+
+4. PROGNOSIS
+   Based on the clinical data and the guideline excerpts, state the expected clinical course. Connect the patient's specific findings (e.g. lab values, imaging, scores) to the guideline criteria that apply. Cite the relevant excerpt(s) using [E#] notation.
+
+5. RECOMMENDATIONS AND PRESCRIPTIONS
+   Provide specific, actionable recommendations. Each recommendation MUST:
+   - Be supported by at least one guideline excerpt, cited as [E#]
+   - Reference the patient's specific clinical data that makes the recommendation applicable (e.g. "Given your CHA₂DS₂-VASc score of 3..." or "Given preserved LVEF...")
+   - Include drug names and dosages where applicable
+   - Be grouped into: Pharmacological therapy, Follow-up investigations, Lifestyle modifications, and Follow-up appointments
+
+   If a clinically relevant topic (e.g. anticoagulation, rate control) cannot be addressed by the provided excerpts, state:
+   "No specific guidance available from provided sources. Refer to specialist for [topic]."
+
+RULES:
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge for recommendations.
+- Do NOT invent dosages, drug names, or clinical facts not present in the clinical note or excerpts.
+- When multiple excerpts address the same topic, synthesize them into a single coherent recommendation and cite all relevant excerpts.
+- Do not repeat the same recommendation under different wording.

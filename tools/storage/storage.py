@@ -3,20 +3,22 @@ import faiss, pickle, joblib
 from pathlib import Path
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-# ASK FOR CLARIFICATION OVER WHAT THIS IS DOING LINE BY LINE
+
 def build_faiss_index(chunks):
     """ extract embeddings in the same order as chunks """
 
     embeddings = np.stack(
         [c["embedding"] for c in chunks]
-    ).astype("float32") # extract embeddings from chunks (list of floats), turn them with np.stack to a 2D NumPy array and convert to float32 for faiss (which only accepts float32)
+    ).astype("float32") # turn embeddings into a 2D NumPy array and convert to float32 for faiss (which only accepts float32)
 
-    dim = embeddings.shape[1] # get the dimensionality of the embeddings (number of columns in the 2D array)
-    index = faiss.IndexFlatIP(dim) # create a FAISS index for inner product similarity search (which is equivalent to cosine similarity if the embeddings are normalized, as they are in our case)
+    dim = embeddings.shape[1]
+    # create a FAISS index for inner product similarity search (equivalent to cosine similarity if embeddings are normalized, as they are here)
+    index = faiss.IndexFlatIP(dim)
 
     index.add(embeddings)
 
     return index
+
 
 def build_metadata(chunks):
     metadata = [
@@ -30,22 +32,21 @@ def build_metadata(chunks):
     ]
     return metadata
 
+
 def sanity_check(index, metadata):
     assert index.ntotal == len(metadata)
 
 def save_index_and_metadata(index, metadata, index_path="Weights/faiss.index", metadata_path="Weights/metadata.pkl"):
-
     faiss.write_index(index, index_path)
 
     with open(metadata_path, "wb") as f:
         pickle.dump(metadata, f)
 
+
 def load_index_and_metadata(index_path="Weights/faiss.index", metadata_path="Weights/metadata.pkl"):
 
     if not Path(index_path).exists() or not Path(metadata_path).exists():
-        raise RuntimeError(
-            "FAISS index or metadata not found."
-        )
+        raise RuntimeError("FAISS index or metadata not found.")
     
     index = faiss.read_index(index_path)
 
@@ -59,13 +60,11 @@ def load_index_and_metadata(index_path="Weights/faiss.index", metadata_path="Wei
 
 def build_vectorizer(metadata: list[dict]) -> TfidfVectorizer:
     """
-    Fit a TfidfVectorizer on the guideline chunk corpus.
-    Call once at startup; the fitted vectorizer stores the IDF weights.
+    Fit a TfidfVectorizer on the guideline chunk corpus. Stores the IDF weights.
     """
 
     corpus = [chunk["text"] for chunk in metadata]
  
-    # Merge sklearn's built-in english stopwords with clinical stopwords
     vectorizer = TfidfVectorizer(
         stop_words="english",
         token_pattern=r'(?u)[a-zA-Z0-9µ²³]+(?:[-/][a-zA-Z0-9µ²³]+)*', # allows to catch terms such as CHA2DS2-VASc as a single one
@@ -76,10 +75,11 @@ def build_vectorizer(metadata: list[dict]) -> TfidfVectorizer:
     vectorizer.fit(corpus)
     return vectorizer
 
+
 def save_vectorizer(vectorizer, path="Weights/tfidf_vectorizer.joblib"):
     joblib.dump(vectorizer, path)
 
-# from storage.storage import load_vectorizer
+
 def load_vectorizer(path="Weights/tfidf_vectorizer.joblib"):
     if not Path(path).exists():
         raise RuntimeError(

@@ -1,17 +1,17 @@
 import re
-from typing import List
+
 
 def detect_biblio(text: str, threshold = 8) -> bool:
+    """Detects if a page is likely to be part of the bibliography section by looking for common indicators like DOIs, URLs, and "et al." references. """
+    
     text_lower = text.lower()
 
-    # DOI / URLs (Bibliography)
     doi_count = text_lower.count("doi")
     url_count = text_lower.count("http")
 
     if doi_count + url_count >= threshold:
         return True
 
-    # Et al.
     etal_counter = text_lower.count("et al")
     if etal_counter >= threshold:
         return True
@@ -19,6 +19,10 @@ def detect_biblio(text: str, threshold = 8) -> bool:
     return False
 
 def detect_index(text: str, threshold: float = 0.4) -> bool:
+    """
+    Detects if a page is likely to be part of the index section.
+    Uses a combination of keyword detection, line patterns, and leader patterns to score the likelihood of being an index page.
+    """
 
     if not text or len(text.strip()) < 20:
         return False
@@ -27,21 +31,18 @@ def detect_index(text: str, threshold: float = 0.4) -> bool:
  
     score = 0.0
  
-    # ── 1. Keyword detection (weight: 0.30) ──
+    # Keyword detection (weight: 0.30)
     # TOC/index headers
     keyword_pattern = re.compile(
         r'\b(table of contents|contents|index|'
         r'|abbreviations|list of figures|list of tables)\b',
         re.IGNORECASE
     )
-    # Check only the first lines for header keywords
-    header_text = " ".join(lines[:10])
+    header_text = " ".join(lines[:20])
     if keyword_pattern.search(header_text):
         score += 0.30
  
-    # ── 2. Lines ending with page numbers (weight: 0.40) ──
-    # Matches lines that end with a number, optionally preceded by
-    # dots, dashes, spaces, or tabs (the "leader" pattern)
+    # 2. Lines ending with page numbers (weight: 0.40)
     line_with_number = re.compile(
         r'[a-zA-Z]'              # at least one letter somewhere
         r'.*'                     # any content
@@ -52,8 +53,7 @@ def detect_index(text: str, threshold: float = 0.4) -> bool:
     number_ratio = number_ending_count / len(lines)
     score += 0.40 * min(number_ratio / 0.5, 1.0)  # full score at 50%+ lines matching
  
-    # ── 3. Dot/dash leaders (weight: 0.15) ──
-    # The classic "Chapter 1 ............... 5" pattern
+    # 3. Dot/dash leaders (weight: 0.15)
     leader_pattern = re.compile(r'[.\-·…]{5,}')
     leader_count = sum(1 for line in lines if leader_pattern.search(line))
     leader_ratio = leader_count / len(lines)
@@ -63,6 +63,9 @@ def detect_index(text: str, threshold: float = 0.4) -> bool:
 
 
 def detect_abbreviations(text:str, threshold = 12) -> bool:
+    """
+    Attempts to detect the pages that are all abbreviations, usually at the start of the guideline document.
+    """
     abbrev_counter = sum(
         1 for line in text.split("\n")
         if re.match(r'^[A-Z][A-Z0-9\-]{1,9}\s*$', line.strip())
@@ -72,14 +75,10 @@ def detect_abbreviations(text:str, threshold = 12) -> bool:
 
 
 def is_page_bad(text: str) -> bool:
-    """
-    Detects if a page only contains Bibliography references or is part of the Index or Abbreviation section.
-    """
-
     return detect_biblio(text) or detect_abbreviations(text) or detect_index(text)
 
 
-def remove_reference_numbers(lines: List[str]) -> List[str]:
+def remove_reference_numbers(lines: list[str]) -> list[str]:
 
     cleaned = []
     for line in lines:
@@ -91,11 +90,11 @@ def remove_reference_numbers(lines: List[str]) -> List[str]:
     return cleaned
 
 
-def remove_captions(sentences: List[str]) -> List[str]:
+def remove_captions(sentences: list[str]) -> list[str]:
     return [s for s in sentences
         if not re.match(r'^\s*(Figure|Fig\.|Table|Supplementary|Recommendation Table)\s*+\d+', s, re.IGNORECASE)]
 
-def remove_figure_nonsense(lines: List[str]) -> List[str]:
+def remove_figure_nonsense(lines: list[str]) -> list[str]:
     """
     Remove lines that are mostly garbled/unrenderable characters
     from broken font mappings in PDF extraction.
@@ -139,7 +138,7 @@ def clean_sentences(lines: list[str]) -> list[str]:
     return lines
 
 
-def clean_lines(lines: List[str]) -> List[str]:
+def clean_lines(lines: list[str]) -> list[str]:
 
     lines = remove_reference_numbers(lines)
     lines = remove_figure_nonsense(lines)

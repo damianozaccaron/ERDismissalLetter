@@ -1,0 +1,18 @@
+FEMALE, 23 AA
+Medical history:
+- Pathological proximate: Patient admits for pain in the right iliac fossa arising within the last 6 hours, moderate intensity, non-irradiated, associated with nausea without episodes of vomiting. Denies fever. Reports taking morning-after pill about 10 days before. Last menstruation 5 weeks ago, cycle usually regular. Denies vaginal bleeding at time of access.
+- Remote pathology: No known pathology. Previous appendectomy. No previous pregnancy. Not taking continuous home drug therapy. Denies drug allergies. Objective examination: Patient alert, oriented, collaborating. Suffering. Vesicular murmur present in all lung areas, no added noise. Heart tones normofrequent, rhythmic, free pauses. Abdomen treatable, painful on palpation in right iliac fossa and hypogastrium, no signs of frank peritonism. Blumberg negative. Jordan negative. No declivous oedema. BP 112/70 mmHg. HR 94 bpm. SpO2 99% aa. TC 36.6°C.
+
+Clinical diary:
+- Venous access found and quantitative serum β-hCG, biochemistry, blood count, indices of inflammation, blood group and Rh. At the same time qualitative urinary β-hCG is performed: positive.
+- ECG is performed: sinus rhythm, no alterations.
+- Examinations are performed: Serum β-hCG 1.840 mUI/mL. CBC: Hb 12.8 g/dL, no ongoing anaemia. No significant indices of inflammation. Blood group: A positive.
+- Ketorolac 30mg in 100cc saline is administered for analgesia, with partial benefit.
+- E FAST is performed: effusion in Douglas.
+- Given the β-hCG positivity, and the pain in the right iliac fossa, the picture is strongly suggestive of extrauterine pregnancy. On-call gynaecology is immediately contacted.
+- The patient is assessed by the on-call gynaecologist directly in the PS. Ultrasound scan: uterus normal size, no endouterine gestational sac visible. Right annexus: rounded para-ovarian image of about 2cm, inhomogeneous content, suspected for ectopic gestational sac. Modest flap of free effusion in Douglas. Left annexus normal.
+- Indication for urgent admission for further investigation and evaluation of therapeutic strategy (medical vs surgical).
+- The patient is informed of the suspected Diagnosis, the planned course of treatment and the need for urgent admission, in clear, age-appropriate language. The patient understands and consents.
+
+Diagnosis: SUSPECTED EXTRAUTERINE PREGNANCY
+Prognosis: urgent hospitalisation

@@ -1,0 +1,20 @@
+FEMALE, 28 AA
+Medical history:
+- Pathological proximate: Patient accesses for abdominal pain arising approximately 12 hours prior to access, initially diffuse and cramping, progressively migrated and localised to right iliac fossa. Associated nausea with an emetic episode. Reports evening fever in the last 24 hours (TC max 37.8°C at home). Denies diarrhoea or altered bowel movements. Last menstruation about 2 weeks ago, regular cycle.
+- Remote pathology: No known pathology. No previous surgery. Not taking home drug therapy. Denies drug allergies.
+
+Objective examination: Patient alert, oriented, collaborating. Suffering. Vesicular murmur present in all lung areas, no added noise. Heart tones normofrequent, rhythmic, free pauses. Abdomen treatable, markedly painful on palpation in right iliac fossa. Blumberg positive. Rovsing's sign positive. Jordan negative. Indolent cystic stitches. No declivous oedema. BP 118/74 mmHg. HR 102 bpm. SpO2 99% aa. TC 38.1°C.
+
+Clinical diary:
+- Venous access found and biochemistry, blood count, indices of inflammation, urine pregnancy test (urinary β-hCG), urine test performed.
+- ECG is performed: sinus rhythm, reactive sinus tachycardia, no ST segment abnormalities.
+- Tests are viewed: neutrophilic leukocytosis (GB 14,200/μL, N 84%). PCR 4.2 mg/dL. β-hCG negative. Urine examination: normal, excludes acute urological pathology.
+- We administered ketorolac 30mg in 100cc saline for analgesia and ondansetron 4mg i.v. for nausea, with partial benefit.
+- Bedside echo is performed: no appreciable free intra-abdominal effusion. No hydronephrosis bilaterally. Appendage not visualisable with this method due to gas interposition.
+- Given the clinic, laboratory and positive appendicular signs, the patient is sent to radiology for CT scan of abdomen and pelvis with contrast medium.
+- CT report: finding compatible with acute non-perforated appendicitis.
+- On-call general surgery is contacted for collegial assessment. The surgeon examines the patient and confirms the surgical indication.
+- Patient is informed of Diagnosis and need for surgery. Informed consent is obtained. Fasting is started and the patient is prepared for the operating theatre.
+
+Diagnosis: ACUTE APPENDICITE
+Prognosis: hospitalisation

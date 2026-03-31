@@ -1,0 +1,9 @@
+--- Query 1 ---
+REFLUSH DISEASE. GASTROESOFAGEOUS REFLUSH DISEASE. diagnosis comorbidities risk factors management
+
+--- Query 2 ---
+pantoprazole pro-BNP CBC. GASTROESOFAGEOUS REFLUSH DISEASE. therapy recommendations pharmacological management clinical scores diagnostic evaluation
+
+--- Query 3 ---
+GASTROESOFAGEOUS REFLUSH DISEASE recommendations discharge management male
+

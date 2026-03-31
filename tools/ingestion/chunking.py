@@ -1,5 +1,3 @@
-from typing import List, Dict
-
 import pickle, time, re
 from pathlib import Path
 from nltk.tokenize.punkt import PunktTrainer, PunktSentenceTokenizer
@@ -7,11 +5,14 @@ from nltk.tokenize.punkt import PunktTrainer, PunktSentenceTokenizer
 from ingestion.cleaning import clean_lines, clean_sentences
 
 
-def create_chunks(
-    pages: List[Dict],
-    max_chars: int = 1200,
-    overlap_units: int = 2,
-) -> List[Dict]:
+def create_chunks(pages: list[dict], max_chars: int = 1200, overlap_units: int = 2) -> list[dict]:
+    """
+    Create chunks from extraced pages. Uses sentence-aware chunking through a custom trained Punkt tokenizer
+    trained on the guideline corpus.
+    Performs line level cleaning to remove reference numbers and attempts of the PDF parser to translate a figure into text.
+    Also performs sentence level cleaning to remove the bulk of captions and summaries, which can be very long and noisy and with high retrieval scores.
+    Chunks are saved with their metadata for future reference during retrieval and generation.
+    """
 
     chunks = []
     current_chunk = []
@@ -89,7 +90,7 @@ def create_chunks(
     return chunks
 
 
-def merge_lines(lines: List[str]) -> List[str]:
+def merge_lines(lines: list[str]) -> list[str]:
     """
     Merge broken lines from PDF extraction.
     """
@@ -128,10 +129,9 @@ def merge_lines(lines: List[str]) -> List[str]:
 
     return merged
 
-def train_punkt(texts: list[str], save_path: str = "Weights/punkt_medical.pkl") -> PunktSentenceTokenizer:
 
+def train_punkt(texts: list[str], save_path: str = "Weights/punkt_medical.pkl") -> PunktSentenceTokenizer:
     trainer = PunktTrainer()
-    # trainer.ABBREV_BACKOFF = 0  # more aggressive abbreviation learning
 
     print("Training a new Punkt tokenizer")
     
@@ -149,19 +149,17 @@ def train_punkt(texts: list[str], save_path: str = "Weights/punkt_medical.pkl") 
     end_time = time.time()
 
     print(f"Tokenizer trained in {end_time - start_time:.3f} seconds")
-    
     return tokenizer
 
 
 def load_punkt(path: str = "punkt_weights.pkl") -> PunktSentenceTokenizer:
-
     with open(path, "rb") as f:
         return pickle.load(f)
 
-# Remember to modify paths for models
-def get_tokenizer(texts: list[str] = None, path: str = "Weights/punkt_medical.pkl") -> PunktSentenceTokenizer:
 
-    # load tokenizer if it exists, otherwise train and save it.
+def get_tokenizer(texts: list[str] = None, path: str = "Weights/punkt_medical.pkl") -> PunktSentenceTokenizer:
+    """load tokenizer if it exists, otherwise train and save it."""
+
     if Path(path).exists():
         print("Loading existing tokenizer...")
         return load_punkt(path)
@@ -172,8 +170,8 @@ def get_tokenizer(texts: list[str] = None, path: str = "Weights/punkt_medical.pk
     print("Training new tokenizer...")
     return train_punkt(texts, save_path=path)
 
-def split_oversized_sentences(sentences: List[str], max_chars: int) -> List[str]:
 
+def split_oversized_sentences(sentences: list[str], max_chars: int) -> list[str]:
     i = 0
     while i < len(sentences):
         if len(sentences[i]) > max_chars:

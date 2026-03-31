@@ -1,4 +1,5 @@
-import torch, time
+import torch, time, sys
+from pathlib import Path
 
 from config import (
     MODEL_NAME,
@@ -15,23 +16,18 @@ from config import (
 
 from storage.storage import load_index_and_metadata, load_vectorizer
 from storage.embedding import embed_query, load_embedder
-from output.retrieval import mmr_select, retrieve_top_k, load_crossEncoder, reranking_multi_query
+from retrieval.retrieval import retrieve_top_k, load_crossEncoder, reranking_multi_query
 
-from output.output_prod import (
+from generation.output_prod import (
     load_model_quant,
     load_model_transformer,
     generate_letter_quant,
     generate_letter_transformer
 )
 
-from output.query_building import(
-    build_queries_ner,
-    extract_entities,
-    load_ner_model,
-    collect_patient_input,
-)
-
-from output.prompting import build_prompt, deepl_translation
+from retrieval.query_building import build_queries_ner,load_ner_model
+from generation.prompting import build_prompt, deepl_translation
+from pipeline.user_input import collect_patient_input
 
 """
 def main():
@@ -63,8 +59,8 @@ def main():
     print(letter)
 """
 
-def check_retrieval():
-
+def load_models():
+    
     start_models = time.time()
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Loading NER pipeline...")
@@ -76,27 +72,36 @@ def check_retrieval():
     print("Loading cross-encoder...")
     cross_encoder = load_crossEncoder(CROSS_ENCODER)
     end_models = time.time()
-    print(f"Models loaded in {end_models-start_models:.3f} seconds")
-
-
-    start_faiss = time.time()
     print("Loading FAISS index and metadata...")
     index, metadata = load_index_and_metadata()
-    end_faiss = time.time()
-    print(f"Index and Metadata loaded in {end_faiss-start_faiss:.3f} seconds")
+    print(f"Models loaded in {end_models-start_models:.3f} seconds")
+
+    return ner_model, vectorizer, emb_model, cross_encoder, index, metadata
+
+def check_retrieval(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index, metadata, use_existing_transl = True):
+
+    print(f"\n{'='*50}")
+    print(f"Processing: {input_file.name}")
+    print(f"{'='*50}")
+
 
     # raw_data = collect_patient_input()
-    with open("EsempiITA/AF.txt", "r", encoding="utf-8") as f:
-        italian_data = f.read()
-    print("Translating clinical note...")
+  
+    if use_existing_transl:
+        with open(f"ExamplesENG/translation{input_file.name}", "r", encoding="utf-8") as file:
+            translated_note = file.read()
+    else:
+        with open(input_file, "r", encoding="utf-8") as f:
+            italian_data = f.read()
 
-    """ translated_note = deepl_translation(italian_data)
+        print("Translating clinical note...")
+        translated_note = deepl_translation(italian_data)
 
-    with open('ExamplesENG/translationAF.txt', 'w', encoding='utf-8') as file:
-        file.write(translated_note)"""
+        eng_path = f"ExamplesENG/translation{input_file.name}"
+        with open(eng_path, "w", encoding="utf-8") as f:
+            f.write(translated_note)
+        print(f"Translation saved to {eng_path}")
 
-    with open("ExamplesENG/translationAF.txt", "r", encoding="utf-8") as file:
-        translated_note = file.read()
 
     start_retrieval = time.time()
     print("Building queries...")
@@ -160,11 +165,51 @@ def check_retrieval():
     return prompt, rerank_queries
 
 if __name__ == "__main__":
-    output, queries = check_retrieval()
 
-    with open('results/output1.txt', 'w', encoding='utf-8') as file:
-        file.write(output)
+    input_dir = Path("EsempiITA")
+    eng_dir = Path("ExamplesENG")
+    results_dir = Path("results")
 
-    with open("results/queries.txt", "w", encoding="utf-8") as file:
-        for i, q in enumerate(queries, 1):
-            file.write(f"--- Query {i} ---\n{q}\n\n")
+    if len(sys.argv) > 1:
+        single_file = input_dir / sys.argv[1]
+        if not single_file.exists():
+            print(f"File not found: {single_file}")
+            exit(1)
+        txt_files = [single_file]
+    else:
+        txt_files = sorted(input_dir.glob("*.txt"))
+        if not txt_files:
+            print(f"No .txt files found in {input_dir}/")
+            exit(1)
+
+    print(f"Found {len(txt_files)} file(s)\n")
+
+    ner_model, vectorizer, emb_model, cross_encoder, index, metadata = load_models()
+
+    for input_file in txt_files:
+        start = time.time()
+        output, queries = check_retrieval(
+            input_file=input_file,
+            ner_model=ner_model,
+            vectorizer=vectorizer,
+            emb_model=emb_model,
+            cross_encoder=cross_encoder,
+            index=index,
+            metadata=metadata,
+            use_existing_transl=True
+        )
+        end = time.time()
+        print(f"{input_file} processed in {end-start:.3f} seconds.")
+
+        stem = input_file.stem
+        output_path = results_dir / f"{stem}_output.txt"
+        queries_path = results_dir / f"{stem}_queries.txt"
+
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(output)
+
+        with open(queries_path, "w", encoding="utf-8") as f:
+            for i, q in enumerate(queries, 1):
+                f.write(f"--- Query {i} ---\n{q}\n\n")
+
+        print(f"Results saved to {output_path} and {queries_path}")
