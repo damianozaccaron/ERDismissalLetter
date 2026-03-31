@@ -69,48 +69,68 @@ def extract_patient_fields(translated_note: str) -> dict:
     fields = {}
 
     # demographics (everything before comma is gender, the first digits after the comma are the age)
-    demo_match = re.match(r'^(.+?),\s*(\d+)\s*(?:years?\s*old|AA)?', translated_note, re.IGNORECASE)
-    if demo_match:
-        fields["gender"] = demo_match.group(1).strip()
-        if fields["gender"].lower() == "other":
-            fields["gender"] == ""
-        fields["age"] = demo_match.group(2).strip()
+    import re
 
-    demo_match = re.match(r'^(.+?),\s*(\d+)\s*(?:months)?', translated_note, re.IGNORECASE)
-    if demo_match:
+    demo_match = re.match(r'^[^,]+,\s*(?:(\d+)\s*(?:years?\s*old|aa))?\s*(?:(\d+)\s*months?)?', translated_note, re.IGNORECASE)
+
+
+    gender = translated_note.split(",", 1)[0].strip()
+    if gender.lower() == "other":
+        gender = ""
+    fields["gender"] = gender
+
+    # age
+    years = int(demo_match.group(1)) if demo_match.group(1) else None
+    months = int(demo_match.group(2)) if demo_match.group(2) else None
+
+    if years is not None:
+        fields["age"] = years
+    elif months is not None:
+        fields["age"] = 0
+    else:
+        fields["age"] = None
+
+    # neonatal
+    if years is None and months is not None:
         fields["neonatal"] = True
+    else: 
+        fields["neonatal"] = False
 
     # medical history
     recent_match = re.search(
-        r'Pathological proximate[:\s]+(.*?)(?=Remote pathology)',
+        r'Pathological proximate[:\s]+(.*?)(?=Remote pathology\s*:)',
         translated_note, re.IGNORECASE | re.DOTALL
     )
     fields["medical_history"] = recent_match.group(1).strip() if recent_match else ""
 
     # remote medical history
     recent_match = re.search(
-        r'Remote pathology[:\s]+(.*?)(?=Objective examination)',
+        r'Remote pathology[:\s]+(.*?)(?=Objective examination\s*:)',
         translated_note, re.IGNORECASE | re.DOTALL
     )
     fields["remote_medical_history"] = recent_match.group(1).strip() if recent_match else ""
 
     # objective examination
     exam_match = re.search(
-        r'Objective examination[:\s]+(.*?)(?=Clinical Diary)',
+        r'Objective examination[:\s]+(.*?)(?=Clinical Diary\s*:)',
         translated_note, re.IGNORECASE | re.DOTALL
     )
     fields["exams"] = exam_match.group(1).strip() if exam_match else ""
 
     # clinical diary
     diary_match = re.search(
-        r'(?:Clinical record|Clinical diary)[:\s]+(.*?)(?=Diagnosis)',
+        r'(?:Clinical record|Clinical diary)[:\s]+(.*?)(?=Diagnosis\s*:)',
         translated_note, re.IGNORECASE | re.DOTALL
     )
     fields["clinical_diary"] = diary_match.group(1).strip() if diary_match else ""
 
     # diagnosis
-    diag_match = re.search(r'Diagnosis[:\s]+(.+?)$', translated_note, re.IGNORECASE | re.DOTALL)
+    diag_match = re.search(r'Diagnosis[:\s]+(.*?)(?=Prognosis\s*:)', translated_note, re.IGNORECASE | re.DOTALL)
     fields["diagnosis"] = diag_match.group(1).strip() if diag_match else ""
+
+    # prognosis
+    prog_match = re.search(r'Prognosis[:\s]+(.+?)$', translated_note, re.IGNORECASE | re.DOTALL)
+    fields["prognosis"] = prog_match.group(1).strip() if prog_match else ""
 
     return fields
 
@@ -120,15 +140,9 @@ ENTITY_TYPE_ANCHORS = {
     "DISEASE_DISORDER":      "diagnosis comorbidities risk factors management",
     "MEDICATION":            "therapy recommendations pharmacological management",
  #   "SIGN_SYMPTOM":          "clinical presentation symptoms assessment",
- #   "DIAGNOSTIC_PROCEDURE":  "diagnostic evaluation assessment workup",
+  #  "DIAGNOSTIC_PROCEDURE":  "diagnostic evaluation assessment workup",
 }
 
-# Clinically high-impact terms that should ALWAYS be included in queries
-MANDATORY_TERMS = {
-    "pregnant", "pregnancy", "renal", "hepatic", "dialysis", "transplant",
-    "immunosuppressed", "immunocompromised", "hiv", "palliative", "terminal", "cancer", "malignancy", "anaphylaxis", "anaphylactic",
-    "breastfeeding", "lactation", "CHA2DS2-VASc"
-}
 
 def load_ner_model(model_name = "Clinical-AI-Apollo/Medical-NER", device="cuda"):
 
@@ -146,7 +160,7 @@ NEGATION_PATTERNS = re.compile(
     r')\b',
     re.IGNORECASE
 )
-def is_negated(text: str, entity_start: int, entity_end: int, window: int = 30) -> bool:
+def is_negated(text: str, entity_start: int, entity_end: int, window: int = 40) -> bool:
    
     raw_start = max(0, entity_start - window)
     preceding_raw = text[raw_start:entity_start]
@@ -159,7 +173,6 @@ def is_negated(text: str, entity_start: int, entity_end: int, window: int = 30) 
         preceding = preceding_raw
  
     if NEGATION_PATTERNS.search(preceding):
-        print(f"Negated {text[entity_start:entity_end]} because of: {preceding} (Preceding)")
         return True
  
     # Look-ahead: "negative(s)" after the entity
@@ -176,7 +189,7 @@ def is_negated(text: str, entity_start: int, entity_end: int, window: int = 30) 
     following = following_raw[:first_boundary]
  
     if re.search(r'\bnegatives?\b', following, re.IGNORECASE):
-        print(f"Negated {text[entity_start:entity_end]} because of: {following} (Following)")
+        # print(f"Negated {text[entity_start:entity_end]} because of: {following} (Following)")
         return True
  
     return False
@@ -212,11 +225,6 @@ def extract_entities(text: str, ner_model, filter_negated = True) -> dict[str, l
         entities[entity] = deduped
 
     return entities
-
-
-def find_mandatory_terms(text: str) -> list[str]:
-    text_lower = text.lower()
-    return [term for term in MANDATORY_TERMS if term in text_lower]
 
 
 # TF-IDF to summarize NER further
@@ -259,10 +267,14 @@ def rank_entities(
 
     return [ent for ent, _ in scored[:top_n]]
 
+def normalize(text: str) -> str:
+    SUBSCRIPT_MAP = str.maketrans('₀₁₂₃₄₅₆₇₈₉⁰¹²³⁴⁵⁶⁷⁸⁹', '01234567890123456789')
+    return text.translate(SUBSCRIPT_MAP)
+
 def condense_diary(
     clinical_diary: str,
     diagnostic_entities: list[str],
-    max_sentences: int = 8,
+    max_sentences: int = 2,
 ) -> str:
     """
     Extract sentences from the clinical diary that contain diagnostic
@@ -271,23 +283,25 @@ def condense_diary(
     # Split diary into sentences on period, newline, or dash-prefixed lines
     sentences = re.split(r'(?<=[.])\s+|(?=\n\s*-)', clinical_diary)
     sentences = [s.strip().lstrip('- ') for s in sentences if s.strip()]
- 
-    # Lowercase entities for matching
-    entity_keys = [e.lower() for e in diagnostic_entities]
- 
+
+    entity_keys = [normalize(e).lower() for e in diagnostic_entities]
+
     matched = []
     seen = set()
     for sent in sentences:
-        sent_lower = sent.lower()
-        for ent in entity_keys:
-            if ent in sent_lower and sent not in seen:
-                matched.append(sent)
+        if sent in seen:
+            continue
+        sent_norm = normalize(sent).lower()
+        for rank_idx, ent in enumerate(entity_keys):
+            hit = bool(re.search(r'(?<![a-z0-9])' + re.escape(ent) + r'(?![a-z0-9])', sent_norm))
+            if hit:
+                matched.append((rank_idx, sent))
                 seen.add(sent)
                 break
- 
-    # Cap length
-    matched = matched[:max_sentences]
- 
+
+    matched.sort(key=lambda x: x[0])
+    matched = [sent for _, sent in matched[:max_sentences]]
+
     return " ".join(matched) if matched else ""
 
 
@@ -321,10 +335,6 @@ def build_queries_ner(
     if age >= 65:
         age_bracket = "elderly"
  
-    # Detect mandatory clinical modifiers
-    mandatory = find_mandatory_terms(translated_note)
-    mandatory_str = " ".join(mandatory)
- 
     # Run NER on the full note
     entities = extract_entities(translated_note, ner_model)
 
@@ -334,31 +344,30 @@ def build_queries_ner(
     for etype, anchor_terms in ENTITY_TYPE_ANCHORS.items():
         ent_list = entities.get(etype, [])
 
-        if etype == "DIAGNOSTIC_PROCEDURE":
-            # Q4: use condensed diary instead of bare entity names
-            condensed = condense_diary(clinical_diary, ent_list) if ent_list else ""
-            if condensed:
-                query = f"{condensed}. {diagnosis}. {anchor_terms}"
-                if mandatory_str:
-                    query += f". {mandatory_str}"
-                retrieval_queries.append(query)
-                reranking_queries.append(query)
-            continue
-
         if not ent_list:
             continue
  
         ranked = rank_entities(ent_list, vectorizer)
+
+        if etype == "DIAGNOSTIC_PROCEDURE":
+            # use condensed diary instead of bare entity names
+            print(ranked)
+            
+            condensed = condense_diary(clinical_diary, ranked) if ent_list else ""
+            if condensed:
+                query = f"{condensed}. {diagnosis}. {anchor_terms}"
+                # retrieval_queries.append(query)
+                reranking_queries.append(query)
+            continue
+
         if not ranked:
             # Fallback: if no entity survived IDF filtering use the raw entities
             ranked = ent_list
 
         entity_str = " ".join(ranked)
 
-        # final query should be top entities + diagnosis + anchor + mandatory words
+        # final query should be top entities + diagnosis + anchor
         parts = [entity_str, diagnosis, anchor_terms]
-        if mandatory_str:
-            parts.append(mandatory_str)
 
         query = ". ".join(filter(None, parts))
         retrieval_queries.append(query)
@@ -373,8 +382,6 @@ def build_queries_ner(
         broad = f"{diagnosis} recommendations discharge management {age_bracket} {gender}"
     else:
         broad = f"{diagnosis} recommendations discharge management {gender}"
-    if mandatory_str:
-        broad += f" {mandatory_str}"
 
     retrieval_queries.append(broad)
     reranking_queries.append(broad)

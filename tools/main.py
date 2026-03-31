@@ -86,16 +86,16 @@ def check_retrieval():
     print(f"Index and Metadata loaded in {end_faiss-start_faiss:.3f} seconds")
 
     # raw_data = collect_patient_input()
-    with open("AFexample.txt", "r", encoding="utf-8") as f:
+    with open("EsempiITA/AFexample.txt", "r", encoding="utf-8") as f:
         italian_data = f.read()
     print("Translating clinical note...")
 
     """ translated_note = deepl_translation(italian_data)
 
-    with open('translationAF.txt', 'w', encoding='utf-8') as file:
+    with open('ExamplesENG/translationAF.txt', 'w', encoding='utf-8') as file:
         file.write(translated_note)"""
 
-    with open("translationAF.txt", "r", encoding="utf-8") as file:
+    with open("ExamplesENG/translationAF.txt", "r", encoding="utf-8") as file:
         translated_note = file.read()
 
     start_retrieval = time.time()
@@ -162,7 +162,7 @@ def check_retrieval():
 if __name__ == "__main__":
     output, queries = check_retrieval()
 
-    with open('output.txt', 'w', encoding='utf-8') as file:
+    with open('output1.txt', 'w', encoding='utf-8') as file:
         file.write(output)
 
     with open("queries.txt", "w", encoding="utf-8") as file:

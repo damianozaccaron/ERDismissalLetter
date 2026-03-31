@@ -33,14 +33,14 @@ def build_metadata(chunks):
 def sanity_check(index, metadata):
     assert index.ntotal == len(metadata)
 
-def save_index_and_metadata(index, metadata, index_path="faiss.index", metadata_path="metadata.pkl"):
+def save_index_and_metadata(index, metadata, index_path="Weights/faiss.index", metadata_path="Weights/metadata.pkl"):
 
     faiss.write_index(index, index_path)
 
     with open(metadata_path, "wb") as f:
         pickle.dump(metadata, f)
 
-def load_index_and_metadata(index_path="faiss.index", metadata_path="metadata.pkl"):
+def load_index_and_metadata(index_path="Weights/faiss.index", metadata_path="Weights/metadata.pkl"):
 
     if not Path(index_path).exists() or not Path(metadata_path).exists():
         raise RuntimeError(
@@ -76,11 +76,11 @@ def build_vectorizer(metadata: list[dict]) -> TfidfVectorizer:
     vectorizer.fit(corpus)
     return vectorizer
 
-def save_vectorizer(vectorizer, path="tfidf_vectorizer.joblib"):
+def save_vectorizer(vectorizer, path="Weights/tfidf_vectorizer.joblib"):
     joblib.dump(vectorizer, path)
 
 # from storage.storage import load_vectorizer
-def load_vectorizer(path="tfidf_vectorizer.joblib"):
+def load_vectorizer(path="Weights/tfidf_vectorizer.joblib"):
     if not Path(path).exists():
         raise RuntimeError(
             f"TF-IDF vectorizer not found at {path}. "

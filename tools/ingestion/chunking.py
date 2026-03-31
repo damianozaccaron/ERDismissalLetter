@@ -128,7 +128,7 @@ def merge_lines(lines: List[str]) -> List[str]:
 
     return merged
 
-def train_punkt(texts: list[str], save_path: str = "punkt_medical.pkl") -> PunktSentenceTokenizer:
+def train_punkt(texts: list[str], save_path: str = "Weights/punkt_medical.pkl") -> PunktSentenceTokenizer:
 
     trainer = PunktTrainer()
     # trainer.ABBREV_BACKOFF = 0  # more aggressive abbreviation learning
@@ -159,7 +159,7 @@ def load_punkt(path: str = "punkt_weights.pkl") -> PunktSentenceTokenizer:
         return pickle.load(f)
 
 # Remember to modify paths for models
-def get_tokenizer(texts: list[str] = None, path: str = "punkt_medical.pkl") -> PunktSentenceTokenizer:
+def get_tokenizer(texts: list[str] = None, path: str = "Weights/punkt_medical.pkl") -> PunktSentenceTokenizer:
 
     # load tokenizer if it exists, otherwise train and save it.
     if Path(path).exists():
