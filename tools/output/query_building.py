@@ -138,9 +138,9 @@ def extract_patient_fields(translated_note: str) -> dict:
 # NER categories
 ENTITY_TYPE_ANCHORS = {
     "DISEASE_DISORDER":      "diagnosis comorbidities risk factors management",
-    "MEDICATION":            "therapy recommendations pharmacological management",
- #   "SIGN_SYMPTOM":          "clinical presentation symptoms assessment",
-  #  "DIAGNOSTIC_PROCEDURE":  "diagnostic evaluation assessment workup",
+    "MEDICATION":            "therapy recommendations pharmacological management clinical scores diagnostic evaluation",
+   # "SIGN_SYMPTOM":          "clinical presentation symptoms assessment",
+    "DIAGNOSTIC_PROCEDURE":  "diagnostic evaluation assessment workup",
 }
 
 
@@ -265,6 +265,8 @@ def rank_entities(
     scored = [(ent, s) for ent, s in scored if s > 0]
     scored.sort(key=lambda x: x[1], reverse=True)
 
+    print(scored)
+
     return [ent for ent, _ in scored[:top_n]]
 
 def normalize(text: str) -> str:
@@ -304,7 +306,9 @@ def condense_diary(
 
     return " ".join(matched) if matched else ""
 
-
+SALVAGE_ENTITY_TYPES = {
+    "DIAGNOSTIC_PROCEDURE": 2
+}
 def build_queries_ner(
     translated_note: str,
     ner_model,
@@ -338,21 +342,32 @@ def build_queries_ner(
     # Run NER on the full note
     entities = extract_entities(translated_note, ner_model)
 
+    salvaged_entities = []
+    for etype, top_n in SALVAGE_ENTITY_TYPES.items():
+        ent_list = entities.get(etype, [])
+        if not ent_list:
+            continue
+        ranked = rank_entities(ent_list, vectorizer, top_n=top_n)
+        salvaged_entities.extend(ranked)
+
     retrieval_queries = []
     reranking_queries = []
- 
+
     for etype, anchor_terms in ENTITY_TYPE_ANCHORS.items():
         ent_list = entities.get(etype, [])
 
-        if not ent_list:
+        if not ent_list and etype != "MEDICATION":
             continue
  
-        ranked = rank_entities(ent_list, vectorizer)
+        ranked = rank_entities(ent_list, vectorizer) if ent_list else []
+
+        # Append salvaged entities to MEDICATION query
+        if etype == "MEDICATION" :
+            ranked = ranked + salvaged_entities
 
         if etype == "DIAGNOSTIC_PROCEDURE":
-            # use condensed diary instead of bare entity names
-            print(ranked)
-            
+            continue
+            # use condensed diary instead of bare entity names            
             condensed = condense_diary(clinical_diary, ranked) if ent_list else ""
             if condensed:
                 query = f"{condensed}. {diagnosis}. {anchor_terms}"
@@ -426,7 +441,7 @@ if __name__ == "__main__":
     queries = build_queries_ner(translated_text, ner_model, vectorizer)
 
 
-    with open("queries.txt", "w", encoding="utf-8") as file:
+    with open("results/queries.txt", "w", encoding="utf-8") as file:
         for i, q in enumerate(queries, 1):
             file.write(f"--- Query {i} ---\n{q}\n\n")
 

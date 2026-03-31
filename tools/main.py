@@ -86,7 +86,7 @@ def check_retrieval():
     print(f"Index and Metadata loaded in {end_faiss-start_faiss:.3f} seconds")
 
     # raw_data = collect_patient_input()
-    with open("EsempiITA/AFexample.txt", "r", encoding="utf-8") as f:
+    with open("EsempiITA/AF.txt", "r", encoding="utf-8") as f:
         italian_data = f.read()
     print("Translating clinical note...")
 
@@ -162,9 +162,9 @@ def check_retrieval():
 if __name__ == "__main__":
     output, queries = check_retrieval()
 
-    with open('output1.txt', 'w', encoding='utf-8') as file:
+    with open('results/output1.txt', 'w', encoding='utf-8') as file:
         file.write(output)
 
-    with open("queries.txt", "w", encoding="utf-8") as file:
+    with open("results/queries.txt", "w", encoding="utf-8") as file:
         for i, q in enumerate(queries, 1):
             file.write(f"--- Query {i} ---\n{q}\n\n")

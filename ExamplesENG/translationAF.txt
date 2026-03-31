@@ -17,3 +17,5 @@ Clinical diary:
 - Patient is admitted to cardiology for in-depth diagnosis, initiation of anticoagulant therapy and evaluation of rhythm vs. rate strategy in election.
 
 Diagnosis: new onset atrial fibrillation with rapid ventricular response
+
+Prognosis: hospitalization

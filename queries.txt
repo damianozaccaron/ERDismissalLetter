@@ -1,9 +1,0 @@
---- Query 1 ---
-pleural effusion REFLUSH DISEASE. GASTROESOFAGEOUS REFLUSH DISEASE. diagnosis comorbidities risk factors management
-
---- Query 2 ---
-pantoprazole. GASTROESOFAGEOUS REFLUSH DISEASE. therapy recommendations pharmacological management
-
---- Query 3 ---
-GASTROESOFAGEOUS REFLUSH DISEASE recommendations discharge management male
-

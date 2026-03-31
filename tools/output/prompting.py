@@ -1,6 +1,6 @@
 import deepl
 
-def deepl_translation(text, auth_key = "3e8dba21-6f6c-4f49-9d7f-9fea17bd3f3f:fx", glossary = "627f273f-d457-400f-a171-d04b9c13ddf3"):
+def deepl_translation(text, auth_key = "-6f6c-4f49-9d7f-9fea17bd3f3f:fx", glossary = "627f273f-d457-400f-a171-d04b9c13ddf3"):
 
     deepl_client = deepl.DeepLClient(auth_key)
     result = deepl_client.translate_text(text, source_lang="IT", target_lang="EN-GB", glossary=glossary)
