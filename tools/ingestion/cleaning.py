@@ -18,10 +18,48 @@ def detect_biblio(text: str, threshold = 8) -> bool:
     
     return False
 
-def detect_index(text:str, threshold = 5) -> bool:
-    
-    sep_counter = text.count(".............................")
-    return sep_counter >= threshold
+def detect_index(text: str, threshold: float = 0.4) -> bool:
+
+    if not text or len(text.strip()) < 20:
+        return False
+ 
+    lines = [l.strip() for l in text.strip().splitlines() if l.strip()]
+ 
+    score = 0.0
+ 
+    # ── 1. Keyword detection (weight: 0.30) ──
+    # TOC/index headers
+    keyword_pattern = re.compile(
+        r'\b(table of contents|contents|index|'
+        r'|abbreviations|list of figures|list of tables)\b',
+        re.IGNORECASE
+    )
+    # Check only the first lines for header keywords
+    header_text = " ".join(lines[:10])
+    if keyword_pattern.search(header_text):
+        score += 0.30
+ 
+    # ── 2. Lines ending with page numbers (weight: 0.40) ──
+    # Matches lines that end with a number, optionally preceded by
+    # dots, dashes, spaces, or tabs (the "leader" pattern)
+    line_with_number = re.compile(
+        r'[a-zA-Z]'              # at least one letter somewhere
+        r'.*'                     # any content
+        r'[\s.\-·…\t]{2,}'       # leader: dots, spaces, dashes, etc.
+        r'\d{1,4}\s*$'           # ends with a page number
+    )
+    number_ending_count = sum(1 for line in lines if line_with_number.match(line))
+    number_ratio = number_ending_count / len(lines)
+    score += 0.40 * min(number_ratio / 0.5, 1.0)  # full score at 50%+ lines matching
+ 
+    # ── 3. Dot/dash leaders (weight: 0.15) ──
+    # The classic "Chapter 1 ............... 5" pattern
+    leader_pattern = re.compile(r'[.\-·…]{5,}')
+    leader_count = sum(1 for line in lines if leader_pattern.search(line))
+    leader_ratio = leader_count / len(lines)
+    score += 0.15 * min(leader_ratio / 0.3, 1.0)  # full score at 30%+ lines
+ 
+    return score >= threshold
 
 
 def detect_abbreviations(text:str, threshold = 12) -> bool:

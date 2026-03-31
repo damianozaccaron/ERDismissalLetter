@@ -4,8 +4,64 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 from storage.storage import load_vectorizer
 
-def collect_patient_input(raw_text: str) -> dict:
-    return {"clinical_note": raw_text}
+def collect_patient_input() -> str:
+
+    def prompt_required(prompt_text: str) -> str:
+        value = ""
+        while not value.strip():
+            print(prompt_text)
+            value = input()
+            if not value.strip():
+                print("Questo campo non può essere vuoto.")
+        return value.strip()
+
+    def prompt_optional(prompt_text: str) -> str:
+        print(prompt_text)
+        return input().strip()
+    
+    clinical_note = []
+
+    print("Genere (M/F/A): ")
+    gender = ""
+    while gender.lower() not in ('m', 'f', 'a'):
+        gender = input()
+        if gender.lower() not in ('m', 'f', 'a'):
+            print("Genere deve essere M (maschio), F (femmina) o A (altro): ")
+    
+    gender_exp = "Maschio"
+    if gender.lower() == 'f':
+        gender_exp = "Femmina"
+    elif gender.lower() == 'a':
+        gender_exp = "Altro"
+
+    age = prompt_required("\n\nEtà: ")
+    clinical_note.append(gender_exp+", "+age)
+
+    clinical_note.append("\nAnamnesi: ")
+
+    pat_prox = prompt_required("\n\nPatologica Prossima: ")
+    clinical_note.append("- Patologia Prossima:\n" + pat_prox)
+
+    pat_rem = prompt_optional("\n\nPatologica Remota (lasciare vuoto se non presente): ")
+    if pat_rem:
+        clinical_note.append("- Patologia Remota:\n" + pat_rem)
+
+    exam = prompt_required("\n\nEsame Obiettivo: ")
+    clinical_note.append("\nEsame Obiettivo:\n" + exam)
+    
+    diary = prompt_required("\n\nDiario Clinico: ")
+    clinical_note.append("\nDiario Clinico: \n" + diary)
+
+    diagnosis = prompt_required("\n\nDiagnosi: ")
+    clinical_note.append("\nDiagnosi: "+diagnosis)
+
+    prognosis = prompt_required("\n\nPrognosi: ")
+    clinical_note.append("\nPrognosi: "+prognosis)
+
+
+    clinical_note_str = "\n".join(clinical_note)
+
+    return clinical_note_str
 
 
 def extract_patient_fields(translated_note: str) -> dict:
@@ -16,6 +72,8 @@ def extract_patient_fields(translated_note: str) -> dict:
     demo_match = re.match(r'^(.+?),\s*(\d+)\s*(?:years?\s*old|AA)?', translated_note, re.IGNORECASE)
     if demo_match:
         fields["gender"] = demo_match.group(1).strip()
+        if fields["gender"].lower() == "other":
+            fields["gender"] == ""
         fields["age"] = demo_match.group(2).strip()
 
     demo_match = re.match(r'^(.+?),\s*(\d+)\s*(?:months)?', translated_note, re.IGNORECASE)
@@ -61,8 +119,8 @@ def extract_patient_fields(translated_note: str) -> dict:
 ENTITY_TYPE_ANCHORS = {
     "DISEASE_DISORDER":      "diagnosis comorbidities risk factors management",
     "MEDICATION":            "therapy recommendations pharmacological management",
-    "SIGN_SYMPTOM":          "clinical presentation symptoms assessment",
-    "DIAGNOSTIC_PROCEDURE":  "diagnostic evaluation assessment workup",
+ #   "SIGN_SYMPTOM":          "clinical presentation symptoms assessment",
+ #   "DIAGNOSTIC_PROCEDURE":  "diagnostic evaluation assessment workup",
 }
 
 # Clinically high-impact terms that should ALWAYS be included in queries
@@ -76,32 +134,83 @@ def load_ner_model(model_name = "Clinical-AI-Apollo/Medical-NER", device="cuda")
 
     ner_model = pipeline("ner", model=model_name, aggregation_strategy="simple", device=device)
     return ner_model
+
+
+NEGATION_PATTERNS = re.compile(
+    r'\b('
+    r'no|not|none|neither|never|nor|'
+    r'without|absent|absence of|'
+    r'denies|denied|deny|'
+    r'negative|'
+    r'rule[sd]? out|exclude[sd]?'
+    r')\b',
+    re.IGNORECASE
+)
+def is_negated(text: str, entity_start: int, entity_end: int, window: int = 30) -> bool:
+   
+    raw_start = max(0, entity_start - window)
+    preceding_raw = text[raw_start:entity_start]
  
+    # Trim to the last clause boundary (period or comma)
+    last_boundary = max(preceding_raw.rfind('.'), preceding_raw.rfind(','), preceding_raw.rfind(':'), preceding_raw.rfind(';'))
+    if last_boundary != -1:
+        preceding = preceding_raw[last_boundary + 1:]
+    else:
+        preceding = preceding_raw
  
-def extract_entities(text: str, ner_model) -> dict[str, list[str]]:
+    if NEGATION_PATTERNS.search(preceding):
+        print(f"Negated {text[entity_start:entity_end]} because of: {preceding} (Preceding)")
+        return True
+ 
+    # Look-ahead: "negative(s)" after the entity
+    post_start = entity_end
+    post_end = min(len(text), entity_end + 15)
+    following_raw = text[post_start:post_end]
+ 
+    # Trim to the next clause boundary (period or comma)
+    first_boundary = len(following_raw)
+    for sep in ['.', ',', ':', ';']:
+        pos = following_raw.find(sep)
+        if pos != -1:
+            first_boundary = min(first_boundary, pos)
+    following = following_raw[:first_boundary]
+ 
+    if re.search(r'\bnegatives?\b', following, re.IGNORECASE):
+        print(f"Negated {text[entity_start:entity_end]} because of: {following} (Following)")
+        return True
+ 
+    return False
+
+
+def extract_entities(text: str, ner_model, filter_negated = True) -> dict[str, list[str]]:
     """
     Run NER on text and return entities grouped by type.
     Only keeps entity types listed in ENTITY_TYPE_ANCHORS.
-    """ 
+    """
     results = ner_model(text)
  
     entity_group = set([ent["entity_group"] for ent in results if ent["entity_group"] in ENTITY_TYPE_ANCHORS])
     entities = {}
-    
-    # eliminate duplicates
+ 
     for entity in list(entity_group):
         seen = set()
         deduped = []
         for ent in results:
             if ent["entity_group"] != entity:
                 continue
+ 
+            # Skip negated entities
+            if filter_negated and is_negated(text, ent["start"], ent["end"]):
+                continue
+            
+            # Eliminate duplicates
             word = ent["word"].strip()
             word_key = word.lower()
             if word_key not in seen:
                 deduped.append(word)
                 seen.add(word_key)
         entities[entity] = deduped
-    
+
     return entities
 
 
@@ -150,12 +259,42 @@ def rank_entities(
 
     return [ent for ent, _ in scored[:top_n]]
 
+def condense_diary(
+    clinical_diary: str,
+    diagnostic_entities: list[str],
+    max_sentences: int = 8,
+) -> str:
+    """
+    Extract sentences from the clinical diary that contain diagnostic
+    procedure entities, preserving their clinical context (results, findings, values).
+    """
+    # Split diary into sentences on period, newline, or dash-prefixed lines
+    sentences = re.split(r'(?<=[.])\s+|(?=\n\s*-)', clinical_diary)
+    sentences = [s.strip().lstrip('- ') for s in sentences if s.strip()]
+ 
+    # Lowercase entities for matching
+    entity_keys = [e.lower() for e in diagnostic_entities]
+ 
+    matched = []
+    seen = set()
+    for sent in sentences:
+        sent_lower = sent.lower()
+        for ent in entity_keys:
+            if ent in sent_lower and sent not in seen:
+                matched.append(sent)
+                seen.add(sent)
+                break
+ 
+    # Cap length
+    matched = matched[:max_sentences]
+ 
+    return " ".join(matched) if matched else ""
+
 
 def build_queries_ner(
     translated_note: str,
     ner_model,
-    vectorizer: TfidfVectorizer
-) -> list[str]:
+    vectorizer: TfidfVectorizer):
     """
     NER + TF-IDF query decomposition.
 
@@ -170,10 +309,12 @@ def build_queries_ner(
     diagnosis = fields.get("diagnosis", "")
     gender = fields.get("gender", "").lower()
     age = int(fields.get("age", ""))
+    exams = fields.get("exams", "")
+    clinical_diary = fields.get("clinical_diary", "")
 
     # Divide patient into relevant age brackets
     age_bracket = None
-    if age <= 1 or fields["neonatal"]:
+    if age <= 1 or fields.get("neonatal"):
         age_bracket = "neonatal"
     elif age <= 14:
         age_bracket = "pediatric"
@@ -186,17 +327,30 @@ def build_queries_ner(
  
     # Run NER on the full note
     entities = extract_entities(translated_note, ner_model)
- 
-    queries = []
+
+    retrieval_queries = []
+    reranking_queries = []
  
     for etype, anchor_terms in ENTITY_TYPE_ANCHORS.items():
         ent_list = entities.get(etype, [])
+
+        if etype == "DIAGNOSTIC_PROCEDURE":
+            # Q4: use condensed diary instead of bare entity names
+            condensed = condense_diary(clinical_diary, ent_list) if ent_list else ""
+            if condensed:
+                query = f"{condensed}. {diagnosis}. {anchor_terms}"
+                if mandatory_str:
+                    query += f". {mandatory_str}"
+                retrieval_queries.append(query)
+                reranking_queries.append(query)
+            continue
+
         if not ent_list:
             continue
  
         ranked = rank_entities(ent_list, vectorizer)
         if not ranked:
-            # Fallback: if no entity survived IDF filtering use the raw entities (they may still help via embedding)
+            # Fallback: if no entity survived IDF filtering use the raw entities
             ranked = ent_list
 
         entity_str = " ".join(ranked)
@@ -207,7 +361,12 @@ def build_queries_ner(
             parts.append(mandatory_str)
 
         query = ". ".join(filter(None, parts))
-        queries.append(query)
+        retrieval_queries.append(query)
+        reranking_queries.append(query)
+
+    # Include raw Objective Examination query for Cross-Encoder only
+    exam_query = f"{exams}. {diagnosis}. clinical presentation symptoms assessment"
+    #reranking_queries.append(exam_query)
  
     # Always include a broad diagnosis-level query
     if age_bracket:
@@ -216,9 +375,11 @@ def build_queries_ner(
         broad = f"{diagnosis} recommendations discharge management {gender}"
     if mandatory_str:
         broad += f" {mandatory_str}"
-    queries.append(broad)
+
+    retrieval_queries.append(broad)
+    reranking_queries.append(broad)
  
-    return queries
+    return retrieval_queries, reranking_queries
 
 
 def build_query(translated_note: str) -> str:

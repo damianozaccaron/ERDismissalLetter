@@ -3,13 +3,10 @@
 - Choice of PDF extractor (X)
 - Choice of Embedder (MedEmbed, BioClinicalBERT, ModernPubMedBERT) (X)
 - Choice of vector database (FAISS; Chroma; Milvus; Weaviate; Pinecone) (X)
-- Retrieval Strategy
+- Retrieval Strategy (X)
 - Choice of base LLM (medalpaca, BioGPT, Llama-3-Instruct, or Mistral-Med, MedGemma)
 
-- Understanding cross-reasoning. Multi-query retrieval could be useful (One per diagnosis)
-- Translation challenges
-- Consider including the source for information
+- Understanding cross-reasoning. Multi-query retrieval could be useful (One per diagnosis) (X)
+- Translation challenges (X)
+- Consider including the source for information (X)
 
-Optional:
-- Parallelizing PDF ingestion
-- Tokenized Chunking (needs a tokenizer)

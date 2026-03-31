@@ -1,5 +1,6 @@
 import numpy as np
 from sentence_transformers import CrossEncoder
+from collections import Counter
 
 def retrieve_top_k(query_embedding, index, metadata, k=30):
     scores, indices = index.search(query_embedding, k)
@@ -87,7 +88,7 @@ def reranking(query: str, retrieved_chunks: list[dict], reranker: CrossEncoder, 
     return ranked_chunks
 
 
-def _text_overlap(a: str, b: str, threshold: float = 0.8) -> bool:
+def text_overlap(a: str, b: str, threshold: float = 0.8) -> bool:
     """
     Check if two chunk texts are near-duplicates using token overlap.
     Uses set intersection over the smaller set to detect when one
@@ -114,7 +115,7 @@ def remove_duplicates(chunks: list[dict]) -> list[dict]:
     for chunk in chunks:
         is_dup = False
         for existing in kept:
-            if _text_overlap(chunk["text"], existing["text"]):
+            if text_overlap(chunk["text"], existing["text"]):
                 is_dup = True
                 break
         if not is_dup:
@@ -122,12 +123,43 @@ def remove_duplicates(chunks: list[dict]) -> list[dict]:
     return kept
 
 
+def identify_primary_source(
+    retrieved_chunks: list[dict],
+    dominance_ratio: float = 0.4,
+) -> set[str]:
+    """
+    Identify the primary guideline source(s) based on retrieval frequency.
+    If a single doc_id accounts for more than dominance_ratio of all
+    retrieved chunks, it is considered the primary source. Chunks from
+    other sources receive a penalty during reranking.
+    """
+ 
+    doc_counts = Counter(chunk["doc_id"] for chunk in retrieved_chunks)
+    total = len(retrieved_chunks)
+ 
+    if total == 0:
+        return set()
+ 
+    primary = set()
+    for doc_id, count in doc_counts.items():
+        if count / total >= dominance_ratio:
+            primary.add(doc_id)
+ 
+    # If no single source dominates, skip penalty entirely
+    if not primary:
+        return set(doc_counts.keys())
+ 
+    return primary
+
+
 def reranking_multi_query(
     queries: list[str],
     retrieved_chunks: list[dict],
     reranker: CrossEncoder,
-    top_n: int = 8,
-    category_boost: float = 0.1
+    top_n = 8,
+    category_boost = 0.1,
+    source_penalty = 0.15,
+    dominance_ratio = 0.3
 ) -> list[dict]:
     """
     Rerank chunks by scoring each chunk against each query independently,
@@ -137,8 +169,9 @@ def reranking_multi_query(
       1. Score every (query, chunk) pair with the cross-encoder.
       2. For each chunk, take the MAX score across all queries.
       3. Identify the top-scoring chunk per query (category leader) and apply a percentage boost to its max score.
-      4. Sort by final score, deduplicate near-identical chunks.
-      5. Return top-N.
+      4. Penalize chunks from non-primary sources
+      5. Sort by final score, deduplicate near-identical chunks.
+      6. Return top-N.
     """
     texts = [chunk["text"] for chunk in retrieved_chunks]
     n_chunks = len(texts)
@@ -170,6 +203,22 @@ def reranking_multi_query(
         boosted_scores[chunk_idx] *= (1.0 + category_boost)
 
     # Step 4
+    primary_sources = identify_primary_source(retrieved_chunks, dominance_ratio)
+    all_doc_ids = set(chunk["doc_id"] for chunk in retrieved_chunks)
+ 
+    # Only penalize if there are clear dominant sources
+    if primary_sources < all_doc_ids:
+        penalized = 0
+        for chunk_idx in range(n_chunks):
+            if retrieved_chunks[chunk_idx]["doc_id"] not in primary_sources:
+                boosted_scores[chunk_idx] *= (1.0 - source_penalty)
+                penalized += 1
+ 
+        print(f"  Source penalty: {penalized}/{n_chunks} chunks penalized "
+              f"(primary: {primary_sources})")
+ 
+
+    # Step 5
     for i, chunk in enumerate(retrieved_chunks):
         chunk["final_score"] = float(boosted_scores[i])
 

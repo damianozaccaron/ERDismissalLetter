@@ -1,15 +1,9 @@
 --- Query 1 ---
-effusion pericardial effusion deep vein thrombosis atrial fibrillation hypertension. new onset atrial fibrillation with rapid ventricular response. diagnosis comorbidities risk factors management
+deep vein thrombosis atrial fibrillation hypertension. new onset atrial fibrillation with rapid ventricular response. diagnosis comorbidities risk factors management
 
 --- Query 2 ---
-amlodipine Metoprolol tartrate anticoagulant anticoagulant therapy metfromin therapy. new onset atrial fibrillation with rapid ventricular response. therapy recommendations pharmacological management
+Metoprolol tartrate amlodipine anticoagulant anticoagulant therapy metfromin therapy. new onset atrial fibrillation with rapid ventricular response. therapy recommendations pharmacological management
 
 --- Query 3 ---
-dyspnoea alert oriented irregular heartbeat inflammation dyslipidaemia pauses enlargement oedema syncope. new onset atrial fibrillation with rapid ventricular response. clinical presentation symptoms assessment
-
---- Query 4 ---
-TSH electrolytes X-ray Potassium echo examination troponin pattern Sodium blood count. new onset atrial fibrillation with rapid ventricular response. diagnostic evaluation assessment workup
-
---- Query 5 ---
-new onset atrial fibrillation with rapid ventricular response recommendations discharge management male
+new onset atrial fibrillation with rapid ventricular response recommendations discharge management elderly male
 
