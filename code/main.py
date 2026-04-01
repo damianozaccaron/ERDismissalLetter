@@ -20,7 +20,7 @@ from retrieval.retrieval import retrieve_top_k, load_crossEncoder, reranking_mul
 from generation.output_prod import load_model_quant, load_model_transformer, generate_letter
 
 from retrieval.query_building import build_queries_ner,load_ner_model
-from generation.prompting import build_prompt, deepl_translation
+from generation.prompting import build_prompt, deepl_translation, deepl_translation_en_it
 from pipeline.user_input import collect_patient_input
 
 
@@ -134,12 +134,15 @@ def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index
     print("Building prompt...")
     prompt = build_prompt(translated_note, final_chunks)
 
-    print("Generating letter...\n")
-    letter = generate_letter(prompt=prompt, tokenizer=tokenizer, model=llm_model, temperature=TEMPERATURE)
+    print("Generating recommendations...\n")
+    output = generate_letter(prompt=prompt, tokenizer=tokenizer, model=llm_model, temperature=TEMPERATURE)
 
-    print("=== GENERATED LETTER ===\n")
+    print("Translating recommendations in Italian...\n")
+    # output = deepl_translation_en_it(output)
 
-    return letter, rerank_queries
+    print("=== GENERATED RECOMMENDATIONS ===\n")
+
+    return output, rerank_queries
 
 if __name__ == "__main__":
 
