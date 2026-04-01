@@ -1,0 +1,110 @@
+ROLE:
+You are an emergency department physician writing a discharge document for a patient. The document will be read by the patient's general practitioner and by the patient. Write in a clinical but accessible tone.
+
+CLINICAL NOTE:
+
+FEMALE, 28 AA
+Medical history:
+- Pathological proximate: Patient accesses for abdominal pain arising approximately 12 hours prior to access, initially diffuse and cramping, progressively migrated and localised to right iliac fossa. Associated nausea with an emetic episode. Reports evening fever in the last 24 hours (TC max 37.8°C at home). Denies diarrhoea or altered bowel movements. Last menstruation about 2 weeks ago, regular cycle.
+- Remote pathology: No known pathology. No previous surgery. Not taking home drug therapy. Denies drug allergies.
+
+Objective examination: Patient alert, oriented, collaborating. Suffering. Vesicular murmur present in all lung areas, no added noise. Heart tones normofrequent, rhythmic, free pauses. Abdomen treatable, markedly painful on palpation in right iliac fossa. Blumberg positive. Rovsing's sign positive. Jordan negative. Indolent cystic stitches. No declivous oedema. BP 118/74 mmHg. HR 102 bpm. SpO2 99% aa. TC 38.1°C.
+
+Clinical diary:
+- Venous access found and biochemistry, blood count, indices of inflammation, urine pregnancy test (urinary β-hCG), urine test performed.
+- ECG is performed: sinus rhythm, reactive sinus tachycardia, no ST segment abnormalities.
+- Tests are viewed: neutrophilic leukocytosis (GB 14,200/μL, N 84%). PCR 4.2 mg/dL. β-hCG negative. Urine examination: normal, excludes acute urological pathology.
+- We administered ketorolac 30mg in 100cc saline for analgesia and ondansetron 4mg i.v. for nausea, with partial benefit.
+- Bedside echo is performed: no appreciable free intra-abdominal effusion. No hydronephrosis bilaterally. Appendage not visualisable with this method due to gas interposition.
+- Given the clinic, laboratory and positive appendicular signs, the patient is sent to radiology for CT scan of abdomen and pelvis with contrast medium.
+- CT report: finding compatible with acute non-perforated appendicitis.
+- On-call general surgery is contacted for collegial assessment. The surgeon examines the patient and confirms the surgical indication.
+- Patient is informed of Diagnosis and need for surgery. Informed consent is obtained. Fasting is started and the patient is prepared for the operating theatre.
+
+Diagnosis: ACUTE APPENDICITE
+Prognosis: hospitalisation
+
+
+
+GUIDELINE EXCERPTS:
+
+[E1] (CardiovascularAssessment, p.17-17)
+
+the stage of the acute illness, and how far it has progressed. The best interests of the patient should be considered before deciding on treatment, informed consent to management should be obtained, if at all possible, and decisions should be clearly recorded. The degree of urgency should also be considered (i.e. does the procedure need to be performed outside working hours or can it wait until the next day?). In general, competences and supportive functions are not always present in the evenings or during the night; thus, an overall evaluation of what best serves the patient is necessary. The optimal timing of NCS should be discussed within the multidisciplinary team, including an anaesthesiologist, in order to achieve optimized anaesthesia for each patient (see Section 7). 3.. Type of surgical approach New surgical techniques have been introduced to replace open surgery and to reduce the overall risk for the patient. 3... Laparoscopy Laparoscopic procedures, compared with open surgical procedures, have the advantage of causing less tissue trauma and intestinal paralysis,
+
+
+[E2] (CardiovascularAssessment, p.17-17)
+
+Immediate: surgery/intervention should be performed without any delay to save life or organ function. Urgent: surgery/intervention should be performed without unnecessary delay to save life, limb, or organ function. Time-sensitive: surgery/intervention should be performed as soon as possible as there is a time-dependent risk of losing limb or organ function, or increased risk of complications. Cancer surgery is typically time-sensitive, as is carotid surgery to prevent stroke in a symptomatic case. The time window for time-sensitive surgery will vary depending on the underlying disease. Elective: surgery/intervention can be performed electively (not further deﬁned) without signiﬁcant risk of losing limb, or organ function, or increased risks of complications. Many factors affect outcomes when comparing acute or timesensitive vs. elective surgery: the general condition of the patient vs. the stage of the acute illness, and how far it has progressed. The best interests of the patient should be considered before deciding on treatment, informed consent to management should be obtained, if at all possible, and decisions should be clearly recorded.
+
+
+[E3] (AcuteCoronarySyndromes, p.73-73)
+
+Long-term treatment Secondary prevention after ACS should be offered to every patient and should start as early as possible after the index event. This includes cardiac rehabilitation, lifestyle management, and pharmacological treatment, and has been shown to both increase quality of life and decrease morbidity and mortality. Patient perspectives Some of the key first steps in the timely diagnosis and treatment of ACS are reliant on a comprehensive assessment of symptoms. An incomplete history or poorly elicited symptoms can result in delay or misdiagnosis. Patient-centred care is recommended as a critical tenet of routine clinical management and involves consideration of a patient’s physical, emotional, and psychological needs. The provision of care that is respectful of, and responsive to, individual patient preferences, needs and values, is important in the management of patients with ACS. It is recommended, as much as possible, to include ACS patients in decision-making. Preparing for discharge begins on admission. Educating and informing the patient using the teach back method and educationally appropriate material should be integrated into the patient care pathway.
+
+
+[E4] (IatrogenicEndoscopicPerforations, p.14-14)
+
+Rapid endoscopic intervention with clip placement and the use of carbon dioxide may limit the volume of extraluminal insufflation and subsequently the need for surgery [186, 187]. When there is no evidence of intraperitoneal contamination by fecal contents, free air may either resolve spontaneously within a week or progress to a compartment syndrome [188]. In this case, a tension pneumoperitoneum develops requiring an immediate release of trapped intraperitoneal air. However, if fecal contents are present, then the optimal management is surgery. The decision to attempt endoscopic closure of an iatrogenic perforation depends on multiple factors, including the size and the cause of iatrogenic perforation, the endoscopist’s experience and the accessories available at the time.
+
+
+[E5] (AcuteCoronarySyndromes, p.71-71)
+
+should be provided in a simple and clear format. In patients undergoing emergency invasive angiography, a shortened informed consent process is appropriate. If a shortened informed consent process has been used, it is important that there is contact with the patient and/ or family member after the intervention when the patient is physically and psychologically stable or following the death of the patient. Further information can be found in the Supplementary data online. 14.. Research participation and consent in the acute setting With unstable ACS patients, it is often challenging to obtain their consent for emergency procedures—and even more challenging to enrol in clinical trials due to a number of factors, including the necessity for prompt clinical care, increased pain and stress levels, and impairment of consciousness. Where clinical trials are conducted, patient involvement in enrolment decisions is paramount, if possible. A short witnessed verbal consent, followed by written consent after the acute phase, has been shown to be less stressful and more positively received than written consent in the acute setting.
+
+
+[E6] (VentricularArrhytmias, p.90-90)
+
+Epinephrine or isoproterenol challenge may be considered for the diagnosis of CPVT when an exercise test is not possible. General recommendations Avoidance of competitive sports, strenuous exercise, and exposure to stressful environments is recommended in all patients with CPVT. Therapeutic interventions Beta-blockers, ideally non-selective (nadolol or propranolol) are recommended in all patients with a clinical diagnosis of CPVT. ICD implantation combined with beta-blockers and ﬂecainide is recommended in CPVT patients after aborted CA. Therapy with beta-blockers should be considered for genetically positive CPVT patients without phenotype. LCSD should be considered in patients with diagnosis of CPVT when the combination of beta-blockers and ﬂecainide at therapeutic dosage are either not effective, not tolerated, or contraindicated. ICD implantation should be considered in patients with CPVT who experience arrhythmogenic syncope and/or documented bidirectional/PVT while on highest tolerated beta-blocker dose and on ﬂecainide. Flecainide should be considered in patients with CPVT who experience recurrent syncope,
+
+
+[E7] (CardiovascularAssessment, p.36-37)
+
+bUntil oral PY inhibitor therapy is possible. cInitiate within 72 h from PY inhibitor discontinuation at a dose of 0. μg/ kg/min for a minimum of 48 h and a maximum of 7 days. time-sensitive NCS. Once the PY inhibitor has been discontinued, surgery should be performed while the patient is still on aspirin. Indications for long-term DAPT have recently emerged. Long-term DAPT (beyond 1 year) with clopidogrel, prasugrel, or ticagrelor in addition to aspirin should be considered in patients with high ischaemic risk, and may be considered in patients with moderate ischaemic risk, both in the absence of increased risk of major or lifethreatening bleeding. When NCS is required, discontinuation of PY inhibitors is recommended for 3–7 days (depending on the PY inhibitor) for these additional indications for DAPT.
+
+
+[E8] (IatrogenicEndoscopicPerforations, p.14-15)
+
+However, if fecal contents are present, then the optimal management is surgery. The decision to attempt endoscopic closure of an iatrogenic perforation depends on multiple factors, including the size and the cause of iatrogenic perforation, the endoscopist’s experience and the accessories available at the time. With immediate endoPost-colonoscopy suspicion of colorectal iatrogenic perforation TTS or OTSC clipping within 4 h provided the bowel is clean Clinically stable Home discharge with oral antibiotics Symptomatic/unstable with clinical deterioration CT imaging (with/without rectal contrast) Extravasation of contrast +/– Free intraperitoneal gas Surgical repair Consider peritoneal decompression if tension pneumoperitoneum No findings at CT Hospital stay Supportive measures Close observation Fig. Algorithm for the management of colonic iatrogenic perforations. TTS, throughthe-scope; OTSC, over-the-scope clip; CT, computed tomography. scopic closure of the defect, superficial apposition of the mucosa and submucosal layers seems sufficient to obtain adequate wound healing at the perforation site and to achieve a good nonsurgical outcome [189].
+
+
+[E9] (AcuteCoronarySyndromes, p.72-73)
+
+radiation exposure, and alternative options. Decision aids can be used to facilitate the discussion. It is recommended to assess symptoms using methods that help patients to describe their experience. Use of the ‘teach back’ technique for decision support during the securing of informed consent should be considered. Patient discharge information should be provided in both written and verbal formats prior to discharge. Adequate preparation and education for patient discharge using the teach back technique and/or motivational interviewing, giving information in chunks, and checking for understanding should be considered. Assessment of mental well-being using a validated tool and onward psychological referral when appropriate should be considered. aClass of recommendation. bLevel of evidence. months unless there are concerns regarding HBR. Regarding PY receptor inhibitor choice, prasugrel and ticagrelor are recommended in preference to clopidogrel, and prasugrel should be considered in preference to ticagrelor for ACS patients who undergo PCI.
+
+
+[E10] (CardiovascularAssessment, p.40-40)
+
+the off-label use of andexanet alpha in life-threatening situations requiring an immediate intervention may be considered, bearing in mind that andexanet alpha non-speciﬁcally binds all FXa inhibitors, which may have important implications for further treatment, including the administration of UFH or LMWH. When speciﬁc reversal agents are unavailable, prothrombin complex concentrate (PCC) or activated PCC should be considered, although there is a lack of evidence on their efﬁcacy and safety for emergency procedures in patients taking a NOAC. Performing immediate or urgent surgery under general rather than spinal anaesthesia is prudent, in order to reduce the risk of epidural haematoma. Prior to unplanned surgery, the full panel of coagulation blood tests (see Supplementary data, Table S) should be obtained in order to assess the patient’s coagulation status.
+
+
+TASK:
+Using the clinical note and guideline excerpts above, produce a discharge document structured EXACTLY as follows.
+
+1. MEDICAL HISTORY
+   Copy the medical history from the clinical note. Do not alter, summarize, or omit any detail.
+
+2. OBJECTIVE EXAMINATION
+   Copy the objective examination from the clinical note verbatim.
+
+3. CLINICAL DIARY
+   Copy the clinical diary from the clinical note verbatim.
+
+4. PROGNOSIS
+   Copy the prognosis from the clinical note verbatim.
+
+5. RECOMMENDATIONS AND PRESCRIPTIONS
+   Provide specific, actionable recommendations. Each recommendation MUST:
+   - Be supported by at least one guideline excerpt, cited as [E#]
+   - Reference the patient's specific clinical data that makes the recommendation applicable (e.g. "Given your CHA₂DS₂-VASc score of 3..." or "Given preserved LVEF...")
+   - Include drug names and dosages where applicable
+   - Be grouped into: Pharmacological therapy, Follow-up investigations, Lifestyle modifications, and Follow-up appointments
+
+   If a clinically relevant topic (e.g. anticoagulation, rate control) cannot be addressed by the provided excerpts, state:
+   "No specific guidance available from provided sources. Refer to specialist for [topic]."
+
+RULES:
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge for recommendations.
+- Do NOT invent dosages, drug names, or clinical facts not present in the clinical note or excerpts.
+- When multiple excerpts address the same topic, synthesize them into a single coherent recommendation and cite all relevant excerpts.
+- Do not repeat the same recommendation under different wording.

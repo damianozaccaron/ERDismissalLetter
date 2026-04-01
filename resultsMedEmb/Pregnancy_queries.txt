@@ -1,9 +1,0 @@
---- Query 1 ---
-ectopic gestational sac extra pregnancy EXTRAUTERINE PREGNANCY. SUSPECTED EXTRAUTERINE PREGNANCY. diagnosis comorbidities risk factors management
-
---- Query 2 ---
-Ketorolac morning-after pill CBC β-hCG. SUSPECTED EXTRAUTERINE PREGNANCY. therapy recommendations pharmacological management clinical scores diagnostic evaluation
-
---- Query 3 ---
-SUSPECTED EXTRAUTERINE PREGNANCY recommendations discharge management female
-

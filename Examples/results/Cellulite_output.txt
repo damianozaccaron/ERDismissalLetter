@@ -1,0 +1,110 @@
+ROLE:
+You are an emergency department physician writing a discharge document for a patient. The document will be read by the patient's general practitioner and by the patient. Write in a clinical but accessible tone.
+
+CLINICAL NOTE:
+
+MALE, 47 AA
+Medical history:
+- Pathological proximate: The patient comes in for swelling, redness and heat in the left leg that has been present for about 5 days, progressively worsening, associated with high fever (max. 39.4°C at home) and chills. He also reports marked asthenia and lack of appetite. He denies coughing, dyspnoea or chest pain. Does not report recent leg trauma.
+- Remote pathology: Homeless patient. Reports intravenous drug use (heroin), active. No known formally diagnosed pathologies. Does not take regular home therapy. No known declared drug allergies.
+
+Objective examination: Patient alert, oriented, poorly co-operative. General condition poor. Markedly dehydrated, malnourished. Personal hygiene severely lacking. Vesicular murmur present in all lung areas, no added noise. Tachycardic, rhythmic cardiac tones. On cardiac auscultation there is holosystolic murmur 3/6 at the mesocardium, radiating towards the axilla, not reported in Medical history nor documented in previous accesses. Abdomen treatable, not painful. Giordano and Blumberg negative. Left lower limb: erythematous plaque with clear, irregular margins extending from the ankle to the middle third of the leg, warm, oedematous skin, painful on palpation. Multiple venepuncture scars are present along the veins of the forearm bilaterally and the left popliteal cavity. No fluctuation suggestive of superficial abscess. No contralateral declivous oedema. BP 98/62 mmHg. HR 118 bpm. SpO2 96% aa. TC 39.1°C.
+
+Clinical diary:
+- Found venous access with difficulty due to compromised venous heritage; performed blood cultures x2 from separate sites prior to any antibiotic therapy. Performed biochemistry, blood count, indices of inflammation, procalcitonin, coagulation, renal and liver function, serologies for HIV, HBV, HCV.
+- ECG is performed: sinus tachycardia, HR 118 bpm, no ST segment abnormalities, no signs of conduction disturbances.
+- Arterial EGA performed: mild hypoxemia (PaO2 68 mmHg), compensatory respiratory alkalosis, lactates 2.8 mmol/L (mildly elevated).
+- 500cc saline bolus infusion is started for relative hypotension, BP improved to 108/68 mmHg. Continuous monitoring of vital parameters is started.
+- Tests are viewed: marked neutrophil leukocytosis (GB 22,400/μL, N 89%). PCR 28.4 mg/dL. Procalcitonin 18.2 ng/mL (v.n. <0.5), markedly elevated, suggestive of systemic bacterial infectious process. Creatinine 1.6 mg/dL (mild renal insufficiency). Slightly elevated AST/ALT. Coagulation: PT and aPTT at upper limits. HIV negative, HCV positive, HBsAg negative.
+- Bedside echo performed: no pericardial effusion. No diffuse B lines. Visually preserved left ventricular systolic function. On examination of the right sections there is a mobile hyperechogenic image at the level of the tricuspid valve, suspicious for vegetation. No significant pleural effusion.
+- Given the overall picture - erysipelas/cellulitis in an IVDU patient, high fever, markedly elevated procalcitonin, increased lactates, new heart murmur and suspicious echocardiographic findings - the picture is strongly suggestive of infective endocarditis with a likely skin/venous entry port. The on-call infectivologist is urgently contacted.
+- Empirical broad-spectrum antibiotic therapy is initiated after blood cultures are taken: vancomycin 25mg/kg slow infusion (estimated weight 65kg, dose 1,625mg rounded to 1,500mg) to cover for methicillin-resistant staphylococcus (MRSA), a priority pathogen in IVDU patient.
+- The infectivologist assessed the patient in the PS and confirmed the indication for urgent admission for dedicated transthoracic/transesophageal echocardiography, monitoring of blood cultures and continuation of targeted antibiotic therapy.
+
+Diagnosis: LEFT LOWER LIMB HERISIPELA/CELLULITE - SUSPECTED INFECTIVE ENDOCARDITIS (probably on tricuspid valve) IN IVDU PATIENT
+Prognosis: urgent hospitalisation
+
+
+
+GUIDELINE EXCERPTS:
+
+[E1] (Endocarditis, p.59-59)
+
+Glycopeptides (vancomycin) should not be used in a 2-week treatment. The standard 4–6-week regimen should be used in the remaining patients or when therapy with antibiotics other than penicillinase-resistant penicillins are used. When the conventional i.v. route therapy is not possible, S. aureus right-sided IE in PWID may also be treated with oral ciprofloxacin (750 mg twice a day) plus rifampin (300 mg twice a day) if the strain is susceptible to both drugs, the case is uncomplicated, and patient adherence is monitored carefully. Partial oral antibiotic treatment may also be beneficial for PWID with IE. For organisms other than S. aureus, therapy in PWID does not differ from that in other patients. 12.... Surgery The commonly accepted indications for surgical treatment of rightsided IE in patients who are receiving appropriate antibiotic therapy are (see Recommendation Table 19): • Persistent bacteraemia after at least 1 week of appropriate antibiotic therapy. • Tight ventricular dysfunction secondary to acute severe tricuspid regurgitation non-responsive to diuretics. • Respiratory insufficiency requiring ventilatory support after recurrent pulmonary emboli.
+
+
+[E2] (Endocarditis, p.17-17)
+
+Cardiovascular imaging has achieved such an advanced sophistication in the diagnosis of IE that the cardiologists with expertise in Start empirical antibiotic treatment Admission to a Heart Valve Centre Admission to a Referring Centre Adjust antibiotic treatment according to blood culture results Patient with deﬁnite infective endocarditis 2023 ESC diagnostic criteria Endocarditis Team Cardiologists Cardiovascular surgeons Infecious disease specialists Microbiologists Adjunct specialities Radiologists/nuclear medicine specialists Neurologists/ neurosurgeons Intensive care specialists Geriatricians Nephrologists Nurses Addiction medicine teams Establish indication and timing of cardiac surgery Consultation with outpatient antibiotic therapy team Frequent communication Clinical, microbiological, and imaging data sharing Endocarditis Team Cardiologists Infectious disease specialists Complicated clinical evolution Unstable haemodynamic condition under pharmacological and/or respiratory support Severe valvular regurgitation (clinical and echocardiographic criteria) Prosthetic valve endocarditis with or without prosthetic valve dysfunction Stroke (ischaemic or haemorrhagic) with definite or possible IE Extravalvular complications (abscesses, fistulae, etc.) Positive blood cultures >7 days under appropriate antibiotic therapy Embolism CIED-related infective endocarditis Aggressive or difficult-to-treat microorganisms (S. aureus,
+
+
+[E3] (Endocarditis, p.41-41)
+
+cHighly difficult-to-treat microorganism: microorganisms requiring i.v. antibiotic combinations that cannot be administered by means of outpatient parenteral antibiotic treatment or that require strict monitoring of drug levels either in blood or in other fluids owing to their potential toxicity or narrow therapeutic index (e.g. MRSA or vancomycin-resistant enterococci also resistant to alternative drugs such as daptomycin and linezolid, multidrug- or extensively drug-resistant Gram-negative rods, highly penicillin-resistant oral streptococci, fungi other than Candida). Heart failure Emergency surgery (Class I) Uncontrolled infection High risk of embolism or established embolism Cardiogenic shock or pulmonary oedema Local complications (abscess, false aneurysm, fistula, enlarging vegetation) Vegetation ≥10 mm and emboli despite appropriate antibiotic therapy Poor haemodynamic tolerance Persistent positive blood culturesa Vegetation ≥10 mm and other reason for surgeryb Non-urgent surgery (Class I) Resistant bacteriac Vegetation ≥10 mm and no evidence of embolus Antibiotic therapy and continued observation Surgical timing for patient with left-sided infective endocarditis Urgent surgery (Class I) Urgent surgery (Class I) Urgent surgery (Class I) Urgent surgery (Class IIa) Urgent or non-urgent surgery (Class I)d PVE caused by S. aureus or non-HACEK Gram-negative bacilli Non-urgent surgery (Class I) N Urgent surgery (Class IIa) Urgent surgery (Class I) Urgent surgery (Class IIb) Figure 10 Proposed surgical timing for infective endocarditis.
+
+
+[E4] (Endocarditis, p.31-31)
+
+I C Adult antibiotic dosage and route Vancomycine 30 mg/kg/day i.v. in 2 dosese Paediatric antibiotic dosage and route Vancomycine 30 mg/kg/day i.v. in 2 dosese In patients with PVE due to oral streptococci and S. gallolyticus and who are allergic to beta-lactams, vancomycin for 6 weeks combined with gentamicin for 2 weeks is recommended using the following doses: aClass of recommendation. bLevel of evidence. cThe starting recommended doses are the lower doses which can be scalable to the highest doses. dMaximum doses 240 mg/day. High doses are associated with increased risk of nephrotoxicity. Renal function and serum gentamicin concentrations should be monitored once a week. When given in a single daily dose, pre-dose (trough) concentrations should be <1 mg/L and post-dose (peak; 1 h after injection) serum concentrations should be ∼10–12 mg/L. eSerum vancomycin concentrations should achieve 10–15 mg/L at pre-dose (trough) level, although some experts recommend to increase the dose of vancomycin to 45–60 mg/kg/day i.v. in 2 or 3 divided doses to reach serum trough vancomycin levels (Cmin) of 15–20 mg/L as in staphylococcal endocarditis.
+
+
+[E5] (Endocarditis, p.43-43)
+
+small abscesses or pseudoaneurysms can be treated conservatively under close clinical and echocardiographic follow-up. 8.... Infection with resistant or virulent organisms Microorganisms causing endocarditis that are unlikely to be controlled with current antimicrobial therapy include fungi, multiresistant bacteria (e.g. MRSA or vancomycin-resistant enterococci) and, in rare cases, non-HACEK Gram-negative bacteria. S. aureus should also be included in this group due to its fast progression and ability to cause local tissue destruction and abscess formation, specifically, if a favourable early response to antibiotics is not achieved. The presence of these organisms should lead to discussions within the Endocarditis Team and urgent surgery. 8.. Prevention of systemic embolism 8... Incidence of embolic events in infective endocarditis Embolic events are frequent and potentially life-threatening complications of IE related to the migration of cardiac vegetations. The brain and spleen are the most frequent sites of embolism for left-sided IE, while pulmonary embolism is frequent in right-sided and pacemaker lead IE (see Section 12).
+
+
+[E6] (Endocarditis, p.28-28)
+
+those treated without. In NVE needing valve replacement by a prosthesis during antibiotic therapy, the post-operative antibiotic regimen should be that recommended for NVE, not for PVE. In both NVE and PVE, the duration of treatment is based on the first day of effective antibiotic therapy (negative blood culture in the case of initial positive blood culture), not on the day of surgery. A new full course of treatment should only start if valve cultures are positive. Finally, there are important considerations in these recommendations: (i) Only published antibiotic efficacy data from clinical trials and cohort studies in patients with IE (or bacteraemia if there are no IE data) have been considered in these guidelines. Data from experimental IE models have not been taken into account.
+
+
+[E7] (Endocarditis, p.37-37)
+
+(ii) IE in a native valve or a prosthesis (and if so, when surgery was performed [early vs. late PVE]). (iii) The place of the infection (community, nosocomial, or nonnosocomial healthcare-associated IE) and knowledge of the local epidemiology, especially for antibiotic resistance and specific genuine culture-negative pathogens. (iv) Cloxacillin/cefazolin administration is associated with lower mortality rates than other beta-lactams, including amoxicillin/clavulanic acid or ampicillin/sulbactam, and vancomycin for empirically treating MSSA bacteraemia/endocarditis. However, recently amoxicillin/clavulanic acid or ampicillin/sulbactam might be an effective empirical treatment for MSSA bacteraemia when de-escalated to cloxacillin or cefazolin within 96 h from the index blood culture. Native valve endocarditis and late PVE regimens should cover staphylococci, streptococci, and enterococci. If the patient was receiving antibiotic therapy, the empirical therapy should include different antibiotics. CoNS should be empirically covered in PVE but not in NVE. Early PVE or healthcare-associated IE regimens should cover methicillin-resistant staphylococci, enterococci and, ideally,
+
+
+[E8] (Endocarditis, p.58-58)
+
+In contrast, cardiac surgery, CIED, male gender, and Streptococcus spp. as the causative microorganism of IE, were associated with a better survival. In another study that reported an even higher mortality (42%), four independent prognostic factors were identified: high SAPS II (>35 points) and Sequential Organ Failure Assessment (>8 points) scores, MRSA infection, and native valve IE. Right-sided IE, which is more commonly associated with PWID, accounts for <10% of IE cases but is associated with high mortality in patients needing ICU admission. 12... Causative microorganisms The majority of retrospective series in the ICU setting point to Staphylococcus spp. as the main causative agent of IE episodes. Indeed, S. aureus has emerged as the most feared aetiological agent with the highest rates of complications and mortality, being responsible for up to 56% of IE cases in one observational study. Streptococcus spp., Enterococcus spp., Gram-negative bacilli, and Candida spp. are less frequently reported. Identification of the infecting microorganism remains the mainstay of effective therapy in complicated IE cases.
+
+
+[E9] (Endocarditis, p.43-44)
+
+However, prosthetic dehiscence has also been associated with early surgery in patients with S. aureus IE. Individualized decision-making is required to balance the risk of surgery, which is also influenced by pre-operative neurological events or other co-morbidities. The main indications and the timing of surgery to prevent embolism based on the currently available literature are given in Recommendation Table 12 and Figure 10. 9. Other complications of infective endocarditis 9.. Neurological complications Neurological manifestations may occur before or after the diagnosis of IE is established and recurrent events can also take place later in the course of IE. The possibility of IE should be considered in patients who present with stroke, meningitis, or brain abscess. Unexplained fever accompanying a stroke in a patient with valvular disease should trigger the suspicion of IE with blood cultures taken prior to empirical antibiotic therapy. Symptomatic cerebrovascular complications occur in up to 35% of patients with IE, whereas silent cerebrovascular complications (including ischaemia and microhaemorrhage) occur in up to 80% of patients.
+
+
+[E10] (Endocarditis, p.9-9)
+
+untreated large extracardiac abscesses, heart valve complications, or other severe conditions requiring surgery, severe post-surgical complications, and in PWID-related IE. Section 9. Thrombolytic therapy is not recommended in embolic stroke due to IE. Section 9. tricuspid valve involvement, or previous valvular surgery. Section 9. TTE/TOE is recommended to rule out IE in patients with spondylodiscitis and/or septic arthritis with positive blood cultures for typical IE microorganisms. More than 6-week antibiotic therapy should be considered in patients with osteoarticular IE-related lesions caused by difficult-to-treat microorganisms, such as S. aureus or Candida spp., and/or complicated with severe vertebral destruction or abscesses. Section 10. Invasive coronary angiography is recommended in patients requiring heart surgery who are high risk of CAD, in the absence of aortic valve vegetations. In emergency situations, valvular surgery without pre-operative coronary anatomy assessment regardless of CAD risk should be considered.
+
+
+TASK:
+Using the clinical note and guideline excerpts above, produce a discharge document structured EXACTLY as follows.
+
+1. MEDICAL HISTORY
+   Copy the medical history from the clinical note. Do not alter, summarize, or omit any detail.
+
+2. OBJECTIVE EXAMINATION
+   Copy the objective examination from the clinical note verbatim.
+
+3. CLINICAL DIARY
+   Copy the clinical diary from the clinical note verbatim.
+
+4. PROGNOSIS
+   Copy the prognosis from the clinical note verbatim.
+
+5. RECOMMENDATIONS AND PRESCRIPTIONS
+   Provide specific, actionable recommendations. Each recommendation MUST:
+   - Be supported by at least one guideline excerpt, cited as [E#]
+   - Reference the patient's specific clinical data that makes the recommendation applicable (e.g. "Given your CHA₂DS₂-VASc score of 3..." or "Given preserved LVEF...")
+   - Include drug names and dosages where applicable
+   - Be grouped into: Pharmacological therapy, Follow-up investigations, Lifestyle modifications, and Follow-up appointments
+
+   If a clinically relevant topic (e.g. anticoagulation, rate control) cannot be addressed by the provided excerpts, state:
+   "No specific guidance available from provided sources. Refer to specialist for [topic]."
+
+RULES:
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge for recommendations.
+- Do NOT invent dosages, drug names, or clinical facts not present in the clinical note or excerpts.
+- When multiple excerpts address the same topic, synthesize them into a single coherent recommendation and cite all relevant excerpts.
+- Do not repeat the same recommendation under different wording.

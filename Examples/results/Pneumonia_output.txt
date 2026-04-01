@@ -1,0 +1,111 @@
+ROLE:
+You are an emergency department physician writing a discharge document for a patient. The document will be read by the patient's general practitioner and by the patient. Write in a clinical but accessible tone.
+
+CLINICAL NOTE:
+
+WOMAN, 52 AA
+Medical history:
+- Pathological proximate: Patient accesses for dyspnoea and onset of fever since about 2 days, partially responsive to paracetamol and worsening. Denies recent travel. No chest pain.
+- Remote pathology: No known cardiovascular events or family history. Not suffering from diabetes. Normal weight.
+Never smoker. No known pathologies. Denies drug allergies.
+
+Objective examination:
+Vesicular murmur present in all lung areas, pathological noises in right basal lung area. Heart tones normofrequent, rhythmic and with free pauses. Abdomen treatable, not painful on superficial or deep palpation. Giordano and Blumberg negative. Indolent cystic spots. No declivous oedema or signs of venous thrombosis.
+
+Clinical diary:
+- Venous access found and biochemistry, blood count and pro-BNP performed. ECG is performed: sinus rhythm, no signs of under/over ST elevation.
+- 500cc RIII rehydration solution is administered
+- Arterial EGA is performed: physiological exchange, at lower Po2 limits.
+- Patient is sent to radiology for chest X-ray in 2 projections.
+- Tests are taken: PCR 78 and white blood cells 14000. Nothing else abnormal.
+- X-ray: focus on right base compatible with ongoing inflammatory process.
+- Bedside echo is performed: no pleuropericardial or endoabdominal effusion. No B lines in the lung fields, valid pleural sliding. In the right basal area, visible opacity comaptible with inflammatory focus in first hypothesis.
+- Amoxicillin 2gr+clavulanic acid 200mg is administered intravenously.
+
+Diagnosis: RIGHT BASAL PNEUMONIA
+Prognosis: 10 days
+
+
+
+GUIDELINE EXCERPTS:
+
+[E1] (PneumothoraxAdults, p.8-8)
+
+Recommendations The panel suggests ambulatory management# for the initial treatment of PSP, in centres with appropriate expertise and pathways to manage patients as outpatients. (Conditional recommendation, low certainty of evidence) The panel suggests against the use of small bore (8 Fr) ambulatory devices for the initial treatment of SSP. (Conditional recommendation, very low certainty of evidence) #: ambulatory management is defined as the use of a Heimlich (one-way) valve device inbuilt or attached to a drainage device. Summary of evidence Three studies were eligible for inclusion for this PICO question: two were RCTs, one in patients with PSP and one with SSP [27, 28], and one was a non-randomised study [29]. In the PSP study, 114 patients received ambulatory treatment with an 8 Fr ambulatory pneumothorax device and 113 received standard care with available data to inform the primary outcome [27]. The median (IQR) hospitalisation (up to day 30) was significantly shorter in the ambulatory group (0 (0–3) days) than in the standard care group (4 (0–8) days; p<0.; median difference 2 (95% CI 1–3) days).
+
+
+[E2] (PulmonaryHypertension, p.33-33)
+
+if causes other than PH are identiﬁed and/or in case of low probability of PH, patients should be managed accordingly. 5... Step 3 (conﬁrmation) Patients should be referred to a PH centre for further evaluation in the following situations: (1) when an intermediate/high probability of PH is established; (2) in the presence of risk factors for PAH, or a history of PE. A comprehensive work-up should be performed, with the goal of establishing the differential diagnoses and distinguishing between the various causes of PH according to the current clinical classiﬁcation. The PH centre is responsible for performing an invasive assessment according to the clinical scenario. At any time, warning signs must be recognized, as they are associated with worse outcomes and warrant immediate intervention. Such warning signs include: rapidly evolving or severe symptoms Diagnostic algorithm of patients with unexplained exertional dyspnoea and/or suspected PH Suspected cause PH probability Causes other than PH identified Medical history Physical exam ECG BNP/NT-p T roBNP O saturation Gene G ral practitioner PFT ABG Chest X-ray a Chest CTc Lung assessmentb Echocardiography (see Figures 4–5,
+
+
+[E3] (PneumothoraxAdults, p.2-2)
+
+It follows the 2015 European Respiratory Society (ERS) Task Force statement on diagnosis and treatment of primary SP (PSP) [1]. The guideline is divided into four sections containing nine PICO (Patient, Intervention, Comparison, Outcome) questions and three narrative questions. The first section describes the initial management of SP, with PICOs 1–4 summarising recent evidence from conservative care, needle aspiration (NA), ambulatory management and surgery at first presentation studies (figure 2). PICOs 5–7 analyse the management of persistent air leak (PAL). PICOs 8 and 9 address optimal recurrence prevention techniques. Three narrative Primary spontaneous pneumothorax (PSP) Secondary spontaneous pneumothorax (SSP) Stable after period of observation Resolved on CXR? See PICOs 1–4 and Decision aid (figure 2) Insert chest drain and admit (Usual practice) Discharge home with outpatient review Consider ABP Discharge home with regular outpatient review Discharge home with outpatient review Resolved on CXR and no air leak?
+
+
+[E4] (PneumothoraxAdults, p.2-2)
+
+Three narrative Primary spontaneous pneumothorax (PSP) Secondary spontaneous pneumothorax (SSP) Stable after period of observation Resolved on CXR? See PICOs 1–4 and Decision aid (figure 2) Insert chest drain and admit (Usual practice) Discharge home with outpatient review Consider ABP Discharge home with regular outpatient review Discharge home with outpatient review Resolved on CXR and no air leak? Suggest ambulatory device in symptomatic patients where ambulatory care available Recommend needle aspiration in symptomatic patients (PICO 2) Insert chest drain and admit (Usual practice) Suggest consideration of VATS in patients who prioritise recurrence prevention Suggest conservative care in minimally symptomatic patients who are clinically stable (PICO 1) Known or suspected lung disease? This figure is a combination of the recommendations made in this guideline and a description of the Task Force members’ usual practice in situations where there was not enough evidence to warrant a recommendation or for questions for which a systematic review of the literature was not undertaken.
+
+
+[E5] (PneumothoraxAdults, p.2-3)
+
+Suggest ambulatory device in symptomatic patients where ambulatory care available Recommend needle aspiration in symptomatic patients (PICO 2) Insert chest drain and admit (Usual practice) Suggest consideration of VATS in patients who prioritise recurrence prevention Suggest conservative care in minimally symptomatic patients who are clinically stable (PICO 1) Known or suspected lung disease? This figure is a combination of the recommendations made in this guideline and a description of the Task Force members’ usual practice in situations where there was not enough evidence to warrant a recommendation or for questions for which a systematic review of the literature was not undertaken. Note that the information depicted as usual practice is not intended as a recommendation for clinical practice. For reproduction rights and permissions contact permissions@ ersnet.org Received: 31 May 2023 Accepted: 9 Feb 2024 questions supplement the PICOs by addressing recurrence prediction, timing of surgical interventions and patient-centred implications.
+
+
+[E6] (UrologicalInfections, p.28-28)
+
+In patients presenting with signs of urosepsis, empiric antimicrobial coverage for ESBL-producing organisms is warranted [244]. Patients initially treated with parenteral therapy who improve clinically and can tolerate oral fluids may transition to oral antimicrobial therapy [245]. 3...c Summary of evidence and recommendations for the treatment of pyelonephritis Summary of evidence LE Fluoroquinolones and cephalosporines are the only microbial agents that can be recommended for oral empirical treatment of pyelonephritis. 1b Intravenous antimicrobial regimens for pyelonephritis may include a fluoroquinolone, an aminoglycoside (with or without ampicillin) or an extended-spectrum cephalosporin or penicillin. 1b Carbapenems should only be considered in patients with early culture results indicating the presence of multidrug-resistant organisms. 4 The appropriate antimicrobial should be chosen based on local resistance patterns and optimised on the basis of drug susceptibility results. 3 Recommendations Strength rating Treat patients with pyelonephritis not requiring hospitalisation with short-course fluoroquinolones as first-line treatment.
+
+
+[E7] (UrologicalInfections, p.28-28)
+
+4 The appropriate antimicrobial should be chosen based on local resistance patterns and optimised on the basis of drug susceptibility results. 3 Recommendations Strength rating Treat patients with pyelonephritis not requiring hospitalisation with short-course fluoroquinolones as first-line treatment. Strong Treat patients with pyelonephritis requiring hospitalisation with an intravenous antimicrobial regimen initially. Strong Switch patients initially treated with parenteral therapy who improve clinically and can tolerate oral fluids to oral antimicrobial therapy. Strong Do not use nitrofurantoin, oral fosfomycin and pivmecillinam to treat pyelonephritis. Strong Table 5: Suggested regimens for empirical oral antimicrobial therapy in pyelonephritis Antimicrobial Daily dose Duration of therapy Comments Ciprofloxacin 500-750mg b.i.d 7 days Fluoroquinolone resistance should be less than 10%. Levofloxacin Standard dosage: 500mg oral q.d High dosage: 500mg oral b.i.d Trimethoprim sulfamethoxazole 160/800mg b.i.d 14 days If such agents are used empirically, an initial intravenous dose of a long-acting parenteral antimicrobial (e.g. ceftriaxone) should be administered.
+
+
+[E8] (PneumothoraxAdults, p.1-2)
+
+Results The panel makes a conditional recommendation for conservative care of minimally symptomatic patients with primary spontaneous pneumothorax (PSP) who are clinically stable. We make a strong recommendation for needle aspiration over chest tube drain for initial PSP treatment. We make a conditional recommendation for ambulatory management for initial PSP treatment. We make a conditional This article has been co-published with permission in the European Journal of Cardio-Thoracic Surgery and in the European Respiratory Journal. Published by European Respiratory Society. All rights reserved. The articles are identical except for minor stylistic and spelling differences in keeping with each journal’s style. Either citation can be used when citing this article. EUROPEAN RESPIRATORY JOURNAL ERS OFFICIAL DOCUMENTS S. WALKER ET AL. recommendation for early surgical intervention for the initial treatment of PSP in patients who prioritise recurrence prevention. The panel makes a conditional recommendation for autologous blood patch in secondary SP patients with persistent air leak (PAL).
+
+
+[E9] (Guillan-BarreSyndrome, p.8-8)
+
+•	 Inflammation or infection of brainstem or spinal cord (e.g., acute transverse myelitis, neuromyelitis optica or anti-­MOG-­associated disorder, sarcoidosis, Sjögren) •	 Malignancy (e.g., leptomeningeal metastases, neurolymphomatosis) •	 Compression of brainstem or spinal cord (e.g., haematoma, abscess, herniated disc, tumour) •	 Brainstem stroke •	 Deficiency (e.g., vitamin B (especially nitrous oxide inhalation), copper: subacute degeneration spinal cord) Anterior horn cells •	 Acute flaccid myelitis (e.g., poliomyelitis virus, enterovirus, West Nile virus, Japanese encephalitis virus, rabies, Lyme disease) Nerve roots •	 Infection (e.g., cytomegalovirus, HIV, Epstein–­Barr virus, varicella zoster virus, Lyme disease) •	 Leptomeningeal malignancy Peripheral nerves •	 CIDP, or acute-­onset CIDP (A-­CIDP) •	 Metabolic or electrolyte disorders (e.g., hypoglycaemia, hypothyroidism, porphyria or copper deficiency) •	 Vitamin deficiency (e.g., vitamin B, vitamin B) •	 Toxins (e.g., nitrous oxide, drugs, alcohol, vitamin B, lead, thallium, arsenic, organophosphate, glycol, methanol, N-­hexane,
+
+
+[E10] (UrologicalInfections, p.42-42)
+
+Weak Do not routinely perform microbiological analysis of the ejaculate alone to diagnose CBP. Weak 3.. Disease management 3...a Antimicrobials Antimicrobials are life-saving in ABP and recommended in CBP. Culture-guided antibiotic treatments are the optimum standard, however, empirical therapies should be considered in all patients with ABP. In ABP, parenteral administration of high doses of bactericidal antimicrobials, such as broad-spectrum penicillins, a third-generation cephalosporin or fluoroquinolones, is recommended [366]. For initial therapy, any of these antimicrobials can be combined with an aminoglycoside [350-359, 366-370]. Ancillary measures include adequate fluid intake and urine drainage [228]. After normalisation of infection parameters, oral therapy can be substituted and continued for a total of two to four weeks [371]. Fluoroquinolones, despite the high resistance rates of uropathogens, are recommended as first-line agents in the empirical treatment of CBP, due to their favourable pharmacokinetic properties [372], their generally good safety profile, and antibacterial activity against Gram-negative pathogens, including P. aeruginosa and C. trachomatis [337, 373].
+
+
+TASK:
+Using the clinical note and guideline excerpts above, produce a discharge document structured EXACTLY as follows.
+
+1. MEDICAL HISTORY
+   Copy the medical history from the clinical note. Do not alter, summarize, or omit any detail.
+
+2. OBJECTIVE EXAMINATION
+   Copy the objective examination from the clinical note verbatim.
+
+3. CLINICAL DIARY
+   Copy the clinical diary from the clinical note verbatim.
+
+4. PROGNOSIS
+   Copy the prognosis from the clinical note verbatim.
+
+5. RECOMMENDATIONS AND PRESCRIPTIONS
+   Provide specific, actionable recommendations. Each recommendation MUST:
+   - Be supported by at least one guideline excerpt, cited as [E#]
+   - Reference the patient's specific clinical data that makes the recommendation applicable (e.g. "Given your CHA₂DS₂-VASc score of 3..." or "Given preserved LVEF...")
+   - Include drug names and dosages where applicable
+   - Be grouped into: Pharmacological therapy, Follow-up investigations, Lifestyle modifications, and Follow-up appointments
+
+   If a clinically relevant topic (e.g. anticoagulation, rate control) cannot be addressed by the provided excerpts, state:
+   "No specific guidance available from provided sources. Refer to specialist for [topic]."
+
+RULES:
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge for recommendations.
+- Do NOT invent dosages, drug names, or clinical facts not present in the clinical note or excerpts.
+- When multiple excerpts address the same topic, synthesize them into a single coherent recommendation and cite all relevant excerpts.
+- Do not repeat the same recommendation under different wording.

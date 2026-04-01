@@ -1,0 +1,108 @@
+ROLE:
+You are an emergency department physician writing a discharge document for a patient. The document will be read by the patient's general practitioner and by the patient. Write in a clinical but accessible tone.
+
+CLINICAL NOTE:
+
+FEMALE, 23 AA
+Medical history:
+- Pathological proximate: Patient admits for pain in the right iliac fossa arising within the last 6 hours, moderate intensity, non-irradiated, associated with nausea without episodes of vomiting. Denies fever. Reports taking morning-after pill about 10 days before. Last menstruation 5 weeks ago, cycle usually regular. Denies vaginal bleeding at time of access.
+- Remote pathology: No known pathology. Previous appendectomy. No previous pregnancy. Not taking continuous home drug therapy. Denies drug allergies. Objective examination: Patient alert, oriented, collaborating. Suffering. Vesicular murmur present in all lung areas, no added noise. Heart tones normofrequent, rhythmic, free pauses. Abdomen treatable, painful on palpation in right iliac fossa and hypogastrium, no signs of frank peritonism. Blumberg negative. Jordan negative. No declivous oedema. BP 112/70 mmHg. HR 94 bpm. SpO2 99% aa. TC 36.6°C.
+
+Clinical diary:
+- Venous access found and quantitative serum β-hCG, biochemistry, blood count, indices of inflammation, blood group and Rh. At the same time qualitative urinary β-hCG is performed: positive.
+- ECG is performed: sinus rhythm, no alterations.
+- Examinations are performed: Serum β-hCG 1.840 mUI/mL. CBC: Hb 12.8 g/dL, no ongoing anaemia. No significant indices of inflammation. Blood group: A positive.
+- Ketorolac 30mg in 100cc saline is administered for analgesia, with partial benefit.
+- E FAST is performed: effusion in Douglas.
+- Given the β-hCG positivity, and the pain in the right iliac fossa, the picture is strongly suggestive of extrauterine pregnancy. On-call gynaecology is immediately contacted.
+- The patient is assessed by the on-call gynaecologist directly in the PS. Ultrasound scan: uterus normal size, no endouterine gestational sac visible. Right annexus: rounded para-ovarian image of about 2cm, inhomogeneous content, suspected for ectopic gestational sac. Modest flap of free effusion in Douglas. Left annexus normal.
+- Indication for urgent admission for further investigation and evaluation of therapeutic strategy (medical vs surgical).
+- The patient is informed of the suspected Diagnosis, the planned course of treatment and the need for urgent admission, in clear, age-appropriate language. The patient understands and consents.
+
+Diagnosis: SUSPECTED EXTRAUTERINE PREGNANCY
+Prognosis: urgent hospitalisation
+
+
+
+GUIDELINE EXCERPTS:
+
+[E1] (AcutePulmonaryEmbolism, p.7-7)
+
+PE in pregnancy A dedicated diagnostic algorithm is proposed for suspected PE in pregnancy (Figure 7). Updated information is provided on radiation absorption related to procedures used for diagnosing PE in pregnancy (Table 12). Long-term sequelae An integrated model of patient care after PE is proposed to ensure optimal transition from hospital to community care. Recommendations on patient care have been extended to the entire spectrum of post-PE symptoms and functional limitation, not only A new comprehensive algorithm is proposed for patient follow-up after acute PE (Figure 8). 2.. Changes in recommendations 201419 Recommendations 2014 2019 Rescue thrombolytic therapy is recommended for patients who deteriorate haemodynamically. IIa I Surgical embolectomy or catheter-directed treatment should be considered as alternatives to rescue thrombolytic therapy for patients who deteriorate haemodynamically. D-dimer measurement and clinical prediction rules should be considered to rule out PE during pregnancy or the post-partum period. Further evaluation may be considered for asymptomatic PE survivors at increased risk for CTEPH.
+
+
+[E2] (TurnerSyndrome, p.45-45)
+
+Considerations for fertility counselling in individuals with TS. Comprehensive review of options for family building or the choice to remain childless Adoption/fostering, gestational carriers, oocyte or embryo donation, family without children; oocyte cryopreservation has unknown livebirth rate (one case report of successful live birth) and ovarian tissue cryopreservation remains experimental (no reported live births) Discussion of maternal health risks associated with pregnancy Cardiovascular risks including hypertensive disorders, aortic dissection or death Increased risk of spontaneous abortion and increased risk of operative delivery Discussion of fetal health risks associated with pregnancy Risk of fetal aneuploidy, preterm birth, intrauterine growth restriction Complexity of procedures for fertility preservation Ovarian stimulation and oocyte cryopreservation involves serial parenteral hormonal stimulation. Possible complications: deep venous thromboembolism, pelvis inflammation, pelvic/vaginal bleeding, mood disorders. Burden to girl/women: frequent blood testing, transabdominal or transvaginal ultrasound,
+
+
+[E3] (AcutePulmonaryEmbolism, p.37-37)
+
+For example, in the UK and Ireland, thrombosis and thromboembolism were the most common causes of direct maternal death (death resulting from the pregnancy rather than pre-existing conditions) in the triennium 201315, resulting in 1. mortalities per 100 000 maternities (https://www.npeu.ox.ac.uk/mbrrace-uk). VTE risk is higher in pregnant women compared with non-pregnant women of similar age; it increases during pregnancy and reaches a peak during the post-partum period. The baseline pregnancy-related risk increases further in the presence of additional VTE risk factors, including in vitro fertilization: in a cross-sectional study derived from a Swedish registry, the HR for VTE following in vitro fertilization was 1. (95% CI 1.2.) overall and 4. (95% CI 2.7.) during the first trimester. Other important and common risk factors include prior VTE, obesity, medical comorbidities, stillbirth, pre-eclampsia, post-partum haemorrhage, and caesarean section; documented risk assessment is therefore essential. The recommendations provided in these Guidelines are in line with those included in the 2018 ESC Guidelines on the management of cardiovascular diseases during pregnancy. 9.
+
+
+[E4] (PulmonaryHypertension.pdf, p.101-102)
+
+In analogy with the ‘advanced heart failure units’ [843], PH centres offer the full range of PAH therapies available in their country (including i.v./s.c. prostacyclin derivatives) and have early referral protocols to CTEPH, LTx, and rehabilitation centres. Since evaluation and early availability of new drugs and techniques are critical, PH centres participate in collaborative clinical research. Regular multidisciplinary team meetings, including core members and on-demand invited members (extended multidisciplinary team) as needed (Figure 16), are required to establish and adapt individual patient care pathways. Case management (co-ordination of individual patient pathways) should include FIGURE 16 Pulmonary hypertension centre schematic. aNumber adapted according to specific country characteristics. bCase manager can be a nurse specialist, social worker, physiotherapist, or administrative assistant in function of the centre organization. cCan be located in partner centres. Adapted from BIGANZOLI et al. [846]. administrative, social, and care support. Remote accessibility of the PH centre by phone, mail, or other is a vital part of the care.
+
+
+[E5] (PostERCPPancreatitis, p.3-3)
+
+4..Risk stratification 4.. Hospital and endoscopist volume for ERCP ▶Statement 2010: There is no evidence that hospital ERCP volume has an influence on the incidence of PEP; data about a potential relationship between PEP incidence and endoscopist case volume are conflicting. Low annual case volumes, of endoscopists and centers, are associated with higher ERCP failure rates (Evidence level 2+). ▶Statement 2014: No changes. Background: Factors that may affect the outcome of ERCP that are specifically related to hospital procedure volume include availability of equipment and adequacy of anesthesia, endoscopic and radiologic support, and nursing assistance. The number of ERCPs performed in many centers is not as high as commonly believed: in three large (regional or national) studies, the median annual number of ERCPs was between 49 and 235 [12–14]. In one large study, the median annual number of ERCPs per endoscopist was 111 and 40% of endoscopists performed fewer than 50 sphincterotomies/year [15].
+
+
+[E6] (FacioscapulohumeralMuscularDystrophy, p.11-11)
+
+In different countries, different medical specialties will perform the role of counselor. Ideally, post-test evaluation is multidisciplinary, providing a complete explanation to the patient, with both neurological (confirmation of diagnosis, characteristics of clinical management and prognosis), and genetic (family and recurrence risk, procreative choices) issues. Finally, there are further psychological issues to evaluate. In particular, the assessment of recurrence risk should be accompanied by the explanation of available reproductive choices. AUTHOR CONTRIBUTIONS Emiliano Giardina, Pilar Camaño, Sarah Burton-Jones, Frederique Magdinier, Nienke van der Stoep, Valerie Race, Victoria Williams, Nicol C. Voermans, Richard J. L. F. Lemmers: Concept and initial discussion during ENMC workshop. Emiliano Giardina, Pilar Camaño, Sarah Burton-Jones, Gina Ravenscroft, Franclo Henning, Frederique Magdinier, Nienke van der Stoep, Patrick J. van der Vliet, Rafaëlle Bernard, Mark R. Davis, Piraye Oflazer, S. M. van der Maarel, Steve A. Moore, Nicol C. Voermans, Richard J. L. F. Lemmers: Writing of manuscript. Emiliano Giardina, Pilar Camaño, Sarah Burton-Jones,
+
+
+[E7] (ClusterHeadache, p.17-17)
+
+but only open trials with topiramate as monotherapy exist at this point. Corticosteroids can be used for short periods where bouts are short or to help establish another medication. Clinically, the use of at least 100 mg oral or up to 500 mg iv per day methylprednisolone (or equivalent corticosteroid) over 5 days (then tapering down) can be an option. Based on consensus, ergotamine tartrate or frovatriptan are also recommended for short-­term prevention. Despite some positive case reports, local civamide and/or intranasal capsaicin should only be used as short-­term prevention in rare cases, due to side effects. If one medication does not achieve sufficient symptom reduction, a combination might be beneficial (Table 17). Because preventative treatment needs time for dose escalation, the question arises as to when to start preventative treatment in episodic cluster headache. No sufficient data exist, but depending on the length of the active period, the above-­named preventatives or short-­term treatment with prednisolone, frovatriptan, or naratriptan may be considered. Pharmacological nerve block of the GON is recommended and can be repeated if efficacious.
+
+
+[E8] (MentalHealthAndCardiovascular, p.38-38)
+
+Assess individual’s mental health and cardiovascular risk SMI in remission or with mild symptoms New or unremitted SMI (moderate/severe) Is individual adherent to psychiatric and CVD treatment? • Assess treatment • Support adherence with behavioural interventionsa • Consider long-acting injectables • Assess CV side eﬀects of psychotropic medication • Consider change in medication if CV eﬀects • Check for medication interactions • Initiate therapeutic drug monitoring if required Use a person-centred multidisciplinary approach with shared decision-making and collaboration among members of Psycho-Cardio team Psychiatric consultation and introduction or change to psychotropic medication • Monitor ECG post initiation of new antipsychotics at week 1 and 6 • Assess risk factors, drug side eﬀects and interactions at week 6 and 12, then annually • Monitor adherence to CVD and antipsychotic therapy • Psycho-education, behavioural counselling to improve CV risk factors and adherence • CVD medications as indicated, consider change in medication if CV side eﬀectsc • Choose medication with less propensity to cause metabolic syndrome if possible • Monotherapy if possibleb • Long-acting injectables may improve adherence Figure 13 Management of people with cardiovascular disease and severe mental illness. aVarenicline or bupropion can be used to support smoking cessation behavioural interventions.
+
+
+[E9] (CardioVascularDiseaseAndPregnancy, p.55-55)
+
+E. Antenatally unclassifiable hypertension When BP is first recorded after 20 weeks gestation and hypertension is diagnosed, reassessment is necessary at or after 6 weeks post-partum. If hypertension resolves, it should be reclassified as gestational hypertension, whereas if hypertension persists, it should be reclassified as pre-existing/chronic hypertension. and McEvoy et al. I C It is recommended to manage pregnant women with ACS in the same way as non-pregnant women, including diagnostic investigations and interventions. I C Low-dose ASA is recommended as the antiplatelet treatment of choice during pregnancy and lactation when single antiplatelet treatment is indicated. I B If DAPT is required, clopidogrel is recommended as the PY inhibitor of choice during pregnancy. I C The duration of DAPT (aspirin and clopidogrel) in pregnant women undergoing coronary stent implantation is recommended to be the same as in non-pregnant women, with an individual approach considering ischaemic risk and delivery-related bleeding risks. I C A vaginal delivery should be considered in most pregnant women with ACS, depending on LV function and clinical symptoms.
+
+
+[E10] (PneumothoraxAdults, p.9-9)
+
+[33] only enrolled patients with a first episode. Furthermore, the authors used pleural abrasion (mechanical pleurodesis of all visible pleura parietal with a dedicated tool “MICTEC Pleural abrader”). This technique may well explain the high recurrence rate (6%) compared to the 1.% recurrence rate reported with talc poudrage in the largest case series [36]. All other included studies were non-randomised (supplementary material: EtD frameworks) [32, 34, 35]. Hospital LOS was lower in the VATS cohort in the two studies which reported it [32, 34]. Recurrence was statistically lower in both studies with VATS [34, 35]. Justification of recommendation A conditional recommendation with low certainty of evidence could be made for early surgical intervention for the initial treatment of PSP. The data suggest that less recurrence occurs with the surgical intervention; however, due to the low number of patients analysed and lack of other outcomes the panel can only make a conditional recommendation. The strength of the recommendation is lowered by the lack of patient-related outcomes, and application to all patients presenting with PSP will result in over-treatment of patients who would never recur.
+
+
+TASK:
+Using the clinical note and guideline excerpts above, produce a discharge document structured EXACTLY as follows.
+
+1. MEDICAL HISTORY
+   Copy the medical history from the clinical note. Do not alter, summarize, or omit any detail.
+
+2. OBJECTIVE EXAMINATION
+   Copy the objective examination from the clinical note verbatim.
+
+3. CLINICAL DIARY
+   Copy the clinical diary from the clinical note verbatim.
+
+4. PROGNOSIS
+   Copy the prognosis from the clinical note verbatim.
+
+5. RECOMMENDATIONS AND PRESCRIPTIONS
+   Provide specific, actionable recommendations. Each recommendation MUST:
+   - Be supported by at least one guideline excerpt, cited as [E#]
+   - Reference the patient's specific clinical data that makes the recommendation applicable (e.g. "Given your CHA₂DS₂-VASc score of 3..." or "Given preserved LVEF...")
+   - Include drug names and dosages where applicable
+   - Be grouped into: Pharmacological therapy, Follow-up investigations, Lifestyle modifications, and Follow-up appointments
+
+   If a clinically relevant topic (e.g. anticoagulation, rate control) cannot be addressed by the provided excerpts, state:
+   "No specific guidance available from provided sources. Refer to specialist for [topic]."
+
+RULES:
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge for recommendations.
+- Do NOT invent dosages, drug names, or clinical facts not present in the clinical note or excerpts.
+- When multiple excerpts address the same topic, synthesize them into a single coherent recommendation and cite all relevant excerpts.
+- Do not repeat the same recommendation under different wording.

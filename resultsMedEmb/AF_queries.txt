@@ -1,9 +1,0 @@
---- Query 1 ---
-fibrillation ATRIAL FIBRILLATION hypertension. diagnosis comorbidities risk factors management
-
---- Query 2 ---
-Metoprolol tartrate amlodipine anticoagulant anticoagulant therapy metfromin therapy pro-BNP CHA₂DS₂-VASc. therapy recommendations pharmacological management clinical scores diagnostic evaluation
-
---- Query 3 ---
- recommendations discharge management elderly male
-
