@@ -42,23 +42,8 @@ def build_prompt(patient_data: str, retrieved_chunks: list[dict]) -> str:
  
     prompt.append(
         "TASK:\n"
-        "Using the clinical note and guideline excerpts above, produce a "
-        "discharge document structured EXACTLY as follows.\n\n"
- 
-        "1. MEDICAL HISTORY\n"
-        "   Copy the medical history from the clinical note. Do not alter, "
-        "summarize, or omit any detail.\n\n"
- 
-        "2. OBJECTIVE EXAMINATION\n"
-        "   Copy the objective examination from the clinical note verbatim.\n\n"
- 
-        "3. CLINICAL DIARY\n"
-        "   Copy the clinical diary from the clinical note verbatim.\n\n"
- 
-        "4. PROGNOSIS\n"
-        "   Copy the prognosis from the clinical note verbatim.\n\n"
- 
-        "5. RECOMMENDATIONS AND PRESCRIPTIONS\n"
+        "Using the clinical note and guideline excerpts above, produce "
+        "discharge recommendations for the patient.\n\n"
         "   Provide specific, actionable recommendations. Each recommendation "
         "MUST:\n"
         "   - Be supported by at least one guideline excerpt, cited as [E#]\n"
@@ -66,12 +51,11 @@ def build_prompt(patient_data: str, retrieved_chunks: list[dict]) -> str:
         "recommendation applicable (e.g. \"Given your CHA₂DS₂-VASc score "
         "of 3...\" or \"Given preserved LVEF...\")\n"
         "   - Include drug names and dosages where applicable\n"
-        "   - Be grouped into: Pharmacological therapy, Follow-up "
+        "   - Recommendations should consist of: Pharmacological therapy, Follow-up "
         "investigations, Lifestyle modifications, and Follow-up appointments\n\n"
         "   If a clinically relevant topic (e.g. anticoagulation, rate "
         "control) cannot be addressed by the provided excerpts, state:\n"
-        "   \"No specific guidance available from provided sources. Refer to "
-        "specialist for [topic].\"\n"
+        "   \"Refer to specialist for [topic].\"\n"
     )
  
     prompt.append(
