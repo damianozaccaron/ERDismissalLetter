@@ -1,5 +1,5 @@
 ROLE:
-You are an emergency department physician writing a discharge document for a patient. The document will be read by the patient's general practitioner and by the patient. Write in a clinical but accessible tone.
+You are an emergency department physician writing discharge recommendations for a patient. The document will be read by the patient and their general practitioner.
 
 CLINICAL NOTE:
 
@@ -37,19 +37,19 @@ Gastro-oesophageal reflux disease (GORD) has been identified as the most common 
 Reproduction is authorised provided the source is acknowledged. 17 March 2011 EMA/CHMP/EWP/342691/2009 Committee for Medicinal Products for Human Use (CHMP) Guideline on the evaluation of drugs for the treatment of Gastro-oesophageal reflux disease Draft Agreed by Efficacy Working Party November 2009 Adoption by CHMP for release for consultation 17 December 2009 End of consultation (deadline for comments) 30 June 2010 Agreed by the Gastroenterology Drafting Group February 2011 Adoption by CHMP 17 March 2011 Date for coming into effect 01 October 2011 Keywords Gastro-oesophageal Reflux Disease (GORD), Reflux Oesophagitis, Non-Erosive Reflux Disease (NERD) Executive summary This guideline intends to address the EU regulatory position on the main topics of the clinical development of new medicinal products in the treatment of patients with gastro-oesophageal reflux disease (GORD). 1.  Introduction (background) 1..  Definition of GORD: Gastro-oesophageal reflux disease (GORD) has been identified as the most common gastrointestinal diagnosis in outpatient clinics. Estimations suggest that up to 20% of adults are affected (weekly complaints over an observation period of 1 year).
 
 
-[E3] (NonvaricealUpperGastrointestinalHemorrhage, p.37-38)
+[E3] (Gastro-oesophagealReflux, p.8-8)
 
-Evidence: Low Wang, 2010 [281] Systematic review High dose PPIs (80 mg bolus + 8 mg/h for 3 days vs. Non-high dose PPIs (40 mg mg/ day for 3 days) Patients with bleeding peptic ulcer – Rebleeding – Surgical intervention, and – Mortality 7 studies and 1157 patients – Rebleeding: OR 1., 95 %CI 0. – 1. – Surgical intervention: OR 1., 0. – 3. – Mortality: OR 0., 0. – 2. Compared with non – high dose PPIs, high dose PPIs do not further reduce the rates of rebleeding, surgical intervention, or mortality after endoscopic treatment. Evidence: High Masjedizadeh, 2014 [282] Randomized, open-label – High dose pantoprazole (80 mg bolus, 8 mg per hour) infused for 3 days vs. – Low dose pantoprazole (40 mg bolus, 4 mg per hour) infused for 3 days Patients with endoscopic signs of high risk of rebleeding Rebleeding at 30 days 166 patients (83 patients per group) Rebleeding observed in: – High dose group: 27 patients (32. %) – Low dose group: 21 patients (25. %) P = 0. For controlling peptic ulcer bleeding, there is no difference between high dose and low dose pantoprazole infusion. Appendix e Salvage therapy in failed endoscopic hemostasis. First author, year [ref.]
-
-
-[E4] (NonvaricealUpperGastrointestinalHemorrhage, p.36-36)
-
-– Oral group: 6. % High dose oral esomeprazole may be considered as a useful alternative to intravenous therapy. Evidence: Moderate Mostaghni, 2011 [278] Randomized, open-label – Oral omeprazole (80 mg twicedaily for 3 days), or – Intravenous pantoprazole (80 mg bolus and 8 mg/hour infusion for 3 days) Followed in all patients by omeprazole (20 mg each day for 30 days). Patients with endoscopic signs of high risk of rebleeding Rebleeding (30 days? ; timing not well-defined) – Oral omeprazole: 44 patients – Intravenous pantoprazole: 41 patients Rebleeding: – Oral omeprazole: 11. %, vs. – Intravenous pantoprazole: 9. % Mean hospital stay and blood transfusion were not different between the two groups. Oral omeprazole and intravenous pantoprazole had equal effects on prevention of rebleeding after endoscopic therapy in patients with high risk bleeding peptic ulcers. Evidence: Low Yen, 2012 [279] Randomized, open-label Esomeprazole group: 40 mg continuous infusion of esomeprazole every 6 h for 3 days. Then oral esomeprazole 40 mg once-daily for 2 months. Lansoprazole group: oral 30 mg four times daily for 3 days followed by once daily for 2 months.
+If studies in this patient population are conducted, data on endoscopic diagnosis (exclusion of mucosal breaks) are required before inclusion (see 6...). The condition “Symptomatic Gastro-oesophageal Reflux Disease” is slightly different from pure “nonerosive disease” because mild reflux oesophagitis (defined as grade A of L.A classification) has traditionally been included in trials in the “non-erosive” population leading to the claim “symptomatic GORD” or “symptomatic treatment of GORD”. The inclusion of mild oesophagitis patients and subsequent claim of “Symptomatic Gastro-oesophageal Reflux Disease” is considered acceptable on the basis of adequate justification. 4... Further Subdivision/claims based on the response to acid suppressive medication, especially PPIs: In recent years, there have been a growing number of reports suggesting that about 30% of GORD patients treated with PPI are partially or completely unresponsive to standard dose and duration of PPI therapy. For these patients, it is usually suggested – as a first step – to increase (usually double) the dose and duration of therapy with a PPI.
 
 
-[E5] (Gastro-oesophagealReflux, p.7-7)
+[E4] (Gastro-oesophagealReflux, p.7-7)
 
 Subdivision based on endoscopic findings: The development of acid-suppressive agents has been based on the primary evaluation of reflux oesophagitis patients, followed later by the inclusion of non-erosive disease, based on symptomatic evaluations “only”. This “traditional” subdivision is still considered valid, as it expresses the severity of the disease, not in terms of severity of symptoms and impairment of quality of life, but severity regarding acid exposure and the risk of pre-malignant and malignant changes in the oesophageal The possible indication claims are therefore erosive disease (“reflux oesophagitis”) and “Non-Erosive GORD”. The indication “Symptomatic GORD” is also possible and may include mild forms of reflux oesophagitis, see below. A global indication “GORD” may be possible if the two distinct populations are both studied in pivotal trials. However, the two populations should be tested in separate trials (see 6....). Erosive disease (reflux oesophagitis): Reflux oesophagitis has to be diagnosed by endoscopy, using the best validated classification, which is, at the moment, the Los Angeles classification. The L.A. classification is described in the following table:
+
+
+[E5] (NonvaricealUpperGastrointestinalHemorrhage, p.37-38)
+
+Evidence: Low Wang, 2010 [281] Systematic review High dose PPIs (80 mg bolus + 8 mg/h for 3 days vs. Non-high dose PPIs (40 mg mg/ day for 3 days) Patients with bleeding peptic ulcer – Rebleeding – Surgical intervention, and – Mortality 7 studies and 1157 patients – Rebleeding: OR 1., 95 %CI 0. – 1. – Surgical intervention: OR 1., 0. – 3. – Mortality: OR 0., 0. – 2. Compared with non – high dose PPIs, high dose PPIs do not further reduce the rates of rebleeding, surgical intervention, or mortality after endoscopic treatment. Evidence: High Masjedizadeh, 2014 [282] Randomized, open-label – High dose pantoprazole (80 mg bolus, 8 mg per hour) infused for 3 days vs. – Low dose pantoprazole (40 mg bolus, 4 mg per hour) infused for 3 days Patients with endoscopic signs of high risk of rebleeding Rebleeding at 30 days 166 patients (83 patients per group) Rebleeding observed in: – High dose group: 27 patients (32. %) – Low dose group: 21 patients (25. %) P = 0. For controlling peptic ulcer bleeding, there is no difference between high dose and low dose pantoprazole infusion. Appendix e Salvage therapy in failed endoscopic hemostasis. First author, year [ref.]
 
 
 [E6] (Gastro-oesophagealReflux, p.11-11)
@@ -57,53 +57,55 @@ Subdivision based on endoscopic findings: The development of acid-suppressive ag
 Absence of histopathology-based motility disorders. This definition, referring to acid reflux only, is, however, in conflict to the Montreal definition of GORD, which includes FH into GORD, as the pH of the refluxate is not a criterion for diagnosis. The exact diagnosis of FH patients would therefore have to be based on exclusion of mucosal breaks, exclusion of pathological acid exposure and the exclusion of symptom associations (e.g. impedance investigations). More recent studies have defined FH as absence of all reflux (acidic and nonacidic) that is not the cause of the symptoms (as diagnosed by combined pH-impedance monitorin with symptom association evaluation As the inclusion of patients into GORD therapeutic trials is usually only based on nature and severity of symptoms (see 6...), the inclusion of this kind of patients into clinical trials in non-erosive disease or “symptomatic GORD” appears to be inevitable to some extent and is regarded as acceptable. Any claim for the treatment of FH for an investigational product is however, currently not considered acceptable because of insufficient validation of this concept at the present time. 5. Possible targets of treatment:
 
 
-[E7] (Gastro-oesophagealReflux, p.12-12)
+[E7] (NonvaricealUpperGastrointestinalHemorrhage, p.36-36)
+
+– Oral group: 6. % High dose oral esomeprazole may be considered as a useful alternative to intravenous therapy. Evidence: Moderate Mostaghni, 2011 [278] Randomized, open-label – Oral omeprazole (80 mg twicedaily for 3 days), or – Intravenous pantoprazole (80 mg bolus and 8 mg/hour infusion for 3 days) Followed in all patients by omeprazole (20 mg each day for 30 days). Patients with endoscopic signs of high risk of rebleeding Rebleeding (30 days? ; timing not well-defined) – Oral omeprazole: 44 patients – Intravenous pantoprazole: 41 patients Rebleeding: – Oral omeprazole: 11. %, vs. – Intravenous pantoprazole: 9. % Mean hospital stay and blood transfusion were not different between the two groups. Oral omeprazole and intravenous pantoprazole had equal effects on prevention of rebleeding after endoscopic therapy in patients with high risk bleeding peptic ulcers. Evidence: Low Yen, 2012 [279] Randomized, open-label Esomeprazole group: 40 mg continuous infusion of esomeprazole every 6 h for 3 days. Then oral esomeprazole 40 mg once-daily for 2 months. Lansoprazole group: oral 30 mg four times daily for 3 days followed by once daily for 2 months.
+
+
+[E8] (Gastro-oesophagealReflux, p.12-12)
 
 functional dyspepsia regarding visceral hypersensitivity. Because hypersensitivity has been shown to be involved in the generation of symptoms in GORD, this approach may be promising. Further options may include agents for mucosal protection. Other mechanisms and targets such as TRPV 137, ASIC 1-338, PX 1-7, and others have been discussed as a potential mechanisms to enter clinical development. It is expected that the same requirements as for the agents influencing motility regarding the inclusion of reflux oesophagitis patients and the conduct of endoscopies would apply to these cases. 6. Clinical Study Design 6..  Patient selection 6...  Inclusion criteria Endoscopic appearance: Patients may be included on the presence of mucosal breaks if the indication “reflux oesophagitis” or “erosive reflux disease” is being proposed. The phase III trials should include a relevant proportion of all severities, unless a restriction of the indication (e.g. to less severe inflammation, or most severe inflammation only) is being sought. For endoscopic grading, the Los Angeles classification should be used (see 4... and 6...).
 
 
-[E8] (NonvaricealUpperGastrointestinalHemorrhage, p.36-37)
+[E9] (NonvaricealUpperGastrointestinalHemorrhage, p.36-37)
 
 Then oral esomeprazole 40 mg once-daily for 2 months. Lansoprazole group: oral 30 mg four times daily for 3 days followed by once daily for 2 months. Patients with endoscopic signs of high risk of rebleeding Rebleeding rate within 14 days. Secondary outcomes included: – Hospital stay – Volume of blood transfusion – Surgical intervention, and – Mortality within 1 month 100 patients enrolled. Rebleeding rates: – esomeprazole intravenous group: 4 % (2 /50), and – Lansoprazole oral group: 4 % (2/50) No difference between the two groups with regard to: – Hospital stay – Volume of blood transfusion – Surgery, or – Mortality rate There is no evidence of a difference in clinical outcomes between oral and intravenous PPI treatment. (not powered to prove equivalence or noninferiority). Patients receiving oral PPI have a shorter hospital stay. Evidence: Low Appendix e (Continuation) First author, year Study design Intervention Participants Outcomes Results Level of evidence, conclusions Tsai, 2008 [280] Randomized, open-label – Oral rabeprazole (20 mg twicedaily for 3 days), or – Intravenous omeprazole (40 mg intravenous infusion every 12 h for 3 days).
 
 
-[E9] (NonvaricealUpperGastrointestinalHemorrhage, p.26-26)
+[E10] (NonvaricealUpperGastrointestinalHemorrhage, p.37-37)
 
-– Need for endoscopic therapy at the first endoscopic examination Secondary: – Signs of bleeding – Need for urgent endoscopy – Emergency surgery – Recurrent bleeding Among patients with peptic ulcer bleeding, endoscopic treatment required in: – Omeprazole group 22. % – Placebo group 36. % – OR 0., 95 %CI 0. – 0.; P = 0. Active ulcer bleeding seen less frequently in omeprazole group than in placebo group: 6. % vs. 14. %; P = 0.. Rebleedings: 3. % in omeprazole group vs. 2. % in placebo group; P = 0. Long-term aspirin users were excluded Pre-emptive omeprazole appears to accelerate the resolution of signs of bleeding. Fewer cases of actively bleeding ulcers were seen among patients receiving omeprazole than among those who received placebo. In patients awaiting endoscopy pre-emptive use of high dose intravenous omeprazole is recommended. Liu, 2012 [239] Randomized, singlecenter, prospective, double-blind PPI parenteral (either omeprazole or esomeprazole) started prior to endoscopy (“early” endoscopy ≤24 h, “late” > 24 – 72 h) Intensive regimen, 80 mg + 8 mg/h infusion: 410 patients Standard regimen, 2 × 40 mg PPI/day: 456 patients Rebleeding rate Need for endoscopic therapy at first endoscopy Rebleeding:
-
-
-[E10] (NystagmusOscillopsia, p.7-1)
-
-Science 228:199–202. Yousry I, Dieterich M, Naidich TP, Schmid UD, Yousry TA (2002). Superior oblique myokymia: magnetic resonance imaging support for the neurovascular compression hypothesis. Ann Neurol 51:361–368. Zee DS (1985). Mechanisms of nystagmus. Am J Otolaryngol (Suppl. ):30–34. EFNS task force: Therapy of nystagmus 89  2004 EFNS European Journal of Neurology 11, 83–89 Reproduction is authorised provided the source is acknowledged. 17 March 2011 EMA/CHMP/EWP/342691/2009 Committee for Medicinal Products for Human Use (CHMP) Guideline on the evaluation of drugs for the treatment of Gastro-oesophageal reflux disease Draft Agreed by Efficacy Working Party November 2009 Adoption by CHMP for release for consultation 17 December 2009 End of consultation (deadline for comments) 30 June 2010 Agreed by the Gastroenterology Drafting Group February 2011 Adoption by CHMP 17 March 2011 Date for coming into effect 01 October 2011 Keywords Gastro-oesophageal Reflux Disease (GORD), Reflux Oesophagitis, Non-Erosive Reflux Disease (NERD)
+Evidence: Low Appendix e (Continuation) First author, year Study design Intervention Participants Outcomes Results Level of evidence, conclusions Tsai, 2008 [280] Randomized, open-label – Oral rabeprazole (20 mg twicedaily for 3 days), or – Intravenous omeprazole (40 mg intravenous infusion every 12 h for 3 days). Patients with endoscopic signs of high risk of rebleeding Bleeding up to 14 days. Also compared: – Hospital stay – Volume of blood transfusion – Surgery, and – Mortality within 14 days 156 patients with 78 in each group Rebleeding: – Omeprazole group: 12 patients (15. %) – Rabeprazole group: 13 patients (16. %) – 95 %CI of difference: 12. – 10. No differences in the other evaluated outcomes Oral rabeprazole and intravenous regular-dose omeprazole are equally effective in preventing rebleeding in patients with high risk bleeding peptic ulcers after successful endoscopic injection with epinephrine. Evidence: Low Wang, 2010 [281] Systematic review High dose PPIs (80 mg bolus + 8 mg/h for 3 days vs. Non-high dose PPIs (40 mg mg/ day for 3 days) Patients with bleeding peptic ulcer – Rebleeding – Surgical intervention,
 
 
 TASK:
-Using the clinical note and guideline excerpts above, produce a discharge document structured EXACTLY as follows.
+Produce discharge recommendations in two sections.
 
-1. MEDICAL HISTORY
-   Copy the medical history from the clinical note. Do not alter, summarize, or omit any detail.
+SECTION 1 — DISCHARGE RECOMMENDATIONS
+A numbered list of concise instructions for the patient.
+Rules:
+- One or two sentences per item. Be direct: "Continue...", "Stop...", "A prescription is issued for...".
+- Combine closely related actions into a single item (e.g. stopping a medication and adopting an alternative is one recommendation, not two). Never combine medication prescriptions with non-medication actions.
+- For medications: always include drug name, dose, route, and frequency (e.g. "every 12 hours"). Copy the exact dosing from the clinical note. If frequency is not in the clinical note or excerpts, write "as directed by the specialist".
+- For lifestyle factors (smoking, alcohol, diet, exercise): use strong advisory tone ("strongly recommended", "strongly advised") rather than direct orders.
+- For follow-up appointments and specialist referrals, use the phrasing: "A prescription is issued for [specialist type] evaluation for [clinical purpose]" and always specify the specialist type from the clinical note (e.g. "angiologist", "cardiologist", "internist") and the clinical purpose of the visit (e.g. "for thrombophilia screening", "for initiation of anticoagulant therapy", "for echocardiographic follow-up").
+- Do NOT explain why. No rationale, no "because...", no "to reduce the risk of...", no pathophysiology.
+- Do NOT speculate about future treatment decisions (duration of therapy, drug switches). Write "to be determined by the specialist" and move on.
+- No sub-bullets, no bold, no markdown headers, no category groupings. Just a numbered list.
+- Do NOT cite [E#] in this section. Citations belong only in Section 2.
+- The second-to-last item must always be: "Go to the nearest emergency department immediately if you experience [relevant warning symptoms for this diagnosis]."
+- The last item must always be: "You are referred back to your general practitioner for any further diagnostic or therapeutic needs and ongoing care."
+- If a topic cannot be addressed by the excerpts: "Refer to specialist for [topic]."
 
-2. OBJECTIVE EXAMINATION
-   Copy the objective examination from the clinical note verbatim.
-
-3. CLINICAL DIARY
-   Copy the clinical diary from the clinical note verbatim.
-
-4. PROGNOSIS
-   Copy the prognosis from the clinical note verbatim.
-
-5. RECOMMENDATIONS AND PRESCRIPTIONS
-   Provide specific, actionable recommendations. Each recommendation MUST:
-   - Be supported by at least one guideline excerpt, cited as [E#]
-   - Reference the patient's specific clinical data that makes the recommendation applicable (e.g. "Given your CHA₂DS₂-VASc score of 3..." or "Given preserved LVEF...")
-   - Include drug names and dosages where applicable
-   - Be grouped into: Pharmacological therapy, Follow-up investigations, Lifestyle modifications, and Follow-up appointments
-
-   If a clinically relevant topic (e.g. anticoagulation, rate control) cannot be addressed by the provided excerpts, state:
-   "No specific guidance available from provided sources. Refer to specialist for [topic]."
+SECTION 2 — CLINICAL REFERENCES (for the reviewing physician)
+For each recommendation number in Section 1, write:
+[number] - [E#] - clinical justification
+Example:
+1 - [E4][E7] - Anticoagulation recommended for confirmed distal DVT with high pretest probability.
+3 - [E7] - Oral contraceptives classified as moderate VTE risk factor (OR 2-9).
 
 RULES:
-- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge for recommendations.
-- Do NOT invent dosages, drug names, or clinical facts not present in the clinical note or excerpts.
-- When multiple excerpts address the same topic, synthesize them into a single coherent recommendation and cite all relevant excerpts.
-- Do not repeat the same recommendation under different wording.
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge.
+- Do NOT invent drug names, dosages, frequencies, or clinical facts not in the clinical note or excerpts.
+- When multiple excerpts cover the same topic, write one recommendation and cite all relevant excerpts.
+- Do not repeat the same recommendation in different wording.
+- Section 1 must be directly usable as a discharge document with no editing needed.

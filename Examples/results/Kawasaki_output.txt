@@ -1,5 +1,5 @@
 ROLE:
-You are an emergency department physician writing a discharge document for a patient. The document will be read by the patient's general practitioner and by the patient. Write in a clinical but accessible tone.
+You are an emergency department physician writing recommendations for a patient being admitted to hospital. The document will be read by the admitting team, the patient, and their family.
 
 CLINICAL NOTE:
 
@@ -73,38 +73,32 @@ Recommendations were developed using the EULAR’s standard operating procedures
 Among those with CAA, ECG and echocardiography should be performed every 36 months (or as specified by a paediatric cardiologist for individual cases), depending on CAA severity [3, 6]. A final important caveat in relation to echocardiography for young children who present with systemic inflammation is that other inflammatory diseases might be associated with transient coronary artery dilatation, particularly systemiconset juvenile idiopathic arthritis [38]. Treating Kawasaki disease Table 3 summarizes the SHARE recommendations for treating KD in childhood. Randomized controlled trials and meta-analyses have demonstrated unequivocally that early recognition and treatment of KD with IVIG and aspirin reduces the occurrence of CAA [39, 40]. Therefore, the panel recommended strongly that IVIG and aspirin should be started as soon as a patient is diagnosed with complete or incomplete KD. In keeping with previous guidance [3, 6], treatment should include a dose of 2 g/kg IVIG as a single infusion, in view of greater therapeutic effect in preventing CAA when compared with a lower, divided dose regimen [41].
 
 
-[E10] (Kawasaki, p.6-6)
+[E10] (Kawasaki, p.7-7)
 
-is increasingly recognized [3, 6]. It should be remembered that ibuprofen and other non-steroidal anti-inflammatory drugs interfere with the antiplatelet effect of aspirin and thus should be avoided if possible, a point emphasized in the recent AHA guidelines [3]. It is possible that future guidance may recommend low-dose aspirin (35 mg/kg/ day) at all stages of KD, as suggested by data from a retrospective cohort [43]; while the SHARE group acknowledged this recent development, there has never been a prospective controlled clinical trial to support this approach. Another practical consideration highlighted by the AHA regarding children on long-term low-dose aspirin is avoidance of non-steroidal anti-inflammatory drugs such as ibuprofen which can antagonize platelet inhibition induced by aspirin [44]. Low-dose aspirin has not been associated with any documented cases of Reye syndrome and therefore is safe to continue in the event of intercurrent infection [3]. Treatment with corticosteroids Up to 2040% of patients are IVIG resistant, and are at increased risk of developing CAA [37, 4547]. In the UK,
+While significant equipoise remains regarding the use of corticosteroids for unselected KD patients, the use of corticosteroids as primary adjunctive treatment of patients with severe KD [53], has an increasingly compelling evidence base [37, 45, 46, 5457]. Meta-analysis of 16 comparative studies involving 2746 KD patients demonstrated that early addition of corticosteroids to conventional IVIG therapy is associated with reduced risk of CAA compared TABLE 3 SHARE recommendations for the treatment of KD KD recommendations  treatment LoE SoR 1. As soon as a patient is diagnosed with KD, treatment should be initiateda. This applies to both complete and incomplete KD. 1A A 2. Treatment of KD should include IVIG at a dose of 2 g/kg as a single infusion. 1A A 3. In non-Japanese patients, the Kobayashi criteria may indicate risk of IVIG resistance if ‘positive’ (score 54) but may not reliably exclude IVIG resistance if ‘negative’ (score <4). 2A C 4. All patients diagnosed with KD who are treated with IVIG should be treated with aspirin at a dose of 3050 mg/kg/day until fever has settled for 48 h, clinical features are improving, and CRP levels are falling. 5.
 
 
 TASK:
-Using the clinical note and guideline excerpts above, produce a discharge document structured EXACTLY as follows.
+The patient is being admitted to hospital. The ER does not prescribe ongoing therapy or follow-up — that is the admitting team's responsibility. Produce a brief handover note in two sections.
 
-1. MEDICAL HISTORY
-   Copy the medical history from the clinical note. Do not alter, summarize, or omit any detail.
+SECTION 1 — ADMISSION NOTE
+In a numbered list: 
+State that the patient is admitted to [department] for [key planned interventions], extracting the department and planned interventions from the clinical note (e.g. "Patient is admitted urgently to the Paediatrics department for high-dose intravenous immunoglobulin therapy, dedicated transthoracic echocardiography with coronary evaluation, and clinical-laboratory monitoring.").
+State that the patient and/or family have been informed of the diagnosis, the expected clinical course based on the guideline excerpts (e.g. treatment protocol, possible complications, need for monitoring), and the planned treatment pathway.
+If the patient is being hospitalised to perform surgery,state that the patient has been prepped. 
+State that the patient is handed over to the care of the [department] team.
 
-2. OBJECTIVE EXAMINATION
-   Copy the objective examination from the clinical note verbatim.
+- Do NOT prescribe medications, follow-up visits, or lifestyle changes.
+- Do NOT cite [E#] in this section.
+- Keep each item to one or two sentences.
 
-3. CLINICAL DIARY
-   Copy the clinical diary from the clinical note verbatim.
-
-4. PROGNOSIS
-   Copy the prognosis from the clinical note verbatim.
-
-5. RECOMMENDATIONS AND PRESCRIPTIONS
-   Provide specific, actionable recommendations. Each recommendation MUST:
-   - Be supported by at least one guideline excerpt, cited as [E#]
-   - Reference the patient's specific clinical data that makes the recommendation applicable (e.g. "Given your CHA₂DS₂-VASc score of 3..." or "Given preserved LVEF...")
-   - Include drug names and dosages where applicable
-   - Be grouped into: Pharmacological therapy, Follow-up investigations, Lifestyle modifications, and Follow-up appointments
-
-   If a clinically relevant topic (e.g. anticoagulation, rate control) cannot be addressed by the provided excerpts, state:
-   "No specific guidance available from provided sources. Refer to specialist for [topic]."
+SECTION 2 — CLINICAL REFERENCES (for the reviewing physician)
+For each item in Section 1 that draws on guideline content, write:
+[number] - [E#] - clinical justification
+Example:
+2 - [E1][E9] - IVIG 2g/kg and aspirin 30-50mg/kg/day are first-line treatment for Kawasaki disease to prevent coronary artery aneurysms.
 
 RULES:
-- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge for recommendations.
-- Do NOT invent dosages, drug names, or clinical facts not present in the clinical note or excerpts.
-- When multiple excerpts address the same topic, synthesize them into a single coherent recommendation and cite all relevant excerpts.
-- Do not repeat the same recommendation under different wording.
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge.
+- Do NOT invent clinical facts not in the clinical note or excerpts.
+- Section 1 must be directly usable as a handover note with no editing needed.

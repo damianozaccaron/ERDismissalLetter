@@ -18,4 +18,4 @@ Clinical diary:
 
 Diagnosis: ATRIAL FIBRILLATION OF NEW RAPID VENTRICOLAR RESPONSE
 
-Prognosis: 4 days
+Prognosis: hospitalisation

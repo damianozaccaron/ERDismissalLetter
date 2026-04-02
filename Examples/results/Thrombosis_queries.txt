@@ -2,10 +2,10 @@
 DVT thromboembolic venous VENOUS THROMBOSIS thrombosis. DEEP VENOUS THROMBOSIS OF THE LEFT GEMELLAR VENEES. diagnosis comorbidities risk factors management
 
 --- Query 2 ---
-contraceptive pill enoxaparin oestrogen therapy Anticoagulant. DEEP VENOUS THROMBOSIS OF THE LEFT GEMELLAR VENEES. therapy recommendations pharmacological management
+contraceptive pill enoxaparin oestrogen therapy Anticoagulant therapy. DEEP VENOUS THROMBOSIS OF THE LEFT GEMELLAR VENEES. therapy recommendations pharmacological management dosage clinical scores diagnostic evaluation
 
 --- Query 3 ---
-CBC and coagulation normal. DEEP VENOUS THROMBOSIS OF THE LEFT GEMELLAR VENEES. diagnostic evaluation assessment workup
+CBC and coagulation normal. DEEP VENOUS THROMBOSIS OF THE LEFT GEMELLAR VENEES. findings results clinical course management
 
 --- Query 4 ---
 DEEP VENOUS THROMBOSIS OF THE LEFT GEMELLAR VENEES recommendations discharge management female

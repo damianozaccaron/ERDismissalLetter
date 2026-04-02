@@ -9,9 +9,9 @@ from pipeline.user_input import extract_patient_fields
 # NER categories
 ENTITY_TYPE_ANCHORS = {
     "DISEASE_DISORDER":      "diagnosis comorbidities risk factors management",
-    "MEDICATION":            "therapy recommendations pharmacological management",
-   # "SIGN_SYMPTOM":          "clinical presentation symptoms assessment  clinical scores diagnostic evaluation",
-    "DIAGNOSTIC_PROCEDURE":  "diagnostic evaluation assessment workup",
+    "MEDICATION":            "therapy recommendations pharmacological management dosage clinical scores diagnostic evaluation",
+   # "SIGN_SYMPTOM":          "clinical presentation symptoms assessment  ",
+    "DIAGNOSTIC_PROCEDURE":  "findings results clinical course management",
 }
 def load_ner_model(model_name = "Clinical-AI-Apollo/Medical-NER", device="cuda"):
     ner_model = pipeline("ner", model=model_name, aggregation_strategy="simple", device=device)

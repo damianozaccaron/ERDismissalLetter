@@ -9,6 +9,7 @@ from config import (
     RETRIEVAL_K,
     FINAL_N,
     TEMPERATURE,
+    TEST,
     QUANT,
     REPO,
     MODEL_QUANT)
@@ -21,7 +22,7 @@ from generation.output_prod import load_model_quant, load_model_transformer, gen
 
 from retrieval.query_building import build_queries_ner,load_ner_model
 from generation.prompting import build_prompt, deepl_translation, deepl_translation_en_it
-from pipeline.user_input import collect_patient_input
+from pipeline.user_input import collect_patient_input, extract_patient_fields
 
 
 def load_models():
@@ -41,10 +42,11 @@ def load_models():
     index, metadata = load_index_and_metadata()
     print(f"Models loaded in {end_models-start_models:.3f} seconds")
 
-    llm_model = None
     tokenizer = None
 
-    if QUANT:
+    if TEST:
+        llm_model = None
+    elif QUANT:
         # quantized models
         print("Loading LLM...")
         llm_model = load_model_quant(repo=REPO, model_name=MODEL_QUANT)
@@ -86,7 +88,7 @@ def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index
     queries, rerank_queries = build_queries_ner(translated_note, ner_model, vectorizer)
 
     print("Retrieving relevant chunks...")
-    all_candidates = {}   # faiss_id -> chunk dict
+    all_candidates = {}
     query_embeddings = []
 
     # top-k
@@ -117,9 +119,7 @@ def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index
     # re-ranking
     print("Reranking...")
     start = time.time()
-
     final_chunks = reranking_multi_query(rerank_queries, top_k_candidates, cross_encoder, top_n=FINAL_N)
-
     end = time.time()
 
     print(f"Total time for re-reranking: {end-start:.3f} seconds")
@@ -131,11 +131,17 @@ def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index
     print(f"Executed retrieval in {end_retrieval-start_retrieval:.3f} seconds.")
 
     # LETTER GENERATION
+    fields = extract_patient_fields(translated_note)
+    prognosis = fields.get("prognosis", "")
+
     print("Building prompt...")
-    prompt = build_prompt(translated_note, final_chunks)
+    prompt = build_prompt(translated_note, final_chunks, prognosis=prognosis)
 
     print("Generating recommendations...\n")
-    output = generate_letter(prompt=prompt, tokenizer=tokenizer, model=llm_model, temperature=TEMPERATURE)
+    if TEST:
+        output = prompt
+    else:
+        output = generate_letter(prompt=prompt, tokenizer=tokenizer, model=llm_model, temperature=TEMPERATURE)
 
     print("Translating recommendations in Italian...\n")
     # output = deepl_translation_en_it(output)
@@ -193,5 +199,16 @@ if __name__ == "__main__":
         with open(queries_path, "w", encoding="utf-8") as f:
             for i, q in enumerate(queries, 1):
                 f.write(f"--- Query {i} ---\n{q}\n\n")
+                
+        # Append original recommendations for comparison
+        rec_path = results_dir / "recommendations" / f"{stem}_rec.txt"
+        if rec_path.exists():
+            with open(rec_path, "r", encoding="utf-8") as f:
+                original_rec = f.read()
+            with open(output_path, "a", encoding="utf-8") as f:
+                f.write("\n\n" + "=" * 60 + "\n")
+                f.write("ORIGINAL RECOMMENDATIONS (for comparison)\n")
+                f.write("=" * 60 + "\n")
+                f.write(original_rec)
 
         print(f"Results saved to {output_path} and {queries_path}")

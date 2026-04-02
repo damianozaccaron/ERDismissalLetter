@@ -6,12 +6,12 @@ Diagnosis: ACUTE APPENDICITE. diagnosis comorbidities risk factors management
 --- Query 2 ---
 ketorolac ondansetron saline. and need for surgery. Informed consent is obtained. Fasting is started and the patient is prepared for the operating theatre.
 
-Diagnosis: ACUTE APPENDICITE. therapy recommendations pharmacological management
+Diagnosis: ACUTE APPENDICITE. therapy recommendations pharmacological management dosage clinical scores diagnostic evaluation
 
 --- Query 3 ---
 Venous access found and biochemistry, blood count, indices of inflammation, urine pregnancy test (urinary β-hCG), urine test performed. β-hCG negative. and need for surgery. Informed consent is obtained. Fasting is started and the patient is prepared for the operating theatre.
 
-Diagnosis: ACUTE APPENDICITE. diagnostic evaluation assessment workup
+Diagnosis: ACUTE APPENDICITE. findings results clinical course management
 
 --- Query 4 ---
 and need for surgery. Informed consent is obtained. Fasting is started and the patient is prepared for the operating theatre.

@@ -2,10 +2,10 @@
 inflammatory process. RIGHT BASAL PNEUMONIA. diagnosis comorbidities risk factors management
 
 --- Query 2 ---
-RIII rehydration solution clavulanic acid paracetamol Amoxicillin. RIGHT BASAL PNEUMONIA. therapy recommendations pharmacological management
+RIII rehydration solution clavulanic acid paracetamol Amoxicillin. RIGHT BASAL PNEUMONIA. therapy recommendations pharmacological management dosage clinical scores diagnostic evaluation
 
 --- Query 3 ---
-Venous access found and biochemistry, blood count and pro-BNP performed. RIGHT BASAL PNEUMONIA. diagnostic evaluation assessment workup
+Venous access found and biochemistry, blood count and pro-BNP performed. RIGHT BASAL PNEUMONIA. findings results clinical course management
 
 --- Query 4 ---
 RIGHT BASAL PNEUMONIA recommendations discharge management woman

@@ -1,5 +1,5 @@
 ROLE:
-You are an emergency department physician writing a discharge document for a patient. The document will be read by the patient's general practitioner and by the patient. Write in a clinical but accessible tone.
+You are an emergency department physician writing discharge recommendations for a patient. The document will be read by the patient and their general practitioner.
 
 CLINICAL NOTE:
 
@@ -24,83 +24,85 @@ Prognosis: 30 days barring complications
 
 GUIDELINE EXCERPTS:
 
-[E1] (AtrialFibrillation, p.17-17)
+[E1] (NonComplexFractures, p.7-8)
 
-Patients with OAC-related bleeding have higher mortality, including both minor and major bleeding (as defined by the International Society on Thrombosis and Haemostasis scale). Despite OAC, patients with AF remain at high residual risk of death, highlighting the importance of attention to concomitant disease. 3.. Atrial flutter Atrial flutter (AFL) is the among the most common atrial tachyarrhythmias, with an overall incidence rate of 88 per 100 000 person-years, rising to 317 per 100 000 person-years in people over 50 years of age. Risk factors for AFL and AF are similar, and more than half of all patients with AFL will develop AF. Observational studies suggest that thromboembolic risk is elevated in AFL. In direct comparison of AFL with AF, some studies suggest a similar risk of stroke and others a lower risk in AFL, possibly due to different comorbidity burdens and the impact of confounders such as AFL/AF ablation and anticoagulation (more frequently stopped in AFL). 4. Patient pathways and management of AF 4.. Patient-centred, multidisciplinary AF management 4...
-
-
-[E2] (SupraventricularTachycardia, p.27-27)
-
-Although no procedure-related mortality had been detected in early studies, in recent studies, mortality and stroke rates of 0. - 0. and 0. - 0.%, respectively, have been reported (Table 11). In a recent registry, ablation for flutter had a higher mortality than that for AF (0. vs. 0.%), but this might have been due to the comorbidities or advanced ages of patients referred for flutter ablation. 11.... Chronic therapy. Rate control is part of the therapeutic approach, using AV nodal blocking agents such as diltiazem, verapamil, or beta-blockers (Figure 12). When ablation is not feasible or the patient’s preference, antiarrhythmic drugs may also be used to maintain sinus rhythm. Dofetilide and sotalol are useful, but there are concerns about pro-arrhythmia. Amiodarone may have a role, but it should be restricted to cases of HF or significant structural heart disease. 11.... Anticoagulation. Data about the embolic risk of atrial flutter have usually been derived in the presence of concomitant AF, thus making individualized risk stratification difficult. Left atrial (LA) appendage ‘stunning’ and thrombi seem to be lower compared with those in AF.
+Consider MRI for first-line imaging in people with suspected scaphoid fractures following a thorough clinical examination. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights). 1. Management in the emergency department Reduction of distal radius fractures 1.. Consider intravenous regional anaesthesia (Bier's block) when reducing dorsally displaced distal radius fractures in adults (16 or over) in the emergency department. This should be performed by healthcare professionals trained in the technique, not necessarily anaesthetists. 1.. Do not use gas and air (nitrous oxide and oxygen) on its own when reducing dorsally displaced distal radius fractures in the emergency department. Management of torus fractures 1.. Do not use a rigid cast for torus fractures of the distal radius. 1.. Discharge children with torus fractures after first assessment and advise parents and carers that further review is not usually needed. 1. Ongoing orthopaedic management Non-surgical orthopaedic management of unimalleolar ankle fractures 1.. In the non-surgical orthopaedic management of unimalleolar ankle fractures:
 
 
-[E3] (AntithromboticHemophilia, p.9-9)
+[E2] (NonComplexFractures, p.8-9)
+
+Ongoing orthopaedic management Non-surgical orthopaedic management of unimalleolar ankle fractures 1.. In the non-surgical orthopaedic management of unimalleolar ankle fractures: • advise immediate unrestricted weight-bearing as tolerated • arrange for orthopaedic follow-up within 2 weeks if there is uncertainty about • advise all patients to return for review if symptoms are not improving 6 weeks after injury. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights). Timing of surgery for ankle fractures 1.. If treating an ankle fracture with surgery, consider operating on the day of injury or the next day. Timing of surgery for distal radius fractures 1.. When needed for distal radius fractures, perform surgery: • within 72 hours of injury for intra-articular fractures • within 7 days of injury for extra-articular fractures. 1.. When needed for re-displacement of distal radius fractures, perform surgery within 72 hours of the decision to operate. Definitive treatment of distal radius fractures in adults (skeletally mature) 1..
+
+
+[E3] (FragilityFracture, p.2-3)
+
+Patients with fragility fractures are at risk for multiple postoperative complications: some are patient related, while others are related to the surgical treatment. In the elderly multimorbid patient, complications are frequent and may increase the length of stay and perioperative mortality. Complications are related to increased mortality and morbidity, and therefore should preferably be prevented, if possible: delirium, deep venous thrombosis, pressure sores and malnutrition. 28 Postoperative care should include appropriate pain management and antibiotic prophylaxis, correction of postoperative anaemia, routine systems examinations, regular assessment of cognitive function, assessment for pressure sores, nutritional status and renal function, assessment and regulation of bowel and bladder function, wound assessment and care and early mobilisation. Recommendation 3: treatment of the fracture Appropriate treatment of the fractures in these often elderly and multimorbid patients with frail bones requires a balanced approach with regard to operative versus non-operative treatment and careful selection of ﬁxation devices and techniques.
+
+
+[E4] (ComplexFractures, p.5-6)
+
+For recommendations on managing airways, recognising and managing chest trauma, controlling external haemorrhage and fluid replacement, see the NICE guideline on major trauma. [2016] Initial pharmacological management of pain 1.. For recommendations on pain assessment in people with suspected complex fractures, see the NICE guideline on major trauma. [2016] 1.. For recommendations on the initial pharmacological management of pain in people with suspected open fractures, see the NICE guideline on major trauma. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights). 1.. For recommendations on the initial pharmacological management of pain in people with suspected high-energy pelvic fractures, see the NICE guideline on major trauma. [2016] 1.. For recommendations on the initial pharmacological management of pain in adults with suspected low-energy pelvic fractures, see the NICE guideline on hip fracture. [2016] 1.. For recommendations on the initial pharmacological management of pain in adults with suspected pilon fractures and children with suspected intra-articular distal tibia fractures, see the NICE guideline on non-complex fractures.
+
+
+[E5] (ComplexFractures, p.13-14)
+
+negative pressure wound therapy for temporary closure of open fractures. Pilon fractures in adults (skeletally mature) 1.. Create a definitive management plan and perform initial surgery (temporary or definitive) within 24 hours of injury in adults (skeletally mature) with displaced pilon fractures. [2016] 1.. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights). Page 13 of with displaced pilon fractures to an orthoplastic centre (ideally this would be emergency department to emergency department transfer to avoid delay). [2016] 1.. Immediately transfer adults (skeletally mature) with displaced pilon fractures to an orthoplastic centre if there are wound complications. [2016] Intra-articular distal tibia fractures in children (skeletally immature) 1.. Create a definitive management plan involving a children's orthopaedic trauma specialist within 24 hours of diagnosis in children (skeletally immature) with intra-articular distal tibia fractures. [2016] 1..
+
+
+[E6] (AntithromboticHemophilia, p.9-9)
 
 Usually, anticoagulation for 4 weeks before the procedure has been advised for those having factor levels >20 IU/dL. Left atrial appendage occlusion (LAAO) has recently been proposed as an alternative for long-term management of AF. The LAA is the main site of clot formation in patients with AF and a potential source of cardiac arrhythmia; furthermore, it contributes to regulating intravascular volume status and hemodynamic conditions. In randomized trials, this approach had similar efficacy as VKAs in preventing stroke with a trend for lower bleeding rates and AF recurrences on long-term follow-up. The Left Atrial Appendage Ligation and Ablation for Persistent Atrial Fibrillation (LAALA-AF) registry study showed that, at 1-year follow-up after 1 ablation procedure and off antiarrhythmic therapy, 65% (P = 0.) of patients who had LAAO with a LARIAT device and ablation were free from AF compared with 39% of those undergoing ablation only (P = 0.). Recently, there have been a series of case reports describing the experience with LAAO in PWH. 94 Overall, there were very few minor periprocedural bleeding events, with excellent clinical results.
 
 
-[E4] (AcutePulmonaryEmbolism, p.39-39)
-
-Fondaparinux may be considered if there is an allergy or adverse response to LMWH, although solid data are lacking and minor transplacental passage has been demonstrated. VKAs cross the placenta and are associated with a well-defined embryopathy during the first trimester. Administration of VKAs in the third trimester can result in foetal and neonatal haemorrhage, as well as placental abruption. Warfarin may be associated with central nervous system anomalies in the foetus throughout pregnancy. NOACs are contraindicated in pregnant patients. The management of labour and delivery requires particular attention. In women receiving therapeutic LMWH, strong consideration should be given to planned delivery in collaboration with the multidisciplinary team to avoid the risk of spontaneous labour while fully anticoagulated. The incidence of spinal haematoma after regional anaesthesia is unknown in pregnant women under anticoagulation treatment.
-
-
-[E5] (AtrialFibrillation, p.34-34)
-
-During a mean of 3. years follow-up, ischaemic stroke or systemic embolism occurred in 114 patients (4.%) in the occlusion group and 168 (7.%) in the control arm (HR, 0.; 95% CI, 0..; P = . ). The LAAOS III trial did not compare appendage occlusion with anticoagulation (77% of participants continued to receive OAC), and therefore, surgical LAA closure should be considered as an adjunct therapy to prevent thromboembolism in addition to anticoagulation in patients with AF. There are no RCT data showing a beneficial effect on ischaemic stroke or systemic embolism in patients with AF undergoing LAAO during endoscopic or hybrid AF ablation. A meta-analysis of RCT and observational data showed no differences in stroke prevention or allcause mortality when comparing LAA clipping during thoracoscopic AF ablation with percutaneous LAAO and catheter ablation. While the percutaneous LAAO/catheter ablation group showed a higher acute success rate, it was also associated with a higher risk of haemorrhage during the peri-operative period.
-
-
-[E6] (AtrialFibrillation, p.40-40)
-
-Metoprolol XL (succinate) N/A 50–200 mg once daily Bisoprolol N/A 1. mg once daily Atenololc N/A 25–100 mg once daily Esmolol 500 µg/kg i.v. bolus over 1 min; followed by 50–300 µg/kg/min Landiolol 100 µg/kg i.v. bolus over 1 min; followed by 10–40 µg/kg/min Nebivolol N/A 2. mg once daily Carvedilol N/A 3. mg twice daily Due to its broad extracardiac adverse effect profile, amiodarone is reserved as a last option when heart rate cannot be controlled even with maximal tolerated combination therapy, or in patients who do not qualify for atrioventricular node ablation and pacing. Many of the adverse effects from amiodarone have a direct relationship with cumulative dose, restricting the long-term value of amiodarone for rate control. 7... Atrioventricular node ablation and pacemaker implantation Ablation of the atrioventricular node and pacemaker implantation (‘ablate and pace’) can lower and regularize heart rate in patients with AF (see Supplementary data online, Additional Evidence Table S). The procedure has a low complication rate and a low long-term mortality risk.
-
-
-[E7] (TurnerSyndrome, p.53-53)
-
-These calculations are only available <21 years of age, therefore obtaining DXA prior to age 18-21 years is a helpful baseline from which to trend spine BMD over time. Fracture risk in TS appears most related to timing of estrogen treatment and/or compliance. The most common site is the forearm, with peak incidence at childhood and then above 45 years. Fracture rate is increased in those with a hearing deficit. Fracture risk assessment in the general population relies on DXA-derived fracture risk assessment tool (FRAX) using BMD T-score to estimate risk of osteoporosis-related fracture over age 10 years. Due to lack of height adjustment in T-score calculation, we do not recommend FRAX in women with TS due to risk of over-estimation of fracture risk and potential for inappropriate initiation of treatment. Back pain and worsening spine DXA may prompt assessment for vertebral compressions fractures. 7. Skeletal anomalies • R 7. We recommend physical examination to identify scoliosis at diagnosis and then at least annually until skeletal maturation (⊕○○○). • R 7.
-
-
-[E8] (PituitaryAdenomasPregnancy, p.7-7)
-
-metergoline, quinagolide PRLoma: Diagnosis of PRLoma during pregnancy, stop and restart of medical treatment after pregnancy confirmation, spontaneous abortion or miscarriage, clinical progress/tumour symptoms, headache, gestational diabetes, gestational hypertension, pre-eclampsia Malformations, low birth weight, pre-term, small for gestational age, macrosomia, neonatal death PRLoma: 51; HP: 77 (includes the 51 papers on PRLoma) HP: spontaneous abortion or miscarriage, termination of pregnancy due to malformation Question II: What is the safety profile and teratogenicity of medical treatment during pregnancy in patients with AC? Sub-question IIa: Is there a difference between patients who used medication only until confirmation of pregnancy and patients who used medication during a larger part of pregnancy? Patients with AC and pregnancy Bromocriptine, cabergoline, dopamine agonist (unspecified), octreotide, lanreotide, pasireotide, somatostatin (unspecified), and/ or pegvisomant Diagnosis of acromegaly during pregnancy, stop of medical treatment after pregnancy confirmation, spontaneous abortion or miscarriage, clinical progress/tumour symptoms, headache, gestational diabetes,
-
-
-[E9] (Urolithiasis, p.41-41)
+[E7] (Urolithiasis, p.41-41)
 
 Strong 3...e Special problems in stone removal Table 3.: Special problems in stone removal [539] Calyceal diverticulum stones SWL, PCNL [540] (if possible) or RIRS [540-542]. Can also be removed using laparoscopic retroperitoneal surgery [543, 544]. Patients may become asymptomatic due to stone disintegration (SWL), whilst well-disintegrated stone material remains in the original position due to narrow calyceal neck. Horseshoe kidneys Can be treated in line with the options described above [545-547]. Passage of fragments after SWL or fragmentation of stones might be poor. Acceptable SFRs (up to 76%) with low major complication rates (2.%) can be achieved with flexible ureteroscopy [545-547]. Stones in pelvic kidneys SWL, RIRS, PCNL or laparoscopic surgery [548]. Stones formed in a continent reservoir Each stone must be considered and treated individually. Patients with obstruction of the UPJ When outflow abnormality requires correction, stones can be removed by PCNL together with percutaneous endopyelotomy or open/laparoscopic reconstructive surgery. URS together with endopyelotomy with Ho:YAG laser [549]. 3..
 
 
-[E10] (PituitaryAdenomasPregnancy, p.19-19)
+[E8] (PaedriaticUrology, p.124-124)
 
-ophthalmoplegia or limited visual field impairment, surgery should be discussed case-by-case (255). It may occur both in patients treated with DA (64) and in untreated pregnant women with a prolactinoma (247). However, haemorrhagic necrosis of a macroprolactinoma during pregnancy may also be minor or asymptomatic, thus not requiring surgery and having a favourable outcome without treatment (230). R... For women with a prolactinoma, breastfeeding is usually feasible and not contraindicated, but we recommend to take into account individual circumstances like tumour size and symptoms. Lactation is considered safe and feasible. It is also considered safe to withhold DA treatment as long as breastfeeding is desired (81, 230). In individual cases of macroadenoma requiring DA throughout pregnancy, the advice to breastfeed and stop DA should be individualised (256). Breastfeeding while taking a DA is not possible and should be avoided anyway. R... We recommend reassessing prolactinoma status after every pregnancy before considering restarting therapy. There is a subset of prolactinomas that will involute during pregnancy and lactation. In various studies,
+Strong Use enhanced recovery after surgery protocols for abdominal surgery in children with preexisting normal bowel function. Strong 25. Postoperative pain management: general information 25.. Epidemiology, aetiology and pathophysiology The provision of adequate pain control requires proper pain evaluation, accurate choice of drug and route of administration, as well as consideration of age, physical condition and type of surgery and anaesthesia [1476]. 25.. Diagnostic evaluation Assessment of pain is the first step in pain management. Several pain assessment tools have been validated according to the child’s age, cultural background, mental status, communication skills and physiological reactions [1477]. One of the most important topics in paediatric pain management is informing and involving the child and caregivers during this process. Patient and family-controlled analgesia is the preferred pain management in the hospital and at home if the child and caregivers are provided with the correct information [1479, 1480]. 25..
+
+
+[E9] (AtrialFibrillation, p.34-34)
+
+During a mean of 3. years follow-up, ischaemic stroke or systemic embolism occurred in 114 patients (4.%) in the occlusion group and 168 (7.%) in the control arm (HR, 0.; 95% CI, 0..; P = . ). The LAAOS III trial did not compare appendage occlusion with anticoagulation (77% of participants continued to receive OAC), and therefore, surgical LAA closure should be considered as an adjunct therapy to prevent thromboembolism in addition to anticoagulation in patients with AF. There are no RCT data showing a beneficial effect on ischaemic stroke or systemic embolism in patients with AF undergoing LAAO during endoscopic or hybrid AF ablation. A meta-analysis of RCT and observational data showed no differences in stroke prevention or allcause mortality when comparing LAA clipping during thoracoscopic AF ablation with percutaneous LAAO and catheter ablation. While the percutaneous LAAO/catheter ablation group showed a higher acute success rate, it was also associated with a higher risk of haemorrhage during the peri-operative period.
+
+
+[E10] (PituitaryAdenomasPregnancy, p.7-7)
+
+metergoline, quinagolide PRLoma: Diagnosis of PRLoma during pregnancy, stop and restart of medical treatment after pregnancy confirmation, spontaneous abortion or miscarriage, clinical progress/tumour symptoms, headache, gestational diabetes, gestational hypertension, pre-eclampsia Malformations, low birth weight, pre-term, small for gestational age, macrosomia, neonatal death PRLoma: 51; HP: 77 (includes the 51 papers on PRLoma) HP: spontaneous abortion or miscarriage, termination of pregnancy due to malformation Question II: What is the safety profile and teratogenicity of medical treatment during pregnancy in patients with AC? Sub-question IIa: Is there a difference between patients who used medication only until confirmation of pregnancy and patients who used medication during a larger part of pregnancy? Patients with AC and pregnancy Bromocriptine, cabergoline, dopamine agonist (unspecified), octreotide, lanreotide, pasireotide, somatostatin (unspecified), and/ or pegvisomant Diagnosis of acromegaly during pregnancy, stop of medical treatment after pregnancy confirmation, spontaneous abortion or miscarriage, clinical progress/tumour symptoms, headache, gestational diabetes,
 
 
 TASK:
-Using the clinical note and guideline excerpts above, produce a discharge document structured EXACTLY as follows.
+Produce discharge recommendations in two sections.
 
-1. MEDICAL HISTORY
-   Copy the medical history from the clinical note. Do not alter, summarize, or omit any detail.
+SECTION 1 — DISCHARGE RECOMMENDATIONS
+A numbered list of concise instructions for the patient.
+Rules:
+- One or two sentences per item. Be direct: "Continue...", "Stop...", "A prescription is issued for...".
+- Combine closely related actions into a single item (e.g. stopping a medication and adopting an alternative is one recommendation, not two). Never combine medication prescriptions with non-medication actions.
+- For medications: always include drug name, dose, route, and frequency (e.g. "every 12 hours"). Copy the exact dosing from the clinical note. If frequency is not in the clinical note or excerpts, write "as directed by the specialist".
+- For lifestyle factors (smoking, alcohol, diet, exercise): use strong advisory tone ("strongly recommended", "strongly advised") rather than direct orders.
+- For follow-up appointments and specialist referrals, use the phrasing: "A prescription is issued for [specialist type] evaluation for [clinical purpose]" and always specify the specialist type from the clinical note (e.g. "angiologist", "cardiologist", "internist") and the clinical purpose of the visit (e.g. "for thrombophilia screening", "for initiation of anticoagulant therapy", "for echocardiographic follow-up").
+- Do NOT explain why. No rationale, no "because...", no "to reduce the risk of...", no pathophysiology.
+- Do NOT speculate about future treatment decisions (duration of therapy, drug switches). Write "to be determined by the specialist" and move on.
+- No sub-bullets, no bold, no markdown headers, no category groupings. Just a numbered list.
+- Do NOT cite [E#] in this section. Citations belong only in Section 2.
+- The second-to-last item must always be: "Go to the nearest emergency department immediately if you experience [relevant warning symptoms for this diagnosis]."
+- The last item must always be: "You are referred back to your general practitioner for any further diagnostic or therapeutic needs and ongoing care."
+- If a topic cannot be addressed by the excerpts: "Refer to specialist for [topic]."
 
-2. OBJECTIVE EXAMINATION
-   Copy the objective examination from the clinical note verbatim.
-
-3. CLINICAL DIARY
-   Copy the clinical diary from the clinical note verbatim.
-
-4. PROGNOSIS
-   Copy the prognosis from the clinical note verbatim.
-
-5. RECOMMENDATIONS AND PRESCRIPTIONS
-   Provide specific, actionable recommendations. Each recommendation MUST:
-   - Be supported by at least one guideline excerpt, cited as [E#]
-   - Reference the patient's specific clinical data that makes the recommendation applicable (e.g. "Given your CHA₂DS₂-VASc score of 3..." or "Given preserved LVEF...")
-   - Include drug names and dosages where applicable
-   - Be grouped into: Pharmacological therapy, Follow-up investigations, Lifestyle modifications, and Follow-up appointments
-
-   If a clinically relevant topic (e.g. anticoagulation, rate control) cannot be addressed by the provided excerpts, state:
-   "No specific guidance available from provided sources. Refer to specialist for [topic]."
+SECTION 2 — CLINICAL REFERENCES (for the reviewing physician)
+For each recommendation number in Section 1, write:
+[number] - [E#] - clinical justification
+Example:
+1 - [E4][E7] - Anticoagulation recommended for confirmed distal DVT with high pretest probability.
+3 - [E7] - Oral contraceptives classified as moderate VTE risk factor (OR 2-9).
 
 RULES:
-- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge for recommendations.
-- Do NOT invent dosages, drug names, or clinical facts not present in the clinical note or excerpts.
-- When multiple excerpts address the same topic, synthesize them into a single coherent recommendation and cite all relevant excerpts.
-- Do not repeat the same recommendation under different wording.
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge.
+- Do NOT invent drug names, dosages, frequencies, or clinical facts not in the clinical note or excerpts.
+- When multiple excerpts cover the same topic, write one recommendation and cite all relevant excerpts.
+- Do not repeat the same recommendation in different wording.
+- Section 1 must be directly usable as a discharge document with no editing needed.

@@ -1,5 +1,5 @@
 ROLE:
-You are an emergency department physician writing a discharge document for a patient. The document will be read by the patient's general practitioner and by the patient. Write in a clinical but accessible tone.
+You are an emergency department physician writing recommendations for a patient being admitted to hospital. The document will be read by the admitting team, the patient, and their family.
 
 CLINICAL NOTE:
 
@@ -26,83 +26,77 @@ Prognosis: urgent hospitalisation
 
 GUIDELINE EXCERPTS:
 
-[E1] (AcutePulmonaryEmbolism, p.7-7)
+[E1] (ExtraUterinePregnancy, p.2-8)
 
-PE in pregnancy A dedicated diagnostic algorithm is proposed for suspected PE in pregnancy (Figure 7). Updated information is provided on radiation absorption related to procedures used for diagnosing PE in pregnancy (Table 12). Long-term sequelae An integrated model of patient care after PE is proposed to ensure optimal transition from hospital to community care. Recommendations on patient care have been extended to the entire spectrum of post-PE symptoms and functional limitation, not only A new comprehensive algorithm is proposed for patient follow-up after acute PE (Figure 8). 2.. Changes in recommendations 201419 Recommendations 2014 2019 Rescue thrombolytic therapy is recommended for patients who deteriorate haemodynamically. IIa I Surgical embolectomy or catheter-directed treatment should be considered as alternatives to rescue thrombolytic therapy for patients who deteriorate haemodynamically. D-dimer measurement and clinical prediction rules should be considered to rule out PE during pregnancy or the post-partum period. Further evaluation may be considered for asymptomatic PE survivors at increased risk for CTEPH.
-
-
-[E2] (TurnerSyndrome, p.45-45)
-
-Considerations for fertility counselling in individuals with TS. Comprehensive review of options for family building or the choice to remain childless Adoption/fostering, gestational carriers, oocyte or embryo donation, family without children; oocyte cryopreservation has unknown livebirth rate (one case report of successful live birth) and ovarian tissue cryopreservation remains experimental (no reported live births) Discussion of maternal health risks associated with pregnancy Cardiovascular risks including hypertensive disorders, aortic dissection or death Increased risk of spontaneous abortion and increased risk of operative delivery Discussion of fetal health risks associated with pregnancy Risk of fetal aneuploidy, preterm birth, intrauterine growth restriction Complexity of procedures for fertility preservation Ovarian stimulation and oocyte cryopreservation involves serial parenteral hormonal stimulation. Possible complications: deep venous thromboembolism, pelvis inflammation, pelvic/vaginal bleeding, mood disorders. Burden to girl/women: frequent blood testing, transabdominal or transvaginal ultrasound,
+This requires women and clinicians to make difficult decisions about whether these pregnancies should be terminated to protect maternal health, despite some possibility of a good foetal outcome. Herein, we provide a comprehensive review of published literature to summarize new evidence and explore emerging themes with respect to ectopic pregnancy. Our aim is to provide an overview of modern classification and diagnosis, to summarize available treatment options and recommendations, and to emphasize longer-term outcomes, including the potential psychological impact of ectopic pregnancy. We examine current knowledge gaps and outline priorities for further research. Keywords: ectopic pregnancy / ultrasound / psychology / surgery / extrauterine ectopic pregnancy / interstitial ectopic pregnancy / ovarian ectopic pregnancy / abdominal ectopic pregnancy / uterine ectopic pregnancy / Caesarean scar ectopic pregnancy GRAPHICAL ABSTRACT The diagnosis and management of extrauterine and uterine ectopic pregnancy. Ultrasound features of eutopic and ectopic pregnancies.
 
 
-[E3] (AcutePulmonaryEmbolism, p.37-37)
+[E2] (ExtraUterinePregnancy, p.1-1)
 
-For example, in the UK and Ireland, thrombosis and thromboembolism were the most common causes of direct maternal death (death resulting from the pregnancy rather than pre-existing conditions) in the triennium 201315, resulting in 1. mortalities per 100 000 maternities (https://www.npeu.ox.ac.uk/mbrrace-uk). VTE risk is higher in pregnant women compared with non-pregnant women of similar age; it increases during pregnancy and reaches a peak during the post-partum period. The baseline pregnancy-related risk increases further in the presence of additional VTE risk factors, including in vitro fertilization: in a cross-sectional study derived from a Swedish registry, the HR for VTE following in vitro fertilization was 1. (95% CI 1.2.) overall and 4. (95% CI 2.7.) during the first trimester. Other important and common risk factors include prior VTE, obesity, medical comorbidities, stillbirth, pre-eclampsia, post-partum haemorrhage, and caesarean section; documented risk assessment is therefore essential. The recommendations provided in these Guidelines are in line with those included in the 2018 ESC Guidelines on the management of cardiovascular diseases during pregnancy. 9.
-
-
-[E4] (PulmonaryHypertension.pdf, p.101-102)
-
-In analogy with the ‘advanced heart failure units’ [843], PH centres offer the full range of PAH therapies available in their country (including i.v./s.c. prostacyclin derivatives) and have early referral protocols to CTEPH, LTx, and rehabilitation centres. Since evaluation and early availability of new drugs and techniques are critical, PH centres participate in collaborative clinical research. Regular multidisciplinary team meetings, including core members and on-demand invited members (extended multidisciplinary team) as needed (Figure 16), are required to establish and adapt individual patient care pathways. Case management (co-ordination of individual patient pathways) should include FIGURE 16 Pulmonary hypertension centre schematic. aNumber adapted according to specific country characteristics. bCase manager can be a nurse specialist, social worker, physiotherapist, or administrative assistant in function of the centre organization. cCan be located in partner centres. Adapted from BIGANZOLI et al. [846]. administrative, social, and care support. Remote accessibility of the PH centre by phone, mail, or other is a vital part of the care.
+Women’s Health Department, University College London Hospitals NHS Foundation Trust, 250 Euston Road, London NW 2BU, UK. E-mail: Jessica.Farren@ucl.ac.uk https://orcid.org/0000-0002-8082-6499 TABLE OF CONTENTS • Introduction • Methods • Terminology and nomenclature • Prevalence and mortality • Risk factors, aetiology, and pathogenesis Risk factors for tubal ectopic pregnancy Risk factors for other extrauterine ectopic pregnancy Risk factors for uterine ectopic pregnancy Assisted reproduction and risk of ectopic pregnancy Aetiological mechanisms Pathogenesis • Clinical evaluation and diagnosis Clinical assessment Imaging Biochemical assessment Surgical assessment Histological assessment • Management Management of tubal ectopic pregnancy Management of other extrauterine ectopic pregnancy Management of uterine ectopic pregnancy • Long-term care Ongoing Caesarean scar, intramural, abdominal, and rudimentary horn pregnancy Residual ectopic and aberrant vascular supply Caesarean scar niche management Subsequent pregnancy Psychological outcomes • Scope for future research • Conclusions Received: November 15, 2024. Revised: August 14, 2025. Editorial decision: August 28, 2025.
 
 
-[E5] (PostERCPPancreatitis, p.3-3)
+[E3] (ExtraUterinePregnancy, p.30-30)
+
+Risk of ectopic pregnancy is linked to endometrial thickness in a retrospective cohort study of 8120 assisted reproduction technology cycles. Hum Reprod 2015;30:2846–2852. Romero R, Kadar N, Castro D, Jeanty P, Hobbins JC, DeCherney AH. The value of adnexal sonographic findings in the diagnosis of ectopic pregnancy. Am J Obstet Gynecol 1988;158:52–55. Rosenblum JM, Dowling RW, Barnes AC. Treatment of tubal pregnancy. Am J Obstet Gynecol 1960;80:274–277. Ross JA, Davison AZ, Sana Y, Appiah A, Johns J, Lee CT. Ovum transmigration after salpingectomy for ectopic pregnancy. Hum Reprod 2013;28:937–941. Rotas MA, Haberman S, Levgur M. Cesarean scar ectopic pregnancies: etiology, diagnosis, and management. Obstet Gynecol 2006; 107:1373–1381. Rozenberg P, Chevret S, Camus E, de Tayrac R, Garbin O, de Poncheville L, Coiffic J, Lucot JP, Le Goueff F, Tardif Det al. ; GROG. Medical treatment of ectopic pregnancies: a randomized clinical trial comparing methotrexate-mifepristone and methotrexateplacebo. Hum Reprod 2003;18:1802–1808. Sandvei R, Ulstein M. History and findings in ectopic pregnancies in women with and without an IUD. Contracept Deliv Syst 1980; 1:131–138. Santos-Ribeiro S, Tournaye H, Polyzos NP.
+
+
+[E4] (ExtraUterinePregnancy, p.24-24)
+
+13:e. Atrash HK, Friede A, Hogue CJ. Abdominal pregnancy in the United States: frequency and maternal mortality. Obstet Gynecol 1987; 69:333–337. Ayim F, Tapp S, Guha S, Ameye L, Al-Memar M, Sayasneh A, Bottomley C, Gould D, Stalder C, Timmerman D et al. Can risk factors, clinical history and symptoms be used to predict risk of ectopic pregnancy in women attending an early pregnancy assessment unit? Ultrasound Obstet Gynecol 2016;48:656–662. Aytan H, Caliskan AC, Demirturk F, Koseoglu RD, Acu B. Cervical partial hydatidiform molar pregnancy. Gynecol Obstet Invest 2008; 66:142–144. Baggio S, Garzon S, Russo A, Ianniciello CQ, Santi L, Lagana AS, Raffaelli R, Franchi M. Fertility and reproductive outcome after tubal ectopic pregnancy: comparison among methotrexate, surgery and expectant management. Arch Gynecol Obstet 2021; 303:259–268. Baltarowich OH. The term "Cornual Pregnancy" should be abandoned. J Ultrasound Med 2017;36:1081–1087. Ban Y, Shen J, Wang X, Zhang T, Lu X, Qu W, Hao Y, Mao Z, Li S, Tao G et al. Cesarean scar ectopic pregnancy clinical classification system with recommended surgical strategy. Obstet Gynecol 2023; 141:927–936. Banz C, Chalvatzas N, Kelling K, Beyer D, Hornemann A, Diedrich K,
+
+
+[E5] (ExtraUterinePregnancy, p.29-29)
+
+Arch Gynecol Obstet 2013; 287:613–614. Pfeifer SM, Attaran M, Goldstein J, Lindheim SR, Petrozza JC, Rackow BW, Siegelman E, Troiano R, Winter T, Zuckerman A et al. ASRM mullerian anomalies classification 2021. Fertil Steril 2021; 116:1238–1252. Poole A, Haas D, Magann EF. Early abdominal ectopic pregnancies: a systematic review of the literature. Gynecol Obstet Invest 2012; 74:249–260. Poon LC, Emmanuel E, Ross JA, Johns J. How feasible is expectant management of interstitial ectopic pregnancy? Ultrasound Obstet Gynecol 2014;43:317–321. Rahaman J, Berkowitz R, Mitty H, Gaddipati S, Brown B, Nezhat F. Minimally invasive management of an advanced abdominal pregnancy. Obstet Gynecol 2004;103:1064–1068. Raine-Bennett T, Fassett MJ, Chandra M, Armstrong MA, Xie F, Shi JM, Alexeeff S, Chiu VY, Im TM, Asiimwe A et al. Disparities in the incidence of ectopic pregnancy in a large health care system in California, 2010-2019. Perm J 2022;26:61–68. Rajah K, Goodhart V, Zamora KP, Amin T, Jauniaux E, Jurkovic D. How to measure size of tubal ectopic pregnancy on ultrasound. Ultrasound Obstet Gynecol 2018;52:103–109. Rajkhowa M, Glass MR, Rutherford AJ, Balen AH, Sharma V, Cuckle HS.
+
+
+[E6] (ExtraUterinePregnancy, p.27-27)
+
+J Minim Invasive Gynecol 2021;28: 1497–1502.e. Karhus LL, Egerup P, Skovlund CW, Lidegaard O. Impact of ectopic pregnancy for reproductive prognosis in next generation. Acta Obstet Gynecol Scand 2014;93:416–419. Karikoski R, Aine R, Heinonen PK. Abnormal embryogenesis in the etiology of ectopic pregnancy. Gynecol Obstet Invest 1993; 36:158–162. Katz J, Marcus RG. The risk of Rh isoimmunization in ruptured tubal pregnancy. Br Med J 1972;3:667–669. Kayatas S, Demirci O, Kumru P, Mahmutoglu D, Saribrahim B, Arinkan SA. Predictive factors for failure of salpingostomy in ectopic pregnancy. J Obstet Gynaecol Res 2014;40:453–458. Khan K. The CROWN Initiative: journal editors invite researchers to develop core outcomes in women’s health. J Obstet Gynaecol 2014; 34:553–554. Khunda S, Abas R, Khunda A. Pregnancy after Tompkins metroplasty for Robert’s uterus. BMJ Case Rep 2025;18:e. Kirk E, Ankum P, Jakab A, Clef NL, Ludwin A, Small R, Tellum T, Toyli M, Van den Bosch T, Jurkovic D; ESHRE Working Group on Ectopic Pregnancy. Terminology for describing normally sited and ectopic pregnancies on ultrasound: ESHRE recommendations for good practice. Hum Reprod Open 2020;2020:hoaa.
+
+
+[E7] (ExtraUterinePregnancy, p.27-27)
+
+Terminology for describing normally sited and ectopic pregnancies on ultrasound: ESHRE recommendations for good practice. Hum Reprod Open 2020;2020:hoaa. Kirk E, Papageorghiou AT, Condous G, Tan L, Bora S, Bourne T. The diagnostic effectiveness of an initial transvaginal scan in detecting ectopic pregnancy. Hum Reprod 2007;22:2824–2828. Kirk E, Van Calster B, Condous G, Papageorghiou AT, Gevaert O, Van Huffel S, De Moor B, Timmerman D, Bourne T. Ectopic pregnancy: using the hCG ratio to select women for expectant or medical management. Acta Obstet Gynecol Scand 2011;90:264–272. Ko PC, Lo LM, Hsieh TT, Cheng PJ. Twenty-one years of experience with ovarian ectopic pregnancy at one institution in Taiwan. Int J Gynaecol Obstet 2012;119:154–158. Koo YJ, Choi HJ, Im KS, Jung HJ, Kwon YS. Pregnancy outcomes after surgical treatment of ovarian pregnancy. Int J Gynaecol Obstet 2011;114:97–100. Kopp-Kallner H, Linder M, Cesta CE, Segovia Chacon S, Kieler H, Graner S. Method of hormonal contraception and protective effects against ectopic pregnancy. Obstet Gynecol 2022; 139:764–770. Kyriacou C, Cooper N, Robinson E, Parker N, Barcroft J, Kundu S, Letchworth P, Sur S, Gould D, Stalder C et al.
+
+
+[E8] (ExtraUterinePregnancy, p.25-25)
+
+Increase rate of ruptured tubal ectopic pregnancy during the COVID-19 pandemic. Eur J Obstet Gynecol Reprod Biol 2021;259:95–99. Elias S, LeBeau M, Simpson JL, Martin AO. Chromosome analysis of ectopic human conceptuses. Am J Obstet Gynecol 1981; 141:698–703. Ellaithy M, Asiri M, Rateb A, Altraigey A, Abdallah K. Prediction of recurrent ectopic pregnancy: a five-year follow-up cohort study. Eur J Obstet Gynecol Reprod Biol 2018;225:70–78. Elsherbiny M, Lim ET, Ma K. Interstitial ectopic pregnancy: laparoscopic cornuostomy. J Minim Invasive Gynecol 2023;30:439–440. Elson J, Tailor A, Banerjee S, Salim R, Hillaby K, Jurkovic D. Expectant management of tubal ectopic pregnancy: prediction of successful outcome using decision tree analysis. Ultrasound Obstet Gynecol 2004;23:552–556. Erel CT, Kaleli S, Oral E, Engur A, Eren T, Calay Z, Aydinli K. DNA ploidy of ectopic pregnancy and first trimester spontaneous abortion investigated by flow cytometry. Acta Obstet Gynecol Scand 1996;75:881–885. Fait G, Goyert G, Sundareson A, Pickens A. Jr. Intramural pregnancy with fetal survival: case history and discussion of etiologic factors. Obstet Gynecol 1987;70:472–474. Farahani L, Sinha A, Lloyd J, Islam M, Ross JA.
+
+
+[E9] (ExtraUterinePregnancy, p.27-27)
+
+Ultrasound Obstet Gynecol 2007;30:1–7. Jwa SC, Seto S, Takamura M, Kuwahara A, Kajihara T, Ishihara O. Ovarian stimulation increases the risk of ectopic pregnancy for fresh embryo transfers: an analysis of 68, clinical pregnancies from the Japanese Assisted Reproductive Technology registry. Fertil Steril 2020;114:1198–1206. Kadar N, DeVore G, Romero R. Discriminatory hCG zone: its use in the sonographic evaluation for ectopic pregnancy. Obstet Gynecol 1981;58:156–161. Kaelin Agten A, Cali G, Monteagudo A, Oviedo J, Ramos J, TimorTritsch I. The clinical outcome of cesarean scar pregnancies implanted "on the scar" versus "in the niche". Am J Obstet Gynecol 2017;216:510.e.e. Kaelin Agten A, Jurkovic D, Timor-Tritsch I, Jones N, Johnson S, Monteagudo A, Huirne J, Fleisher J, Maymon R, Herrera T et al. ; CSP Collaborative Network. First-trimester cesarean scar pregnancy: a comparative analysis of treatment options from the international registry. Am J Obstet Gynecol 2024;230:669.e. Karavani G, Gutman-Ido E, Herzberg S, Chill HH, Cohen A, Dior UP. Recurrent tubal ectopic pregnancy management and the risk of a third ectopic pregnancy. J Minim Invasive Gynecol 2021;28: 1497–1502.e.
+
+
+[E10] (PostERCPPancreatitis, p.3-3)
 
 4..Risk stratification 4.. Hospital and endoscopist volume for ERCP ▶Statement 2010: There is no evidence that hospital ERCP volume has an influence on the incidence of PEP; data about a potential relationship between PEP incidence and endoscopist case volume are conflicting. Low annual case volumes, of endoscopists and centers, are associated with higher ERCP failure rates (Evidence level 2+). ▶Statement 2014: No changes. Background: Factors that may affect the outcome of ERCP that are specifically related to hospital procedure volume include availability of equipment and adequacy of anesthesia, endoscopic and radiologic support, and nursing assistance. The number of ERCPs performed in many centers is not as high as commonly believed: in three large (regional or national) studies, the median annual number of ERCPs was between 49 and 235 [12–14]. In one large study, the median annual number of ERCPs per endoscopist was 111 and 40% of endoscopists performed fewer than 50 sphincterotomies/year [15].
 
 
-[E6] (FacioscapulohumeralMuscularDystrophy, p.11-11)
-
-In different countries, different medical specialties will perform the role of counselor. Ideally, post-test evaluation is multidisciplinary, providing a complete explanation to the patient, with both neurological (confirmation of diagnosis, characteristics of clinical management and prognosis), and genetic (family and recurrence risk, procreative choices) issues. Finally, there are further psychological issues to evaluate. In particular, the assessment of recurrence risk should be accompanied by the explanation of available reproductive choices. AUTHOR CONTRIBUTIONS Emiliano Giardina, Pilar Camaño, Sarah Burton-Jones, Frederique Magdinier, Nienke van der Stoep, Valerie Race, Victoria Williams, Nicol C. Voermans, Richard J. L. F. Lemmers: Concept and initial discussion during ENMC workshop. Emiliano Giardina, Pilar Camaño, Sarah Burton-Jones, Gina Ravenscroft, Franclo Henning, Frederique Magdinier, Nienke van der Stoep, Patrick J. van der Vliet, Rafaëlle Bernard, Mark R. Davis, Piraye Oflazer, S. M. van der Maarel, Steve A. Moore, Nicol C. Voermans, Richard J. L. F. Lemmers: Writing of manuscript. Emiliano Giardina, Pilar Camaño, Sarah Burton-Jones,
-
-
-[E7] (ClusterHeadache, p.17-17)
-
-but only open trials with topiramate as monotherapy exist at this point. Corticosteroids can be used for short periods where bouts are short or to help establish another medication. Clinically, the use of at least 100 mg oral or up to 500 mg iv per day methylprednisolone (or equivalent corticosteroid) over 5 days (then tapering down) can be an option. Based on consensus, ergotamine tartrate or frovatriptan are also recommended for short-­term prevention. Despite some positive case reports, local civamide and/or intranasal capsaicin should only be used as short-­term prevention in rare cases, due to side effects. If one medication does not achieve sufficient symptom reduction, a combination might be beneficial (Table 17). Because preventative treatment needs time for dose escalation, the question arises as to when to start preventative treatment in episodic cluster headache. No sufficient data exist, but depending on the length of the active period, the above-­named preventatives or short-­term treatment with prednisolone, frovatriptan, or naratriptan may be considered. Pharmacological nerve block of the GON is recommended and can be repeated if efficacious.
-
-
-[E8] (MentalHealthAndCardiovascular, p.38-38)
-
-Assess individual’s mental health and cardiovascular risk SMI in remission or with mild symptoms New or unremitted SMI (moderate/severe) Is individual adherent to psychiatric and CVD treatment? • Assess treatment • Support adherence with behavioural interventionsa • Consider long-acting injectables • Assess CV side eﬀects of psychotropic medication • Consider change in medication if CV eﬀects • Check for medication interactions • Initiate therapeutic drug monitoring if required Use a person-centred multidisciplinary approach with shared decision-making and collaboration among members of Psycho-Cardio team Psychiatric consultation and introduction or change to psychotropic medication • Monitor ECG post initiation of new antipsychotics at week 1 and 6 • Assess risk factors, drug side eﬀects and interactions at week 6 and 12, then annually • Monitor adherence to CVD and antipsychotic therapy • Psycho-education, behavioural counselling to improve CV risk factors and adherence • CVD medications as indicated, consider change in medication if CV side eﬀectsc • Choose medication with less propensity to cause metabolic syndrome if possible • Monotherapy if possibleb • Long-acting injectables may improve adherence Figure 13 Management of people with cardiovascular disease and severe mental illness. aVarenicline or bupropion can be used to support smoking cessation behavioural interventions.
-
-
-[E9] (CardioVascularDiseaseAndPregnancy, p.55-55)
-
-E. Antenatally unclassifiable hypertension When BP is first recorded after 20 weeks gestation and hypertension is diagnosed, reassessment is necessary at or after 6 weeks post-partum. If hypertension resolves, it should be reclassified as gestational hypertension, whereas if hypertension persists, it should be reclassified as pre-existing/chronic hypertension. and McEvoy et al. I C It is recommended to manage pregnant women with ACS in the same way as non-pregnant women, including diagnostic investigations and interventions. I C Low-dose ASA is recommended as the antiplatelet treatment of choice during pregnancy and lactation when single antiplatelet treatment is indicated. I B If DAPT is required, clopidogrel is recommended as the PY inhibitor of choice during pregnancy. I C The duration of DAPT (aspirin and clopidogrel) in pregnant women undergoing coronary stent implantation is recommended to be the same as in non-pregnant women, with an individual approach considering ischaemic risk and delivery-related bleeding risks. I C A vaginal delivery should be considered in most pregnant women with ACS, depending on LV function and clinical symptoms.
-
-
-[E10] (PneumothoraxAdults, p.9-9)
-
-[33] only enrolled patients with a first episode. Furthermore, the authors used pleural abrasion (mechanical pleurodesis of all visible pleura parietal with a dedicated tool “MICTEC Pleural abrader”). This technique may well explain the high recurrence rate (6%) compared to the 1.% recurrence rate reported with talc poudrage in the largest case series [36]. All other included studies were non-randomised (supplementary material: EtD frameworks) [32, 34, 35]. Hospital LOS was lower in the VATS cohort in the two studies which reported it [32, 34]. Recurrence was statistically lower in both studies with VATS [34, 35]. Justification of recommendation A conditional recommendation with low certainty of evidence could be made for early surgical intervention for the initial treatment of PSP. The data suggest that less recurrence occurs with the surgical intervention; however, due to the low number of patients analysed and lack of other outcomes the panel can only make a conditional recommendation. The strength of the recommendation is lowered by the lack of patient-related outcomes, and application to all patients presenting with PSP will result in over-treatment of patients who would never recur.
-
-
 TASK:
-Using the clinical note and guideline excerpts above, produce a discharge document structured EXACTLY as follows.
+The patient is being admitted to hospital. The ER does not prescribe ongoing therapy or follow-up — that is the admitting team's responsibility. Produce a brief handover note in two sections.
 
-1. MEDICAL HISTORY
-   Copy the medical history from the clinical note. Do not alter, summarize, or omit any detail.
+SECTION 1 — ADMISSION NOTE
+In a numbered list: 
+State that the patient is admitted to [department] for [key planned interventions], extracting the department and planned interventions from the clinical note (e.g. "Patient is admitted urgently to the Paediatrics department for high-dose intravenous immunoglobulin therapy, dedicated transthoracic echocardiography with coronary evaluation, and clinical-laboratory monitoring.").
+State that the patient and/or family have been informed of the diagnosis, the expected clinical course based on the guideline excerpts (e.g. treatment protocol, possible complications, need for monitoring), and the planned treatment pathway.
+If the patient is being hospitalised to perform surgery,state that the patient has been prepped. 
+State that the patient is handed over to the care of the [department] team.
 
-2. OBJECTIVE EXAMINATION
-   Copy the objective examination from the clinical note verbatim.
+- Do NOT prescribe medications, follow-up visits, or lifestyle changes.
+- Do NOT cite [E#] in this section.
+- Keep each item to one or two sentences.
 
-3. CLINICAL DIARY
-   Copy the clinical diary from the clinical note verbatim.
-
-4. PROGNOSIS
-   Copy the prognosis from the clinical note verbatim.
-
-5. RECOMMENDATIONS AND PRESCRIPTIONS
-   Provide specific, actionable recommendations. Each recommendation MUST:
-   - Be supported by at least one guideline excerpt, cited as [E#]
-   - Reference the patient's specific clinical data that makes the recommendation applicable (e.g. "Given your CHA₂DS₂-VASc score of 3..." or "Given preserved LVEF...")
-   - Include drug names and dosages where applicable
-   - Be grouped into: Pharmacological therapy, Follow-up investigations, Lifestyle modifications, and Follow-up appointments
-
-   If a clinically relevant topic (e.g. anticoagulation, rate control) cannot be addressed by the provided excerpts, state:
-   "No specific guidance available from provided sources. Refer to specialist for [topic]."
+SECTION 2 — CLINICAL REFERENCES (for the reviewing physician)
+For each item in Section 1 that draws on guideline content, write:
+[number] - [E#] - clinical justification
+Example:
+2 - [E1][E9] - IVIG 2g/kg and aspirin 30-50mg/kg/day are first-line treatment for Kawasaki disease to prevent coronary artery aneurysms.
 
 RULES:
-- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge for recommendations.
-- Do NOT invent dosages, drug names, or clinical facts not present in the clinical note or excerpts.
-- When multiple excerpts address the same topic, synthesize them into a single coherent recommendation and cite all relevant excerpts.
-- Do not repeat the same recommendation under different wording.
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge.
+- Do NOT invent clinical facts not in the clinical note or excerpts.
+- Section 1 must be directly usable as a handover note with no editing needed.

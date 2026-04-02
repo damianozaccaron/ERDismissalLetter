@@ -18,4 +18,4 @@ Diario clinico:
 
 Diagnosi: FIBRILLAZIONE ATRIALE DI NUOVO RISCONTRO A RISPOSTA VENTRICOLARE RAPIDA
 
-Prognosi: 4 giorni
+Prognosi: ricovero

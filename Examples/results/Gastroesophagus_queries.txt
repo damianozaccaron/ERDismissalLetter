@@ -2,10 +2,10 @@
 REFLUX DISEASE. GASTROESOFAGEOUS REFLUX DISEASE. diagnosis comorbidities risk factors management
 
 --- Query 2 ---
-pantoprazole. GASTROESOFAGEOUS REFLUX DISEASE. therapy recommendations pharmacological management
+pantoprazole. GASTROESOFAGEOUS REFLUX DISEASE. therapy recommendations pharmacological management dosage clinical scores diagnostic evaluation
 
 --- Query 3 ---
-Venous access found and troponin plus biochemistry, CBC and pro-BNP performed. GASTROESOFAGEOUS REFLUX DISEASE. diagnostic evaluation assessment workup
+Venous access found and troponin plus biochemistry, CBC and pro-BNP performed. GASTROESOFAGEOUS REFLUX DISEASE. findings results clinical course management
 
 --- Query 4 ---
 GASTROESOFAGEOUS REFLUX DISEASE recommendations discharge management male

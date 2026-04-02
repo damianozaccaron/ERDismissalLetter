@@ -1,6 +1,5 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from llama_cpp import Llama
 
 
 def load_model_transformer(model_name: str, device: str):
@@ -13,6 +12,7 @@ def load_model_transformer(model_name: str, device: str):
     return tokenizer, model
 
 def load_model_quant(repo, model_name):
+    from llama_cpp import Llama
 
     llm = Llama.from_pretrained(
         repo_id=repo,

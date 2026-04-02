@@ -2,10 +2,10 @@
 methicillin-resistant staphylococcus MRSA bacterial infectious process infective endocarditis renal insufficiency. LEFT LOWER LIMB HERISIPELA/CELLULITE - SUSPECTED INFECTIVE ENDOCARDITIS (probably on tricuspid valve) IN IVDU PATIENT. diagnosis comorbidities risk factors management
 
 --- Query 2 ---
-vancomycin saline antibiotic antibiotic therapy. LEFT LOWER LIMB HERISIPELA/CELLULITE - SUSPECTED INFECTIVE ENDOCARDITIS (probably on tricuspid valve) IN IVDU PATIENT. therapy recommendations pharmacological management
+vancomycin saline antibiotic antibiotic therapy. LEFT LOWER LIMB HERISIPELA/CELLULITE - SUSPECTED INFECTIVE ENDOCARDITIS (probably on tricuspid valve) IN IVDU PATIENT. therapy recommendations pharmacological management dosage clinical scores diagnostic evaluation
 
 --- Query 3 ---
-Performed biochemistry, blood count, indices of inflammation, procalcitonin, coagulation, renal and liver function, serologies for HIV, HBV, HCV. LEFT LOWER LIMB HERISIPELA/CELLULITE - SUSPECTED INFECTIVE ENDOCARDITIS (probably on tricuspid valve) IN IVDU PATIENT. diagnostic evaluation assessment workup
+Performed biochemistry, blood count, indices of inflammation, procalcitonin, coagulation, renal and liver function, serologies for HIV, HBV, HCV. LEFT LOWER LIMB HERISIPELA/CELLULITE - SUSPECTED INFECTIVE ENDOCARDITIS (probably on tricuspid valve) IN IVDU PATIENT. findings results clinical course management
 
 --- Query 4 ---
 LEFT LOWER LIMB HERISIPELA/CELLULITE - SUSPECTED INFECTIVE ENDOCARDITIS (probably on tricuspid valve) IN IVDU PATIENT recommendations discharge management male

@@ -1,5 +1,5 @@
 ROLE:
-You are an emergency department physician writing a discharge document for a patient. The document will be read by the patient's general practitioner and by the patient. Write in a clinical but accessible tone.
+You are an emergency department physician writing discharge recommendations for a patient. The document will be read by the patient and their general practitioner.
 
 CLINICAL NOTE:
 
@@ -19,7 +19,6 @@ Clinical diary:
 - Venous echocolordoppler of the left lower limb is performed: deep venous thrombosis of the left twin veins, without extension to the popliteal vein. No involvement of the proximal venous circulation.
 - The angiologist/on-call internist is contacted for collegial assessment and therapeutic setting.
 - Anticoagulant therapy is imposed: enoxaparin 8,000 IU (100 IU/kg, weight 80kg) s.c., first dose administered in the PS.
-- The patient is informed of the Diagnosis, the need to discontinue the contraceptive pill immediately and to adopt an alternative contraceptive method, as well as the risks related to cigarette smoking in this context.
 
 Diagnosis: DEEP VENOUS THROMBOSIS OF THE LEFT GEMELLAR VENEES
 Prognosis: 4 days
@@ -53,14 +52,14 @@ The 4Ts score is the sum of the values for each of the four categories. Scores o
 recognition that after best executed anticoagulant management PTS develops in 25% e 75% of patients with extensive lower extremity DVT has inspired ongoing attempts at early thrombus removal. Research has clearly linked the development and progression of PTS to the persistence of venous thrombus and venous valvular injury that stems from the inﬂammatory reaction to this thrombus. 2... Thrombus removal strategies 2.... Surgical thrombectomy. Thrombectomy may be performed for acute iliofemoral DVT under general anaesthesia with common femoral venotomy and thrombus extraction using a Fogarty embolectomy catheter from the level of IVC. Distally, the thrombus can be extruded through the venotomy by manual massage of the entire leg, starting at the foot, or with gentle catheterisation and thrombectomy. The method has evolved over the years, with adjuvant venous stenting potentially used to restore iliac vein outﬂow instead of the previously used creation of an arteriovenous ﬁstula (AVF) in the groin. Temporary IVC ﬁlters as an adjunct to surgical thrombectomy have been used, despite the lack of evidence for this practice.
 
 
-[E6] (AcutePulmonaryEmbolism, p.11-11)
-
-Zones of reduced flow in obstructed Table 3 Predisposing factors for venous thromboembolism (data modiﬁed from Rogers et al. and Anderson and Spencer) Strong risk factors (OR > 10) Fracture of lower limb Hospitalization for heart failure or atrial ﬁbrillation/ﬂutter (within previous 3 months) Hip or knee replacement Major trauma Myocardial infarction (within previous 3 months) Previous VTE Spinal cord injury Moderate risk factors (OR 29) Arthroscopic knee surgery Autoimmune diseases Blood transfusion Central venous lines Intravenous catheters and leads Chemotherapy Congestive heart failure or respiratory failure Erythropoiesis-stimulating agents Hormone replacement therapy (depends on formulation) In vitro fertilization Oral contraceptive therapy Post-partum period Infection (speciﬁcally pneumonia, urinary tract infection, and HIV) Inﬂammatory bowel disease Cancer (highest risk in metastatic disease) Paralytic stroke Superﬁcial vein thrombosis Thrombophilia Weak risk factors (OR < 2) Bed rest >3 days Diabetes mellitus Arterial hypertension Immobility due to sitting (e.g. prolonged car or air travel) Increasing age Laparoscopic surgery (e.g. cholecystectomy) Obesity Pregnancy Varicose veins HIV = human immunodeﬁciency virus; OR = odds ratio; VTE = venous thromboembolism. ..................................
-
-
-[E7] (VenousThrombosis, p.43-43)
+[E6] (VenousThrombosis, p.43-43)
 
 These observations have discredited the widely held perception that SVT is a benign condition. The thromboembolic risk may be higher in subgroups with cancer or extensive thrombosis, particularly if located at thigh level, affecting the GSV or at the popliteal fossa affecting the small saphenous vein (SSV), or extending near the junction with the deep venous system.e 2.... Long term outcomes. Several studies have investigated the long term (> 3 months) thromboembolic risks following an episode of SVT. These risks may be associated with ongoing venous stasis in patients with varicose veins, if not treated by stripping or ablative methods, or other risk factors like thrombophilia or malignancy. In one study with a one year follow up, thromboembolic events after three months occurred at an annualised rate of 4.%, with half of events affecting the deep venous system. In the French OPTIMEV study, which had three years of follow up, VTE recurrence rates were comparable for patients with a ﬁrst isolated SVT and proximal DVT (5.% and 6.% per patient year, respectively; adjusted HR [aHR] 0., 95% CI 0. e 1.).
+
+
+[E7] (AcutePulmonaryEmbolism, p.11-11)
+
+Zones of reduced flow in obstructed Table 3 Predisposing factors for venous thromboembolism (data modiﬁed from Rogers et al. and Anderson and Spencer) Strong risk factors (OR > 10) Fracture of lower limb Hospitalization for heart failure or atrial ﬁbrillation/ﬂutter (within previous 3 months) Hip or knee replacement Major trauma Myocardial infarction (within previous 3 months) Previous VTE Spinal cord injury Moderate risk factors (OR 29) Arthroscopic knee surgery Autoimmune diseases Blood transfusion Central venous lines Intravenous catheters and leads Chemotherapy Congestive heart failure or respiratory failure Erythropoiesis-stimulating agents Hormone replacement therapy (depends on formulation) In vitro fertilization Oral contraceptive therapy Post-partum period Infection (speciﬁcally pneumonia, urinary tract infection, and HIV) Inﬂammatory bowel disease Cancer (highest risk in metastatic disease) Paralytic stroke Superﬁcial vein thrombosis Thrombophilia Weak risk factors (OR < 2) Bed rest >3 days Diabetes mellitus Arterial hypertension Immobility due to sitting (e.g. prolonged car or air travel) Increasing age Laparoscopic surgery (e.g. cholecystectomy) Obesity Pregnancy Varicose veins HIV = human immunodeﬁciency virus; OR = odds ratio; VTE = venous thromboembolism. ..................................
 
 
 [E8] (VenousThrombosis, p.54-55)
@@ -68,43 +67,45 @@ These observations have discredited the widely held perception that SVT is a ben
 1 2 5 Figure 13. Forest plot analysis of randomised controlled trials comparing a direct oral anticoagulant (DOAC), (A) edoxaban, (B) rivaroxaban, or (C) abixaban, with dalteparin for cancer associated venous thrombosis, regarding the outcome of major bleeding. 54 Stavros K. Kakkos et al. 4.. Deep vein thrombosis in patients with thrombophilia 4... General management of deep vein thrombosis in patients with thrombophilia. Details of testing for hereditary and acquired thrombophilias are provided in Chapter 2... The term thrombophilia is conventionally used to describe a propensity for developing thrombosis owing to the presence of hereditary and/or acquired prothrombotic abnormalities. The hereditary thrombophilias can be classiﬁed as either (1) loss of function of natural coagulation inhibitors (i.e., AT, protein C,and protein S deﬁciencies); or(2)gain of function with mutations in clotting proteins (i.e., factor V Leiden and prothrombin GA mutations). The accurate planning of anticoagulant therapy necessitates a thoughtful comprehension of VTE pathogenesis.
 
 
-[E9] (AcutePulmonaryEmbolism, p.53-53)
+[E9] (AntithromboticHemophilia, p.12-12)
+
+Most of the events described in this population are related to additional risk factors, such as surgical procedures and substitutive treatment-related complications. Before introducing emicizumab prophylaxis in clinical practice, an expert panel analyzed the rates of venous and arterial thrombotic events associated with CFCs. The VTE rate was low, the adverse event rate per treated patient was 0.% and 1.% for hemophilia A and B, respectively, after analysis of 5168 patients from a total of 50 studies. There were no arterial or venous thrombotic events, all of which were thrombophlebitis. The estimated risk of symptomatic VTE in PWH who undergo arthroplasty without pharmacological thromboprophylaxis is 0.%. The incidence of subclinical deep vein thrombosis (DVT) detected by routine Doppler ultrasound has also been found to be very low, ranging from 0% to 10%. More recently, contrast-enhanced computed tomography (CT) has seen DVT in 18% of hemophilia A patients undergoing TKA surgery, despite not being detected by ultrasound. There is still controversy whether thromboprophylaxis is indicated in PWH undergoing surgery.
+
+
+[E10] (AcutePulmonaryEmbolism, p.53-53)
 
 Le Gal G, Righini M, Sanchez O, Roy PM, Baba-Ahmed M, Perriers A, Bounameaux H. A positive compression ultrasonography of the lower limb veins is highly predictive of pulmonary embolism on computed tomography in suspected patients. Thromb Haemost 2006;95:963966. 166. Da Costa Rodrigues J, Alzuphar S, Combescure C, Le Gal G, Perrier A. Diagnostic characteristics of lower limb venous compression ultrasonography in suspected pulmonary embolism: a meta-analysis. J Thromb Haemost 2016;14:17651772. 167. Nazerian P, Volpicelli G, Gigli C, Lamorte A, Grifoni S, Vanni S. Diagnostic accuracy of focused cardiac and venous ultrasound examinations in patients with shock and suspected pulmonary embolism. Intern Emerg Med 2018;13:567574. 168. Rademaker J, Griesshaber V, Hidajat N, Oestmann JW, Felix R. Combined CT pulmonary angiography and venography for diagnosis of pulmonary embolism and deep vein thrombosis: radiation dose. J Thorac Imaging 2001;16:297299. 169. Kucher N, Luder CM, Dornhofer T, Windecker S, Meier B, Hess OM. Novel management strategy for patients with suspected pulmonary embolism. Eur Heart J 2003;24:366376. 170. Lucassen W, Geersing GJ, Erkens PM, Reitsma JB, Moons KG, Buller H, van Weert HC.
 
 
-[E10] (AcutePulmonaryEmbolism, p.58-58)
-
-............................................................................................................................................................................. months of oral anticoagulant therapy after a first episode of venous thromboembolism. Duration of Anticoagulation Trial Study Group. N Engl J Med 1995;332:16611665. 338. Kearon C, Ageno W, Cannegieter SC, Cosmi B, Geersing GJ, Kyrle PA; Subcommittees on Control of Anticoagulation, and Predictive and Diagnostic Variables in Thrombotic Disease. Categorization of patients as having provoked or unprovoked venous thromboembolism: guidance from the SSC of ISTH. J Thromb Haemost 2016;14:14801483. 339. Hutten BA, Prins MH, Gent M, Ginsberg J, Tijssen JG, Buller HR. Incidence of recurrent thromboembolic and bleeding complications among patients with venous thromboembolism in relation to both malignancy and achieved international normalized ratio: a retrospective analysis. J Clin Oncol 2000;18:30783083. 340. Baglin T, Luddington R, Brown K, Baglin C. Incidence of recurrent venous thromboembolism in relation to clinical and thrombophilic risk factors: prospective cohort study. Lancet 2003;362:523526. 341.
-
-
 TASK:
-Using the clinical note and guideline excerpts above, produce a discharge document structured EXACTLY as follows.
+Produce discharge recommendations in two sections.
 
-1. MEDICAL HISTORY
-   Copy the medical history from the clinical note. Do not alter, summarize, or omit any detail.
+SECTION 1 — DISCHARGE RECOMMENDATIONS
+A numbered list of concise instructions for the patient.
+Rules:
+- One or two sentences per item. Be direct: "Continue...", "Stop...", "A prescription is issued for...".
+- Combine closely related actions into a single item (e.g. stopping a medication and adopting an alternative is one recommendation, not two). Never combine medication prescriptions with non-medication actions.
+- For medications: always include drug name, dose, route, and frequency (e.g. "every 12 hours"). Copy the exact dosing from the clinical note. If frequency is not in the clinical note or excerpts, write "as directed by the specialist".
+- For lifestyle factors (smoking, alcohol, diet, exercise): use strong advisory tone ("strongly recommended", "strongly advised") rather than direct orders.
+- For follow-up appointments and specialist referrals, use the phrasing: "A prescription is issued for [specialist type] evaluation for [clinical purpose]" and always specify the specialist type from the clinical note (e.g. "angiologist", "cardiologist", "internist") and the clinical purpose of the visit (e.g. "for thrombophilia screening", "for initiation of anticoagulant therapy", "for echocardiographic follow-up").
+- Do NOT explain why. No rationale, no "because...", no "to reduce the risk of...", no pathophysiology.
+- Do NOT speculate about future treatment decisions (duration of therapy, drug switches). Write "to be determined by the specialist" and move on.
+- No sub-bullets, no bold, no markdown headers, no category groupings. Just a numbered list.
+- Do NOT cite [E#] in this section. Citations belong only in Section 2.
+- The second-to-last item must always be: "Go to the nearest emergency department immediately if you experience [relevant warning symptoms for this diagnosis]."
+- The last item must always be: "You are referred back to your general practitioner for any further diagnostic or therapeutic needs and ongoing care."
+- If a topic cannot be addressed by the excerpts: "Refer to specialist for [topic]."
 
-2. OBJECTIVE EXAMINATION
-   Copy the objective examination from the clinical note verbatim.
-
-3. CLINICAL DIARY
-   Copy the clinical diary from the clinical note verbatim.
-
-4. PROGNOSIS
-   Copy the prognosis from the clinical note verbatim.
-
-5. RECOMMENDATIONS AND PRESCRIPTIONS
-   Provide specific, actionable recommendations. Each recommendation MUST:
-   - Be supported by at least one guideline excerpt, cited as [E#]
-   - Reference the patient's specific clinical data that makes the recommendation applicable (e.g. "Given your CHA₂DS₂-VASc score of 3..." or "Given preserved LVEF...")
-   - Include drug names and dosages where applicable
-   - Be grouped into: Pharmacological therapy, Follow-up investigations, Lifestyle modifications, and Follow-up appointments
-
-   If a clinically relevant topic (e.g. anticoagulation, rate control) cannot be addressed by the provided excerpts, state:
-   "No specific guidance available from provided sources. Refer to specialist for [topic]."
+SECTION 2 — CLINICAL REFERENCES (for the reviewing physician)
+For each recommendation number in Section 1, write:
+[number] - [E#] - clinical justification
+Example:
+1 - [E4][E7] - Anticoagulation recommended for confirmed distal DVT with high pretest probability.
+3 - [E7] - Oral contraceptives classified as moderate VTE risk factor (OR 2-9).
 
 RULES:
-- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge for recommendations.
-- Do NOT invent dosages, drug names, or clinical facts not present in the clinical note or excerpts.
-- When multiple excerpts address the same topic, synthesize them into a single coherent recommendation and cite all relevant excerpts.
-- Do not repeat the same recommendation under different wording.
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge.
+- Do NOT invent drug names, dosages, frequencies, or clinical facts not in the clinical note or excerpts.
+- When multiple excerpts cover the same topic, write one recommendation and cite all relevant excerpts.
+- Do not repeat the same recommendation in different wording.
+- Section 1 must be directly usable as a discharge document with no editing needed.
