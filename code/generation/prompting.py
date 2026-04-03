@@ -1,20 +1,3 @@
-import deepl
-
-def deepl_translation(text, auth_key = "", glossary = "627f273f-d457-400f-a171-d04b9c13ddf3"):
-
-    deepl_client = deepl.DeepLClient(auth_key)
-    result = deepl_client.translate_text(text, source_lang="IT", target_lang="EN-GB", glossary=glossary)
-
-    return result.text
-
-def deepl_translation_en_it(text, auth_key = ""):
-
-    deepl_client = deepl.DeepLClient(auth_key)
-    result = deepl_client.translate_text(text, source_lang="EN-GB", target_lang="IT")
-
-    return result.text
-
-
 def build_preamble(patient_data: str, retrieved_chunks: list[dict], role: str) -> list[str]:
     """Shared preamble: ROLE + CLINICAL NOTE + GUIDELINE EXCERPTS."""
 
@@ -68,6 +51,7 @@ def build_discharge_prompt(patient_data: str, retrieved_chunks: list[dict]) -> s
         "Copy the exact dosing from the clinical note. "
         "If frequency is not in the clinical note or excerpts, "
         "write \"as directed by the specialist\".\n"
+        "- Write out all medical abbreviations in full (e.g. 'subcutaneously' not 's.c.', 'intravenously' not 'i.v.').\n"
         "- For lifestyle factors (smoking, alcohol, diet, exercise): "
         "use strong advisory tone (\"strongly recommended\", "
         "\"strongly advised\") rather than direct orders.\n"

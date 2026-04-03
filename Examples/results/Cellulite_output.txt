@@ -83,10 +83,11 @@ The patient is being admitted to hospital. The ER does not prescribe ongoing the
 
 SECTION 1 — ADMISSION NOTE
 In a numbered list: 
-State that the patient is admitted to [department] for [key planned interventions], extracting the department and planned interventions from the clinical note (e.g. "Patient is admitted urgently to the Paediatrics department for high-dose intravenous immunoglobulin therapy, dedicated transthoracic echocardiography with coronary evaluation, and clinical-laboratory monitoring.").
-State that the patient and/or family have been informed of the diagnosis, the expected clinical course based on the guideline excerpts (e.g. treatment protocol, possible complications, need for monitoring), and the planned treatment pathway.
-If the patient is being hospitalised to perform surgery,state that the patient has been prepped. 
-State that the patient is handed over to the care of the [department] team.
+- State that the patient is admitted to [department] for [key planned interventions], extracting the department and planned interventions from the clinical note (e.g. "Patient is admitted urgently to the Paediatrics department for high-dose intravenous immunoglobulin therapy, dedicated transthoracic echocardiography with coronary evaluation, and clinical-laboratory monitoring.").
+- State that the patient and/or family have been informed of the diagnosis, the expected clinical course based on the guideline excerpts (e.g. treatment protocol, possible complications, need for monitoring), and the planned treatment pathway. Do not write examples.
+- Do NOT give examples of complications or risks in parentheses. State the information directly without "e.g.", "such as", or "for example".
+- If the patient is being hospitalised to perform surgery,state that the patient has been prepped. 
+- State that the patient is handed over to the care of the [department] team.
 
 - Do NOT prescribe medications, follow-up visits, or lifestyle changes.
 - Do NOT cite [E#] in this section.
@@ -102,3 +103,14 @@ RULES:
 - Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge.
 - Do NOT invent clinical facts not in the clinical note or excerpts.
 - Section 1 must be directly usable as a handover note with no editing needed.
+
+
+============================================================
+ORIGINAL RECOMMENDATIONS (for comparison)
+============================================================
+• Paziente ricoverato in urgenza presso U.O. Malattie Infettive per prosecuzione della terapia
+antibiotica, ecocardiografia transtoracica e transesofagea dedicata, monitoraggio delle
+emocolture e gestione multidisciplinare.
+• Segnalata la positività per HCV al team ricevente per adeguata gestione e presa in carico.
+• Monitoraggio continuo dei parametri vitali garantito durante il trasferimento.
+• Si affida alla presa in carico del team infettivologico.

@@ -176,9 +176,6 @@ def condense_diary(
     return " ".join(matched) if matched else ""
 
 
-SALVAGE_ENTITY_TYPES = {
-    "DIAGNOSTIC_PROCEDURE": 2
-}
 def build_queries_ner(translated_note: str, ner_model, vectorizer: TfidfVectorizer):
     """
     NER + TF-IDF query decomposition.
@@ -205,27 +202,16 @@ def build_queries_ner(translated_note: str, ner_model, vectorizer: TfidfVectoriz
     # Run NER on the full note
     entities = extract_entities(translated_note, ner_model)
 
-    salvaged_entities = []
-    for etype, top_n in SALVAGE_ENTITY_TYPES.items():
-        ent_list = entities.get(etype, [])
-        if not ent_list:
-            continue
-        ranked = rank_entities(ent_list, vectorizer, top_n=top_n)
-        salvaged_entities.extend(ranked)
-
     retrieval_queries = []
     reranking_queries = []
 
     for etype, anchor_terms in ENTITY_TYPE_ANCHORS.items():
         ent_list = entities.get(etype, [])
 
-        if not ent_list and etype != "MEDICATION":
+        if not ent_list:
             continue
  
         ranked = rank_entities(ent_list, vectorizer) if ent_list else []
-
-        """if etype == "MEDICATION":
-            ranked = ranked + salvaged_entities"""
 
         if etype == "DIAGNOSTIC_PROCEDURE":
             # use condensed diary instead of bare entity names            

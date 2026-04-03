@@ -15,3 +15,7 @@ MODEL_NAME = "meta-llama/Llama-3.2-3B"
 RETRIEVAL_K = 10
 FINAL_N = 10
 TEMPERATURE = 0.2
+
+# DeepL API parameters
+DEEPL_AUTH_KEY = ""
+DEEPL_GLOSSARY_ID = "627f273f-d457-400f-a171-d04b9c13ddf3"

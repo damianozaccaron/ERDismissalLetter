@@ -111,3 +111,15 @@ RULES:
 - When multiple excerpts cover the same topic, write one recommendation and cite all relevant excerpts.
 - Do not repeat the same recommendation in different wording.
 - Section 1 must be directly usable as a discharge document with no editing needed.
+
+
+============================================================
+ORIGINAL RECOMMENDATIONS (for comparison)
+============================================================
+- Assuma amoxicillina 2gr+acido clavulanico 200mg 1 compressa ogni 8h per i successivi 10gg
+- Assuma azitromicina 500mg 1 compressa una volta al giorno per i successivi 3 gg.
+- Per la febbre paracetamolo 1gr, assumibile fino ad un max di 3 volte al giorno a distanza di 8h.
+- RX di controllo a 20gg di distanza.
+- Se persistenza dei sintomi, modifica del dolore o peggioramento del tale rientra presso il più
+vicino PS.
+- Si riaffida al medico curante per eventuali integrazioni terapuetiche-diagnostiche e presa in carico.

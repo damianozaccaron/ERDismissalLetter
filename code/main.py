@@ -21,7 +21,8 @@ from retrieval.retrieval import retrieve_top_k, load_crossEncoder, reranking_mul
 from generation.output_prod import load_model_quant, load_model_transformer, generate_letter
 
 from retrieval.query_building import build_queries_ner,load_ner_model
-from generation.prompting import build_prompt, deepl_translation, deepl_translation_en_it
+from generation.prompting import build_prompt
+from pipeline.translation import deepl_translation, deepl_translation_en_it
 from pipeline.user_input import collect_patient_input, extract_patient_fields
 
 
@@ -70,6 +71,7 @@ def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index
         with open(f"Examples/ENG/translation{input_file.name}", "r", encoding="utf-8") as file:
             translated_note = file.read()
     else:
+        start_transl = time.time()
         with open(input_file, "r", encoding="utf-8") as f:
             italian_data = f.read()
 
@@ -80,6 +82,8 @@ def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index
         with open(eng_path, "w", encoding="utf-8") as f:
             f.write(translated_note)
         print(f"Translation saved to {eng_path}")
+        end_transl = time.time()
+        print(f"Translation time: {end_transl-start_transl:.3f} seconds")
 
 
     # RETRIEVAL
@@ -144,7 +148,7 @@ def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index
         output = generate_letter(prompt=prompt, tokenizer=tokenizer, model=llm_model, temperature=TEMPERATURE)
 
     print("Translating recommendations in Italian...\n")
-    # output = deepl_translation_en_it(output)
+    output = deepl_translation_en_it(output)
 
     print("=== GENERATED RECOMMENDATIONS ===\n")
 
@@ -182,7 +186,7 @@ if __name__ == "__main__":
             cross_encoder=cross_encoder,
             index=index,
             metadata=metadata,
-            use_existing_transl=True,
+            use_existing_transl=False,
             llm_model=model,
             tokenizer=tokenizer
         )
