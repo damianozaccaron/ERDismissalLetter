@@ -35,7 +35,7 @@ def build_discharge_prompt(patient_data: str, retrieved_chunks: list[dict]) -> s
     # ── TASK ──
     prompt.append(
         "TASK:\n"
-        "Produce discharge recommendations in two sections.\n\n"
+        "Produce discharge recommendations in two sections, do not add anything else.\n\n"
 
         "SECTION 1 — DISCHARGE RECOMMENDATIONS\n"
         "A numbered list of concise instructions for the patient.\n"
@@ -162,7 +162,7 @@ def build_hospitalisation_prompt(patient_data: str, retrieved_chunks: list[dict]
         "Example:\n"
         "2 - [E1][E9] - IVIG 2g/kg and aspirin 30-50mg/kg/day are "
         "first-line treatment for Kawasaki disease to prevent coronary "
-        "artery aneurysms.\n"
+        "artery aneurysms.\n\n"
     )
 
     # ── RULES ──

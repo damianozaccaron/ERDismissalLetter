@@ -9,10 +9,11 @@ from config import (
     RETRIEVAL_K,
     FINAL_N,
     TEMPERATURE,
+    OPENROUTER_KEY,
+    API,
     TEST,
     QUANT,
-    REPO,
-    MODEL_QUANT)
+    REPO)
 
 from storage.storage import load_index_and_metadata, load_vectorizer
 from storage.embedding import embed_query, load_embedder
@@ -45,12 +46,12 @@ def load_models():
 
     tokenizer = None
 
-    if TEST:
+    if TEST or API:
         llm_model = None
     elif QUANT:
         # quantized models
         print("Loading LLM...")
-        llm_model = load_model_quant(repo=REPO, model_name=MODEL_QUANT)
+        llm_model = load_model_quant(repo=REPO, model_name=MODEL_NAME)
     else:
         # non-quantized models (transformers library)
         print("Loading LLM...")
@@ -59,7 +60,8 @@ def load_models():
 
     return ner_model, vectorizer, emb_model, cross_encoder, index, metadata, llm_model, tokenizer
 
-def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index, metadata, llm_model, tokenizer, use_existing_transl = True):
+
+def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index, metadata, llm_model, tokenizer, use_existing_transl = False):
     print(f"\n{'='*50}")
     print(f"Processing: {input_file.name}")
     print(f"{'='*50}")
@@ -96,7 +98,7 @@ def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index
     query_embeddings = []
 
     # top-k
-    for i, q in enumerate(queries, 1):
+    for _, q in enumerate(queries, 1):
         q_emb = embed_query(q, embedder=emb_model)
         query_embeddings.append(q_emb)
 
@@ -145,7 +147,15 @@ def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index
     if TEST:
         output = prompt
     else:
-        output = generate_letter(prompt=prompt, tokenizer=tokenizer, model=llm_model, temperature=TEMPERATURE)
+        backend = "local"
+        if API:
+            backend = "openrouter"
+            llm_model = MODEL_NAME
+        start_gen = time.time()
+        output = generate_letter(prompt=prompt, model=llm_model, tokenizer=tokenizer, backend=backend, 
+                                 temperature=TEMPERATURE, max_tokens=2048, api_key=OPENROUTER_KEY)
+        end_gen = time.time()
+        print(f"Generation time: {end_gen-start_gen:.3f} seconds")
 
     print("Translating recommendations in Italian...\n")
     output = deepl_translation_en_it(output)
@@ -176,6 +186,7 @@ if __name__ == "__main__":
 
     ner_model, vectorizer, emb_model, cross_encoder, index, metadata, model, tokenizer = load_models()
 
+    start_total = time.time()
     for input_file in txt_files:
         start = time.time()
         output, queries = main(
@@ -186,7 +197,7 @@ if __name__ == "__main__":
             cross_encoder=cross_encoder,
             index=index,
             metadata=metadata,
-            use_existing_transl=False,
+            use_existing_transl=True,
             llm_model=model,
             tokenizer=tokenizer
         )
@@ -194,8 +205,8 @@ if __name__ == "__main__":
         print(f"{input_file} processed in {end-start:.3f} seconds.")
 
         stem = input_file.stem
-        output_path = results_dir / f"{stem}_output.txt"
-        queries_path = results_dir / f"{stem}_queries.txt"
+        output_path = results_dir / f"output/{stem}_output.txt"
+        queries_path = results_dir / f"queries/{stem}_queries.txt"
 
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(output)
@@ -216,3 +227,5 @@ if __name__ == "__main__":
                 f.write(original_rec)
 
         print(f"Results saved to {output_path} and {queries_path}")
+    end_total = time.time()
+    print(f"\nAverage execution time: {(end_total-start_total)/len(txt_files):.3f} seconds")

@@ -1,0 +1,17 @@
+SEZIONE 1 - NOTA DI AMMISSIONE
+1. La paziente viene ricoverata d'urgenza nel reparto di Ginecologia per ulteriori indagini diagnostiche e per valutare la strategia terapeutica in merito alla gestione medica o chirurgica.
+2. La paziente e la sua famiglia sono state informate della diagnosi di sospetta gravidanza extrauterina, del decorso clinico previsto, compreso il protocollo di trattamento, delle possibili complicanze e della necessità di monitoraggio, nonché del percorso terapeutico previsto.
+3. La paziente viene affidata alle cure del team di ginecologia.
+
+SEZIONE 2 - RIFERIMENTI CLINICI (per il medico revisore)
+1 - [E1][E2] - Il ricovero ginecologico urgente è necessario per eseguire una valutazione diagnostica completa e determinare la strategia terapeutica appropriata tra gestione medica e chirurgica per una sospetta gravidanza extrauterina.
+2 - [E1][E2] - La consulenza alla paziente e alla famiglia deve riguardare la diagnosi, i protocolli di trattamento disponibili, le potenziali complicanze, il monitoraggio clinico richiesto e gli esiti psicologici come componente standard del percorso di gestione della gravidanza extrauterina.
+
+============================================================
+ORIGINAL RECOMMENDATIONS (for comparison)
+============================================================
+• Paziente ricoverata in urgenza presso U.O. Ginecologia e Ostetricia per ecografia
+transvaginale dedicata, monitoraggio del β-hCG e valutazione terapeutica.
+• Digiuno disposto in previsione di eventuale intervento chirurgico.
+• Monitoraggio dei parametri vitali garantito durante il trasferimento.
+• Si affida alla presa in carico del team ginecologico.
