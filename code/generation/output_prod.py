@@ -60,7 +60,7 @@ def generate_letter_local(prompt: str, tokenizer, model, max_new_tokens = 2048, 
         return output["choices"][0]["text"].strip()
 
 
-def generate_letter_openrouter(prompt: str, model = "qwen/qwen3.6-plus:free", api_key=None, temperature = 0.2, 
+def generate_letter_openrouter(prompt: str, model = "anthropic/claude-opus-4.6", api_key=None, temperature = 0.2, 
                                max_tokens = 2048, use_reasoning = False) -> str:
     """
     Generate text via the OpenRouter API.

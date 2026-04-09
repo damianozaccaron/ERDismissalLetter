@@ -159,7 +159,7 @@ def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index
         print(f"Generation time: {end_gen-start_gen:.3f} seconds")
 
     print("Translating recommendations in Italian...\n")
-    # output = deepl_translation_en_it(output)
+    output = deepl_translation_en_it(output)
 
     print("=== GENERATED RECOMMENDATIONS ===\n")
 
