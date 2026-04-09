@@ -5,7 +5,7 @@ Diabetic fibrillation ATRIAL FIBRILLATION hypertension. ATRIAL FIBRILLATION OF N
 Metoprolol tartrate amlodipine anticoagulant anticoagulant therapy metfromin therapy. ATRIAL FIBRILLATION OF NEW RAPID VENTRICOLAR RESPONSE. therapy recommendations pharmacological management dosage clinical scores diagnostic evaluation
 
 --- Query 3 ---
-Venous access found and troponin, biochemistry, blood count, TSH, pro-BNP, electrolytes performed. Pro-BNP 480 pg/mL (slightly elevated). CHA₂DS₂-VASc is calculated: 3 points (according to ESC 2020 guidelines). ATRIAL FIBRILLATION OF NEW RAPID VENTRICOLAR RESPONSE. findings results clinical course management
+CHA₂DS₂-VASc is calculated: 3 points (according to ESC 2020 guidelines). Venous access found and troponin, biochemistry, blood count, TSH, pro-BNP, electrolytes performed. Pro-BNP 480 pg/mL (slightly elevated). ATRIAL FIBRILLATION OF NEW RAPID VENTRICOLAR RESPONSE. findings results clinical course management
 
 --- Query 4 ---
 ATRIAL FIBRILLATION OF NEW RAPID VENTRICOLAR RESPONSE recommendations discharge management elderly male

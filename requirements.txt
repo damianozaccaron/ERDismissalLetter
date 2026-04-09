@@ -4,5 +4,6 @@ transformers
 fitz
 faiss-cpu
 protobuf
-# llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu121
 deepl
+
+# llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu124

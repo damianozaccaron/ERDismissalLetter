@@ -38,7 +38,7 @@ def generate_letter_local(prompt: str, tokenizer, model, max_new_tokens = 2048, 
                 max_new_tokens=max_new_tokens,
                 temperature=temperature,
                 do_sample=temperature > 0,
-                echo=True)
+                echo=False)
 
         decoded = tokenizer.decode(
             outputs[0],
@@ -54,7 +54,7 @@ def generate_letter_local(prompt: str, tokenizer, model, max_new_tokens = 2048, 
             max_tokens=max_new_tokens,
             temperature=temperature,
             stop=["</s>"],
-            echo=True
+            echo=False
         )
 
         return output["choices"][0]["text"].strip()

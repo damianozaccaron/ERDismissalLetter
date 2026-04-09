@@ -11,7 +11,7 @@ from config import (
     TEMPERATURE,
     OPENROUTER_KEY,
     API,
-    TEST,
+    RETRIEVAL_ONLY,
     QUANT,
     REPO)
 
@@ -46,7 +46,7 @@ def load_models():
 
     tokenizer = None
 
-    if TEST or API:
+    if RETRIEVAL_ONLY or API:
         llm_model = None
     elif QUANT:
         # quantized models
@@ -67,7 +67,7 @@ def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index
     print(f"{'='*50}")
 
     # PATIENT DATA COLLECTION
-    # raw_data = collect_patient_input()
+    # italian_data = collect_patient_input()
   
     if use_existing_transl:
         with open(f"Examples/ENG/translation{input_file.name}", "r", encoding="utf-8") as file:
@@ -144,7 +144,7 @@ def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index
     prompt = build_prompt(translated_note, final_chunks, prognosis=prognosis)
 
     print("Generating recommendations...\n")
-    if TEST:
+    if RETRIEVAL_ONLY:
         output = prompt
     else:
         backend = "local"
@@ -158,7 +158,7 @@ def main(input_file: str, ner_model, vectorizer, emb_model, cross_encoder, index
         print(f"Generation time: {end_gen-start_gen:.3f} seconds")
 
     print("Translating recommendations in Italian...\n")
-    output = deepl_translation_en_it(output)
+    # output = deepl_translation_en_it(output)
 
     print("=== GENERATED RECOMMENDATIONS ===\n")
 
@@ -216,7 +216,7 @@ if __name__ == "__main__":
                 f.write(f"--- Query {i} ---\n{q}\n\n")
                 
         # Append original recommendations for comparison
-        rec_path = results_dir / "recommendations" / f"{stem}_rec.txt"
+        rec_path = Path("Examples/recommendations") / f"{stem}_rec.txt"
         if rec_path.exists():
             with open(rec_path, "r", encoding="utf-8") as f:
                 original_rec = f.read()

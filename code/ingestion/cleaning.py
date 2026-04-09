@@ -1,22 +1,20 @@
 import re
 
+def detect_biblio(text: str, threshold: float = 0.1) -> bool:
 
-def detect_biblio(text: str, threshold = 8) -> bool:
-    """Detects if a page is likely to be part of the bibliography section by looking for common indicators like DOIs, URLs, and "et al." references. """
+    lines = [l.strip() for l in text.split('\n') if l.strip()]
+    if not lines:
+        return False
     
-    text_lower = text.lower()
+    journal_citation = re.compile(r'\d{4}\s*;\s*\d+\s*[:(/]*') # "2021;28:" or "2014;93(" or "1993; 36:" (journal volume citations)
+    ref_lines = 0
+    for line in lines:
+        has_citation = journal_citation.search(line) or re.search(r'doi|http', line, re.IGNORECASE)
+        if has_citation:
+            ref_lines += 1
 
-    doi_count = text_lower.count("doi")
-    url_count = text_lower.count("http")
+    return ref_lines/len(lines) >= threshold
 
-    if doi_count + url_count >= threshold:
-        return True
-
-    etal_counter = text_lower.count("et al")
-    if etal_counter >= threshold:
-        return True
-    
-    return False
 
 def detect_index(text: str, threshold: float = 0.4) -> bool:
     """
@@ -34,8 +32,8 @@ def detect_index(text: str, threshold: float = 0.4) -> bool:
     # Keyword detection (weight: 0.30)
     # TOC/index headers
     keyword_pattern = re.compile(
-        r'\b(table of contents|contents|index|'
-        r'|abbreviations|list of figures|list of tables)\b',
+        r'\b(table of contents|index|'
+        r'|list of figures|list of tables)\b',
         re.IGNORECASE
     )
     header_text = " ".join(lines[:20])
@@ -53,11 +51,11 @@ def detect_index(text: str, threshold: float = 0.4) -> bool:
     number_ratio = number_ending_count / len(lines)
     score += 0.40 * min(number_ratio / 0.5, 1.0)  # full score at 50%+ lines matching
  
-    # 3. Dot/dash leaders (weight: 0.15)
+    # 3. Dot/dash leaders (weight: 0.20)
     leader_pattern = re.compile(r'[.\-·…]{5,}')
     leader_count = sum(1 for line in lines if leader_pattern.search(line))
     leader_ratio = leader_count / len(lines)
-    score += 0.15 * min(leader_ratio / 0.3, 1.0)  # full score at 30%+ lines
+    score += 0.2 * min(leader_ratio / 0.3, 1.0)  # full score at 30%+ lines
  
     return score >= threshold
 
@@ -122,7 +120,7 @@ def remove_summaries(lines: list[str]) -> list[str]:
             continue
         if line.count(";") >= 3:
             continue
-        # if len(line) >= 300 and line.count(",") / len(line) > 0.05::
+        # if len(line) >= 300 and line.count(",") / len(line) > 0.05:
             # continue
 
         cleaned.append(line)

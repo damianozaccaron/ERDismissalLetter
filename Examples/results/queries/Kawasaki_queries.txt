@@ -5,7 +5,7 @@ Kawasaki disease. KAWASAKI DISEASE - CLASSIC FORM (5/5 criteria present). diagno
 paracetamol ibuprofen anti antibiotic. KAWASAKI DISEASE - CLASSIC FORM (5/5 criteria present). therapy recommendations pharmacological management dosage clinical scores diagnostic evaluation
 
 --- Query 3 ---
-Found venous access and performed biochemistry, blood count, indices of inflammation, procalcitonin, ESR, fibrinogen, ALT/AST, bilirubin, albumin, sodium, potassium, renal function, urinalysis. ALT slightly elevated. Procalcitonin 2.4 ng/mL. KAWASAKI DISEASE - CLASSIC FORM (5/5 criteria present). findings results clinical course management
+Found venous access and performed biochemistry, blood count, indices of inflammation, procalcitonin, ESR, fibrinogen, ALT/AST, bilirubin, albumin, sodium, potassium, renal function, urinalysis. Procalcitonin 2.4 ng/mL. ALT slightly elevated. KAWASAKI DISEASE - CLASSIC FORM (5/5 criteria present). findings results clinical course management
 
 --- Query 4 ---
 KAWASAKI DISEASE - CLASSIC FORM (5/5 criteria present) recommendations discharge management pediatric male

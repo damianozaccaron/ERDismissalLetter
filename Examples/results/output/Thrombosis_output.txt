@@ -1,28 +1,112 @@
-SEZIONE 1 - RACCOMANDAZIONI DI SCARICO
-1. Continuare l'enoxaparina 8.000 UI per via sottocutanea come indicato dallo specialista, con una durata della terapia che deve essere determinata dallo specialista.
-2. Interrompa la sua attuale pillola contraccettiva orale e discuta con lo specialista di metodi contraccettivi alternativi.
-3. Viene rilasciata una prescrizione per una valutazione angiologica per la gestione continua della trombosi venosa profonda.
-4. Si rechi immediatamente al pronto soccorso più vicino se avverte dolore al petto, mancanza di respiro, tosse con sangue o un improvviso peggioramento del gonfiore e del dolore alle gambe.
-5. Verrà rinviato al suo medico di famiglia per qualsiasi ulteriore necessità diagnostica o terapeutica e per l'assistenza continua.
+ROLE:
+You are an emergency department physician writing discharge recommendations for a patient. The document will be read by the patient and their general practitioner.
 
-SEZIONE 2 - RIFERIMENTI CLINICI (per il medico revisore)
-1 - [E3][E4] - La terapia anticoagulante è indicata per la trombosi venosa profonda distale isolata confermata.
-2 - [E7] - La terapia contraccettiva orale è classificata come fattore di rischio moderato per il tromboembolismo venoso.
-3 - [E3][E8] - Il follow-up specialistico è necessario per la gestione continua della trombosi venosa profonda provocata e per la valutazione della trombofilia.
-4 - [E2][E7] - I sintomi di allarme corrispondono a una potenziale embolia polmonare o alla progressione della malattia, che sono complicanze note del tromboembolismo venoso.
-5 - [E3] - Il follow-up del medico di famiglia assicura la continuità delle cure per la gestione della trombosi venosa profonda.
+CLINICAL NOTE:
 
-============================================================
-ORIGINAL RECOMMENDATIONS (for comparison)
-============================================================
-Si consiglia:
-• Prosegua enoxaparina 8.000 UI s.c. ogni 12 ore fino a rivalutazione specialistica, oppure si
-imposti terapia con DOAC secondo indicazione dello specialista.
-• Sospenda immediatamente la pillola anticoncezionale e si rivolga al ginecologo per metodo
-contraccettivo alternativo non ormonale.
-• Si rilascia impegnativa per visita angiologica/ematologica e valutazione per trombofilia (da
-eseguire a distanza dalla fase acuta e dalla sospensione dell'anticoagulante).
-• Astensione dal fumo raccomandata con fermezza.
-• Se comparsa di dispnea, dolore toracico, emottisi o peggioramento del quadro locale,
-rientrare immediatamente presso il più vicino PS.
-• Si riaffida al medico curante per presa in carico e continuazione terapeutica.
+FEMALE, 31 AA
+Medical history:
+- Pathological proximate: Patient accesses for pain and swelling in the left calf that has been present for about 3 days, progressively worsening. Denies dyspnoea, chest pain or haemoptysis. Denies fever. Does not report recent trauma or prolonged immobilisation.
+- Remote pathology: No known pathology. No previous thromboembolic events or family history of thrombophilia. On oral oestrogen therapy (contraceptive pill). Smoker of about 1 pack/day for 10 years. Denies drug allergies.
+
+Objective examination: Patient alert, oriented, co-operating. Not in pain at rest. Vesicular murmur present in all lung areas, no added noise. Heart tones normofrequent, rhythmic, free pauses. Abdomen treatable, not painful. Left lower limb: calf oedema, skin warm and erythematous distally. Right lower limb normal. BP 122/76 mmHg. HR 82 bpm. SpO2 99% aa. TC 36.8°C.
+
+Clinical diary:
+- Wells score for DVT is calculated: pain along deep venous course (+1), unilateral oedema (+1), swelling>3cm (+1). Total score: 3 - high pretest probability.
+- Venous access found and D-dimer, biochemistry, blood count, coagulation performed.
+- ECG is performed: sinus rhythm, no alterations.
+- Arterial EGA is performed: physiological exchanges, no acid-base alterations. Performed for diagnostic completion in view of thromboembolic suspicion, normal.
+- Examinations are performed: D-dimer 2,840 ng/mL (v.n. <500), significantly elevated. No indices of inflammation. CBC and coagulation normal.
+- Venous echocolordoppler of the left lower limb is performed: deep venous thrombosis of the left twin veins, without extension to the popliteal vein. No involvement of the proximal venous circulation.
+- The angiologist/on-call internist is contacted for collegial assessment and therapeutic setting.
+- Anticoagulant therapy is imposed: enoxaparin 8,000 IU (100 IU/kg, weight 80kg) s.c., first dose administered in the PS.
+
+Diagnosis: DEEP VENOUS THROMBOSIS OF THE LEFT GEMELLAR VENEES
+Prognosis: 4 days
+
+
+
+GUIDELINE EXCERPTS:
+
+[E1] (VenousThrombosis, p.46-46)
+
+which exhibits high risk clinical and/or anatomical features, a three month course of anticoagulation may be considered. Class Level Reference IIb C Nikolakopoulos et al. (2018) Recommendation 50 For patients with lower limb superﬁcial vein thrombosis, acute superﬁcial venous intervention is not recommended. Class Level Reference III C Lozano & Almazan (2003) Recommendation 51 For patients with lower limb superﬁcial vein thrombosis, ablation of incompetent superﬁcial veins should be considered once the acute inﬂammatory and prothrombotic phase has settled, at least three months after the most recent thrombotic event. Class Level Reference IIa C Consensus 3. SPECIFIC TYPES OF VENOUS THROMBOSIS 3.. Upper extremity deep vein thrombosis 3... Diagnosis. Approximately 10% of all cases of DVT occur in the upper extremities, which affect 4 e 10 per 100 000 population. Two different types of UEDVT are recognised. Primary effort thrombosis (PageteSchroetter disease), often triggered by strenuous effort, and secondary UEDVT, which is usually related to the use of a central venous catheter (CVC), the latter being far more frequent (see Chapter 3.).
+
+
+[E2] (VenousThrombosis, p.43-44)
+
+5.%) but was associated with deep venous events. In the Italian ICARO study (Internal Carotid ARtery Occlusion) of patients with SVT, an annual VTE rate of 4.% in patients not on anticoagulation was reported. In a Danish study of patients with SVT, the risk of DVT and PE persisted for three decades, although a reduction in risk over time was seen. It is unclear if treatment of the underlying superﬁcial venous disease reduces or abolishes this risk. An alternative explanation for this continued risk may be the presence of undetected DVT at baseline, including DVT in the contralateral leg. 2... Antithrombotic treatment for superﬁcial vein thrombosis. An extensive overview of the currently available evidence is provided in the most recent update of the Cochrane review on the treatment of SVT of the leg. The heterogeneity of the evidence with anticoagulation precluded a formal meta-analysis. This was because a variety of ESVS 2021 Clinical Practice Guidelines on the Management of Venous Thrombosis 43 LMWHs (and also UFH and warfarin) were given at variable dosages and for a variable duration. Most studies were small and thus underpowered for the outcome measures of DVT and PE.
+
+
+[E3] (VenousThrombosis, p.42-43)
+
+It may be complicated by massive PE, compartment syndrome and, potentially, lead to venous gangrene. Cancer and hypercoagulable states may play a major role in the development of this rare condition. CT or MRI can complement ultrasound by excluding alternative diagnoses, but must not delay treatment, which may be associated with amputation rates of up to 50% and Table 19. Risk factors for recurrent venous thromboembolism in patients with calf deep vein thrombosis Clinical parameter Annual recurrence rate (95% CI) e % aHR (95% CI) p Age >50 y 3. (2.e.) vs. 0. (0.e.) for <50 y 3. (1.e.) Male sex e 4. (1.e.) . Multiple unilateral thromboses 4. (3.e.) vs. 1. (1.e.) for single unilateral thrombosis 2. (1.e.) Bilateral DVT 8. (3.e.) vs. 1. (1.e.) for single unilateral thrombosis 4. (1.e.) Unprovoked DVT 3. (2.e.) vs. 1. (0.e.) for provoked 3. (1.e.) Cancer 34 (15e) vs. 9 (5e)* 5. (1.e.) . * CI ¼ conﬁdence interval; aHR ¼ adjusted hazard ratio; DVT ¼ deep vein thrombosis. * Proximal deep vein thrombosis/pulmonary embolism. 42 Stavros K. Kakkos et al. mortality rates of up to 40% for patients treated with anticoagulation alone.
+
+
+[E4] (VenousThrombosis, p.21-22)
+
+The 4Ts score is the sum of the values for each of the four categories. Scores of 1e, 4e, and 6e are considered to correspond to a low, intermediate, and high probability of heparin induced thrombocytopenia, respectively 4Ts 2 points 1 point 0 points Thrombocytopenia Platelet drop >50% and platelet nadir >20 000/mL Platelet drop 30%e% or platelet nadir 10e 000/mL Platelet count drop <30% or platelet nadir <10 000/mL Timing of platelet count fall Clear onset days 5e or platelet drop <1 day with prior heparin exposure within 30 d Consistent with days 5e fall but not clear (e.g., missing platelet counts) onset after day 10; ESVS 2021 Clinical Practice Guidelines on the Management of Venous Thrombosis 21 rivaroxaban reduced recurrence rates to 2%, 2.%, and 0.%, respectively, at 12 months. Therefore, these ﬁndings suggest that patients with provoked DVT and minor risk factors may beneﬁt from extended anticoagulation therapy, similarly to patients with unprovoked DVT (see Chapter 2..). 2.... Duration of anticoagulation therapy after provoked deep vein thrombosis. The risk of recurrent events after discontinuation of anticoagulation for DVT has been studied extensively.
+
+
+[E5] (VenousThrombosis, p.37-37)
+
+0. 0. 1 10 100 Figure 6. Forest plot analysis of randomised controlled trials comparing early thrombus (thr.) removal techniques with anticoagulation alone regarding the outcome of major bleeding in patients with (A) iliofemoral deep vein thrombosis (DVT) or (B) any proximal DVT. Unlike the analyses in Figs. 4 and 5, TORPEDO (Thrombus Obliteration by Rapid Percutaneous Endovenous Intervention in Deep Venous Occlusion) did not categorise the three bleeding events reported and was not included in the meta-analysis. The incidence of major bleeding was higher with early thrombus removal techniques than anticoagulation alone. There was no heterogeneity or signiﬁcant subgroup difference. Risk ratio is based on ﬁxed ManteleHaenszel (M-H) method. CI ¼ conﬁdence interval; ATTRACT ¼ Acute Venous Thrombosis: Thrombus Removal with Adjunctive Catheter-Directed Thrombolysis; CAVA ¼ CAtheter Versus Anticoagulation Alone for Acute Primary Iliofemoral DVT. ESVS 2021 Clinical Practice Guidelines on the Management of Venous Thrombosis 37
+
+
+[E6] (VenousThrombosis, p.40-41)
+
+(CACTUS) 259 Axial or muscle calf vein thrombosis, excluding recurrence and cancer associated DVT Nadroparin for 6 w Placebo Double blind Extension of calf DVT to proximal veins, contralateral proximal DVT, or symptomatic PE No difference at 6 w and 3 mo Pinede et al. (DOTAVK) 197 Calf vein thrombosis, excluding recurrence and cancer associated DVT VKA for 12 w VKA for 6 w Open label Recurrent VTE and haemorrhage No difference in outcome rates up to 15 mo Schulman et al. (DURAC) 347 Distal deep vein thrombosis, excluding recurrence and cancer associated DVT VKA for 6 mo VKA for 6 w Open label Recurrent VTE at 2 y A non-signiﬁcant trend towards reduced VTE rates with 6 mo treatment Ferrara et al. 192 Post-operative calf vein thrombosis VKA for 12 w VKA for 6 w Open label Extension of calf DVT to proximal veins, symptomatic PE, and major bleeding at 12e w In patients with single vessel DVT there was no signiﬁcant difference between the two subgroups, whereas in patients with DVT involving 2 vessels, DOTAVK ¼ Durée Optimale du Traitement AntiVitamines K; DURAC ¼ Duration of Anticoagulation trial; Pts ¼ patients. 40 Stavros K. Kakkos et al. 0., 95% CI 0. e 1.; p ¼ . ).
+
+
+[E7] (VenousThrombosis, p.7-7)
+
+pregnancy (particularly the postpartum period), long distance travel, recent hospitalisation, and antiphospholipid syndrome (APS). Primary varicose veins constitute a minor risk factor only. More recently, prolonged computer related “seated immobility syndrome” has also been recognised as a potential risk factor. The most common inherited risk factor is a non-O blood type, which is associated with double the risk of VTE. Another common thrombophilia is heterozygous factor V Leiden gene polymorphism, which may increase the risk of VTE by a factor of 3 e 8 in selected populations. Severe thrombophilia comprising homozygous factor V Leiden, deﬁciency of antithrombin, protein C or protein S, and APS increases the risk of DVT by a factor of 20 e 80. Important risk factors for arterial thromboembolism such as hypertension and diabetes are also risk factors for VTE, but their signiﬁcance is far less prominent. For patients with cancer, an externally validated clinical prediction model incorporating D dimer and only one clinical factor (tumour site category) has been shown to predict the risk of VTE. 2... Pathophysiology of deep vein thrombosis.
+
+
+[E8] (VenousThrombosis, p.43-43)
+
+These observations have discredited the widely held perception that SVT is a benign condition. The thromboembolic risk may be higher in subgroups with cancer or extensive thrombosis, particularly if located at thigh level, affecting the GSV or at the popliteal fossa affecting the small saphenous vein (SSV), or extending near the junction with the deep venous system.e 2.... Long term outcomes. Several studies have investigated the long term (> 3 months) thromboembolic risks following an episode of SVT. These risks may be associated with ongoing venous stasis in patients with varicose veins, if not treated by stripping or ablative methods, or other risk factors like thrombophilia or malignancy. In one study with a one year follow up, thromboembolic events after three months occurred at an annualised rate of 4.%, with half of events affecting the deep venous system. In the French OPTIMEV study, which had three years of follow up, VTE recurrence rates were comparable for patients with a ﬁrst isolated SVT and proximal DVT (5.% and 6.% per patient year, respectively; adjusted HR [aHR] 0., 95% CI 0. e 1.).
+
+
+[E9] (AcutePulmonaryEmbolism, p.11-11)
+
+Zones of reduced flow in obstructed Table 3 Predisposing factors for venous thromboembolism (data modiﬁed from Rogers et al. and Anderson and Spencer) Strong risk factors (OR > 10) Fracture of lower limb Hospitalization for heart failure or atrial ﬁbrillation/ﬂutter (within previous 3 months) Hip or knee replacement Major trauma Myocardial infarction (within previous 3 months) Previous VTE Spinal cord injury Moderate risk factors (OR 29) Arthroscopic knee surgery Autoimmune diseases Blood transfusion Central venous lines Intravenous catheters and leads Chemotherapy Congestive heart failure or respiratory failure Erythropoiesis-stimulating agents Hormone replacement therapy (depends on formulation) In vitro fertilization Oral contraceptive therapy Post-partum period Infection (speciﬁcally pneumonia, urinary tract infection, and HIV) Inﬂammatory bowel disease Cancer (highest risk in metastatic disease) Paralytic stroke Superﬁcial vein thrombosis Thrombophilia Weak risk factors (OR < 2) Bed rest >3 days Diabetes mellitus Arterial hypertension Immobility due to sitting (e.g. prolonged car or air travel) Increasing age Laparoscopic surgery (e.g. cholecystectomy) Obesity Pregnancy Varicose veins HIV = human immunodeﬁciency virus; OR = odds ratio; VTE = venous thromboembolism. ..................................
+
+
+[E10] (VenousThrombosis, p.54-55)
+
+1 2 5 Figure 13. Forest plot analysis of randomised controlled trials comparing a direct oral anticoagulant (DOAC), (A) edoxaban, (B) rivaroxaban, or (C) abixaban, with dalteparin for cancer associated venous thrombosis, regarding the outcome of major bleeding. 54 Stavros K. Kakkos et al. 4.. Deep vein thrombosis in patients with thrombophilia 4... General management of deep vein thrombosis in patients with thrombophilia. Details of testing for hereditary and acquired thrombophilias are provided in Chapter 2... The term thrombophilia is conventionally used to describe a propensity for developing thrombosis owing to the presence of hereditary and/or acquired prothrombotic abnormalities. The hereditary thrombophilias can be classiﬁed as either (1) loss of function of natural coagulation inhibitors (i.e., AT, protein C,and protein S deﬁciencies); or(2)gain of function with mutations in clotting proteins (i.e., factor V Leiden and prothrombin GA mutations). The accurate planning of anticoagulant therapy necessitates a thoughtful comprehension of VTE pathogenesis.
+
+
+TASK:
+Produce discharge recommendations in two sections, do not add anything else.
+
+SECTION 1 — DISCHARGE RECOMMENDATIONS
+A numbered list of concise instructions for the patient.
+Rules:
+- One or two sentences per item. Be direct: "Continue...", "Stop...", "A prescription is issued for...".
+- Combine closely related actions into a single item (e.g. stopping a medication and adopting an alternative is one recommendation, not two). Never combine medication prescriptions with non-medication actions.
+- For medications: always include drug name, dose, route, and frequency (e.g. "every 12 hours"), but do not make up information. Copy the exact dosing from the clinical note. If frequency is not in the clinical note or excerpts, write "as directed by the specialist".
+- For lifestyle factors (smoking, alcohol, diet, exercise): use strong advisory tone ("strongly recommended", "strongly advised") rather than direct orders.
+- For lifestyle factors, if the patient is already doing the right thing (e.g. non-smoking, not overweight),don't acknowledge it. Only give instructions for things that need to be changed or started.
+- For follow-up appointments and specialist referrals, use the phrasing: "A prescription is issued for [specialist type] evaluation for [clinical purpose]" and always specify the specialist type from the clinical note (e.g. "angiologist", "cardiologist", "internist") and the clinical purpose of the visit (e.g. "for thrombophilia screening", "for initiation of anticoagulant therapy", "for echocardiographic follow-up").
+- Do NOT explain why. No rationale, no "because...", no "to reduce the risk of...", no pathophysiology.
+- Do NOT speculate about future treatment decisions (duration of therapy, drug switches). Write "to be determined by the specialist" and move on.
+- No sub-bullets, no bold, no markdown headers, no category groupings. Just a numbered list.
+- Do NOT cite [E#] in this section. Citations belong only in Section 2.
+- The second-to-last item must always be: "Go to the nearest emergency department immediately if you experience [relevant warning symptoms for this diagnosis]."
+- The last item must always be: "You are referred back to your general practitioner for any further diagnostic or therapeutic needs and ongoing care."
+- If a topic cannot be addressed by the excerpts: "Refer to specialist for [topic]."
+
+SECTION 2 — CLINICAL REFERENCES (for the reviewing physician)
+For each recommendation number in Section 1, write:
+[number] - [E#] - brief clinical justification
+Example:
+1 - [E4][E7] - Anticoagulation recommended for confirmed distal DVT with high pretest probability.
+3 - [E7] - Oral contraceptives classified as moderate VTE risk factor (OR 2-9).
+
+RULES:
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge.
+- Do NOT invent drug names, dosages, frequencies, or clinical facts not in the clinical note or excerpts.
+- When multiple excerpts cover the same topic, write one recommendation and cite all relevant excerpts.
+- Do not repeat the same recommendation in different wording.
+- Section 1 must be directly usable as a discharge document with no editing needed.

@@ -7,7 +7,7 @@ curl -X POST 'https://api-free.deepl.com/v3/glossaries' \
     {
       "source_lang": "it",
       "target_lang": "en",
-      "entries": "Anamnesi\tMedical history\nPatologica Prossima\tPathological proximate\nPatologica Remota\tRemote pathology\nEsame obiettivo\tObjective examination\nDiario Clinico\tClinical diary\nDiagnosi\tDiagnosis\nPrognosi\tPrognosis\nEGA\tBlood Gas\nTC\tBody Temperature\nPCR\tC-reactive protein\nGiordano\tCVA Tenderness\nFC\tHeart Rate",
+      "entries": "Anamnesi\tMedical history\nPatologica Prossima\tPathological proximate\nPatologica Remota\tRemote pathology\nEsame obiettivo\tObjective examination\nDiario Clinico\tClinical diary\nDiagnosi\tDiagnosis\nPrognosi\tPrognosis\nRicovero\tHospitalisation\nEGA\tBlood Gas\nTC\tBody Temperature\nPCR\tC-reactive protein\nGiordano\tCVA Tenderness\nFC\tHeart Rate",
       "entries_format": "tsv"
     }
   ]

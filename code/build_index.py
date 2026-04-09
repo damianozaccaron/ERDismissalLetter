@@ -1,4 +1,4 @@
-from ingestion.pdf_retriever import extract_folder
+from ingestion.pdf_parsing import extract_folder
 from ingestion.chunking import create_chunks
 from storage.embedding import load_embedder, embed_docs
 from storage.storage import build_faiss_index, build_metadata, save_index_and_metadata, sanity_check, save_vectorizer, build_vectorizer

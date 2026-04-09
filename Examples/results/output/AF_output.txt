@@ -1,17 +1,107 @@
-SEZIONE 1 - NOTA DI AMMISSIONE
-1. Il paziente viene ricoverato nel reparto di Cardiologia per una valutazione diagnostica approfondita, l'inizio della terapia anticoagulante orale e la valutazione di una strategia di controllo della frequenza rispetto al ritmo.
-2. Il paziente e la famiglia sono stati informati della diagnosi di fibrillazione atriale, del decorso clinico previsto che richiede un monitoraggio cardiaco continuo e una stratificazione del rischio di ictus, del potenziale di complicazioni tromboemboliche e di recidiva dell'aritmia e del percorso terapeutico previsto.
-3. Il paziente viene formalmente consegnato alle cure dell'équipe di cardiologia per la gestione ospedaliera continua.
+ROLE:
+You are an emergency department physician writing recommendations for a patient being admitted to hospital. The document will be read by the admitting team, the patient, and their family.
 
-SEZIONE 2 - RIFERIMENTI CLINICI (per il medico revisore)
-1 - [E5][E6] - La valutazione delle strategie di controllo della frequenza rispetto al ritmo è una componente standard del percorso della fibrillazione atriale per ridurre i sintomi, prevenire la cardiomiopatia indotta dalla tachicardia e guidare il processo decisionale condiviso.
-2 - [E1][E3][E9] - Il quadro AF-CARE prevede la stratificazione sistematica del rischio di ictus, la valutazione clinica continua e la gestione delle comorbilità per mitigare i rischi di tromboembolismo sistemico, insufficienza cardiaca e progressione dell'aritmia, stabilendo al contempo un protocollo di trattamento strutturato.
+CLINICAL NOTE:
 
-============================================================
-ORIGINAL RECOMMENDATIONS (for comparison)
-============================================================
-Si consiglia:
-• Paziente ricoverato presso U.O. Cardiologia per monitoraggio, ecocardiogramma
-transtoracico dedicato, avvio di terapia anticoagulante orale (DOAC) e valutazione in
-elezione della strategia terapeutica.
-• Si informa il paziente e i familiari presenti della diagnosi e del percorso previsto.
+MALE, 71 AA
+Medical history:
+Pathological proximate: Patient accesses for heart palpitation and sense of irregular heartbeat arising approximately 4 hours prior to access, associated with mild asthenia. Denies chest pain, syncope or pre-syncope. Reports similar, self-resolved episode about 3 months ago, not investigated. Denies dyspnoea.
+Remote pathology: arterial hypertension under therapy with amlodipine 5mg. Diabetic on metfromin therapy. No known dyslipidaemia. Former smoker, about 1 pack/day for 30 years, STOP 15 years ago. No known cardiovascular events or family history of arrhythmias. Denies drug allergies.
+
+Objective examination: Patient alert, oriented, cooperative. Mildly anxious. Eupnoic at rest. Vesicular murmur present in all lung areas, no added noise. Arrhythmic cardiac tones, pauses not free, heart rate approx. 110-120 bpm. No appreciable murmurs. Abdomen treatable, not painful. Jordan and Blumberg negative. No declivous oedema or signs of deep vein thrombosis. BP 158/94 mmHg. HR 114 bpm. SpO2 97% aa. TC 36.5°C.
+
+Clinical diary:
+- Immediate ECG is performed: rapid ventricular response atrial fibrillation (HR 114 bpm), no signs of acute ischaemia, no repolarisation changes. First documented finding.
+- Venous access found and troponin, biochemistry, blood count, TSH, pro-BNP, electrolytes performed. Arterial EGA is performed: physiological exchanges, mild hypoxemia (PaO2 72 mmHg).
+- Patient is sent to radiology for 2-projection chest X-ray: slight increase in hilar vascular pattern bilaterally, no frank pleural effusion, no parenchymal thickening. Mild enlargement of the cardiac shadow.
+- Tests are viewed: troponin <14, negative. No significant indices of inflammation. Blood count normal. TSH normal. Pro-BNP 480 pg/mL (slightly elevated). Potassium 3.8 mEq/L. Sodium 139 mEq/L.
+- Bedside echo performed: no pericardial effusion. Modest left atrial dilatation. No diffuse B lines in lung fields. Visually preserved left ventricular systolic function.
+- On-call cardiology is contacted for collegial assessment. Given the duration of the episode reported by the patient (approximately 4 hours), the approach is discussed: the patient is haemodynamically stable, therefore a decision is made to check the rate in the first instance.
+- Metoprolol tartrate 5mg e.v. is administered under continuous monitoring. ECG check after 20 minutes: persistent AF, HR reduced to 88 bpm. Patient reports slight improvement in symptoms.
+- Patient is informed of Diagnosis, need for anticoagulant therapy and related thromboembolic risk. CHA₂DS₂-VASc is calculated: 3 points (according to ESC 2020 guidelines). Indication for oral anticoagulant therapy.
+- Patient is admitted to cardiology for in-depth diagnosis, initiation of anticoagulant therapy and evaluation of rhythm vs. rate strategy in election.
+
+Diagnosis: ATRIAL FIBRILLATION OF NEW RAPID VENTRICOLAR RESPONSE
+
+Prognosis: hospitalisation
+
+
+
+GUIDELINE EXCERPTS:
+
+[E1] (AtrialFibrillation, p.20-20)
+
+cardiac imaging, ambulatory ECG, other imaging as needed Assess new and existing risk factors and comorbidities (Class I) Stratify risk for stroke and thromboembolism (Class I) Check impact of AF symptoms before and after treatment (Class I) Assess and manage modifiable bleeding risk factors (Class I) Continue OAC despite rhythm control if risk of thromboembolism (Class I) Regular re-evaluation: 6 months after presentation, and then at least annually or based on clinical need Figure 3 Central illustration. Patient pathway for AF-CARE (see Figures 4, 5, 6, and 7 for the [R] pathways for first-diagnosed, paroxysmal, persistent and permanent AF). AF, atrial fibrillation; AF-CARE, atrial fibrillation—[C] Comorbidity and risk factor management, [A] Avoid stroke and thromboembolism, [R] Reduce symptoms by rate and rhythm control, [E] Evaluation and dynamic reassessment; CCS, chronic coronary syndrome; CHADS-VA, congestive heart failure, hypertension, age ≥75 years (2 points), diabetes mellitus, prior stroke/transient ischaemic attack/arterial thromboembolism (2 points), sodium-glucose cotransporter-2; VKA, vitamin K antagonist.
+
+
+[E2] (AtrialFibrillation, p.24-25)
+
+AF, atrial fibrillation; AF-CARE, Atrial fibrillation—[C] Comorbidity and risk factor management, [A] Avoid stroke and thromboembolism, [R] Reduce symptoms by rate and rhythm control, [E] Evaluation and dynamic reassessment; b.p.m., Permanent AF is a shared decision made between the patient and physician that no further attempts at restoration of sinus rhythm are planned. aNote that the combination of betablockers with diltiazem or verapamil should only be used under specialist advice, and monitored with an ambulatory ECG to check for bradycardia. 5. [C] Comorbidity and risk factor management A broad array of comorbidities are associated with the recurrence and progression of AF. Managing comorbidities is also central to the success of other aspects of care for patients with AF, with evidence available for hypertension, heart failure, diabetes mellitus, obesity, and sleep apnoea, along with lifestyle changes that improve physical activity and reduce alcohol intake (see Supplementary data online, Additional Evidence Table S).
+
+
+[E3] (CardiovascularDiseaseClinicalPractices, p.38-38)
+
+the volume of the heart irradiated, concomitant Risk factors for AF Hypertension Obesity Diabetes mellitus Physical activity OSA Alcohol Dyslipidemia Smoking Lifestyle modification AF risk factors modification Treatment of underlying CV conditions Reduction of mortality and morbidity Primary prevention of AF Reduction of mortality and morbidity Symptomatic improvement Secondary prevention of AF Modifiable Ageing Genetics Heart failure CAD Valvular heart disease COPD Lifestyle modification AF risk factors modification Treatment of underlying CV conditions Stroke prevention Rate control AAD therapy Cardioversion Catheter ablation Surgery Non- or partly modifiable LA remodeling Electrical Biochemical Inflammation Reversible Fibrosis Scarring Dilatation Non-reversible AF outcomes Mortality Stroke/systemic thromboembolism Symptoms and quality of life Heart failure Dementia Myocardial infarction Hospitalizations and healthcare costs AF development and progression Paroxysmal Persistent Permanent Figure 9 The role of risk factors and comorbidities in atrial fibrillation. .............................................................................................................................................................................
+
+
+[E4] (AtrialFibrillation, p.40-41)
+
+Maximum doses have been defined based on the summary of product characteristic of each drug. aAll rate control drugs are contraindicated in Wolff–Parkinson–White syndrome; also intravenous amiodarone. bOther beta-blockers are available but not recommended as specific rate control therapy in AF and therefore not mentioned here (e.g. propranolol and labetalol). cNo data on atenolol; should not be used in heart failure with reduced ejection fraction or in pregnancy. dLoading regimen may vary; i.v. dosage should be considered when calculating total load. Cardioversion for atrial fibrillation Check OAC status as soon as possible and proceed to last step Pharmacological or electrical cardioversion (Class IIa) Decide on continued OAC post-cardioversion Short-term OAC after cardioversion (4 weeks) for all patients, even if CHADS-VA = 0 (optional if AF onset definitely <24 h and low thromboembolic risk) Long-term OAC for all patients according to thromboembolic risk assessment Already on therapeutic OAC for minimum 3 weeks Not already on OAC Wait-and-see approach for spontaneous conversion (Class IIa) Initiation of DOAC (or VKA, LMWH,
+
+
+[E5] (AtrialFibrillation, p.24-24)
+
+AF, atrial fibrillation; AF-CARE, Atrial fibrillation—[C] Comorbidity and risk factor management, aIn patients with HFrEF: Class I if high probability of tachycardia-induced cardiomyopathy; and Class IIa in selected patients to improve prognosis. Patient with permanent AF Evaluation and dynamic reassessment Initiate beta-blocker, digoxin, diltiazem or verapamil (Class I) Continue beta-blocker, digoxin, diltiazem or verapamil (Class I) Combination beta-blocker with digoxin, or diltiazem/ verapamil with digoxin; avoiding bradycardia (Class IIa)a Rate control target = resting heart rate <110 b.p.m. (lenient control), with stricter control with continuing symptoms (Class IIa) Continue review and follow-up as per AF-CARE approach Continue beta-blocker or digoxin (Class I) Combination beta-blocker with digoxin, avoiding bradycardia (Class IIa) Evaluation and dynamic reassessment Initiate beta-blocker or digoxin (Class I) Rate control target = resting heart rate  <110 b.p.m. (lenient control),
+
+
+[E6] (MentalHealthAndCardiovascular, p.40-40)
+
+wait for normalization • If symptomatic or persistent HR >130 bpm: beta-blocker, alternatively verapamil or ivabradine Sinus tachycardia • Management according to ESC Guidelines • Consider ablation as ﬁrst-line treatment for AVNRT and AVRT • Thromboembolic prophylaxis if needed • Choose rhythm or rate control according to ESC Guidelines • Caution with speciﬁc psychotropic drugsg Atrial ﬁbrillation VPB, VT Bradycardia • Avoid other drugs causing bradycardia • For management in people taking Lithiumh • Manage according to ESC Guidelines • Re-evaluate potential drug side eﬀects • Consider avoiding or switching medication • Risk assessment by cardiologist Figure 14 Management of people with severe mental illness and arrhythmias. aHistory, symptoms, status, 12-lead ECG, Holter-ECG and/or event recorder, echocardiography, blood test and other evaluation if appropriate. bSee Figure 13. cSuch as hypertension, heart failure, ischaemic heart disease, electrolyte imbalance, history of arrhythmia, or syncope, family history of sudden cardiac death. dSpecial caution with quetiapine, olanzapine, risperidone, iloperidone, amisulpride, sertindole.
+
+
+[E7] (AtrialFibrillation, p.40-40)
+
+Metoprolol XL (succinate) N/A 50–200 mg once daily Bisoprolol N/A 1. mg once daily Atenololc N/A 25–100 mg once daily Esmolol 500 µg/kg i.v. bolus over 1 min; followed by 50–300 µg/kg/min Landiolol 100 µg/kg i.v. bolus over 1 min; followed by 10–40 µg/kg/min Nebivolol N/A 2. mg once daily Carvedilol N/A 3. mg twice daily Due to its broad extracardiac adverse effect profile, amiodarone is reserved as a last option when heart rate cannot be controlled even with maximal tolerated combination therapy, or in patients who do not qualify for atrioventricular node ablation and pacing. Many of the adverse effects from amiodarone have a direct relationship with cumulative dose, restricting the long-term value of amiodarone for rate control. 7... Atrioventricular node ablation and pacemaker implantation Ablation of the atrioventricular node and pacemaker implantation (‘ablate and pace’) can lower and regularize heart rate in patients with AF (see Supplementary data online, Additional Evidence Table S). The procedure has a low complication rate and a low long-term mortality risk.
+
+
+[E8] (AtrialFibrillation, p.22-23)
+
+valvular heart disease Absence or minimal heart disease Sotalol (Class IIb) Recurrence of AF symptoms Antiarrhythmic drug therapy Shared decision-making on rhythm control (Class I) If failed antiarrhythmic drug therapy If failed catheter ablation Re-do catheter ablation (Class IIa) Surgical/hybrid ablation (Class IIb) Antiarrhythmic drug therapy (see above) Catheter ablationa Shared decision-making (Class I) Follow AF-CARE for [C] comorbidity and risk factor management & [A] avoid stroke and thromboembolism Figure 5 [R] Pathway for patients with paroxysmal AF. AF, atrial fibrillation; AF-CARE, atrial fibrillation—[C] Comorbidity and risk factor management, [A] Avoid stroke and thromboembolism, [R] Reduce symptoms by rate and rhythm control, [E] Evaluation and dynamic reassessment; b.p.m., aIn patients with HFrEF: Class I if high probability of tachycardia-induced cardiomyopathy; and Class IIa in selected patients to improve prognosis. Electrical cardioversion Rate control target = resting heart rate <110 b.p.m. (lenient control),
+
+
+[E9] (AtrialFibrillation, p.23-23)
+
+coronary heart disease, valvular heart disease Absence or minimal heart disease Sotalol (Class IIb) Recurrence of AF symptoms Antiarrhythmic drug therapy Shared decision-making on rhythm control (Class I) If failed antiarrhythmic drug therapy If failed catheter ablation Catheter ablationa (Class IIb) Shared decision-making, considering all rhythm control options (Class I) Beta-blocker, digoxin, diltiazem or verapamil (Class I) Catheter ablation (Class I) Re-do catheter ablation Endoscopic hybrid or surgical ablation Antiarrhythmic drug therapy (see above) Consider rate control strategy Follow AF-CARE for [C] comorbidity and risk factor management & [A] avoid stroke and thromboembolism Haemodynamic instability (Class I) Part of rhythm control strategy (Class IIa) Clarify benefit from sinus rhythm (Class IIa) Endoscopic/ hybrid ablation (Class IIa) Figure 6 [R] Pathway for patients with persistent AF. AF, atrial fibrillation; AF-CARE, Atrial fibrillation—[C] Comorbidity and risk factor management, aIn patients with HFrEF: Class I if high probability of tachycardia-induced cardiomyopathy; and Class IIa in selected patients to improve prognosis.
+
+
+[E10] (AtrialFibrillation, p.24-24)
+
+avoiding bradycardia (Class IIa) Evaluation and dynamic reassessment Initiate beta-blocker or digoxin (Class I) Rate control target = resting heart rate  <110 b.p.m. (lenient control), with stricter control with continuing symptoms (Class IIa) Severely symptomatic and HF hospitalization Atrioventricular node ablation and CRT (Class IIa) Intensify rate control therapy under observation Evaluation for atrioventricular node ablation in combination with pacemaker (Class IIa) Follow AF-CARE for [C] comorbidity and risk factor management & [A] avoid stroke and thromboembolism Rate control target = resting heart rate  <110 b.p.m. (lenient control), with stricter control with continuing symptoms (Class IIa) Figure 7 [R] Pathway for patients with permanent AF. AF, atrial fibrillation; AF-CARE, Atrial fibrillation—[C] Comorbidity and risk factor management, [A] Avoid stroke and thromboembolism, [R] Reduce symptoms by rate and rhythm control, [E] Evaluation and dynamic reassessment; b.p.m., Permanent AF is a shared decision made between the patient and physician that no further attempts at restoration of sinus rhythm are planned.
+
+
+TASK:
+The patient is being admitted to hospital. The ER does not prescribe ongoing therapy or follow-up — that is the admitting team's responsibility. Produce a brief handover note in two sections.
+
+SECTION 1 — ADMISSION NOTE
+In a numbered list: 
+- State that the patient is admitted to [department] for [key planned interventions], extracting the department and planned interventions from the clinical note (e.g. "Patient is admitted urgently to the Paediatrics department for high-dose intravenous immunoglobulin therapy, dedicated transthoracic echocardiography with coronary evaluation, and clinical-laboratory monitoring.").
+- State that the patient and/or family have been informed of the diagnosis, the expected clinical course based on the guideline excerpts (e.g. treatment protocol, possible complications, need for monitoring), and the planned treatment pathway. Do not write examples.
+- Do NOT give examples of complications or risks in parentheses. State the information directly without "e.g.", "such as", or "for example".
+- If the patient is being hospitalised to perform surgery,state that the patient has been prepped. 
+- State that the patient is handed over to the care of the [department] team.
+
+- Do NOT prescribe medications, follow-up visits, or lifestyle changes.
+- Do NOT cite [E#] in this section.
+- Keep each item to one or two sentences.
+
+SECTION 2 — CLINICAL REFERENCES (for the reviewing physician)
+For each item in Section 1 that draws on guideline content, write:
+[number] - [E#] - brief clinical justification
+Example:
+2 - [E1][E9] - IVIG 2g/kg and aspirin 30-50mg/kg/day are first-line treatment for Kawasaki disease to prevent coronary artery aneurysms.
+
+
+RULES:
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge.
+- Do NOT invent clinical facts not in the clinical note or excerpts.
+- Section 1 must be directly usable as a handover note with no editing needed.

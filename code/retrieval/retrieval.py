@@ -81,7 +81,7 @@ def load_crossEncoder(model_name: str = "BAAI/bge-reranker-large"):
 
 def reranking(query: str, retrieved_chunks: list[dict], reranker: CrossEncoder, top_n: int = 6) -> list[dict]:
     """
-    Performs cross-encoder reranking of retrieved chunks based on the query.
+    Performs cross-encoder reranking of retrieved chunks based on the query. Deprecated in favor of the more complex multi-query approach.
     """
 
     texts = [chunk["text"] for chunk in retrieved_chunks]
@@ -167,7 +167,7 @@ def reranking_multi_query(
     top_n = 8,
     category_boost = 0.1,
     source_penalty = 0.15,
-    dominance_ratio = 0.3
+    dominance_ratio = 0.35
 ) -> list[dict]:
     """
     Rerank chunks by scoring each chunk against each query independently,
@@ -192,7 +192,7 @@ def reranking_multi_query(
         for t in texts:
             all_pairs.append((q, t))
 
-    all_scores = reranker.predict(all_pairs) # Why not rank?
+    all_scores = reranker.predict(all_pairs)
 
     # Reshape into (n_queries, n_chunks)
     score_matrix = np.array(all_scores).reshape(n_queries, n_chunks)

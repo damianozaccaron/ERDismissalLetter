@@ -1,17 +1,104 @@
-SEZIONE 1 - NOTA DI AMMISSIONE
-1. La paziente viene ricoverata d'urgenza nel reparto di Ginecologia per ulteriori indagini diagnostiche e per valutare la strategia terapeutica in merito alla gestione medica o chirurgica.
-2. La paziente e la sua famiglia sono state informate della diagnosi di sospetta gravidanza extrauterina, del decorso clinico previsto, compreso il protocollo di trattamento, delle possibili complicanze e della necessità di monitoraggio, nonché del percorso terapeutico previsto.
-3. La paziente viene affidata alle cure del team di ginecologia.
+ROLE:
+You are an emergency department physician writing recommendations for a patient being admitted to hospital. The document will be read by the admitting team, the patient, and their family.
 
-SEZIONE 2 - RIFERIMENTI CLINICI (per il medico revisore)
-1 - [E1][E2] - Il ricovero ginecologico urgente è necessario per eseguire una valutazione diagnostica completa e determinare la strategia terapeutica appropriata tra gestione medica e chirurgica per una sospetta gravidanza extrauterina.
-2 - [E1][E2] - La consulenza alla paziente e alla famiglia deve riguardare la diagnosi, i protocolli di trattamento disponibili, le potenziali complicanze, il monitoraggio clinico richiesto e gli esiti psicologici come componente standard del percorso di gestione della gravidanza extrauterina.
+CLINICAL NOTE:
 
-============================================================
-ORIGINAL RECOMMENDATIONS (for comparison)
-============================================================
-• Paziente ricoverata in urgenza presso U.O. Ginecologia e Ostetricia per ecografia
-transvaginale dedicata, monitoraggio del β-hCG e valutazione terapeutica.
-• Digiuno disposto in previsione di eventuale intervento chirurgico.
-• Monitoraggio dei parametri vitali garantito durante il trasferimento.
-• Si affida alla presa in carico del team ginecologico.
+FEMALE, 23 AA
+Medical history:
+- Pathological proximate: Patient admits for pain in the right iliac fossa arising within the last 6 hours, moderate intensity, non-irradiated, associated with nausea without episodes of vomiting. Denies fever. Reports taking morning-after pill about 10 days before. Last menstruation 5 weeks ago, cycle usually regular. Denies vaginal bleeding at time of access.
+- Remote pathology: No known pathology. Previous appendectomy. No previous pregnancy. Not taking continuous home drug therapy. Denies drug allergies. Objective examination: Patient alert, oriented, collaborating. Suffering. Vesicular murmur present in all lung areas, no added noise. Heart tones normofrequent, rhythmic, free pauses. Abdomen treatable, painful on palpation in right iliac fossa and hypogastrium, no signs of frank peritonism. Blumberg negative. Jordan negative. No declivous oedema. BP 112/70 mmHg. HR 94 bpm. SpO2 99% aa. TC 36.6°C.
+
+Clinical diary:
+- Venous access found and quantitative serum β-hCG, biochemistry, blood count, indices of inflammation, blood group and Rh. At the same time qualitative urinary β-hCG is performed: positive.
+- ECG is performed: sinus rhythm, no alterations.
+- Examinations are performed: Serum β-hCG 1.840 mUI/mL. CBC: Hb 12.8 g/dL, no ongoing anaemia. No significant indices of inflammation. Blood group: A positive.
+- Ketorolac 30mg in 100cc saline is administered for analgesia, with partial benefit.
+- E FAST is performed: effusion in Douglas.
+- Given the β-hCG positivity, and the pain in the right iliac fossa, the picture is strongly suggestive of extrauterine pregnancy. On-call gynaecology is immediately contacted.
+- The patient is assessed by the on-call gynaecologist directly in the PS. Ultrasound scan: uterus normal size, no endouterine gestational sac visible. Right annexus: rounded para-ovarian image of about 2cm, inhomogeneous content, suspected for ectopic gestational sac. Modest flap of free effusion in Douglas. Left annexus normal.
+- Indication for urgent admission for further investigation and evaluation of therapeutic strategy (medical vs surgical).
+- The patient is informed of the suspected Diagnosis, the planned course of treatment and the need for urgent admission, in clear, age-appropriate language. The patient understands and consents.
+
+Diagnosis: SUSPECTED EXTRAUTERINE PREGNANCY
+Prognosis: urgent hospitalisation
+
+
+
+GUIDELINE EXCERPTS:
+
+[E1] (ExtraUterinePregnancy, p.3-3)
+
+Keywords: ectopic pregnancy / ultrasound / psychology / surgery / extrauterine ectopic pregnancy / interstitial ectopic pregnancy / ovarian ectopic pregnancy / abdominal ectopic pregnancy / uterine ectopic pregnancy / Caesarean scar ectopic pregnancy GRAPHICAL ABSTRACT The diagnosis and management of extrauterine and uterine ectopic pregnancy. Introduction An ectopic pregnancy can be defined as a pregnancy that develops fully or partially outside the endometrial cavity, and that, due to growth in an abnormal anatomical position, is potentially associated with haemorrhagic morbidity. Bleeding and pain are common presentations in early pregnancy, with which women generally present sub-acutely, depending on access to early pregnancy services. While normal early pregnancy and miscarriage are the more common outcomes, ectopic pregnancy has scope for greater morbidity, especially if undiagnosed. The majority of ectopic pregnancies are located in the Fallopian tubes, and their diagnosis and management are a routine part of early pregnancy care.
+
+
+[E2] (ExtraUterinePregnancy, p.1-1)
+
+E-mail: Jessica.Farren@ucl.ac.uk https://orcid.org/0000-0002-8082-6499 TABLE OF CONTENTS • Introduction • Methods • Terminology and nomenclature • Prevalence and mortality • Risk factors, aetiology, and pathogenesis Risk factors for tubal ectopic pregnancy Risk factors for other extrauterine ectopic pregnancy Risk factors for uterine ectopic pregnancy Assisted reproduction and risk of ectopic pregnancy Aetiological mechanisms Pathogenesis • Clinical evaluation and diagnosis Clinical assessment Imaging Biochemical assessment Surgical assessment Histological assessment • Management Management of tubal ectopic pregnancy Management of other extrauterine ectopic pregnancy Management of uterine ectopic pregnancy • Long-term care Ongoing Caesarean scar, intramural, abdominal, and rudimentary horn pregnancy Residual ectopic and aberrant vascular supply Caesarean scar niche management Subsequent pregnancy Psychological outcomes • Scope for future research • Conclusions Received: November 15, 2024. Revised: August 14, 2025. Editorial decision: August 28, 2025. Published by Oxford University Press on behalf of European Society of Human Reproduction and Embryology.
+
+
+[E3] (ExtraUterinePregnancy, p.2-3)
+
+This requires women and clinicians to make difficult decisions about whether these pregnancies should be terminated to protect maternal health, despite some possibility of a good foetal outcome. Herein, we provide a comprehensive review of published literature to summarize new evidence and explore emerging themes with respect to ectopic pregnancy. Our aim is to provide an overview of modern classification and diagnosis, to summarize available treatment options and recommendations, and to emphasize longer-term outcomes, including the potential psychological impact of ectopic pregnancy. We examine current knowledge gaps and outline priorities for further research. Keywords: ectopic pregnancy / ultrasound / psychology / surgery / extrauterine ectopic pregnancy / interstitial ectopic pregnancy / ovarian ectopic pregnancy / abdominal ectopic pregnancy / uterine ectopic pregnancy / Caesarean scar ectopic pregnancy GRAPHICAL ABSTRACT The diagnosis and management of extrauterine and uterine ectopic pregnancy. Introduction An ectopic pregnancy can be defined as a pregnancy that develops fully or partially outside the endometrial cavity, and that,
+
+
+[E4] (ExtraUterinePregnancy, p.15-15)
+
+Only 6% (8/132) of cases referred to a regional referral centre (one of three UK centres) with suspected molar histology over an 18-year period were ultimately confirmed as such (compared to 90% for routine uterine curettage) (Sebire et al., 2005). None of these required any additional treatment. Although histology is not available after successful expectant or medical management, protocols follow-up patients until normalization of hCG, meaning any persistent gestational trophoblastic disease would be picked up (Sebire et al., 2005). Management The first recorded survival after a ruptured TEP was in 1883, following surgery performed by Robert Lawson Tait (Lurie, 1992). The same surgeon is credited with the first record of delivering Table 3. Interpretation of hCG and progesterone levels following a scan in which a eutopic or ectopic pregnancy cannot be visualized (a pregnancy of unknown location). Scenario Hormone level Interpretation Reference Pregnancy of unknown location Progesterone ≤2 mmol/l <2% diagnosed with EP: study proposes UPT in 2 weeks Bobdiwala et al. (2020) Progesterone ≤10 nmol/l 2% risk of intervention: study proposes discharge after single visit Cordina et al.
+
+
+[E5] (ExtraUterinePregnancy, p.3-3)
+
+While normal early pregnancy and miscarriage are the more common outcomes, ectopic pregnancy has scope for greater morbidity, especially if undiagnosed. The majority of ectopic pregnancies are located in the Fallopian tubes, and their diagnosis and management are a routine part of early pregnancy care. Ectopic pregnancies in other locations are less common, and it is thus more difficult for clinicians to acquire experience and skill to identify and treat them with confidence. Moreover, while most cases of ectopic pregnancy represent a clear deviation from normality, partial ectopic location across anatomical boundaries can make the differential diagnosis between normally sited and ectopic pregnancy very challenging (Kirk et al., 2020). If a pregnancy is showing signs of growth and development, certainty in diagnosis is imperative to avoid inadvertent termination of a normal pregnancy. In those with mild symptoms, or those in whom the diagnosis is uncertain, conservative management may enable resolution of this often self-limiting disease (RCOG, 2016; ACOG, 2018; NICE, 2023; Al Wattar et al., 2024).
+
+
+[E6] (ExtraUterinePregnancy, p.18-19)
+
+Essential to the safe management of abdominal pregnancies is preoperative diagnosis, to enable the presence of senior surgeons (Atrash et al., 1987). Management of uterine ectopic pregnancy Individualized management of uterine ectopic pregnancy is determined by two important factors: (i) whether it is live or failed and (ii) whether it is partial or complete. The former will determine whether spontaneous regression is likely or whether the pregnancy could progress to reach viability, and the latter determines what surgical access can be achieved. Caesarean scar ectopic pregnancy CSEP is part of a spectrum of abnormal placentation, which may have potential for live birth (Timor-Tritsch et al., 2014). Some women will continue their pregnancy, acknowledging the high risk of hysterectomy at delivery and the simultaneous potential for life-threatening haemorrhage, late miscarriage, or extreme prematurity. In many places, they will be supported to terminate the pregnancy, given the risks to both mother and baby.
+
+
+[E7] (ExtraUterinePregnancy, p.5-5)
+
+Intramural EP (Terms related to morphological anomalies omitted) Tubal ectopic pregnancy with solid appearance, with variable echogenicity and vascularity Solid swelling Extraovarian mass or Adnexal mass Tubal ectopic pregnancy containing a gestation sac Containing a gestational sac  ± yolk sac  ± foetal pole Tubal ring or Adnexal ring or Adnexal gestation sac Ectopic pregnancy containing an embryo with visible heart pulsations Live With cardiac activity (Discourage use of term ‘live’) Ectopic pregnancy showing ultrasound or biochemical signs of spontaneous resolution Failing EP Not included Uterine or interstitial ectopic pregnancy in part within the uterine cavity Partial No distinction between partial and complete uterine or interstitial EPs Uterine or interstitial ectopic pregnancy completely confined to myometrium with no visible connection to the endometrial cavity Ectopic pregnancy that remains visible on ultrasound after decline of serum hCG to pre-pregnancy levels Residual ectopic pregnancy Not included mortality to 0. per 100 000 maternities. Issues identified in the 12 deaths from ectopic pregnancy included delays in transfer to hospital and lack of face-to-face examination during the COVID19 pandemic (MBRRACE-UK et al., 2024b).
+
+
+[E8] (ExtraUterinePregnancy, p.18-18)
+
+The pregnancy can be excised, or the affected wedge of the ovary can be resected. Blood loss is higher than during surgical management for TEP, with a mean blood loss of 700 ml in one series (Solangon et al., 2024). Following surgical management, serial hCG measurement is indicated to ensure there is no active residual trophoblast. The management of abdominal ectopic pregnancies will depend on the location, the gestation at which it is diagnosed, symptoms at diagnosis, and the viability of the pregnancy. Medical management does not have a major role, and generally surgical management is required, with a risk of intra-operative haemorrhage and the need for blood transfusion (Poole et al., 2012). Essential to the safe management of abdominal pregnancies is preoperative diagnosis, to enable the presence of senior surgeons (Atrash et al., 1987). Management of uterine ectopic pregnancy Individualized management of uterine ectopic pregnancy is determined by two important factors: (i) whether it is live or failed and (ii) whether it is partial or complete.
+
+
+[E9] (ExtraUterinePregnancy, p.3-3)
+
+Uterine ectopic pregnancies develop within the confines of the uterine visceral peritoneum and include Caesarean scar, cervical, and intramural pregnancies. They may also develop within a uterine anomaly. A further important classification relates to whether all or part of the pregnancy breaches the anatomical boundaries. For example, where a uterine ectopic pregnancy has no visible connection to the uterine cavity, it is termed ‘complete’, but pregnancies that are part within and part outside the cavity should be termed ‘partial’. Finally, a pregnancy can be ‘heterotopic’ when a correctly sited and an ectopic pregnancy co-exist. It is also possible to have two (or more) concomitant ectopic pregnancies. Within this paper, we use the terms ‘woman’ and ‘women’ to refer to persons affected by ectopic pregnancy. Prevalence and mortality Prevalence studies are hampered by a lack of national notification and surveillance infrastructures in both high-income and low- and middle-income countries (LMIC).
+
+
+[E10] (ExtraUterinePregnancy, p.21-21)
+
+A French registry study conducted over 16 years demonstrated that 70% of women with a previous ectopic pregnancy went on to have a correctly sited pregnancy, and 57% had a live birth, with a mean follow-up of 24 months (de Bennetot et al., 2012). Other studies have used smaller cohorts of women known to be actively seeking pregnancy. A 1988 Swedish study, which included 112 women who desired pregnancy and were interviewed 5 years after surgically managed TEP, found that 62 (55%) women achieved a eutopic pregnancy, and 60 (54%) had a live birth (Thorburn et al., 1988). A 1996 French study followed up a cohort of 155 women wanting pregnancy after TEP for a mean of 16 months: 92 (59%) achieved a eutopic pregnancy (Job-Spira et al., 1996). These historical studies may reflect generally more clinically severe TEPs, managed surgically, and it would be a reasonable hypothesis that smaller TEPs, managed expectantly, may be associated with better fertility outcomes. Small observational studies to date have not demonstrated a significant difference in conception or live birth rates comparing surgical, medical, and expectant management (Strobelt et al.,
+
+
+TASK:
+The patient is being admitted to hospital. The ER does not prescribe ongoing therapy or follow-up — that is the admitting team's responsibility. Produce a brief handover note in two sections.
+
+SECTION 1 — ADMISSION NOTE
+In a numbered list: 
+- State that the patient is admitted to [department] for [key planned interventions], extracting the department and planned interventions from the clinical note (e.g. "Patient is admitted urgently to the Paediatrics department for high-dose intravenous immunoglobulin therapy, dedicated transthoracic echocardiography with coronary evaluation, and clinical-laboratory monitoring.").
+- State that the patient and/or family have been informed of the diagnosis, the expected clinical course based on the guideline excerpts (e.g. treatment protocol, possible complications, need for monitoring), and the planned treatment pathway. Do not write examples.
+- Do NOT give examples of complications or risks in parentheses. State the information directly without "e.g.", "such as", or "for example".
+- If the patient is being hospitalised to perform surgery,state that the patient has been prepped. 
+- State that the patient is handed over to the care of the [department] team.
+
+- Do NOT prescribe medications, follow-up visits, or lifestyle changes.
+- Do NOT cite [E#] in this section.
+- Keep each item to one or two sentences.
+
+SECTION 2 — CLINICAL REFERENCES (for the reviewing physician)
+For each item in Section 1 that draws on guideline content, write:
+[number] - [E#] - brief clinical justification
+Example:
+2 - [E1][E9] - IVIG 2g/kg and aspirin 30-50mg/kg/day are first-line treatment for Kawasaki disease to prevent coronary artery aneurysms.
+
+
+RULES:
+- Use ONLY the provided guideline excerpts. Do not rely on prior medical knowledge.
+- Do NOT invent clinical facts not in the clinical note or excerpts.
+- Section 1 must be directly usable as a handover note with no editing needed.
