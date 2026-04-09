@@ -103,3 +103,8 @@ This will keep the generated recommendations in English instead of translating t
 ## Results
 
 The `Examples/` folder contains sample results including original Italian clinical notes, their English translations, and the generated discharge recommendations — useful for understanding what the pipeline produces without running it yourself.
+
+
+## Requirements
+
+The system requires CUDA to run. Even with API-accessed LLMs, the rest of the pipeline requires around 4Gb of VRAM to function.
