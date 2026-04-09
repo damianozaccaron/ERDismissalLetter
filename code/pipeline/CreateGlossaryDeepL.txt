@@ -1,5 +1,5 @@
 curl -X POST 'https://api-free.deepl.com/v3/glossaries' \
---header 'Authorization: DeepL-Auth-Key 3e8dba21-6f6c-4f49-9d7f-9fea17bd3f3f:fx' \
+--header 'Authorization: DeepL-Auth-Key [INSERT DEEPL KEY]' \
 --header 'Content-Type: application/json' \
 --data '{
   "name": "Clinical Glossary IT-EN",
