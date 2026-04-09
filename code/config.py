@@ -5,6 +5,9 @@ NER_MODEL = "Clinical-AI-Apollo/Medical-NER"
 # True skips LLM generation, used to test retrieval quality.
 RETRIEVAL_ONLY = False
 
+# Use DeepL pre-translated files to save characters usage.
+USE_EXISTING_TRANSLATION = True
+
 # Output LLM models
 API = True
 QUANT = True # if using local models, whether to use quantized versions from llama-cpp (if False, uses non-quantized models via transformers library)
@@ -17,6 +20,6 @@ FINAL_N = 10
 TEMPERATURE = 0.2
 
 # Tokens
-OPENROUTER_KEY = "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"
-DEEPL_AUTH_KEY = "3e8dba21-6f6c-4f49-9d7f-9fea17bd3f3f:fx"
+OPENROUTER_KEY = ""
+DEEPL_AUTH_KEY = ""
 DEEPL_GLOSSARY_ID = "627f273f-d457-400f-a171-d04b9c13ddf3"

@@ -12,6 +12,7 @@ from config import (
     OPENROUTER_KEY,
     API,
     RETRIEVAL_ONLY,
+    USE_EXISTING_TRANSLATION,
     QUANT,
     REPO)
 
@@ -197,7 +198,7 @@ if __name__ == "__main__":
             cross_encoder=cross_encoder,
             index=index,
             metadata=metadata,
-            use_existing_transl=True,
+            use_existing_transl=USE_EXISTING_TRANSLATION,
             llm_model=model,
             tokenizer=tokenizer
         )
@@ -217,7 +218,7 @@ if __name__ == "__main__":
                 
         # Append original recommendations for comparison
         rec_path = Path("Examples/recommendations") / f"{stem}_rec.txt"
-        if rec_path.exists():
+        if rec_path.exists() and not RETRIEVAL_ONLY:
             with open(rec_path, "r", encoding="utf-8") as f:
                 original_rec = f.read()
             with open(output_path, "a", encoding="utf-8") as f:
